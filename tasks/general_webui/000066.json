@@ -1,0 +1,235 @@
+{
+  "website_summary": {
+    "name": "Culinary Guide Explorer",
+    "description": "The website is a vibrant culinary guide featuring a clean and user-friendly interface with a lemon chiffon background and chocolate-styled components, designed for exploring restaurants and recipes.",
+    "category": "User Interaction",
+    "appearance": "The website has a well-organized layout with a navigation bar at the top offering options like \"Restaurants\" and \"Recipes.\" The main content area is divided into sections: a list of restaurants on the left with details like ratings, cuisine type, and distance, and a detailed view of a selected restaurant on the right. The detailed view includes the restaurant's name, rating, contact information, and reviews. The design uses a lemon chiffon background with chocolate-styled components, creating a warm and inviting atmosphere. The star ratings and review sections are prominently displayed, enhancing user engagement.",
+    "functionality": "The website features a search bar for finding specific restaurants or recipes, a \"Nearby\" button for browsing local options, and a detailed restaurant view with reviews and ratings. Users can write their own reviews and ratings for restaurants. The restaurant list is interactive, allowing users to click on a restaurant to view more details. The reviews section displays user comments and ratings, providing social proof and enhancing the user experience."
+  },
+  "test_cases": {
+    "functionality_testing": [
+      {
+        "id": "TC001",
+        "name": "Enter Review Text Test",
+        "objective": "To verify that entering text in the Review Textarea and selecting a rating using Rating Selection is properly handled.",
+        "coverage_element": "Review Textarea, Rating Selection",
+        "preconditions": "The user is on the Saffron Palace restaurant detail page with the \"Reviews\" section visible, and the review writing form is open.",
+        "expected_results": "The entered review text and selected rating should be visible within the form without any errors or loss of data. 7. Next Steps : Enter a review text in the provided textbox, select a rating using the interactive rating elements, and then proceed to submit the review.",
+        "procedure": [
+          "Enter a review text in the Review Textarea textbox.",
+          "Select a rating using the Rating Selection elements.",
+          "Verify that the review text and selected rating are displayed correctly within the form."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Hover Over Star Ratings Test",
+        "objective": "To verify that hovering over the star ratings in the Restaurant Details Card displays the correct rating value.",
+        "coverage_element": "Restaurant Details Card",
+        "preconditions": "The user is on the Saffron Palace restaurant detail page.",
+        "expected_results": "The tooltip should display the correct rating value when hovering over the star ratings.",
+        "procedure": [
+          "Hover over the star ratings in the \"Reviews\" section of the Restaurant Details Card.",
+          "Verify that the tooltip displays the correct rating value."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Hover over Star Ratings in Reviews",
+        "objective": "Verify that hovering over the star ratings in the Restaurant Details Card under the \"Reviews\" section displays the correct rating value.",
+        "coverage_element": "Restaurant Details Card",
+        "preconditions": "The webpage is on the \"Saffron Palace\" details page.",
+        "expected_results": "Correct rating value should be shown in a tooltip or additional information.",
+        "procedure": [
+          "Hover over the star ratings in the \"Reviews\" section.",
+          "Observe if the tooltip or additional information accurately displays the rating value."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Saffron Palace Button Test",
+        "objective": "To verify that clicking the Saffron Palace Button navigates to the restaurant detail page.",
+        "coverage_element": "Saffron Palace Button",
+        "preconditions": "The user is on the main page of the website with the restaurant list displayed.",
+        "expected_results": "The user should be navigated to the Saffron Palace detail page with relevant restaurant information displayed. 7. Next Steps : Click on the \"Saffron Palace\" button to navigate to its detail page.",
+        "procedure": [
+          "Click on the Saffron Palace Button",
+          "Verify that the user is navigated to the Saffron Palace restaurant detail page"
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Scroll to Reviews Section Test",
+        "objective": "To verify that scrolling down reveals the \"Reviews\" section and the \"Write a Review\" button.",
+        "coverage_element": "[WINDOW]",
+        "preconditions": "The user is on the Saffron Palace restaurant detail page.",
+        "expected_results": "The \"Reviews\" section and the \"Write a Review\" button should be visible after scrolling down. 7. Next Steps : Scroll down the page to reveal the \"Reviews\" section and the \"Write a Review\" button.",
+        "procedure": [
+          "Scroll down the page until the \"Reviews\" section is visible",
+          "Verify that the \"Write a Review\" button is displayed"
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Search Bar Test",
+        "objective": "To verify that the Search Bar correctly handles search input and returns relevant results.",
+        "coverage_element": "Search Bar",
+        "preconditions": "The search bar is empty.",
+        "expected_results": "The search results should show the Saffron Palace restaurant with its details, including rating, cuisine type, and distance. 7. Next Steps : Enter \"Saffron Palace\" into the search bar and press Enter.",
+        "procedure": [
+          "Type \"Saffron Palace\" into the Search Bar.",
+          "Press Enter or click the search icon.",
+          "Verify that the search results display the Saffron Palace restaurant details."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "Navigate to Restaurants Section",
+        "objective": "To verify that clicking the 'Restaurants' button navigates to the restaurants section.",
+        "coverage_element": "Restaurants : Button for navigating to the restaurants section",
+        "preconditions": "User is on the homepage of the web application.",
+        "expected_results": "The page should navigate to the restaurants section displaying a list of available restaurants.",
+        "procedure": [
+          "Click on the 'Restaurants' button in the navigation bar.",
+          "Verify that the page transitions to the restaurants section."
+        ]
+      },
+      {
+        "id": "TC008",
+        "name": "Select Taco Fiesta Restaurant",
+        "objective": "To verify that clicking the 'Taco Fiesta Button' selects the Taco Fiesta restaurant.",
+        "coverage_element": "Taco Fiesta Button : Button to select the Taco Fiesta restaurant",
+        "preconditions": "User is on the restaurants section page.",
+        "expected_results": "The detailed view of the Taco Fiesta restaurant should be displayed.",
+        "procedure": [
+          "Click on the 'Taco Fiesta Button'.",
+          "Verify that the detailed view of the Taco Fiesta restaurant is shown."
+        ]
+      },
+      {
+        "id": "TC009",
+        "name": "Select Bangkok Bites Restaurant",
+        "objective": "To verify that clicking the 'Bangkok Bites Button' selects the Bangkok Bites restaurant.",
+        "coverage_element": "Bangkok Bites Button : Button to select the Bangkok Bites restaurant",
+        "preconditions": "User is on the restaurants section page.",
+        "expected_results": "The detailed view of the Bangkok Bites restaurant should be displayed.",
+        "procedure": [
+          "Click on the 'Bangkok Bites Button'.",
+          "Verify that the detailed view of the Bangkok Bites restaurant is shown."
+        ]
+      },
+      {
+        "id": "TC010",
+        "name": "Write a Review for Selected Restaurant",
+        "objective": "To verify that clicking the 'Write a Review' button allows users to write a review.",
+        "coverage_element": "Write a Review : Button to write a review for the selected restaurant",
+        "preconditions": "A restaurant is selected and its detailed view is displayed.",
+        "expected_results": "The review textarea should be activated for input.",
+        "procedure": [
+          "Click on the 'Write a Review' button.",
+          "Verify that the review textarea is active and ready for input."
+        ]
+      },
+      {
+        "id": "TC011",
+        "name": "Validate Navigation Tabs Card Functionality",
+        "objective": "To verify that the navigation tabs card allows smooth navigation between different sections.",
+        "coverage_element": "Navigation Tabs Card : Card containing navigation tabs for different sections",
+        "preconditions": "User is on the homepage or any section of the web application.",
+        "expected_results": "Clicking on any tab should navigate to the corresponding section without errors.",
+        "procedure": [
+          "Click on each navigation tab in the navigation tabs card.",
+          "Verify that the page navigates to the correct section for each tab."
+        ]
+      },
+      {
+        "id": "TC012",
+        "name": "Submit a Review",
+        "objective": "To verify that clicking the 'Submit Review Button' submits the review successfully.",
+        "coverage_element": "Submit Review Button : Button to submit the review",
+        "preconditions": "A review text is entered in the review textarea.",
+        "expected_results": "The review should be submitted, and a confirmation message should be displayed.",
+        "procedure": [
+          "Click on the 'Submit Review Button'.",
+          "Verify that the review is submitted and a confirmation message is shown."
+        ]
+      }
+    ],
+    "data_display_testing": [
+      {
+        "id": "TC001",
+        "name": "Restaurant Details Test",
+        "objective": "To verify that the Restaurant Details Card displays the correct details for the Saffron Palace restaurant.",
+        "coverage_element": "Restaurant Details Card",
+        "preconditions": "The search results are displayed.",
+        "expected_results": "The Restaurant Details Card should display the Saffron Palace restaurant details accurately. 7. Next Steps : Verify the details of the Saffron Palace restaurant displayed in the Restaurant Details Card.",
+        "procedure": [
+          "Hover over the Restaurant Details Card.",
+          "Verify that the card displays the Saffron Palace restaurant details, including rating, cuisine type, and distance."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Search Results Test",
+        "objective": "To verify that the search results display the correct restaurant details for \"Saffron Palace\".",
+        "coverage_element": "Restaurant Details Card",
+        "preconditions": "The search results are displayed.",
+        "expected_results": "The Restaurant Details Card should display the Saffron Palace restaurant details accurately. 7. Next Steps : Verify the search results displayed in the Restaurant Details Card.",
+        "procedure": [
+          "Verify that the Restaurant Details Card displays the Saffron Palace restaurant details, including rating, cuisine type, and distance."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Validate Search Filters Card Display",
+        "objective": "To verify that the search filters card displays all necessary options correctly.",
+        "coverage_element": "Search Filters Card : Card containing search filters and options",
+        "preconditions": "User is on the restaurants section page.",
+        "expected_results": "The search filters card should display all filter options clearly and accurately.",
+        "procedure": [
+          "Navigate to the restaurants section.",
+          "Verify that the search filters card contains all expected filter options."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Enter Review Text",
+        "objective": "To verify that the review textarea allows users to enter text for reviews.",
+        "coverage_element": "Review Textarea : Textbox for entering the review text",
+        "preconditions": "The review textarea is active after clicking 'Write a Review'.",
+        "expected_results": "The entered text should appear in the textarea without any issues.",
+        "procedure": [
+          "Type a review text into the review textarea.",
+          "Verify that the text appears correctly in the textarea."
+        ]
+      }
+    ],
+    "design_validation_testing": [
+      {
+        "id": "TC001",
+        "name": "UI Design and Style Test: Background Color",
+        "objective": "To evaluate the background color using elements Background Color, Background Color, Background Color.",
+        "coverage_element": "Background Color",
+        "preconditions": "",
+        "expected_results": "The background should be lemon chiffon. 7. Next Steps : Hover over the main content card Background Color again to inspect the background color.",
+        "procedure": [
+          "Observe the background color of Background Color, Background Color, Background Color.",
+          "Evaluate if the background color matches lemon chiffon."
+        ]
+      }
+    ]
+  },
+  "element_requirement": [
+    "1. Restaurants : Button for navigating to the restaurants section",
+    "2. Taco Fiesta Button : Button to select the Taco Fiesta restaurant",
+    "3. Bangkok Bites Button : Button to select the Bangkok Bites restaurant",
+    "4. Saffron Palace : Button representing the Saffron Palace restaurant entry",
+    "5. Write a Review : Button to write a review for the selected restaurant",
+    "6. Restaurant Details : Card displaying details about the selected restaurant",
+    "7. Search Filters Card : Card containing search filters and options",
+    "8. Navigation Tabs Card : Card containing navigation tabs for different sections",
+    "9. Rating Selection : Interactive elements for selecting the rating",
+    "10. Review Textarea : Textbox for entering the review text",
+    "11. Submit Review Button : Button to submit the review"
+  ]
+}

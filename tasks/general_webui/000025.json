@@ -1,0 +1,296 @@
+{
+  "website_summary": {
+    "name": "Insurance Pro Management System",
+    "description": "The Insurance Pro Management System is a data-centric application designed with a clean, interactive interface for managing customer, policy, and claims information in an insurance setting.",
+    "category": "Data Management",
+    "appearance": "The website features a sleek, modern design with a crisp whitesmoke background for the main content area and dark cyan for interactive elements like buttons and links, adhering to the specified theme. The left sidebar, colored in dark red, lists navigation options: Customers, Policies, Claims, and Analytics. The main content area is split into headers and content sections. Headers are crucial for information categories like \"Customer Management,\" coupled with filters and action buttons such as \"Add Customer\" and \"Export.\" The customer list table includes columns for ID, Name, Email, Phone, Gender, and Status, presented in a clear, sortable format. Each customer row features interactive icons for editing and deleting records. Pagination at the bottom of the list allows for easy navigation through records.",
+    "functionality": "The website offers functional capabilities for managing insurance data comprehensively, including:\n1. **Customer Management:** Users can search for customers, sort data, and easily filter customers by status, gender, and date of birth. Customers can also be added, edited, or deleted directly from the interface.\n2. **Policy and Claims Management:** Similar functionalities as Customer Management, enabling browsing, searching, and managing policies and claims.\n3. **Analytics:** Feature generating various reports and providing insights via charts and graphs, though not visually shown in the provided screenshots.\n4. **Data Export:** Users can export current data views for offline review or record-keeping.\n5. **User Interface Enhancements:** Interactive elements such as hover states for buttons and links, and dynamic loading indicators during operations like search filters."
+  },
+  "test_cases": {
+    "functionality_testing": [
+      {
+        "id": "TC001",
+        "name": "Name Input Test",
+        "objective": "To verify that the Name Input textbox correctly accepts and displays the entered customer name.",
+        "coverage_element": "Name Input",
+        "preconditions": "On the \"Add New Customer\" form.",
+        "expected_results": "The textbox should display \"Test User\". 7. Next Steps : Enter the customer's name into the name textbox.",
+        "procedure": [
+          "Type \"Test User\" into the Name Input textbox.",
+          "Verify that the textbox displays \"Test User\"."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Search Input Field Test",
+        "objective": "To verify that the Search Input Field correctly filters customer results based on the entered query.",
+        "coverage_element": "Search Input Field",
+        "preconditions": "On the Customers page with the search field visible.",
+        "expected_results": "The customer list should display only the information for \"Customer 4.\" 7. Next Steps : Enter \"Customer 4\" into the search field and press Enter.",
+        "procedure": [
+          "Type \"Customer 4\" into the Search Input Field.",
+          "Press Enter or click the search icon.",
+          "Verify that only the information for \"Customer 4\" is displayed."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Navigate to Customers Section",
+        "objective": "To verify that clicking the Customers button navigates to the Customers section.",
+        "coverage_element": "Customers : Sidebar button to navigate to the Customers section",
+        "preconditions": "User is logged into the application and on the homepage.",
+        "expected_results": "TheCustomers section page is displayed after clicking the Customers button.",
+        "procedure": [
+          "Click the 'Customers' button in the sidebar.",
+          "Verify that the page navigates to the Customers section and displays the customer list table."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Gender Dropdown Selection",
+        "objective": "To verify that selecting a gender from the Gender Dropdown updates the customer's gender.",
+        "coverage_element": "Gender Dropdown : Dropdown menu for selecting the customer's gender",
+        "preconditions": "User is on the Customers section page and editing a customer record.",
+        "expected_results": "The selected gender is reflected in the customer's information.",
+        "procedure": [
+          "Select 'Edit' for a customer.",
+          "Click the 'Gender Dropdown' and select a gender.",
+          "Verify that the selected gender is displayed in the customer record."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Status Dropdown Selection",
+        "objective": "To verify that selecting a status from the Status Dropdown updates the customer's status.",
+        "coverage_element": "Status Dropdown : Dropdown menu for selecting customer statuses",
+        "preconditions": "User is on the Customers section page and editing a customer record.",
+        "expected_results": "The selected status is reflected in the customer's information.",
+        "procedure": [
+          "Select 'Edit' for a customer.",
+          "Click the 'Status Dropdown' and select a status.",
+          "Verify that the selected status is displayed in the customer record."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Export Customer Data",
+        "objective": "To verify that clicking the Export Button exports customer data.",
+        "coverage_element": "Export Button : Button for exporting customer data",
+        "preconditions": "User is on the Customers section page.",
+        "expected_results": "A file containing customer data is downloaded.",
+        "procedure": [
+          "Click the 'Export Button'.",
+          "Verify that the file is downloaded and contains the correct customer data."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "Email Input Validation",
+        "objective": "To verify the Email Input for entering a customer's email.",
+        "coverage_element": "Email Input : Textbox for entering the customer's email",
+        "preconditions": "User is on the Customers section page and adding/editing a customer.",
+        "expected_results": "Email is validated and accepted only when it is correctly formatted.",
+        "procedure": [
+          "Attempt to enter invalid emails such as 'test' or '123@abc' in the Email Input.",
+          "Submit the form and verify that the invalid emails are not accepted."
+        ]
+      },
+      {
+        "id": "TC008",
+        "name": "Add Customer Form Submission",
+        "objective": "To verify that clicking the Add Customer Button submits the form and adds a new customer.",
+        "coverage_element": "Add Customer Button : Button to submit the form and add the new customer",
+        "preconditions": "User is on the Customers section page and filling out the Add Customer form.",
+        "expected_results": "A new customer record is created and appears in the customer list.",
+        "procedure": [
+          "Fill out the Add Customer form with all required fields.",
+          "Click the 'Add Customer Button' and verify that a new customer is added to the customer list."
+        ]
+      },
+      {
+        "id": "TC009",
+        "name": "Previous Card Navigation",
+        "objective": "To verify that the Previous Card allows navigation to the previous page.",
+        "coverage_element": "Previous Card : Card for navigating to the previous page",
+        "preconditions": "User is on a page that is not the homepage.",
+        "expected_results": "The application navigates to the previous page.",
+        "procedure": [
+          "Navigate away from the homepage.",
+          "Click the 'Previous Card' and verify the application returns to the previous page."
+        ]
+      },
+      {
+        "id": "TC010",
+        "name": "Next Card Navigation",
+        "objective": "To verify that the Next Card allows navigation to the next page.",
+        "coverage_element": "Next Card : Card for navigating to the next page",
+        "preconditions": "User is on a page with pagination.",
+        "expected_results": "The application navigates to the next page.",
+        "procedure": [
+          "Navigate to the Customers section and view a paginated list.",
+          "Click the 'Next Card' and verify the application moves to the next set of records."
+        ]
+      },
+      {
+        "id": "TC011",
+        "name": "Date of Birth Input Validation",
+        "objective": "To verify the Date of Birth Input field's functionality.",
+        "coverage_element": "Date of Birth Input : Textbox for entering the customer's date of birth",
+        "preconditions": "User is on the Customers section page and adding/editing a customer.",
+        "expected_results": "The Date of Birth Input accepts only valid date formats.",
+        "procedure": [
+          "Enter invalid dates such as '99/99/9999' or 'abc-xyz' in the Date of Birth Input.",
+          "Submit the form and verify that invalid dates are not accepted."
+        ]
+      },
+      {
+        "id": "TC012",
+        "name": "Cancel Action Check",
+        "objective": "To verify that clicking the Cancel button abandons the form without changes.",
+        "coverage_element": "Cancel Card : Card containing the \"Cancel\" button",
+        "preconditions": "User is on the Customers section page and filling out the Add Customer form.",
+        "expected_results": "The form is abandoned, and no new customer is added.",
+        "procedure": [
+          "Fill out the Add Customer form partially.",
+          "Click the 'Cancel' button and verify that the current form is abandoned."
+        ]
+      },
+      {
+        "id": "TC013",
+        "name": "Menu Toggle Check",
+        "objective": "To verify that the Menu Toggle button displays and hides the sidebar.",
+        "coverage_element": "Menu Toggle : Button to toggle the sidebar menu",
+        "preconditions": "User is on the homepage.",
+        "expected_results": "The sidebar menu appears and disappears upon clicking the Menu Toggle.",
+        "procedure": [
+          "Click the 'Menu Toggle' button and ensure the sidebar appears.",
+          "Click it again to ensure the sidebar hides."
+        ]
+      }
+    ],
+    "data_display_testing": [
+      {
+        "id": "TC001",
+        "name": "Customer Details Hover Test",
+        "objective": "To verify that hovering over customer details displays accurate and readable information.",
+        "coverage_element": "Customer Details Table",
+        "preconditions": "The Customers section is open.",
+        "expected_results": "The details for both customers should be accurately displayed and easily readable. 7. Next Steps : Hover over Customer 10's details to check if the information is visible and readable.",
+        "procedure": [
+          "Hover over Customer 10's details.",
+          "Verify that the details are visible and readable.",
+          "Hover over Customer 11's details.",
+          "Verify that the details are visible and readable."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Customer List Table Display",
+        "objective": "To verify that the Customer List Table displays customer information correctly.",
+        "coverage_element": "Customer List Table Rows Displaying customer information such as ID, name, email, phone, gender, and status",
+        "preconditions": "User is on the Customers section page.",
+        "expected_results": "Each row of the Customer List Table shows the correct customer data.",
+        "procedure": [
+          "Navigate to the Customers section.",
+          "Verify that the Customer List Table displays each customer's ID, name, email, phone, gender, and status correctly."
+        ]
+      }
+    ],
+    "design_validation_testing": [
+      {
+        "id": "TC001",
+        "name": "UI Design and Style Test: Color Palette",
+        "objective": "To evaluate the color scheme consistency of the main content area and interactive elements.",
+        "coverage_element": "Color Scheme",
+        "preconditions": "",
+        "expected_results": "The main content area should have a whitesmoke background, and interactive elements should use dark cyan. 7. Next Steps : Perform the UI Design and Style Test focusing on the color palette.",
+        "procedure": [
+          "Observe the background color of the main content area (Color Scheme).",
+          "Check the color of the \"Add Customer\" button (Color Scheme) and the \"Export\" button (Color Scheme).",
+          "Verify the color of the search input field (Color Scheme)."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Export Card Visibility",
+        "objective": "To verify that the Export Card is displayed with export options.",
+        "coverage_element": "Export Card : Card containing export options",
+        "preconditions": "User is on the Customers section page.",
+        "expected_results": "Export Card is visible and contains export options.",
+        "procedure": [
+          "Navigate to the Customers section.",
+          "Verify that the 'Export Card' is visible and contains valid export options."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Various Cards Presence",
+        "objective": "To verify the presence of various cards representing different sections and functionalities.",
+        "coverage_element": "Various Cards Representing different sections and functionalities",
+        "preconditions": "User is on the Customers section page.",
+        "expected_results": "Various cards for different sections and functionalities are displayed.",
+        "procedure": [
+          "Navigate to the Customers section.",
+          "Verify the visibility and presence of cards for different functionalities."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Add Customer Card Display",
+        "objective": "To verify that the Add Customer Card is displayed with the Add Customer button.",
+        "coverage_element": "Add Customer Card : Card containing the \"Add Customer\" button",
+        "preconditions": "User is on the Customers section page.",
+        "expected_results": "The Add Customer Card is visible and contains a functional 'Add Customer' button.",
+        "procedure": [
+          "Navigate to the Customers section.",
+          "Verify that the 'Add Customer Card' is visible and the 'Add Customer' button is functional."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Customers Management Card Visibility",
+        "objective": "To verify the presence and display of the Customers Management Card.",
+        "coverage_element": "Customers Management Card : Card displaying customer management information",
+        "preconditions": "User is on the Customers page.",
+        "expected_results": "The Customers Management Card is visible and displays relevant customer management information.",
+        "procedure": [
+          "Navigate to the Customers section.",
+          "Verify the visibility of the 'Customers Management Card' and check its content."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Add New Customer Card Visibility",
+        "objective": "To verify the presence and display of the Add New Customer Card.",
+        "coverage_element": "Add New Customer Card : Card containing the form for adding a new customer",
+        "preconditions": "User is on the Customers section page and clicking add customer.",
+        "expected_results": "The Add New Customer Card is visible and contains a form for adding a new customer.",
+        "procedure": [
+          "Navigate to the Customers section.",
+          "Click the 'Add Customer' button and ensure the 'Add New Customer Card' is visible with a form."
+        ]
+      }
+    ]
+  },
+  "element_requirement": [
+    "1. Customers : Sidebar button to navigate to the Customers section",
+    "2. Gender Dropdown : Dropdown menu for selecting the customer's gender",
+    "3. Status Dropdown : Dropdown menu for selecting customer statuses",
+    "4. Export Button : Button for exporting customer data",
+    "5. Export Card : Card containing export options",
+    "6. Customer List Table Rows Displaying customer information such as ID, name, email, phone, gender, and status",
+    "7. Various Cards Representing different sections and functionalities",
+    "8. Email Input : Textbox for entering the customer's email",
+    "9. Add Customer Card : Card containing the \"Add Customer\" button",
+    "10. Add Customer Button : Button to submit the form and add the new customer",
+    "11. Previous Card : Card for navigating to the previous page",
+    "12. Next Card : Card for navigating to the next page",
+    "13. Customers Management Card : Card displaying customer management information",
+    "14. Date of Birth Input : Textbox for entering the customer's date of birth",
+    "15. Name Input : Textbox for entering the customer's email",
+    "16. Email Input : Textbox for entering the customer's name",
+    "17. Add New Customer Card : Card containing the form for adding a new customer",
+    "18. Cancel Card : Card containing the \"Cancel\" button",
+    "19. Menu Toggle : Button to toggle the sidebar menu"
+  ]
+}

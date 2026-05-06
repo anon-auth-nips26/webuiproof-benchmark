@@ -1,0 +1,201 @@
+{
+  "website_summary": {
+    "name": "Advanced To-Do Organizer",
+    "description": "The website features a clean and modern interface with a lavender background and indigo-themed components, designed for managing personal tasks efficiently.",
+    "category": "Data Management",
+    "appearance": "The website has a minimalist and visually appealing design with a lavender gradient background transitioning between shades of violet and indigo. It includes several key sections: a form for creating new tasks with fields for Title, Description, Due Date, and Priority level. Below the form, there’s a search bar for finding tasks, alongside sorting and filtering options such as \"Sort by Date,\" \"Completed,\" and \"Pending.\" The bottom section displays task results, currently indicating \"No tasks found,\" suggesting placeholders for dynamic content. The overall layout is responsive, with clear labels and intuitive icons enhancing usability.",
+    "functionality": "The website allows users to add new tasks using a form that includes fields for entering a title, description, due date, and selecting a priority level. Users can also search for specific tasks using a search bar, sort tasks by date, priority, or status, and filter tasks by their completion status. Additionally, the interface provides buttons for marking tasks as completed or pending, though the screenshot does not show explicit delete functionality. The system dynamically updates the task list based on user inputs and selections."
+  },
+  "test_cases": {
+    "functionality_testing": [
+      {
+        "id": "TC001",
+        "name": "Add Task Button Test",
+        "objective": "To verify that the Add Task Button correctly submits the task.",
+        "coverage_element": "Add Task Button",
+        "preconditions": "The webpage is loaded and ready for interaction, and all required fields are filled out.",
+        "expected_results": "The task should appear in the task list below the form. 7. Next Steps : Click on the Due Date input field to open the date picker and select a future date.",
+        "procedure": [
+          "Click on the Add Task Button.",
+          "Verify that the task is added to the task list."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Completed Checkbox Test",
+        "objective": "To verify that checking the Completed Checkbox filters the task list to show only completed tasks.",
+        "coverage_element": "Completed Checkbox",
+        "preconditions": "No tasks are currently displayed.",
+        "expected_results": "The task list should display only completed tasks.",
+        "procedure": [
+          "Check the Completed Checkbox.",
+          "Verify that the task list updates to show only completed tasks."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Description Textarea Test",
+        "objective": "To verify that the Description Textarea correctly accepts and displays the entered description.",
+        "coverage_element": "Description Textarea",
+        "preconditions": "The webpage is loaded and ready for interaction.",
+        "expected_results": "The textarea should display \"Purchase milk, eggs, and bread.\"",
+        "procedure": [
+          "Type \"Purchase milk, eggs, and bread.\" into the Description Textarea.",
+          "Verify that the entered text appears in the textarea."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Due Date Input Test",
+        "objective": "To verify that the Due Date Input correctly accepts and displays the selected date.",
+        "coverage_element": "Due Date Input",
+        "preconditions": "The webpage is loaded and ready for interaction.",
+        "expected_results": "The input field should display the selected future date. 7. Next Steps : Enter the title \"Buy groceries\" into the Title* input field.",
+        "procedure": [
+          "Click on the Due Date Input to open the date picker.",
+          "Select a future date.",
+          "Verify that the selected date appears in the input field."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Pending Checkbox Test",
+        "objective": "To verify that checking the Pending Checkbox filters the task list to show only pending tasks.",
+        "coverage_element": "Pending Checkbox",
+        "preconditions": "No tasks are currently displayed.",
+        "expected_results": "The task list should display only pending tasks.",
+        "procedure": [
+          "Check the Pending Checkbox.",
+          "Verify that the task list updates to show only pending tasks."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Priority Dropdown Test",
+        "objective": "To verify that the Priority Dropdown correctly selects and displays the chosen priority level.",
+        "coverage_element": "Priority Dropdown",
+        "preconditions": "The webpage is loaded and ready for interaction.",
+        "expected_results": "The dropdown should display \"High\". 7. Next Steps : Enter the description \"Purchase milk, eggs, and bread.\" into the Description textarea.",
+        "procedure": [
+          "Click on the Priority Dropdown.",
+          "Select \"High\" from the dropdown options.",
+          "Verify that the selected priority level appears in the dropdown."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "Task Title Input Test",
+        "objective": "To verify that the Task Title Input textbox allows entry of a task title.",
+        "coverage_element": "Task Title Input",
+        "preconditions": "The task form is visible.",
+        "expected_results": "The task title \"Sample Task\" should be visible in the textbox.",
+        "procedure": [
+          "Type \"Sample Task\" into the Task Title Input textbox.",
+          "Verify that the text is entered correctly."
+        ]
+      },
+      {
+        "id": "TC008",
+        "name": "Test Search Bar Functionality",
+        "objective": "To verify that the search bar correctly filters tasks based on the input.",
+        "coverage_element": "Search Input : Search bar for finding tasks",
+        "preconditions": "The task list contains multiple tasks with different titles.",
+        "expected_results": "The task list should display only the tasks that match the search query.",
+        "procedure": [
+          "Enter a specific task title in the search bar.",
+          "Verify that only tasks matching the entered title are displayed."
+        ]
+      },
+      {
+        "id": "TC009",
+        "name": "Test Sort Dropdown Options",
+        "objective": "To verify that the sort dropdown correctly sorts tasks based on the selected option.",
+        "coverage_element": "Sort Dropdown : Dropdown menu for sorting tasks",
+        "preconditions": "The task list contains multiple tasks with different due dates.",
+        "expected_results": "The task list should be sorted according to the selected sorting option.",
+        "procedure": [
+          "Select 'Sort by Date' from the sort dropdown.",
+          "Verify that the tasks are sorted by their due dates."
+        ]
+      },
+      {
+        "id": "TC010",
+        "name": "Test Task Creation Section Fields",
+        "objective": "To verify that the task creation section allows for the input of valid data.",
+        "coverage_element": "Task Creation Section : Cards containing task creation fields and buttons",
+        "preconditions": "The task creation section is accessible and all fields are visible.",
+        "expected_results": "A new task should be successfully created with the provided data.",
+        "procedure": [
+          "Enter valid data into the Title, Description, Due Date, and Priority fields.",
+          "Click the 'Create Task' button and verify that the task is added to the list."
+        ]
+      },
+      {
+        "id": "TC011",
+        "name": "Test Filtering Section Options",
+        "objective": "To verify that the filtering section correctly filters tasks based on the selected options.",
+        "coverage_element": "Filtering Section : Card containing sorting and filtering options",
+        "preconditions": "The task list contains both completed and pending tasks.",
+        "expected_results": "The task list should display only the tasks that match the filter criteria.",
+        "procedure": [
+          "Select 'Completed' from the filtering options.",
+          "Verify that only completed tasks are displayed in the task list."
+        ]
+      }
+    ],
+    "data_display_testing": [
+      {
+        "id": "TC001",
+        "name": "Task Details Verification Test",
+        "objective": "To verify that the task details displayed in the task list match the information entered during the addition process.",
+        "coverage_element": "Task List Card",
+        "preconditions": "A task has been added.",
+        "expected_results": "The task list should display the added task with the correct title and priority. 7. Next Steps : Hover over the task list card to verify the task details.",
+        "procedure": [
+          "Hover over the Task List Card.",
+          "Verify that the task title and priority match the entered information."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Test Empty Task List Message Display",
+        "objective": "To verify that the empty task list message is displayed when no tasks are found.",
+        "coverage_element": "Empty Task List Message : Card displaying a message when no tasks are found",
+        "preconditions": "The task list is empty.",
+        "expected_results": "The message 'No tasks found' should be displayed.",
+        "procedure": [
+          "Ensure the task list is empty.",
+          "Verify that the 'No tasks found' message is displayed."
+        ]
+      }
+    ],
+    "design_validation_testing": [
+      {
+        "id": "TC001",
+        "name": "Test Task List Section Layout",
+        "objective": "To verify that the task list section displays tasks in a clear and organized manner.",
+        "coverage_element": "Task List Section : Card for displaying the list of tasks",
+        "preconditions": "The task list contains multiple tasks.",
+        "expected_results": "Tasks should be displayed in a clear, organized list with all necessary details visible.",
+        "procedure": [
+          "Add several tasks to the task list.",
+          "Verify that the tasks are displayed in a clear and organized manner with all details visible."
+        ]
+      }
+    ]
+  },
+  "element_requirement": [
+    "1. Title Input : Textbox for entering the task title",
+    "2. Description Textarea : Textarea for entering the task description",
+    "3. Due Date Input : Input field for selecting the due date",
+    "4. Priority Dropdown : Dropdown for selecting task priority levels",
+    "5. Search Input : Search bar for finding tasks",
+    "6. Sort Dropdown : Dropdown menu for sorting tasks",
+    "7. Completed Checkbox : Checkbox for marking tasks as completed",
+    "8. Pending Checkbox : Checkbox for marking tasks as pending",
+    "9. Task Creation Section : Cards containing task creation fields and buttons",
+    "10. Filtering Section : Card containing sorting and filtering options",
+    "11. Empty Task List Message : Card displaying a message when no tasks are found",
+    "12. Task List Section : Card for displaying the list of tasks"
+  ]
+}

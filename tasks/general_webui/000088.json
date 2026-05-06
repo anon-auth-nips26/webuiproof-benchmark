@@ -1,0 +1,236 @@
+{
+  "website_summary": {
+    "name": "Species BioInfo Database Manager",
+    "description": "The website presents a clean and organized interface for managing and viewing biological information data of various species, featuring a searchable table and interactive filters.",
+    "category": "Data Management",
+    "appearance": "The website has a minimalist design with a white background and maroon accents for buttons, text, and other interactive elements. At the top, there is a prominent search bar allowing users to look up species by name, common name, region, or habitat. Below the search bar, there is a \"Show Filters\" button that expands additional filtering options. The main content area displays a table listing species information, including columns for species name, common name, conservation status, population trend, regions, habitats, and actions. Each row in the table includes buttons for editing or deleting the entry. Pagination controls at the bottom allow users to navigate through multiple pages of data. The overall layout is responsive and easy to navigate.",
+    "functionality": "The website offers several key functionalities:\n- A search bar enables users to find specific species data by entering keywords related to species names, common names, regions, or habitats.\n- A \"Show Filters\" feature allows users to refine their search using predefined criteria such as conservation status or region.\n- An interactive table displays detailed information about each species, including its scientific name, common name, conservation status, population trend, regions, habitats, and action buttons for editing or deleting records.\n- Pagination controls facilitate navigation through multiple pages of data entries.\n- Buttons for adding new species entries are available, enhancing the data management capabilities."
+  },
+  "test_cases": {
+    "functionality_testing": [
+      {
+        "id": "TC001",
+        "name": "Hover Tooltip Test",
+        "objective": "To verify that hovering over the Blue Whale entry displays a tooltip confirming its \"Endangered\" status.",
+        "coverage_element": "Status of Blue Whale",
+        "preconditions": "The page is loaded and the Blue Whale entry is visible.",
+        "expected_results": "A tooltip should appear confirming the \"Endangered\" status. 7. Next Steps : Hover over the \"Status\" column for the Blue Whale entry to verify the tooltip.",
+        "procedure": [
+          "Hover over the Status of Blue Whale.",
+          "Verify that a tooltip appears confirming the \"Endangered\" status."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Scroll to Tyrannosaurus Rex Entry Test",
+        "objective": "To verify that scrolling down reveals the Tyrannosaurus Rex entry.",
+        "coverage_element": "[WINDOW]",
+        "preconditions": "The page is loaded and the Blue Whale entry is visible.",
+        "expected_results": "The Tyrannosaurus Rex entry should be visible after scrolling down. 7. Next Steps : Scroll down the page to locate the Tyrannosaurus Rex entry.",
+        "procedure": [
+          "Scroll down the page until the Tyrannosaurus Rex entry is visible.",
+          "Verify that the Tyrannosaurus Rex entry is displayed."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Search Bar Test",
+        "objective": "To verify that entering \"Lion\" into the Search Bar returns the correct search results.",
+        "coverage_element": "Search Bar",
+        "preconditions": "The search bar is empty and ready for input.",
+        "expected_results": "The search results should show the Lion entry with accurate details such as its conservation status, population trend, regions, and habitats. 7. Next Steps : Enter \"Lion\" into the search bar and press Enter to initiate the search.",
+        "procedure": [
+          "Type \"Lion\" into the Search Bar",
+          "Press Enter or click the search icon.",
+          "Verify that the search results display the Lion entry with accurate details."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Show Filters Button Test",
+        "objective": "To verify that clicking the Show Filters Button reveals the filter options.",
+        "coverage_element": "Show Filters Button",
+        "preconditions": "The webpage is loaded, and the Show Filters button is visible.",
+        "expected_results": "Filter options should appear after clicking the Show Filters button. 7. Next Steps : Click the \"Show Filters\" button to proceed with filtering.",
+        "procedure": [
+          "Click on the Show Filters Button.",
+          "Verify that the filter options become visible."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Species Image Display Test",
+        "objective": "To verify that hovering over the Panthera leo card displays the correct species image within the tooltip.",
+        "coverage_element": "Species Information Tooltip",
+        "preconditions": "The search term \"Lion\" has been entered, and the search results are displayed.",
+        "expected_results": "The tooltip should display an image of the Panthera leo matching the search result card. 7. Next Steps : With the search results confirming the accuracy of displayed species information, evaluating the interactivity of pagination controls remains.",
+        "procedure": [
+          "Hover over the Panthera leo card Species Information Tooltip to display the tooltip.",
+          "Verify that the tooltip includes the correct image of the Panthera leo."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Status Dropdown Test",
+        "objective": "To verify that selecting \"Endangered\" from the Status Dropdown displays only species classified as \"Endangered.\"",
+        "coverage_element": "Status Dropdown",
+        "preconditions": "The webpage has revealed the filter options, and the Status dropdown is visible.",
+        "expected_results": "The table should only display species classified as \"Endangered.\" 7. Next Steps : Select \"Endangered\" from the \"Status\" dropdown to proceed with filtering.",
+        "procedure": [
+          "Click on the Status Dropdown.",
+          "Select \"Endangered\" from the dropdown options.",
+          "Verify that only species classified as \"Endangered\" are displayed in the table."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "Verify Pagination Controls Functionality",
+        "objective": "To verify that the pagination controls allow users to navigate through multiple pages of species data.",
+        "coverage_element": "Pagination Controls",
+        "preconditions": "The species data table has more entries than can be displayed on a single page.",
+        "expected_results": "Users can navigate to the next page by clicking the 'Next' button and see the subsequent set of species data.",
+        "procedure": [
+          "Load the species data table with multiple pages of data.",
+          "Click the 'Next' button in the pagination controls."
+        ]
+      }
+    ],
+    "data_display_testing": [
+      {
+        "id": "TC001",
+        "name": "Species Information Display Test",
+        "objective": "To verify that the search results display the Lion entry with accurate details such as its conservation status, population trend, regions, and habitats.",
+        "coverage_element": "Species Information Card",
+        "preconditions": "The search term \"Lion\" has been entered, and the search results are displayed.",
+        "expected_results": "The search results should display the Lion entry with accurate details such as its conservation status, population trend, regions, and habitats. 7. Next Steps : Since the search results for \"Lion\" are displayed correctly, the next step is to verify the accuracy of the displayed information.",
+        "procedure": [
+          "Hover over the Species Information Card.",
+          "Verify that the search results display the Lion entry with accurate details such as its conservation status, population trend, regions, and habitats."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Verify Common Name Cell Data Display",
+        "objective": "To verify that the common name cell correctly displays the common name of the species.",
+        "coverage_element": "Common Name Cell : Cell displaying the common name of the species",
+        "preconditions": "The common name cell is populated with a species common name.",
+        "expected_results": "The common name cell displays the correct common name of the species without any truncation or error.",
+        "procedure": [
+          "Select a data row that contains a common name for a species.",
+          "Verify that the common name cell displays the correct name."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Verify Conservation Status Data Display",
+        "objective": "To verify that the conservation status of the species is correctly displayed.",
+        "coverage_element": "Vulnerable : Conservation status of the species",
+        "preconditions": "The species data includes a conservation status.",
+        "expected_results": "The conservation status (e.g., Vulnerable) is displayed correctly in the species data table.",
+        "procedure": [
+          "Locate a species data row with a defined conservation status.",
+          "Verify that the conservation status is accurately displayed in the corresponding cell."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Verify Table Headers for Species Data",
+        "objective": "To verify that the table headers correctly display the expected titles.",
+        "coverage_element": "Table Headers for Species, Status, Population Trend",
+        "preconditions": "The species data table is loaded and visible.",
+        "expected_results": "The table headers display the correct titles for species, status, and population trend.",
+        "procedure": [
+          "Load the species data table.",
+          "Verify that the headers display 'Species', 'Status', and 'Population Trend'."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Verify Species Data Row Information",
+        "objective": "To verify that the species data rows correctly display the required information.",
+        "coverage_element": "Species Data Rows containing species names, status, population trend, and regions",
+        "preconditions": "The species data rows are populated with data.",
+        "expected_results": "Each data row correctly displays the species name, conservation status, population trend, and regions.",
+        "procedure": [
+          "Locate a data row in the species table.",
+          "Verify that all required data (species name, status, population trend, and regions) is displayed."
+        ]
+      }
+    ],
+    "design_validation_testing": [
+      {
+        "id": "TC001",
+        "name": "UI Design and Style Test: Background Color",
+        "objective": "To verify that the background color of the page is white.",
+        "coverage_element": "Background color",
+        "preconditions": "Page is loaded",
+        "expected_results": "The background color should be white.",
+        "procedure": [
+          "Observe the background color of the page.",
+          "Compare it with the expected white color."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "UI Design and Style Test: Button Styling",
+        "objective": "To verify that buttons are styled consistently with maroon color.",
+        "coverage_element": "Buttons",
+        "preconditions": "Page is loaded",
+        "expected_results": "Buttons should be styled with maroon color.",
+        "procedure": [
+          "Observe the color of buttons like \"Add New Species\" and \"Show Filters\".",
+          "Compare it with the expected maroon color."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "UI Design and Style Test: Grid Alignment",
+        "objective": "To verify that all elements are properly aligned within the grid layout.",
+        "coverage_element": "Grid layout [Interactive : No]",
+        "preconditions": "Page is loaded",
+        "expected_results": "All elements should be neatly aligned within the grid layout.",
+        "procedure": [
+          "Observe the alignment of elements within the grid.",
+          "Check for consistent spacing between rows and columns."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "UI Design and Style Test: Text Styling",
+        "objective": "To verify that text elements are styled consistently with maroon color.",
+        "coverage_element": "Text elements",
+        "preconditions": "Page is loaded",
+        "expected_results": "Text elements should be styled with maroon color.",
+        "procedure": [
+          "Observe the color of text elements like species names and status.",
+          "Compare it with the expected maroon color."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Verify Cards Design and Layout",
+        "objective": "To verify that the design and layout of the cards are consistent with the design specifications.",
+        "coverage_element": "Cards",
+        "preconditions": "Cards are present on the page containing species information.",
+        "expected_results": "Cards are displayed with a uniform design, maroon accents, and appropriate spacing.",
+        "procedure": [
+          "Locate cards on the web application.",
+          "Verify that the design and layout of the cards adhere to the specified design standards."
+        ]
+      }
+    ]
+  },
+  "element_requirement": [
+    "1. Search Bar : Text box for entering search terms",
+    "2. Show Filters : Button for displaying filter options",
+    "3. Species Information Card : Card displaying species data",
+    "4. Pagination Controls",
+    "5. Common Name Cell : Cell displaying the common name of the species",
+    "6. Lion : Common name of the species",
+    "7. Vulnerable : Conservation status of the species",
+    "8. Table Headers for Species, Status, Population Trend",
+    "9. Species Data Rows containing species names, status, population trend, and regions",
+    "10. Cards",
+    "11. Pagination Buttons for navigating through entries"
+  ]
+}

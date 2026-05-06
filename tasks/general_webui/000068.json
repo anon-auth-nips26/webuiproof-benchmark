@@ -1,0 +1,330 @@
+{
+  "website_summary": {
+    "name": "Environmental Monitor Dashboard",
+    "description": "The website presents a clean and informative dashboard for monitoring real-time weather and air quality data with interactive charts and historical data tables.",
+    "category": "Content Presentation",
+    "appearance": "The website features a well-organized layout with a primary background in azure mist (#F0F8FF) and elements styled in dark slate blue (#2F4F4F). It includes several key sections:\n- **Header Section:** Displays the title \"Environmental Warning System\" alongside a refresh data button.\n- **Current Weather Conditions:** Shows live weather details such as temperature, humidity, wind speed, and UV index within light blue cards.\n- **Air Quality Index (AQI):** Highlights the AQI value with a circular gauge indicating its severity level (e.g., Moderate).\n- **Pollutant Levels:** Displays PM2.5 levels with a gauge and allows users to switch between pollutants via buttons.\n- **Pollutant Trend Chart:** Features a line graph illustrating AQI trends over time, with options to compare pollutants.\n- **Historical Air Quality Data Table:** Lists daily AQI, PM2.5, PM10, temperature, and humidity values for the past two weeks.",
+    "functionality": "The website offers various functionalities:\n- **Real-Time Updates:** Users can refresh the data using the \"Refresh Data\" button to get the latest weather and air quality information.\n- **Data Visualization:** The pollutant trend chart provides a visual representation of AQI changes over time, enabling users to analyze patterns.\n- **Historical Data Comparison:** Users can view detailed historical data in tabular form, facilitating comparisons of air quality metrics.\n- **Pollutant Selection:** Buttons allow users to toggle between different pollutants (PM2.5, PM10, NO2, O3, CO, SO2) for analysis."
+  },
+  "test_cases": {
+    "functionality_testing": [
+      {
+        "id": "TC001",
+        "name": "Data Refresh Confirmation Test",
+        "objective": "To confirm that the \"Refresh Data\" button triggers the expected data refresh action.",
+        "coverage_element": "Refresh Data",
+        "preconditions": "The Refresh Data button is visible and accessible.",
+        "expected_results": "The data values in Refresh Data, Refresh Data, and Refresh Data should be updated with the most recent live data values. 7. Next Steps : Since the data values have not changed after clicking the \"Refresh Data\" button and waiting, it is necessary to investigate further. Possible next steps include checking the backend data source to confirm if the data is being updated, or checking the browser console for any error messages that may indicate why the refresh is not working.",
+        "procedure": [
+          "Click the Refresh Data button.",
+          "Wait for a few seconds to allow the refresh action to complete.",
+          "Observe the data values in Refresh Data, Refresh Data, and Refresh Data to confirm if they have been updated."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Refresh Data Test",
+        "objective": "To verify that clicking the Refresh Data updates the live environmental and air quality data.",
+        "coverage_element": "Refresh Data",
+        "preconditions": "Webpage is fully loaded, and the UI is in its initial state.",
+        "expected_results": "Data values in the weather conditions, Air Quality Index, and Pollutant Levels cards are refreshed with the most recent live data values.",
+        "procedure": [
+          "Click the Refresh Data Button.",
+          "After a short duration, confirm that the data values in Refresh Data, Refresh Data, and Refresh Data have updated."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Pollutant Trend Line Chart Test Completion",
+        "objective": "To confirm that all required data points have been verified and the task is complete.",
+        "coverage_element": "Pollutant Trend Line Chart",
+        "preconditions": "The \"Pollutant Trend\" section is visible, and data points for 7/24/2025 and 8/1/2025 have been verified.",
+        "expected_results": "All required data points are accurately verified, and the task is complete. 7. Next Steps : Since all required data points have been verified, the task is complete.",
+        "procedure": [
+          "Review the results of previous test cases.",
+          "Confirm that all required data points have been accurately verified."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Pollutant Trend Line Chart Test for 8/1/2025",
+        "objective": "To verify that hovering over the data point for 8/1/2025 on the Pollutant Trend Line Chart displays accurate AQI values.",
+        "coverage_element": "Pollutant Trend Line Chart",
+        "preconditions": "The \"Pollutant Trend\" section is visible.",
+        "expected_results": "Detailed AQI data should appear accurately above the hovered data point for 8/1/2025. 7. Next Steps : Hover over the data point for 8/1/2025 on the line chart to verify the AQI value.",
+        "procedure": [
+          "Hover over the data point for 8/1/2025 on the Pollutant Trend Line Chart.",
+          "Verify that detailed AQI data appears above the data point."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Pollutant Trend Line Chart Test",
+        "objective": "To verify that hovering over data points on the Pollutant Trend Line Chart displays accurate AQI values.",
+        "coverage_element": "Pollutant Trend Line Chart",
+        "preconditions": "The \"Pollutant Trend\" section is visible.",
+        "expected_results": "Detailed AQI data should appear accurately above the hovered data points. 7. Next Steps : Hover over the data point for 7/24/2025 on the line chart to verify the AQI value.",
+        "procedure": [
+          "Hover over the data point for 7/24/2025 on the Pollutant Trend Line Chart.",
+          "Verify that detailed AQI data appears above the data point.",
+          "Hover over the data point for 8/1/2025 on the Pollutant Trend Line Chart.",
+          "Verify that detailed AQI data appears above the data point."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Verify Refresh Data Button Functionality",
+        "objective": "To verify that the refresh data option updates the displayed data.",
+        "coverage_element": "Refresh Data : Card displaying refresh data option",
+        "preconditions": "User is on the Environmental Warning System page.",
+        "expected_results": "After clicking the refresh data button, the displayed environmental data should update to the latest available.",
+        "procedure": [
+          "Step 1 : Click the 'Refresh Data' button.",
+          "Step 2 : Verify that the displayed data has been updated."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "Test Pollutant Comparison Functionality",
+        "objective": "To verify that the Compare button allows for the comparison of different pollutant trends.",
+        "coverage_element": "Compare : Button for comparing pollutants",
+        "preconditions": "User is on the Environmental Warning System page, with the pollutant levels section visible.",
+        "expected_results": "The Compare button should enable the user to view a comparative trend chart of selected pollutants.",
+        "procedure": [
+          "Step 1 : Click the 'Compare' button.",
+          "Step 2 : Select multiple pollutants and observe the trend chart to ensure comparisons are displayed."
+        ]
+      },
+      {
+        "id": "TC008",
+        "name": "Test Pollutants Selection Button Functionality",
+        "objective": "To verify that the Pollutants button enables the selection of pollutants for displaying.",
+        "coverage_element": "Pollutants Button : Button for selecting pollutants",
+        "preconditions": "User is on the Environmental Warning System page, with the pollutant levels section visible.",
+        "expected_results": "The POLLUTANTS button should allow users to select which pollutants’ data to display.",
+        "procedure": [
+          "Step 1 : Click the 'Pollutants' button.",
+          "Step 2 : Select a pollutant and verify that its data is displayed."
+        ]
+      }
+    ],
+    "data_display_testing": [
+      {
+        "id": "TC001",
+        "name": "Test PM2.5 Data Filter Option",
+        "objective": "To verify that the PM2.5 data filter option correctly displays relevant data.",
+        "coverage_element": "PM25 : Button displaying PM2.5 data filter option",
+        "preconditions": "User is on the Environmental Warning System page, with the pollutant levels section visible.",
+        "expected_results": "Clicking the PM2.5 button should filter and display the PM2.5 specific data in the relevant sections.",
+        "procedure": [
+          "Step 1 : Click the 'PM25' button.",
+          "Step 2 : Verify that only PM2.5 data is displayed in the pollutant levels and trend sections."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Test PM10 Data Filter Option Functionality",
+        "objective": "To verify that the PM10 data filter option correctly displays relevant data.",
+        "coverage_element": "PM10 : Button displaying PM10 data filter option",
+        "preconditions": "User is on the Environmental Warning System page, with the pollutant levels section visible.",
+        "expected_results": "Clicking the PM10 button should filter and display the PM10 specific data in the relevant sections.",
+        "procedure": [
+          "Step 1 : Click the 'PM10' button.",
+          "Step 2 : Verify that only PM10 data is displayed in the pollutant levels and trend sections."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Validate Current Weather Conditions Display",
+        "objective": "To verify that the current weather conditions card correctly displays the latest weather data.",
+        "coverage_element": "Current Weather Conditions : Card showing current weather conditions",
+        "preconditions": "User is on the Environmental Warning System page.",
+        "expected_results": "The current weather conditions card should display accurate and up-to-date weather details such as temperature, humidity, wind speed, and UV index.",
+        "procedure": [
+          "Step 1 : Observe the 'Current Weather Conditions' card.",
+          "Step 2 : Verify the accuracy of the displayed weather data against a trusted weather source."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Verify AQI Information Display and Severity Indication",
+        "objective": "To verify that the Air Quality Index card correctly displays the current AQI and its severity.",
+        "coverage_element": "Air Quality Index : Card showing current AQI and related information",
+        "preconditions": "User is on the Environmental Warning System page.",
+        "expected_results": "The AQI card should display the current AQI value with a circular gauge indicating the severity level, e.g., Moderate.",
+        "procedure": [
+          "Step 1 : Observe the 'Air Quality Index' card.",
+          "Step 2 : Verify that the gauge and severity level correctly reflect the current AQI value."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Test Pollutant Levels Card Display",
+        "objective": "To verify that the Pollutant Levels card correctly displays details of different pollutants.",
+        "coverage_element": "Pollutant Levels : Card showing different pollutants' details",
+        "preconditions": "User is on the Environmental Warning System page.",
+        "expected_results": "The Pollutant Levels card should show accurate and detailed information for each listed pollutant.",
+        "procedure": [
+          "Step 1 : Observe the 'Pollutant Levels' card.",
+          "Step 2 : Verify that the information displayed for each pollutant is accurate."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Test NO2 Pollutant Selection",
+        "objective": "To verify that the NO2 button correctly selects and displays NO2 pollutant data.",
+        "coverage_element": "NO2 : Button for selecting NO2 pollutant",
+        "preconditions": "User is on the Environmental Warning System page, with the pollutant levels section visible.",
+        "expected_results": "Clicking the NO2 button should display data for the NO2 pollutant in the relevant sections.",
+        "procedure": [
+          "Step 1 : Click the 'NO2' button.",
+          "Step 2 : Verify that the NO2 data is displayed in the pollutant levels and trend sections."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "Test O3 Pollutant Selection",
+        "objective": "To verify that the O3 button correctly selects and displays O3 pollutant data.",
+        "coverage_element": "O3 : Button for selecting O3 pollutant",
+        "preconditions": "User is on the Environmental Warning System page, with the pollutant levels section visible.",
+        "expected_results": "Clicking the O3 button should display data for the O3 pollutant in the relevant sections.",
+        "procedure": [
+          "Step 1 : Click the 'O3' button.",
+          "Step 2 : Verify that the O3 data is displayed in the pollutant levels and trend sections."
+        ]
+      },
+      {
+        "id": "TC008",
+        "name": "Test CO Pollutant Selection",
+        "objective": "To verify that the CO button correctly selects and displays CO pollutant data.",
+        "coverage_element": "CO : Button for selecting CO pollutant",
+        "preconditions": "User is on the Environmental Warning System page, with the pollutant levels section visible.",
+        "expected_results": "Clicking the CO button should display data for the CO pollutant in the relevant sections.",
+        "procedure": [
+          "Step 1 : Click the 'CO' button.",
+          "Step 2 : Verify that the CO data is displayed in the pollutant levels and trend sections."
+        ]
+      },
+      {
+        "id": "TC009",
+        "name": "Test SO2 Pollutant Selection",
+        "objective": "To verify that the SO2 button correctly selects and displays SO2 pollutant data.",
+        "coverage_element": "SO2 : Button for selecting SO2 pollutant",
+        "preconditions": "User is on the Environmental Warning System page, with the pollutant levels section visible.",
+        "expected_results": "Clicking the SO2 button should display data for the SO2 pollutant in the relevant sections.",
+        "procedure": [
+          "Step 1 : Click the 'SO2' button.",
+          "Step 2 : Verify that the SO2 data is displayed in the pollutant levels and trend sections."
+        ]
+      },
+      {
+        "id": "TC010",
+        "name": "Test AQI Selection and Display",
+        "objective": "To verify that the AQI button correctly selects and displays AQI data.",
+        "coverage_element": "AQI : Button for selecting Air Quality Index",
+        "preconditions": "User is on the Environmental Warning System page, with the pollutant levels section visible.",
+        "expected_results": "Clicking the AQI button should display data for the Air Quality Index in the relevant sections.",
+        "procedure": [
+          "Step 1 : Click the 'AQI' button.",
+          "Step 2 : Verify that the AQI data is displayed in the pollutant levels and trend sections."
+        ]
+      },
+      {
+        "id": "TC011",
+        "name": "Test Air Quality Index Value Display",
+        "objective": "To verify that the card showing the air quality index value correctly displays the data.",
+        "coverage_element": "85 : Card showing air quality index value",
+        "preconditions": "User is on the Environmental Warning System page.",
+        "expected_results": "The card should display the correct AQI value and conform to the website's styling guidelines.",
+        "procedure": [
+          "Step 1 : Observe the '85' card for air quality index value.",
+          "Step 2 : Verify the accuracy and appearance of the displayed AQI value."
+        ]
+      },
+      {
+        "id": "TC012",
+        "name": "Test PM2.5 Level Card Display Accuracy",
+        "objective": "To verify that the card showing PM2.5 level displays the correct data.",
+        "coverage_element": "PM2.512µg/m³Particulate Matter <2.5μm : Card showing PM2.5 level",
+        "preconditions": "User is on the Environmental Warning System page.",
+        "expected_results": "The PM2.5 level card should display the correct PM2.5 concentration value and details with proper formatting.",
+        "procedure": [
+          "Step 1 : Observe the 'PM2.512µg/m³' card.",
+          "Step 2 : Confirm the accuracy and formatting of the displayed PM2.5 level."
+        ]
+      },
+      {
+        "id": "TC013",
+        "name": "Test AQI Tooltip for Historical Data",
+        "objective": "To verify the tooltip for a specific date correctly shows the AQI value.",
+        "coverage_element": "Tooltip for 7/24/2025 : Another tooltip showing AQI value for 7/24/2025",
+        "preconditions": "User is on the Environmental Warning System page, interacting with historical data.",
+        "expected_results": "The tooltip should display the AQI value for the specified date, formatted and styled consistently with the site.",
+        "procedure": [
+          "Step 1 : Hover over the historical data for the date 7/24/2025.",
+          "Step 2 : Verify the content and appearance of the displayed AQI value in the tooltip."
+        ]
+      }
+    ],
+    "design_validation_testing": [
+      {
+        "id": "TC001",
+        "name": "UI Design and Style Test: Button Styling",
+        "objective": "To verify that buttons maintain consistent styling with dark slate blue color.",
+        "coverage_element": "Button Styling",
+        "preconditions": "",
+        "expected_results": "All buttons should maintain consistent styling with the primary color #XXXXXX.",
+        "procedure": [
+          "Observe the color and styling of buttons Button Styling to Button Styling.",
+          "Compare against the specified dark slate blue color."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Validate Sunny Weather Condition Card Design",
+        "objective": "To verify that the Sunny Weather Condition card has a clean and user-friendly design.",
+        "coverage_element": "Sunny25°C : Card showing sunny weather condition",
+        "preconditions": "User is on the Environmental Warning System page.",
+        "expected_results": "The Sunny Weather Condition card should have a design that is easy to read with proper color contrast and legible text.",
+        "procedure": [
+          "Step 1 : Observe the 'Sunny25°C' card.",
+          "Step 2 : Validate the design for user-friendliness and aesthetic qualities."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Test Pollutant Trend Section Header",
+        "objective": "To verify that the Pollutant Trend section header is displayed correctly.",
+        "coverage_element": "Pollutant Trend Section : Section header for pollutant trend information",
+        "preconditions": "User is on the Environmental Warning System page.",
+        "expected_results": "The Pollutant Trend section header should be clearly visible and in accordance with the site's design.",
+        "procedure": [
+          "Step 1 : Locate the 'Pollutant Trend Section' header.",
+          "Step 2 : Ensure that the header is properly displayed and formatted."
+        ]
+      }
+    ]
+  },
+  "element_requirement": [
+    "1. Refresh Data : Button used to update live data",
+    "2. Refresh Data : Card displaying refresh data option",
+    "3. PM25 : Button displaying PM2.5 data filter option",
+    "4. PM10 : Button displaying PM10 data filter option",
+    "5. Current Weather Conditions : Card showing current weather conditions",
+    "6. Air Quality Index : Card showing current AQI and related information",
+    "7. Pollutant Levels : Card showing different pollutants' details",
+    "8. NO2 : Button for selecting NO2 pollutant",
+    "9. O3 : Button for selecting O3 pollutant",
+    "10. CO : Button for selecting CO pollutant",
+    "11. SO2 : Button for selecting SO2 pollutant",
+    "12. AQI : Button for selecting Air Quality Index",
+    "13. Compare : Button for comparing pollutants",
+    "14. Pollutants Button : Button for selecting pollutants",
+    "15. Sunny25°C : Card showing sunny weather condition",
+    "16. 85 : Card showing air quality index value",
+    "17. PM2.512µg/m³Particulate Matter <2.5μm : Card showing PM2.5 level",
+    "18. Tooltip for 7/24/2025 : Another tooltip showing AQI value for 7/24/2025",
+    "19. Pollutant Trend Line Chart : Line chart displaying AQI values over time",
+    "20. Pollutant Trend Section : Section header for pollutant trend information"
+  ]
+}

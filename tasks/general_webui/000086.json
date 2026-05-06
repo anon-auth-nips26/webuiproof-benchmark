@@ -1,0 +1,237 @@
+{
+  "website_summary": {
+    "name": "Medical Journal Hub",
+    "description": "The website features a clean, user-friendly interface with a seashell background and crimson accents, designed for easy navigation and information discovery.",
+    "category": "Content Presentation",
+    "appearance": "The website has a minimalist design with a seashell background color (#fff5f5) and crimson elements for contrast. The top section includes a header with the website's logo (\"Medical Journal\") and a user profile button for Dr. Smith. Below the header, there is a search bar for finding articles. The main content area is divided into sections: \"Featured Articles\" and \"Browse by Category.\" The \"Featured Articles\" section displays three articles in a grid layout, each with an image, title, description, date, and relevant hashtags. The \"Browse by Category\" section lists categories like Oncology, Cardiology, and Psychiatry, each with the number of articles available. The layout is responsive, adapting to different screen sizes.",
+    "functionality": "The website includes a search bar that allows users to search for articles by entering keywords. Users can browse featured articles and categories, each linking to detailed article pages. There is an \"Add Article\" button for contributors to submit new content. Users can manage their profiles through the user profile button. Additionally, the website supports downloading articles in PDF format, though this feature is not explicitly shown in the screenshots."
+  },
+  "test_cases": {
+    "functionality_testing": [
+      {
+        "id": "TC001",
+        "name": "Download PDF Test",
+        "objective": "To verify that clicking the Download PDF button downloads the article in PDF format.",
+        "coverage_element": "Download PDF",
+        "preconditions": "The article page is open.",
+        "expected_results": "The article should be downloaded in PDF format.",
+        "procedure": [
+          "Click on the Download PDF button.",
+          "Verify that the article is downloaded in PDF format."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Add Article Button Test",
+        "objective": "To verify that clicking the Add Article button opens a form or modal for submitting a new article.",
+        "coverage_element": "Add Article",
+        "preconditions": "Currently viewing the articles list page.",
+        "expected_results": "A form or modal appears for article submission.",
+        "procedure": [
+          "Click on the Add Article button.",
+          "Verify that a form or modal appears for article submission."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Back to articles Test",
+        "objective": "To verify that clicking the Back to articles button navigates back to the articles list.",
+        "coverage_element": "Back to articles",
+        "preconditions": "The article page is open.",
+        "expected_results": "The page should navigate back to the articles list.",
+        "procedure": [
+          "Click on the Back to articles button.",
+          "Verify that the page navigates back to the articles list."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Search Articles Textbox Test",
+        "objective": "To verify that typing in the Search articles... textbox filters the articles list.",
+        "coverage_element": "Search articles...",
+        "preconditions": "Currently viewing the articles list page.",
+        "expected_results": "The articles list is filtered based on the search term.",
+        "procedure": [
+          "Type a search term in the Search articles... textbox.",
+          "Verify that the articles list is filtered based on the search term."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Search Bar Test",
+        "objective": "To verify that entering a search term in the Search Bar and pressing Enter displays relevant articles.",
+        "coverage_element": "Search Bar",
+        "preconditions": "The articles list page is open.",
+        "expected_results": "The search results page should display articles related to \"Heart Disease.\"",
+        "procedure": [
+          "Enter \"Heart Disease\" in the Search Bar.",
+          "Press Enter.",
+          "Verify that the search results page displays articles related to \"Heart Disease.\""
+        ]
+      }
+    ],
+    "data_display_testing": [
+      {
+        "id": "TC001",
+        "name": "Alignment and Organization Test",
+        "objective": "To verify the alignment and organization of elements within the \"Featured Articles\" and \"Browse by Category\" sections.",
+        "coverage_element": "Alignment and Organization",
+        "preconditions": "The user is on the articles page.",
+        "expected_results": "The cards should be evenly aligned and organized in a grid format within each section. 7. Next Steps : Hover over a card in the \"Browse by Category\" section to confirm alignment and element consistency.",
+        "procedure": [
+          "Observe the alignment of cards within the \"Featured Articles\" section.",
+          "Observe the alignment of cards within the \"Browse by Category\" section.",
+          "Compare the arrangement and spacing of the elements."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Article Card Display Test",
+        "objective": "To verify that the Article Card displays the correct article information.",
+        "coverage_element": "Article Card",
+        "preconditions": "The article page is open.",
+        "expected_results": "The card should display the correct article information.",
+        "procedure": [
+          "Observe the Article Card.",
+          "Verify that the card displays the correct article title, description, and tags."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Oncology Article Card Verification Test",
+        "objective": "To verify the displayed data (title, description, date, and hashtags) for the Oncology Article Card matches the expected data.",
+        "coverage_element": "Oncology Article Card",
+        "preconditions": "The article card is visible and contains the expected information.",
+        "expected_results": "The displayed title, description, date, and hashtags match the expected data. 7. Next Steps : Compare the displayed data in the article card with the expected data to determine if all information is accurate.",
+        "procedure": [
+          "Compare the title, description, date, and hashtags displayed on the article card with the expected data."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Verify Psychiatry Article Card Information",
+        "objective": "To verify that the article card for 'Mental Health in the Digital Age' displays correct information.",
+        "coverage_element": "Psychiatry Article Card : Card displaying article information for 'Mental Health in the Digital Age'",
+        "preconditions": "The web application is loaded, and the 'Featured Articles' section is visible.",
+        "expected_results": "The article card for 'Mental Health in the Digital Age' correctly displays its title, description, date, and relevant tags.",
+        "procedure": [
+          "Navigate to the 'Featured Articles' section.",
+          "Examine the article card for 'Mental Health in the Digital Age' for title, description, date, and tags."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Oncology Article Count Display Verification",
+        "objective": "To verify that the card displays the correct article count for the Oncology category.",
+        "coverage_element": "Oncology1 articles : Card displaying article count for Oncology",
+        "preconditions": "Web application is loaded, and the 'Browse by Category' section is visible.",
+        "expected_results": "The Oncology articles card correctly displays the number of articles available in the Oncology category.",
+        "procedure": [
+          "Navigate to the 'Browse by Category' section.",
+          "Check the Oncology articles card for the displayed article count."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Cardiology Article Count Display Verification",
+        "objective": "To verify that the card displays the correct article count for the Cardiology category.",
+        "coverage_element": "Cardiology1 articles : Card displaying article count for Cardiology",
+        "preconditions": "Web application is loaded, and the 'Browse by Category' section is visible.",
+        "expected_results": "The Cardiology articles card correctly displays the number of articles available in the Cardiology category.",
+        "procedure": [
+          "Navigate to the 'Browse by Category' section.",
+          "Check the Cardiology articles card for the displayed article count."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "Psychiatry Article Count Display Verification",
+        "objective": "To verify that the card displays the correct article count for the Psychiatry category.",
+        "coverage_element": "Psychiatry1 articles : Card displaying article count for Psychiatry",
+        "preconditions": "Web application is loaded, and the 'Browse by Category' section is visible.",
+        "expected_results": "The Psychiatry articles card correctly displays the number of articles available in the Psychiatry category.",
+        "procedure": [
+          "Navigate to the 'Browse by Category' section.",
+          "Check the Psychiatry articles card for the displayed article count."
+        ]
+      },
+      {
+        "id": "TC008",
+        "name": "Article Card Details Display Verification",
+        "objective": "To verify that the article card displays correct details.",
+        "coverage_element": "Article Card : Displaying card details",
+        "preconditions": "The web application is loaded, and an article card is visible.",
+        "expected_results": "The article card displays all expected details such as image, title, description, date, and tags accurately.",
+        "procedure": [
+          "Select any article card from either the 'Featured Articles' or 'Browse by Category' sections.",
+          "Review the article card for the presence and accuracy of image, title, description, date, and tags."
+        ]
+      },
+      {
+        "id": "TC009",
+        "name": "Understanding Heart Disease Section Verification",
+        "objective": "To verify that the 'Understanding Heart Disease Section' displays article information with tags.",
+        "coverage_element": "Understanding Heart Disease Section : Article information with tags",
+        "preconditions": "The 'Understanding Heart Disease Section' is visible within the web application.",
+        "expected_results": "The section displays the article information along with relevant tags accurately.",
+        "procedure": [
+          "Navigate to the 'Understanding Heart Disease Section'.",
+          "Examine the displayed article information and associated tags for accuracy and completeness."
+        ]
+      },
+      {
+        "id": "TC010",
+        "name": "Mental Health in the Digital Age Section Verification",
+        "objective": "To verify that the 'Mental Health in the Digital Age Section' displays article information with tags.",
+        "coverage_element": "Mental Health in the Digital Age Section : Article information with tags",
+        "preconditions": "The 'Mental Health in the Digital Age Section' is visible within the web application.",
+        "expected_results": "The section displays the article information along with relevant tags accurately.",
+        "procedure": [
+          "Navigate to the 'Mental Health in the Digital Age Section'.",
+          "Examine the displayed article information and associated tags for accuracy and completeness."
+        ]
+      }
+    ],
+    "design_validation_testing": [
+      {
+        "id": "TC001",
+        "name": "UI Design and Style Test: Button Styling",
+        "objective": "To verify that button styles are consistent with a primary color scheme emphasizing crimson.",
+        "coverage_element": "Button Styling",
+        "preconditions": "",
+        "expected_results": "The buttons should be styled consistently with an emphasis on the crimson color. 7. Next Steps : Click on the \"Back to articles\" button to navigate back and potentially observe the alignment of other sections.",
+        "procedure": [
+          "Observe the styles of the \"Back to articles\" and \"Download PDF\" buttons.",
+          "Evaluate the use of the crimson color in the buttons and any consistency with the category label.",
+          "Compare with the design requirements."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "UI Design and Style Test: Color Palette",
+        "objective": "To verify that the background color is consistently seashell (#fff5f5) and crimson elements are used consistently.",
+        "coverage_element": "Color Scheme",
+        "preconditions": "",
+        "expected_results": "The background color should be seashell (#fff5f5), and crimson should be consistently used for the category label and download button. 7. Next Steps : Hover over the card to check for any additional design elements or interactions.",
+        "procedure": [
+          "Observe the background color of the page.",
+          "Evaluate the color of the category label and download button.",
+          "Compare against the specified design requirements."
+        ]
+      }
+    ]
+  },
+  "element_requirement": [
+    "1. Back to articles : Button to navigate back to the articles list",
+    "2. Download PDF : Button to download the article in PDF format",
+    "3. Add Article : Button for adding new articles",
+    "4. Oncology Article Card : Card displaying article information for \"Advances in Cancer Treatment\"",
+    "5. Psychiatry Article Card : Card displaying article information for \"Mental Health in the Digital Age\"",
+    "6. Oncology1 articles : Card displaying article count for Oncology",
+    "7. Cardiology1 articles : Card displaying article count for Cardiology",
+    "8. Psychiatry1 articles : Card displaying article count for Psychiatry",
+    "9. Article Card : Displaying card details",
+    "10. Understanding Heart Disease Section : Article information with tags",
+    "11. Mental Health in the Digital Age Section : Article information with tags"
+  ]
+}

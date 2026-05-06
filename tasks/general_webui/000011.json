@@ -1,0 +1,70 @@
+{
+  "website_summary": {
+    "name": "Fantasy City Manager",
+    "description": "The website features a clean and strategic interface with a seashell background and crimson-accented content blocks, designed for players to select races and manage resources in a text-based strategy game.",
+    "category": "Game Design",
+    "appearance": "The website has a minimalist yet engaging design with a seashell background that provides a soft contrast to the vibrant crimson used for content blocks. The main page prominently displays the title \"SELECT YOUR RACE\" in bold, crimson font. Below the title, there are four rectangular content blocks, each representing a different race—Human, Dragonborn, Elf, and Dwarf—with their respective attributes and bonuses clearly listed. The text within these blocks is well-organized, with headings in a serif font (\"Cinzel\") and body text in a sans-serif font (\"Raleway\"). The layout is responsive, switching between a single-column view on smaller screens and a two-column grid on larger screens.",
+    "functionality": "The website allows users to choose a race by clicking on one of the four content blocks. Each race offers unique bonuses in attack, defense, and resource production. Beyond race selection, the game includes multiple pages such as ranking, store, train, workers, upgrades, bank, messages, and reports, enabling players to manage resources, upgrade facilities, train units, and engage in battles. Users can navigate through these pages via a menu or links, though the screenshot only shows the race selection page."
+  },
+  "test_cases": {
+    "functionality_testing": [
+      {
+        "id": "TC001",
+        "name": "Dragonborn Card Test",
+        "objective": "To verify that clicking the Dragonborn Card selects the Dragonborn race.",
+        "coverage_element": "Dragonborn Card",
+        "preconditions": "The race selection page is open.",
+        "expected_results": "The Dragonborn race should be selected, and the UI should confirm this selection. 7. Next Steps : Click on the Dragonborn card to select the race.",
+        "procedure": [
+          "Click on the Dragonborn Card.",
+          "Verify that the Dragonborn race is selected and the UI reflects this choice."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Dwarf Race Card Test",
+        "objective": "To verify that hovering over the Dwarf card displays accurate attributes.",
+        "coverage_element": "Dwarf",
+        "preconditions": "The Dwarf race card is visible on the screen.",
+        "expected_results": "The Dwarf race card should display the correct attributes without any discrepancies. 7. Next Steps : Hover over the Dwarf race card to ensure all attributes are visible and accurate.",
+        "procedure": [
+          "Hover over the Dwarf card.",
+          "Verify that the displayed attributes match the expected values : Attack Bonus: -10%, Defense Bonus: 30%, Resource Bonus: 20% bonus to iron production."
+        ]
+      }
+    ],
+    "data_display_testing": [
+      {
+        "id": "TC001",
+        "name": "Verify Human Race Attributes Display",
+        "objective": "To verify that the Human Card correctly displays all human race attributes.",
+        "coverage_element": "Human Card : Displays human race attributes",
+        "preconditions": "The user is on the main page where races can be selected.",
+        "expected_results": "The Human Card should display all predefined human race attributes accurately.",
+        "procedure": [
+          "Navigate to the main page titled 'SELECT YOUR RACE'.",
+          "Locate and examine the Human Card for the presence and accuracy of all human race attributes."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Verify Elf Race Attributes Display",
+        "objective": "To verify that the Elf Card correctly displays all elf race attributes.",
+        "coverage_element": "Elf Card : Displays elf race attributes",
+        "preconditions": "The user is on the main page where races can be selected.",
+        "expected_results": "The Elf Card should display all predefined elf race attributes accurately.",
+        "procedure": [
+          "Navigate to the main page titled 'SELECT YOUR RACE'.",
+          "Locate and examine the Elf Card for the presence and accuracy of all elf race attributes."
+        ]
+      }
+    ],
+    "design_validation_testing": []
+  },
+  "element_requirement": [
+    "1. Human Card : Displays human race attributes",
+    "2. Dragonborn Card : Displays dragonborn race attributes",
+    "3. Elf Card : Displays elf race attributes",
+    "4. Dwarf Card : Displays dwarf race attributes"
+  ]
+}

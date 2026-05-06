@@ -1,0 +1,472 @@
+{
+  "website_summary": {
+    "name": "WebMail Service",
+    "description": "The website resembles a modern, user-friendly email client interface with a clean and organized layout.",
+    "category": "User Interaction",
+    "appearance": "The website features a sidebar menu on the left with options such as Inbox, Starred, Snoozed, Sent, Drafts, Spam, Trash, and Labels (Work, Personal, Family, Urgent, Important). The main content area displays a list of emails with sender details, subject lines, and brief previews. Emails are categorized with labels like Work, Important, and Personal. Each email entry includes interactive icons for starring, marking as important, and other actions. The top navigation bar contains a search bar, settings icon, help icon, and user profile picture. The overall design is minimalistic with a white background and blue accents.",
+    "functionality": "The website offers various functionalities including composing new emails, searching through existing emails using a search bar, managing emails via archiving, deleting, marking as read/unread, and applying labels. Users can also view detailed email content, download attachments, and navigate between different folders like Inbox, Sent, and Trash. Additionally, there are options for customizing the interface and accessing account settings."
+  },
+  "test_cases": {
+    "functionality_testing": [
+      {
+        "id": "TC001",
+        "name": "Apply Label Test",
+        "objective": "To verify that clicking the label button applies the label to the selected email.",
+        "coverage_element": "Label Button",
+        "preconditions": "An email is selected.",
+        "expected_results": "The selected label should be applied to the email and visually indicated.",
+        "procedure": [
+          "Click on the label button Label Button.",
+          "Select a label from the options.",
+          "Verify that the label is applied to the email."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Apply Specific Label Test",
+        "objective": "To verify that clicking the label button and selecting a specific label applies the label to the selected email.",
+        "coverage_element": "Label Button, Important",
+        "preconditions": "An email is selected, and the label button is clicked.",
+        "expected_results": "The \"Important\" label should be applied to the email and visually indicated. 7. Next Steps : The next step is to select the \"Important\" label from the options presented after clicking the label button.",
+        "procedure": [
+          "Click on the label button Label Button, Important.",
+          "Select the \"Important\" label Label Button, Important.",
+          "Verify that the \"Important\" label is applied to the email."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Compose Button Test",
+        "objective": "To verify that clicking the Compose Button opens the email composition interface.",
+        "coverage_element": "Compose Button",
+        "preconditions": "The email application is open and ready for interaction.",
+        "expected_results": "The email composition interface should appear, allowing the user to enter recipient, subject, and body text. 7. Next Steps : Click the \"Compose\" button to start composing a new email.",
+        "procedure": [
+          "Click on the Compose Button.",
+          "Verify that the email composition interface appears."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Correct Subject Field Test",
+        "objective": "To verify that the Subject Field accepts input and allows the user to enter a subject for the email.",
+        "coverage_element": "Subject Field",
+        "preconditions": "The email composition interface is open and the recipient's email address has been entered.",
+        "expected_results": "The subject should be accepted and displayed correctly in the subject field. 7. Next Steps : Enter a subject in the correct \"Subject\" field.",
+        "procedure": [
+          "Type a subject into the Subject Field.",
+          "Verify that the entered subject is displayed correctly in the field."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Email Card Hover Test",
+        "objective": "To verify that hovering over an email card displays the correct preview information.",
+        "coverage_element": "Email Card",
+        "preconditions": "The email card is visible in the inbox.",
+        "expected_results": "The preview should accurately reflect the email's details. 7. Next Steps : Hover over the email card for \"john.doe@example.com\" to view its preview.",
+        "procedure": [
+          "Hover over the Email Card for \"john.doe@example.com\".",
+          "Verify that the preview information matches the email details."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Recipient Field Test",
+        "objective": "To verify that the Recipient Field accepts input and allows the user to enter an email address.",
+        "coverage_element": "Recipient Field",
+        "preconditions": "The email composition interface is open.",
+        "expected_results": "The email address should be accepted and displayed correctly in the recipient field. 7. Next Steps : Enter a recipient's email address in the \"To\" field.",
+        "procedure": [
+          "Type an email address into the Recipient Field.",
+          "Verify that the entered email address is displayed correctly in the field."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "Select Email Test",
+        "objective": "To verify that clicking on an email in the inbox selects it and displays its content.",
+        "coverage_element": "Project Update - Q2 2025",
+        "preconditions": "The inbox is open and emails are listed.",
+        "expected_results": "The email content should be displayed, including sender information, subject, and body.",
+        "procedure": [
+          "Click on the email with subject Project Update - Q2 2025.",
+          "Verify that the email content is displayed in the main content area."
+        ]
+      },
+      {
+        "id": "TC008",
+        "name": "Navigate to Inbox Button",
+        "objective": "To verify that clicking the Inbox button navigates the user to the inbox page.",
+        "coverage_element": "Inbox : Button to navigate to the inbox",
+        "preconditions": "User is logged into the web application.",
+        "expected_results": "The application navigates to the inbox page, displaying the list of emails.",
+        "procedure": [
+          "Click the 'Inbox' button in the sidebar menu.",
+          "Verify the inbox page is displayed with the list of emails."
+        ]
+      },
+      {
+        "id": "TC009",
+        "name": "Navigate to Starred Emails Button",
+        "objective": "To verify that clicking the Starred button navigates the user to the page with starred emails.",
+        "coverage_element": "Starred : Button to navigate to starred emails",
+        "preconditions": "User is logged into the web application.",
+        "expected_results": "The application navigates to the starred emails page, displaying the list of starred emails.",
+        "procedure": [
+          "Click the 'Starred' button in the sidebar menu.",
+          "Verify the page displaying starred emails is shown."
+        ]
+      },
+      {
+        "id": "TC010",
+        "name": "Navigate to Snoozed Emails Button",
+        "objective": "To verify that clicking the Snoozed button navigates the user to the page with snoozed emails.",
+        "coverage_element": "Snoozed : Button to navigate to snoozed emails",
+        "preconditions": "User is logged into the web application.",
+        "expected_results": "The application navigates to the snoozed emails page, displaying the list of snoozed emails.",
+        "procedure": [
+          "Click the 'Snoozed' button in the sidebar menu.",
+          "Verify the page displaying snoozed emails is shown."
+        ]
+      },
+      {
+        "id": "TC011",
+        "name": "Navigate to Sent Emails Button",
+        "objective": "To verify that clicking the Sent button navigates the user to the page with sent emails.",
+        "coverage_element": "Sent : Button to navigate to sent emails",
+        "preconditions": "User is logged into the web application.",
+        "expected_results": "The application navigates to the sent emails page, displaying the list of sent emails.",
+        "procedure": [
+          "Click the 'Sent' button in the sidebar menu.",
+          "Verify the page displaying sent emails is shown."
+        ]
+      },
+      {
+        "id": "TC012",
+        "name": "Navigate to Drafts Button",
+        "objective": "To verify that clicking the Drafts button navigates the user to the page with drafts.",
+        "coverage_element": "Drafts : Button to navigate to drafts",
+        "preconditions": "User is logged into the web application.",
+        "expected_results": "The application navigates to the drafts page, displaying the list of email drafts.",
+        "procedure": [
+          "Click the 'Drafts' button in the sidebar menu.",
+          "Verify the page displaying email drafts is shown."
+        ]
+      },
+      {
+        "id": "TC013",
+        "name": "Navigate to Spam Emails Button",
+        "objective": "To verify that clicking the Spam button navigates the user to the page with spam emails.",
+        "coverage_element": "Spam : Button to navigate to spam emails",
+        "preconditions": "User is logged into the web application.",
+        "expected_results": "The application navigates to the spam emails page, displaying the list of spam emails.",
+        "procedure": [
+          "Click the 'Spam' button in the sidebar menu.",
+          "Verify the page displaying spam emails is shown."
+        ]
+      },
+      {
+        "id": "TC014",
+        "name": "Navigate to Trash Button",
+        "objective": "To verify that clicking the Trash button navigates the user to the trash can page.",
+        "coverage_element": "Trash : Button to navigate to trash",
+        "preconditions": "User is logged into the web application.",
+        "expected_results": "The application navigates to the trash can page, displaying the list of deleted emails.",
+        "procedure": [
+          "Click the 'Trash' button in the sidebar menu.",
+          "Verify the page displaying deleted emails is shown."
+        ]
+      },
+      {
+        "id": "TC015",
+        "name": "Filter Emails by Work Label",
+        "objective": "To verify that clicking the Work Label button filters emails by the work label.",
+        "coverage_element": "Work Label : Button to filter emails by work label",
+        "preconditions": "User is on the inbox page.",
+        "expected_results": "The application filters and displays emails with the work label.",
+        "procedure": [
+          "Click the 'Work Label' button in the sidebar menu.",
+          "Verify that only emails with the work label are displayed."
+        ]
+      },
+      {
+        "id": "TC016",
+        "name": "Filter Emails by Personal Label",
+        "objective": "To verify that clicking the Personal Label button filters emails by the personal label.",
+        "coverage_element": "Personal Label : Button to filter emails by personal label",
+        "preconditions": "User is on the inbox page.",
+        "expected_results": "The application filters and displays emails with the personal label.",
+        "procedure": [
+          "Click the 'Personal Label' button in the sidebar menu.",
+          "Verify that only emails with the personal label are displayed."
+        ]
+      },
+      {
+        "id": "TC017",
+        "name": "Filter Emails by Family Label",
+        "objective": "To verify that clicking the Family Label button filters emails by the family label.",
+        "coverage_element": "Family Label : Button to filter emails by family label",
+        "preconditions": "User is on the inbox page.",
+        "expected_results": "The application filters and displays emails with the family label.",
+        "procedure": [
+          "Click the 'Family Label' button in the sidebar menu.",
+          "Verify that only emails with the family label are displayed."
+        ]
+      },
+      {
+        "id": "TC018",
+        "name": "Test the Bcc Field",
+        "objective": "To verify that the Bcc field allows the user to enter blind carbon copy recipients.",
+        "coverage_element": "Bcc Field : Input box for entering blind carbon copy recipients",
+        "preconditions": "User is in the email composition interface.",
+        "expected_results": "The user can successfully enter blind carbon copy recipients in the Bcc field.",
+        "procedure": [
+          "Click on the Bcc field in the email composition interface.",
+          "Enter recipients' email addresses and verify they are accepted."
+        ]
+      },
+      {
+        "id": "TC019",
+        "name": "Test Discard Email Button",
+        "objective": "To verify that clicking the discard button discards the email.",
+        "coverage_element": "Discard Button : Button to discard the email",
+        "preconditions": "User is composing an email.",
+        "expected_results": "The email is discarded, and the composition interface is cleared.",
+        "procedure": [
+          "Click the 'Discard' button in the email composition interface.",
+          "Verify that the email content is cleared and the composition interface is reset."
+        ]
+      },
+      {
+        "id": "TC020",
+        "name": "Test Send Email Button",
+        "objective": "To verify that clicking the send button sends the email.",
+        "coverage_element": "Send Button : Button to send the email",
+        "preconditions": "User is composing an email.",
+        "expected_results": "The email is sent, and the composition interface is cleared.",
+        "procedure": [
+          "Fill in the necessary fields in the email composition interface.",
+          "Click the 'Send' button and verify the email is sent."
+        ]
+      },
+      {
+        "id": "TC021",
+        "name": "Test Search Input Functionality",
+        "objective": "To verify that the search input allows the user to search for specific emails.",
+        "coverage_element": "Search Input : Textbox for searching emails",
+        "preconditions": "User is on the inbox page.",
+        "expected_results": "The user can successfully search and find specific emails.",
+        "procedure": [
+          "Click on the search input box.",
+          "Enter search terms and verify that relevant emails are displayed."
+        ]
+      }
+    ],
+    "data_display_testing": [
+      {
+        "id": "TC001",
+        "name": "Email Preview Accuracy Test",
+        "objective": "To verify that the email preview accurately reflects the email's details.",
+        "coverage_element": "Email Card",
+        "preconditions": "The email card is visible in the inbox, and the preview information is displayed.",
+        "expected_results": "The preview should accurately reflect the email's details. 7. Next Steps : Verify if the preview information for the email card \"john.doe@example.com\" accurately reflects the email's details.",
+        "procedure": [
+          "Verify that the subject in the preview matches the email's subject.",
+          "Verify that the message preview matches the email's content."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Verify Number of Emails Display",
+        "objective": "To verify that the text correctly shows the number of emails in the inbox.",
+        "coverage_element": "4 : Text showing the number of emails in the inbox",
+        "preconditions": "User is on the inbox page.",
+        "expected_results": "The text accurately displays the total number of emails present in the inbox.",
+        "procedure": [
+          "Observe the text showing the number of emails in the inbox.",
+          "Compare the displayed number with the actual count of emails in the inbox."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Display Profile Information",
+        "objective": "To verify that the profile information is displayed correctly.",
+        "coverage_element": "Profile Card : Card displaying profile information",
+        "preconditions": "User is logged into the web application.",
+        "expected_results": "The profile card is displayed with correct user information.",
+        "procedure": [
+          "Locate the profile card in the application.",
+          "Verify that the user's profile information is correctly displayed."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Display Number of Emails",
+        "objective": "To verify that the card showing the number of emails is displayed correctly.",
+        "coverage_element": "5 emails : Card showing the number of emails",
+        "preconditions": "User is on the inbox page.",
+        "expected_results": "The card displays the correct number of emails.",
+        "procedure": [
+          "Locate the card showing the number of emails.",
+          "Verify that the card displays the actual number of emails in the inbox."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Test Alex Johnson Email Card",
+        "objective": "To verify that the email card for Alex Johnson displays the correct details.",
+        "coverage_element": "Email Card : Card displaying email details for \"Alex Johnson\"",
+        "preconditions": "User is on the inbox page.",
+        "expected_results": "The email card for Alex Johnson displays the correct sender, subject, and content.",
+        "procedure": [
+          "Locate the email card for \"Alex Johnson\".",
+          "Verify that the displayed details are correct."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Test Marketing Email Card",
+        "objective": "To verify that the email card for marketing@company.com displays the correct details.",
+        "coverage_element": "Email Card : Card displaying email details for \"marketing@company.com\"",
+        "preconditions": "User is on the inbox page.",
+        "expected_results": "The email card for marketing@company.com displays the correct sender, subject, and content.",
+        "procedure": [
+          "Locate the email card for \"marketing@company.com\".",
+          "Verify that the displayed details are correct."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "Test Support Webmail Com Email Card",
+        "objective": "To verify that the email card for support@webmail.com displays the correct details.",
+        "coverage_element": "Email Card : Card displaying email details for \"support@webmail.com\"",
+        "preconditions": "User is on the inbox page.",
+        "expected_results": "The email card for support@webmail.com displays the correct sender, subject, and content.",
+        "procedure": [
+          "Locate the email card for \"support@webmail.com\".",
+          "Verify that the displayed details are correct."
+        ]
+      },
+      {
+        "id": "TC008",
+        "name": "Test Jane Smith Email Card",
+        "objective": "To verify that the email card for jane.smith@friends.com displays the correct details.",
+        "coverage_element": "Email Card : Card displaying email details for \"jane.smith@friends.com\"",
+        "preconditions": "User is on the inbox page.",
+        "expected_results": "The email card for jane.smith@friends.com displays the correct sender, subject, and content.",
+        "procedure": [
+          "Locate the email card for \"jane.smith@friends.com\".",
+          "Verify that the displayed details are correct."
+        ]
+      },
+      {
+        "id": "TC009",
+        "name": "Verify Sender Name on Selected Email",
+        "objective": "To verify that the sender name of the selected email is correctly displayed.",
+        "coverage_element": "Alex Johnson : Sender name of the selected email",
+        "preconditions": "User is on the inbox page with an email from Alex Johnson selected.",
+        "expected_results": "The sender name 'Alex Johnson' is displayed correctly.",
+        "procedure": [
+          "Locate the email from 'Alex Johnson' and select it.",
+          "Verify that the sender name 'Alex Johnson' is displayed correctly."
+        ]
+      },
+      {
+        "id": "TC010",
+        "name": "Verify Applied Work Label",
+        "objective": "To verify that the 'Work' label is correctly applied to the email.",
+        "coverage_element": "Work : Label applied to the email",
+        "preconditions": "User is on the inbox page with an email labeled as 'Work'.",
+        "expected_results": "The 'Work' label is displayed on the email.",
+        "procedure": [
+          "Locate an email with the 'Work' label.",
+          "Verify that the label 'Work' is applied correctly."
+        ]
+      },
+      {
+        "id": "TC011",
+        "name": "Verify Important Label Card",
+        "objective": "To verify that the important label card is displayed correctly.",
+        "coverage_element": "Important : Card showing the label applied to the email",
+        "preconditions": "User is on the inbox page with an email labeled as 'Important'.",
+        "expected_results": "The 'Important' card is displayed with the correct label.",
+        "procedure": [
+          "Locate an email with the 'Important' label.",
+          "Verify that the 'Important' label card is displayed correctly."
+        ]
+      },
+      {
+        "id": "TC012",
+        "name": "Verify Email Body Content Display",
+        "objective": "To verify that the email body content is displayed correctly.",
+        "coverage_element": "Email body content",
+        "preconditions": "User is on the inbox page and an email is selected.",
+        "expected_results": "The email body content is displayed correctly.",
+        "procedure": [
+          "Select an email from the inbox.",
+          "Verify that the email body content is displayed correctly."
+        ]
+      }
+    ],
+    "design_validation_testing": [
+      {
+        "id": "TC001",
+        "name": "UI Design and Style Test: Sidebar Menu Alignment",
+        "objective": "To verify that the sidebar menu items (Sidebar Menu Card, Sidebar Menu Card, Sidebar Menu Card, Sidebar Menu Card, Sidebar Menu Card, Sidebar Menu Card, Sidebar Menu Card, Sidebar Menu Card, Sidebar Menu Card, Sidebar Menu Card) are vertically aligned and evenly spaced.",
+        "coverage_element": "Sidebar Menu Card",
+        "preconditions": "The sidebar menu is visible.",
+        "expected_results": "All sidebar menu items should be vertically aligned and evenly spaced.",
+        "procedure": [
+          "Observe the sidebar menu items for vertical alignment and spacing.",
+          "Compare the alignment and spacing against design specifications."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Compose Email Interface Display",
+        "objective": "To verify that the email composition interface is displayed correctly.",
+        "coverage_element": "Compose Interface : Card displaying the email composition interface",
+        "preconditions": "User is on the inbox page.",
+        "expected_results": "The email composition interface is displayed with necessary fields and buttons.",
+        "procedure": [
+          "Navigate to the email composition interface.",
+          "Verify that all necessary fields and buttons are present."
+        ]
+      }
+    ]
+  },
+  "element_requirement": [
+    "1. Compose Button : Button for starting a new email composition",
+    "2. Inbox : Button to navigate to the inbox",
+    "3. 4 : Text showing the number of emails in the inbox",
+    "4. Starred : Button to navigate to starred emails",
+    "5. Snoozed : Button to navigate to snoozed emails",
+    "6. Sent : Button to navigate to sent emails",
+    "7. Drafts : Button to navigate to drafts",
+    "8. Spam : Button to navigate to spam emails",
+    "9. Trash : Button to navigate to trash",
+    "10. Work Label : Button to filter emails by work label",
+    "11. Personal Label : Button to filter emails by personal label",
+    "12. Family Label : Button to filter emails by family label",
+    "13. Compose Interface : Card displaying the email composition interface",
+    "14. Profile Card : Card displaying profile information",
+    "15. 5 emails : Card showing the number of emails",
+    "16. Recipient Field : Input box for entering the recipient's email address",
+    "17. Bcc Field : Input box for entering blind carbon copy recipients",
+    "18. Email Card : Card displaying email details for \"john.doe@example.com\"",
+    "19. Email Card : Card displaying email details for \"Alex Johnson\"",
+    "20. Email Card : Card displaying email details for \"marketing@company.com\"",
+    "21. Email Card : Card displaying email details for \"support@webmail.com\"",
+    "22. Email Card : Card displaying email details for \"jane.smith@friends.com\"",
+    "23. Discard Button : Button to discard the email",
+    "24. Send Button : Button to send the email",
+    "25. Alex Johnson : Sender name of the selected email",
+    "26. Project Update - Q2 2025 : Email subject",
+    "27. Work : Label applied to the email",
+    "28. Important : Label applied to the email",
+    "29. Important : Card showing the label applied to the email",
+    "30. Email body content",
+    "31. Search Input : Textbox for searching emails"
+  ]
+}

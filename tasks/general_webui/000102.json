@@ -1,0 +1,161 @@
+{
+  "website_summary": {
+    "name": "ChatGPT Interface with Contextual Visualization",
+    "description": "The website provides a clean and organized interface for interacting with ChatGPT, displaying chat history, and visualizing contextual relationships through a graph.",
+    "category": "User Interaction",
+    "appearance": "The website is divided into three main sections:\n- **Chat Interface:** Located on the left side, this section displays the conversation between the user and ChatGPT. Messages are shown in colored bubbles, with timestamps indicating when they were sent. A text input box at the bottom allows users to type and send messages.\n- **Message Context:** Positioned in the middle, this area is designed to show the context of selected messages. Currently, it prompts users to select a message to view its context but appears empty until a selection is made.\n- **Graph Visualization:** On the right, this section is intended for visualizing relationships between messages using a graph. It includes a refresh button for updating the graph. The graph itself is not yet populated.\n\nThe overall design is minimalistic, with a light background and clear, readable fonts. The use of colors helps differentiate between system messages, user inputs, and responses from ChatGPT.",
+    "functionality": "- **Chatting with ChatGPT:** Users can type messages in the input box and send them to ChatGPT. Responses are displayed immediately below the user’s message.\n- **Contextual Message Viewing:** Although not fully implemented, this feature aims to allow users to select a message and view additional context related to it.\n- **Graph Visualization:** This feature will enable users to visualize connections between messages in a graphical format. The refresh button allows users to update the graph manually."
+  },
+  "test_cases": {
+    "functionality_testing": [
+      {
+        "id": "TC001",
+        "name": "Chat Interface Message Click Test",
+        "objective": "To verify that clicking on the [C5 - Chat Interface Message] card correctly shows the selected message's context.",
+        "coverage_element": "[C5 - Chat Interface Message]",
+        "preconditions": "The UI is in its initial state with messages displayed in the Chat Interface.",
+        "expected_results": "The context for the message \"I'm doing well, thank you for asking!\" should be displayed in the Message Context section.",
+        "procedure": [
+          "Click on the [C5 - Chat Interface Message] card."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Check Graph Refresh With Message Selection",
+        "objective": "To verify if selecting a message in the \"Chat Interface\" prompts one-step synchronous changes, ensuring graph data updates reflect post-refresh as a condition verification.",
+        "coverage_element": "Chat Messages and Refresh graph",
+        "preconditions": "A \"Chat Message\" card is selected.",
+        "expected_results": "Graph Visualization panel updates—potentially indicating refresh is tied with a message selection enabling context-specific graph depiction. 7. Next Steps : Enable message context in the Chat Interface prior to issuing the graph refresh action for validation and achieving task requirements' full context.",
+        "procedure": [
+          "Click on either Chat Messages and Refresh graph, Chat Messages and Refresh graph, or Chat Messages and Refresh graph—corresponding chat messages.",
+          "Click the Refresh graph button.",
+          "Verify if there's any depiction change on Chat Messages and Refresh graph—Graph Visualization section, based on selected message influence."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Message Input Box Test",
+        "objective": "To verify that the Message Input Box allows users to type and send messages.",
+        "coverage_element": "Message Input Box",
+        "preconditions": "The chat interface is open and ready for interaction.",
+        "expected_results": "The message \"What is the weather today?\" should appear in a blue bubble in the chat interface, followed by ChatGPT's response in a white bubble.",
+        "procedure": [
+          "Type \"What is the weather today?\" into the Message Input Box.",
+          "Press Enter or click the Send Button.",
+          "Verify that the message appears in the chat interface."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Refresh graph Test",
+        "objective": "To verify that clicking the Refresh graph button refreshes the graph visualization.",
+        "coverage_element": "Refresh graph",
+        "preconditions": "The graph visualization is displayed.",
+        "expected_results": "The graph visualization should refresh and reflect any updated data. 7. Next Steps : Click the \"Refresh graph\" button to proceed with the task.",
+        "procedure": [
+          "Click on the Refresh graph button.",
+          "Observe if the graph visualization updates."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Send Button Test",
+        "objective": "To verify that clicking the Send Button sends the typed message.",
+        "coverage_element": "Send Button",
+        "preconditions": "A message is typed into the Message Input Box.",
+        "expected_results": "The typed message should appear in the chat interface after clicking the Send Button.",
+        "procedure": [
+          "Type a message into the Message Input Box.",
+          "Click the Send Button.",
+          "Verify that the message appears in the chat interface."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Toggle Theme Test",
+        "objective": "To verify that the toggle theme button functions correctly.",
+        "coverage_element": "Toggle Theme Button",
+        "preconditions": "The toggle theme button is visible and accessible.",
+        "expected_results": "The theme should toggle between light and dark modes.",
+        "procedure": [
+          "Click on the Toggle Theme Button.",
+          "Verify that the theme changes as expected."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "Verify Chat Interface Input Area Functionality",
+        "objective": "To verify that the chat interface input area allows users to type and send new messages.",
+        "coverage_element": "Chat Interface Input Area : Section for typing new messages",
+        "preconditions": "The web application is open and the chat interface is active.",
+        "expected_results": "Users should be able to type a message in the input area and send it successfully.",
+        "procedure": [
+          "Step 1 : Type a new message in the chat interface input area.",
+          "Step 2 : Send the message and verify that it appears in the chat interface."
+        ]
+      }
+    ],
+    "data_display_testing": [
+      {
+        "id": "TC001",
+        "name": "Graph Visualization Display Test",
+        "objective": "To verify that the Graph Visualization Card displays the chat data accurately.",
+        "coverage_element": "Graph Visualization Card",
+        "preconditions": "The chat interface contains messages.",
+        "expected_results": "The graph should visually represent the chat data, providing insights into the conversation patterns.",
+        "procedure": [
+          "Observe the Graph Visualization Card.",
+          "Verify that the graph accurately represents the chat data."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Verify Initial Chat Message Display",
+        "objective": "To verify that the initial chat message is correctly displayed when starting a new conversation.",
+        "coverage_element": "System message : Starting a new conversation : Card contains initial chat message info",
+        "preconditions": "The web application is open and a new conversation is initiated.",
+        "expected_results": "The initial chat message card should be visible with the correct system message text.",
+        "procedure": [
+          "Step 1 : Open the web application and start a new conversation.",
+          "Step 2 : Verify that the initial chat message card is displayed with the correct message."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Verify Chat Message with Timestamp",
+        "objective": "To verify that a chat message with a timestamp is correctly displayed.",
+        "coverage_element": "Chat Interface Message : Card containing a chat message \"I'm doing well, thank you for asking!\" with timestamp",
+        "preconditions": "The web application is open and a message has been sent and received.",
+        "expected_results": "The chat message card should display the message text along with the correct timestamp.",
+        "procedure": [
+          "Step 1 : Send a message in the chat interface.",
+          "Step 2 : Verify that the response message card displays the text \"I'm doing well, thank you for asking!\" with the correct timestamp."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Verify Message Context Display",
+        "objective": "To verify that the message context is correctly displayed when a message is selected.",
+        "coverage_element": "Message Context : Card showing context for selected messages",
+        "preconditions": "The web application is open and there are messages available for selection.",
+        "expected_results": "The message context card should display the context of the selected message.",
+        "procedure": [
+          "Step 1 : Select a message in the chat interface.",
+          "Step 2 : Verify that the message context card displays the appropriate context for the selected message."
+        ]
+      }
+    ],
+    "design_validation_testing": []
+  },
+  "element_requirement": [
+    "1. Message Input Box : Textarea for typing messages",
+    "2. Send Button : Button to send the typed message",
+    "3. System message : Starting a new conversation : Card contains initial chat message info",
+    "4. Chat Interface : Section containing the chat conversation",
+    "5. Chat Interface Message : Card containing a chat message \"I'm doing well, thank you for asking!\" with timestamp",
+    "6. Message Context : Card showing context for selected messages",
+    "7. Graph Visualization : Card related to chat data visualization",
+    "8. Refresh graph : Button for refreshing the graph visualization",
+    "9. Chat Interface Input Area : Section for typing new messages"
+  ]
+}

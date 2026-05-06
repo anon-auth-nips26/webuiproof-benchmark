@@ -1,0 +1,237 @@
+{
+  "website_summary": {
+    "name": "Cybersecurity Education Hub",
+    "description": "The website features a clean and professional design with a lavender background and indigo components, offering a seamless experience for browsing and enrolling in cybersecurity courses.",
+    "category": "Content Presentation",
+    "appearance": "The website has a visually appealing design with a lavender background and indigo elements for buttons, links, and other interactive components. The header includes a navigation bar with options like \"Courses,\" \"About,\" and \"Contact.\" The main section showcases a hero image with a gradient overlay and a call-to-action button labeled \"Explore Courses.\" Below this, there's a course catalog section displaying various courses with images, titles, descriptions, durations, prices, and buttons for \"Enroll Now\" and \"View Details.\" The \"About Us\" section provides information about the institute's mission and offerings, accompanied by an image of students collaborating. The footer contains links to terms, privacy, and FAQs, along with copyright information. A chatbot icon is visible in the bottom-right corner for user assistance.",
+    "functionality": "The website offers several functionalities, including a course catalog where users can browse and view details of different cybersecurity courses. Users can enroll in courses directly from the catalog by clicking the \"Enroll Now\" button. A search bar allows users to find specific courses. The \"About Us\" section provides detailed information about the institute. A contact form enables users to send inquiries, and the chatbot integration offers real-time assistance. Additionally, users can explore certification pathways and contact the institute for further information."
+  },
+  "test_cases": {
+    "functionality_testing": [
+      {
+        "id": "TC001",
+        "name": "Data Science Course Details Test",
+        "objective": "To verify that clicking the \"View Details\" button for the Data Science Course Card navigates to the detailed course page.",
+        "coverage_element": "Data Science Course Card",
+        "preconditions": "The \"Our Courses\" section is visible.",
+        "expected_results": "The page should display detailed information about the Data Science and Analytics course. 7. Next Steps : Click the \"View Details\" button for the Data Science and Analytics course.",
+        "procedure": [
+          "Click on the \"View Details\" button under the Data Science Course Card.",
+          "Verify navigation to the detailed course page."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Explore Courses Button Test",
+        "objective": "To verify that clicking the Explore Courses button navigates to the courses section.",
+        "coverage_element": "Explore Courses",
+        "preconditions": "Homepage is loaded.",
+        "expected_results": "The page should scroll to the \"Our Courses\" section. 7. Next Steps : Scroll down to bring the \"Our Courses\" section fully into view.",
+        "procedure": [
+          "Click on the Explore Courses button.",
+          "Verify navigation to the courses section."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Search Input Test",
+        "objective": "To verify that entering the course name \"Advanced Penetration Testing\" in the search field returns the correct course result.",
+        "coverage_element": "Search Input",
+        "preconditions": "Course listing page is loaded.",
+        "expected_results": "Search results display the \"Advanced Penetration Testing\" course with its details. 7. Next Steps : Enter the desired course name into the search input field. Action: Type Search Input; Advanced Penetration Testing",
+        "procedure": [
+          "Enter \"Advanced Penetration Testing\" into the search field.",
+          "Press the Enter key or click the search icon.",
+          "Verify that the search results display the correct course with details."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Verify Advanced Penetration Testing Course Card Functionality",
+        "objective": "To verify that the Advanced Penetration Testing course card functions correctly when interacting with its elements.",
+        "coverage_element": "Advanced Penetration Testing : Course card with specific details",
+        "preconditions": "The user is on the course catalog page.",
+        "expected_results": "Clicking on 'Enroll Now' should redirect to the enrollment page, and clicking on 'View Details' should display the course details.",
+        "procedure": [
+          "Navigate to the course catalog page.",
+          "Interact with the 'Enroll Now' and 'View Details' buttons on the Advanced Penetration Testing course card."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Verify Incident Response and Forensics Course Card Functionality",
+        "objective": "To verify that the Incident Response and Forensics course card functions as expected.",
+        "coverage_element": "Incident Response and Forensics : Course card with specific details",
+        "preconditions": "The user is on the course catalog page.",
+        "expected_results": "The 'Enroll Now' button should redirect to the enrollment page, and the 'View Details' button should display detailed course information.",
+        "procedure": [
+          "Navigate to the course catalog page.",
+          "Test the 'Enroll Now' and 'View Details' buttons on the Incident Response and Forensics course card."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Verify Explore Courses Button Functionality",
+        "objective": "To verify that the 'Explore Courses' button functions correctly.",
+        "coverage_element": "Explore Courses : Button with text \"Explore Courses\"",
+        "preconditions": "The user is on the homepage.",
+        "expected_results": "Clicking the 'Explore Courses' button should navigate the user to the course catalog page.",
+        "procedure": [
+          "Navigate to the homepage.",
+          "Click the 'Explore Courses' button and verify navigation to the course catalog page."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "Verify Cybersecurity Course Filter Button",
+        "objective": "To verify that the 'Cybersecurity' filter button correctly filters courses.",
+        "coverage_element": "Cybersecurity : Button to filter cybersecurity courses",
+        "preconditions": "The user is on the course catalog page.",
+        "expected_results": "Only cybersecurity-related courses should be displayed after clicking the 'Cybersecurity' filter button.",
+        "procedure": [
+          "Navigate to the course catalog page.",
+          "Click the 'Cybersecurity' filter button and verify that only relevant courses are displayed."
+        ]
+      },
+      {
+        "id": "TC008",
+        "name": "Verify Data Science Course Filter Button",
+        "objective": "To verify that the 'Data Science' filter button correctly filters courses.",
+        "coverage_element": "Data Science : Button to filter data science courses",
+        "preconditions": "The user is on the course catalog page.",
+        "expected_results": "Only data science-related courses should be displayed after clicking the 'Data Science' filter button.",
+        "procedure": [
+          "Navigate to the course catalog page.",
+          "Click the 'Data Science' filter button and verify that only relevant courses are displayed."
+        ]
+      },
+      {
+        "id": "TC009",
+        "name": "Verify Cloud Security Course Filter Button",
+        "objective": "To verify that the 'Cloud Security' filter button correctly filters courses.",
+        "coverage_element": "Cloud Security : Button to filter cloud security courses",
+        "preconditions": "The user is on the course catalog page.",
+        "expected_results": "Only cloud security-related courses should be displayed after clicking the 'Cloud Security' filter button.",
+        "procedure": [
+          "Navigate to the course catalog page.",
+          "Click the 'Cloud Security' filter button and verify that only relevant courses are displayed."
+        ]
+      },
+      {
+        "id": "TC010",
+        "name": "Verify Software Security Course Filter Button",
+        "objective": "To verify that the 'Software Security' filter button correctly filters courses.",
+        "coverage_element": "Software Security : Button to filter software security courses",
+        "preconditions": "The user is on the course catalog page.",
+        "expected_results": "Only software security-related courses should be displayed after clicking the 'Software Security' filter button.",
+        "procedure": [
+          "Navigate to the course catalog page.",
+          "Click the 'Software Security' filter button and verify that only relevant courses are displayed."
+        ]
+      }
+    ],
+    "data_display_testing": [
+      {
+        "id": "TC001",
+        "name": "Verify Cybersecurity Fundamentals Course Card Details",
+        "objective": "To verify that the Cybersecurity Fundamentals course card displays all specific details correctly.",
+        "coverage_element": "Cybersecurity Fundamentals : Course card with specific details",
+        "preconditions": "The user is on the course catalog page.",
+        "expected_results": "The course card for Cybersecurity Fundamentals should display the title, description, duration, price, and buttons for 'Enroll Now' and 'View Details' correctly.",
+        "procedure": [
+          "Navigate to the course catalog page.",
+          "Locate and verify the Cybersecurity Fundamentals course card for the presence and correctness of all details."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Verify Cloud Security Architecture Course Card Data",
+        "objective": "To verify that the Cloud Security Architecture course card displays accurate data.",
+        "coverage_element": "Cloud Security Architecture : Course card with specific details",
+        "preconditions": "The user is on the course catalog page.",
+        "expected_results": "The course card should display the correct title, description, duration, price, and interactive buttons.",
+        "procedure": [
+          "Navigate to the course catalog page.",
+          "Check the Cloud Security Architecture course card for accurate data display."
+        ]
+      }
+    ],
+    "design_validation_testing": [
+      {
+        "id": "TC001",
+        "name": "UI Design and Style Test: Color Palette",
+        "objective": "To verify that the background color is consistently lavender, and all buttons including the \"Explore Courses\" button are indigo.",
+        "coverage_element": "Color scheme consistency and styling uniformity across buttons.",
+        "preconditions": "",
+        "expected_results": "The background should show a consistent lavender color while buttons including \"Explore Courses\" must be consistently styled in indigo.",
+        "procedure": [
+          "Hover over the \"Explore Courses\" button and observe its color.",
+          "Inspect the background color of the site."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Alignment and Navigation Test: Navigation Bar",
+        "objective": "To ensure that all buttons such as \"Courses\", \"About\", and \"Contact\" are aligned correctly and the navigation remains smooth.",
+        "coverage_element": "Button and text alignment within the navigation bar.",
+        "preconditions": "",
+        "expected_results": "Navigation bar elements should be properly aligned with no overlapping or awkward spacing, and clicking on elements should navigate correctly.",
+        "procedure": [
+          "Hover over each navigation button to assess alignment and interaction behavior.",
+          "Simulate clicking each navigation option to ensure navigation tests out intuitively."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Visual Appeal Test: Course Sections",
+        "objective": "To assess the visual appeal and alignment of the course sections.",
+        "coverage_element": "Visual appeal and alignment of course sections.",
+        "preconditions": "",
+        "expected_results": "The course cards should be visually appealing, with proper alignment and consistent design.",
+        "procedure": [
+          "Hover over each course card to observe its design and alignment.",
+          "Verify that the course cards are visually appealing and aligned correctly."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Visual Appeal Test: General Layout",
+        "objective": "To assess the visual appeal, balance, and aesthetic quality of the overall layout.",
+        "coverage_element": "",
+        "preconditions": "",
+        "expected_results": "Website layout should appear clean, uncluttered, and visually appealing, with balanced use of colors and space.",
+        "procedure": [
+          "Scan across all elements to evaluate visual balance and professional appearance.",
+          "Check if there's any visual clutter and elements are harmonized aesthetically."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Verify Secure Software Development Course Card Design",
+        "objective": "To verify that the Secure Software Development course card adheres to the design standards.",
+        "coverage_element": "Secure Software Development : Course card with specific details",
+        "preconditions": "The user is on the course catalog page.",
+        "expected_results": "The course card should have a consistent lavender background, indigo elements, and match the overall design theme.",
+        "procedure": [
+          "Navigate to the course catalog page.",
+          "Visually inspect the Secure Software Development course card for adherence to design standards."
+        ]
+      }
+    ]
+  },
+  "element_requirement": [
+    "1. Courses : Navigation link for courses",
+    "2. Data Science Course Card : Card displaying details of the Data Science and Analytics course",
+    "3. Cybersecurity Fundamentals : Course card with specific details",
+    "4. Advanced Penetration Testing : Course card with specific details",
+    "5. Secure Software Development : Course card with specific details",
+    "6. Cloud Security Architecture : Course card with specific details",
+    "7. Incident Response and Forensics : Course card with specific details",
+    "8. Explore Courses : Button with text \"Explore Courses\"",
+    "9. Cybersecurity : Button to filter cybersecurity courses",
+    "10. Search Input : Text input field for entering course search queries",
+    "11. Data Science : Button to filter data science courses",
+    "12. Cloud Security : Button to filter cloud security courses",
+    "13. Software Security : Button to filter software security courses"
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "website_summary": {
+    "name": "Hospital Management System (HMS)",
+    "description": "The website features a clean, peach-puff-themed interface with a sidebar for navigation and a dashboard displaying key hospital metrics.",
+    "category": "Data Management",
+    "appearance": "The website has a sidebar on the left with a navigation menu that includes options like Home, Finances, Reports, Pharmacy, Patient Files, Claim Formulation, Laboratory, and Theatre. The sidebar is styled with an Indian red background and white text. The main content area on the right displays a dashboard with three white cards showing Patient Overview, Financial Overview, and Inventory Overview. Each card contains relevant data points such as total patients, income, expenses, and inventory levels. The background of the main content area is peach puff, creating a visually appealing contrast with the sidebar.",
+    "functionality": "The website allows users to navigate through various sections for managing hospital operations. Users can access financial management features to handle patient fees and hospital finances. The reporting section enables the generation of inventory, patient, and financial reports. Employees can submit daily reports with detailed activity information. Pharmacy management includes inventory tracking of medicines. Patient files store information like patient names, visit dates, diagnoses, and comments. Additional functionalities include claim formulation, laboratory management, and theater management."
+  },
+  "test_cases": {
+    "functionality_testing": [
+      {
+        "id": "TC001",
+        "name": "Reports Button Test",
+        "objective": "To verify that clicking the Reports button navigates to the reports page.",
+        "coverage_element": "Reports",
+        "preconditions": "The application is open on the dashboard page.",
+        "expected_results": "The application should navigate to the reports page, allowing the user to generate financial reports. 7. Next Steps : Click on the \"Reports\" button to navigate to the reports page.",
+        "procedure": [
+          "Click on the Reports button in the sidebar.",
+          "Verify that the page transitions to the reports section."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Home Button Test",
+        "objective": "To verify that clicking the Home Button navigates to the Home page.",
+        "coverage_element": "Home Button",
+        "preconditions": "The application is open and the sidebar is visible.",
+        "expected_results": "The Home page should be displayed.",
+        "procedure": [
+          "Click on the Home Button.",
+          "Verify that the page navigates to the Home page."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Test Finances Button Functionality",
+        "objective": "To verify that clicking the 'Finances' button navigates to the finances section.",
+        "coverage_element": "Finances Button : Button labeled \"Finances\" in the sidebar",
+        "preconditions": "User is logged in and on the homepage with the sidebar visible.",
+        "expected_results": "Navigates to the finances section of the web application.",
+        "procedure": [
+          "Step 1 : Hover over the 'Finances' button in the sidebar.",
+          "Step 2 : Click the 'Finances' button and verify navigation to the finances section."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Test Pharmacy Button Functionality",
+        "objective": "To verify that clicking the 'Pharmacy' button navigates to the pharmacy section.",
+        "coverage_element": "Pharmacy Button : Button labeled \"Pharmacy\" in the sidebar",
+        "preconditions": "User is logged in and on the homepage with the sidebar visible.",
+        "expected_results": "Navigates to the pharmacy section of the web application.",
+        "procedure": [
+          "Step 1 : Hover over the 'Pharmacy' button in the sidebar.",
+          "Step 2 : Click the 'Pharmacy' button and verify navigation to the pharmacy section."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Test Patient Files Button Functionality",
+        "objective": "To verify that clicking the 'Patient Files' button navigates to the patient files section.",
+        "coverage_element": "Patient Files Button : Button labeled \"Patient Files\" in the sidebar",
+        "preconditions": "User is logged in and on the homepage with the sidebar visible.",
+        "expected_results": "Navigates to the patient files section of the web application.",
+        "procedure": [
+          "Step 1 : Hover over the 'Patient Files' button in the sidebar.",
+          "Step 2 : Click the 'Patient Files' button and verify navigation to the patient files section."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Test Claim Formulation Button Functionality",
+        "objective": "To verify that clicking the 'Claim Formulation' button navigates to the claim formulation section.",
+        "coverage_element": "Claim Formulation Button : Button labeled \"Claim Formulation\" in the sidebar",
+        "preconditions": "User is logged in and on the homepage with the sidebar visible.",
+        "expected_results": "Navigates to the claim formulation section of the web application.",
+        "procedure": [
+          "Step 1 : Hover over the 'Claim Formulation' button in the sidebar.",
+          "Step 2 : Click the 'Claim Formulation' button and verify navigation to the claim formulation section."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "Test Laboratory Button Functionality",
+        "objective": "To verify that clicking the 'Laboratory' button navigates to the laboratory section.",
+        "coverage_element": "Laboratory Button : Button labeled \"Laboratory\" in the sidebar",
+        "preconditions": "User is logged in and on the homepage with the sidebar visible.",
+        "expected_results": "Navigates to the laboratory section of the web application.",
+        "procedure": [
+          "Step 1 : Hover over the 'Laboratory' button in the sidebar.",
+          "Step 2 : Click the 'Laboratory' button and verify navigation to the laboratory section."
+        ]
+      },
+      {
+        "id": "TC008",
+        "name": "Test Theatre Button Functionality",
+        "objective": "To verify that clicking the 'Theatre' button navigates to the theatre section.",
+        "coverage_element": "Theatre Button : Button labeled \"Theatre\" in the sidebar",
+        "preconditions": "User is logged in and on the homepage with the sidebar visible.",
+        "expected_results": "Navigates to the theatre section of the web application.",
+        "procedure": [
+          "Step 1 : Hover over the 'Theatre' button in the sidebar.",
+          "Step 2 : Click the 'Theatre' button and verify navigation to the theatre section."
+        ]
+      }
+    ],
+    "data_display_testing": [
+      {
+        "id": "TC001",
+        "name": "Financial Overview Display Test",
+        "objective": "To verify that the Financial Overview Card displays accurate financial data.",
+        "coverage_element": "Financial Overview Card",
+        "preconditions": "Dashboard page is open.",
+        "expected_results": "The financial data in the card should be accurate. 7. Next Steps : Hover over the \"Financial Overview\" card to begin verifying the data.",
+        "procedure": [
+          "Hover over the Financial Overview Card.",
+          "Verify that the displayed financial data matches the expected values."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Patient Overview Card Display Test",
+        "objective": "To verify that the Patient Overview Card displays the correct patient-related data.",
+        "coverage_element": "Patient Overview Card",
+        "preconditions": "The Home page is displayed.",
+        "expected_results": "The card should display the correct patient-related data. 7. Next Steps : Click the \"Home\" button to navigate to the Home page.",
+        "procedure": [
+          "Hover over the Patient Overview Card.",
+          "Verify that the card displays the total patients, patients paid, and patients unpaid."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Patient Overview Display Test",
+        "objective": "To verify that the Patient Overview card displays accurate information.",
+        "coverage_element": "Patient Overview",
+        "preconditions": "The application is open and ready for interaction.",
+        "expected_results": "The card should display the total patients, paid patients, and unpaid patients accurately.",
+        "procedure": [
+          "Hover over the Patient Overview card.",
+          "Verify that the card displays the total patients, paid patients, and unpaid patients accurately."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Test Inventory Overview Card Data Display",
+        "objective": "To verify that the inventory overview card correctly displays the inventory data.",
+        "coverage_element": "Inventory Overview Card : Card displaying inventory data",
+        "preconditions": "User is logged in and the dashboard is displaying the inventory overview card.",
+        "expected_results": "Inventory overview card displays the correct inventory levels and data points.",
+        "procedure": [
+          "Step 1 : Navigate to the dashboard and locate the inventory overview card.",
+          "Step 2 : Verify the card displays correct inventory levels and data points according to the data source."
+        ]
+      }
+    ],
+    "design_validation_testing": []
+  },
+  "element_requirement": [
+    "1. Home Button : Button labeled \"Home\" in the sidebar",
+    "2. Finances Button : Button labeled \"Finances\" in the sidebar",
+    "3. Reports Button : Button labeled \"Reports\" in the sidebar",
+    "4. Pharmacy Button : Button labeled \"Pharmacy\" in the sidebar",
+    "5. Patient Files Button : Button labeled \"Patient Files\" in the sidebar",
+    "6. Claim Formulation Button : Button labeled \"Claim Formulation\" in the sidebar",
+    "7. Laboratory Button : Button labeled \"Laboratory\" in the sidebar",
+    "8. Theatre Button : Button labeled \"Theatre\" in the sidebar",
+    "9. Patient Overview Card : Card displaying patient-related data",
+    "10. Financial Overview Card : Card displaying financial data",
+    "11. Inventory Overview Card : Card displaying inventory data"
+  ]
+}

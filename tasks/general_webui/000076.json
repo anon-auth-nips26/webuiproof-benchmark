@@ -1,0 +1,287 @@
+{
+  "website_summary": {
+    "name": "Fitness Tracker Pro",
+    "description": "Fitness Tracker Pro is a sleek and functional interface with a clear focus on monitoring and managing fitness activities.",
+    "category": "Data Management",
+    "appearance": "The website features a clean and organized design. The homepage displays a navigation bar at the top with options labeled 'Homepage', 'Exercise Record', 'Leaderboard', and 'Fitness Diary'. Below this, there's a section titled \"Fitness Statistics\" that shows total workouts, distance covered, volume, and personal bests using subtle boxed sections. The \"Weekly Progress\" area incorporates a line graph showing progress over days of the week. Text and information are presented in a navy color theme against a white background for high contrast and readability.",
+    "functionality": "The website provides a comprehensive set of tools for fitness management: users can record exercises, view overall fitness statistics, compete with others on the leaderboard, and maintain a fitness diary. The homepage centralizes access to these features, offering an overview of personal data and weekly progress visualizations."
+  },
+  "test_cases": {
+    "functionality_testing": [
+      {
+        "id": "TC001",
+        "name": "Friday Data Point Hover Test",
+        "objective": "To verify that hovering over the data point for Friday in the Weekly Progress Chart displays the correct workout/calorie data.",
+        "coverage_element": "Weekly Progress Chart",
+        "preconditions": "The weekly progress chart is visible.",
+        "expected_results": "The tooltip should display the correct workout/calorie data for Friday. 7. Next Steps : Hover over the data point for Friday in the weekly progress chart to verify the tooltip data.",
+        "procedure": [
+          "Hover over the data point for Friday in the Weekly Progress Chart.",
+          "Verify that the tooltip displays the correct workout/calorie data for Friday."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Exercise Record Button Test",
+        "objective": "To verify that clicking the Exercise Record button navigates to the exercise record section.",
+        "coverage_element": "Exercise Record",
+        "preconditions": "User is on the homepage.",
+        "expected_results": "The page should navigate to the exercise record section.",
+        "procedure": [
+          "Click on the Exercise Record button.",
+          "Verify navigation to the exercise record section."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Exercise Record Navigation Test",
+        "objective": "Verify that clicking the \"Exercise Record\" button successfully navigates to the exercise record section.",
+        "coverage_element": "Exercise Record",
+        "preconditions": "Current page is the homepage.",
+        "expected_results": "The page should redirect to the exercise record section, allowing entry of exercises. Action : Click Exercise Record",
+        "procedure": [
+          "Click on the Exercise Record button.",
+          "Verify navigation to the exercise record section where exercise entries can be added."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Fitness Card Interactive Design Consistency Test",
+        "objective": "To verify the interactive design consistency across fitness cards that arguably respond to user actions via elements like mouse hovers.",
+        "coverage_element": "Interactive Design Across Graphs",
+        "preconditions": "",
+        "expected_results": "The interactive features in the graphs should conform to the overall UI design, providing a consistent, user-friendly experience. 7. Next Steps : Hover over additional graph points, starting with Interactive Design Across Graphs, to continue evaluating interactive properties, as well as design consistency across all cards.",
+        "procedure": [
+          "Hover over the graph points in Interactive Design Across Graphs and Interactive Design Across Graphs to explore any hidden interactive features.",
+          "Observe if additional information is displayed upon interaction, evaluating the interactivity's design in alignment with the overall color scheme and usability."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Leaderboard Navigation Test",
+        "objective": "To ensure the Leaderboard button correctly navigates to the leaderboard page.",
+        "coverage_element": "Leaderboard",
+        "preconditions": "The user is on the home page with the navigation menu visible.",
+        "expected_results": "The leaderboard page loads successfully, showing a list of users with their fitness statistics.",
+        "procedure": [
+          "Click on the Leaderboard button.",
+          "Verify that the page navigates to the leaderboard page displaying the leaderboard content."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Test Navigation Cards for Page Headers",
+        "objective": "To verify that the navigation cards for page headers are functional and navigate to the correct sections.",
+        "coverage_element": "Navigation cards for the page headers",
+        "preconditions": "User is logged in and on the homepage.",
+        "expected_results": "Clicking on each navigation card should navigate to the corresponding page header section.",
+        "procedure": [
+          "Click on each navigation card in the page headers.",
+          "Verify that the page navigates to the correct section for each card."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "Test Navigation Cards Functionality",
+        "objective": "To verify that the navigation cards are functional and navigate to the correct sections.",
+        "coverage_element": "Navigation cards",
+        "preconditions": "User is logged in and on the homepage.",
+        "expected_results": "Clicking on each navigation card should navigate to the corresponding section.",
+        "procedure": [
+          "Click on each navigation card from C1 to C4.",
+          "Verify that the page navigates to the correct section for each card."
+        ]
+      },
+      {
+        "id": "TC008",
+        "name": "Test Homepage Navigation Button",
+        "objective": "To verify that the button for navigating to the homepage is functional.",
+        "coverage_element": "Homepage : Button for navigating to the homepage",
+        "preconditions": "User is logged in and on any page other than the homepage.",
+        "expected_results": "Clicking the button should navigate the user to the homepage.",
+        "procedure": [
+          "Click on the 'Homepage' button.",
+          "Verify that the page navigates to the homepage."
+        ]
+      },
+      {
+        "id": "TC009",
+        "name": "Test Fitness Diary Button",
+        "objective": "To verify that the button for viewing fitness diary entries is functional.",
+        "coverage_element": "Fitness Diary : Button for viewing fitness diary entries",
+        "preconditions": "User is logged in and on any page.",
+        "expected_results": "Clicking the button should navigate the user to the fitness diary page.",
+        "procedure": [
+          "Click on the 'Fitness Diary' button.",
+          "Verify that the page navigates to the fitness diary page."
+        ]
+      }
+    ],
+    "data_display_testing": [
+      {
+        "id": "TC001",
+        "name": "Final Fitness Card Design Consistency Test",
+        "objective": "To finalize the verification of design consistency across all fitness cards.",
+        "coverage_element": "Final Design Consistency Across Cards",
+        "preconditions": "",
+        "expected_results": "All cards should maintain consistent design properties with a white background and navy blue text. 7. Next Steps : Since all visible cards have been inspected and confirmed to adhere to the design requirements, the task can be concluded.",
+        "procedure": [
+          "Review all inspected cards to ensure adherence to the specified color scheme and alignment.",
+          "Document final findings based on observation."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Fitness Card Design Consistency Test",
+        "objective": "To verify the design consistency across all fitness cards.",
+        "coverage_element": "Design Consistency Across Cards",
+        "preconditions": "",
+        "expected_results": "All cards should maintain consistent design properties with a white background and navy blue text. 7. Next Steps : Hover over additional cards, starting with Design Consistency Across Cards, to continue evaluating design consistency.",
+        "procedure": [
+          "Hover on remaining cards (e.g., Design Consistency Across Cards, Design Consistency Across Cards, Design Consistency Across Cards) to observe design properties.",
+          "Inspect for adherence to the specified color scheme and alignment.",
+          "Document findings based on observation."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Leaderboard Entries Display Test",
+        "objective": "To verify that the Leaderboard entries correctly display user fitness statistics.",
+        "coverage_element": "Leaderboard entries",
+        "preconditions": "The user is on the leaderboard page.",
+        "expected_results": "Each leaderboard entry displays the correct user fitness statistics.",
+        "procedure": [
+          "Hover over each leaderboard entry Leaderboard entries.",
+          "Verify the displayed rank, name, workouts, and points match the expected values."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Personal Bests Display Test",
+        "objective": "To verify that the Personal Bests card displays accurate information.",
+        "coverage_element": "Personal Bests",
+        "preconditions": "User is on the homepage.",
+        "expected_results": "The card should display the correct personal bests.",
+        "procedure": [
+          "Observe the content of the Personal Bests card.",
+          "Verify that it displays the correct personal bests."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Total Workouts Display Test",
+        "objective": "To verify that the Total Workouts card displays accurate information.",
+        "coverage_element": "Total Workouts",
+        "preconditions": "User is on the homepage.",
+        "expected_results": "The card should display the correct total workouts.",
+        "procedure": [
+          "Observe the content of the Total Workouts card.",
+          "Verify that it displays the correct total workouts."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Verify Table Entries on Leaderboard",
+        "objective": "To verify that the table entries displaying user rank, name, number of workouts, and points are correctly shown on the leaderboard.",
+        "coverage_element": "Table entries displaying user rank, name, number of workouts, and points on the leaderboard",
+        "preconditions": "User is logged in and on the Leaderboard page.",
+        "expected_results": "The table should display the correct user rank, name, number of workouts, and points for each user.",
+        "procedure": [
+          "Navigate to the Leaderboard page.",
+          "Verify that the table entries are displayed with the correct information."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "Verify Total Distance Card Display",
+        "objective": "To verify that the card showing total distance covered is correctly displayed.",
+        "coverage_element": "Total Distance : Card showing total distance covered",
+        "preconditions": "User is logged in and on the homepage.",
+        "expected_results": "The card should display the correct total distance covered by the user.",
+        "procedure": [
+          "Navigate to the homepage.",
+          "Verify that the 'Total Distance' card displays the correct distance."
+        ]
+      },
+      {
+        "id": "TC008",
+        "name": "Verify Total Volume Card Display",
+        "objective": "To verify that the card displaying total volume of exercises is correctly shown.",
+        "coverage_element": "Total Volume : Card displaying total volume of exercises",
+        "preconditions": "User is logged in and on the homepage.",
+        "expected_results": "The card should display the correct total volume of exercises.",
+        "procedure": [
+          "Navigate to the homepage.",
+          "Verify that the 'Total Volume' card displays the correct volume."
+        ]
+      },
+      {
+        "id": "TC009",
+        "name": "Verify Push Ups Exercise Stats Card",
+        "objective": "To verify that the card detailing push-up exercise stats is correctly displayed.",
+        "coverage_element": "Push Ups : Card detailing push-up exercise stats",
+        "preconditions": "User is logged in and on the homepage.",
+        "expected_results": "The card should display the correct push-up exercise stats.",
+        "procedure": [
+          "Navigate to the homepage.",
+          "Verify that the 'Push Ups' card displays the correct exercise stats."
+        ]
+      },
+      {
+        "id": "TC010",
+        "name": "Verify Running Exercise Stats Card",
+        "objective": "To verify that the card detailing running exercise stats is correctly displayed.",
+        "coverage_element": "Running : Card detailing running exercise stats",
+        "preconditions": "User is logged in and on the homepage.",
+        "expected_results": "The card should display the correct running exercise stats.",
+        "procedure": [
+          "Navigate to the homepage.",
+          "Verify that the 'Running' card displays the correct exercise stats."
+        ]
+      },
+      {
+        "id": "TC011",
+        "name": "Verify Squats Exercise Stats Card",
+        "objective": "To verify that the card detailing squat exercise stats is correctly displayed.",
+        "coverage_element": "Squats : Card detailing squat exercise stats",
+        "preconditions": "User is logged in and on the homepage.",
+        "expected_results": "The card should display the correct squat exercise stats.",
+        "procedure": [
+          "Navigate to the homepage.",
+          "Verify that the 'Squats' card displays the correct exercise stats."
+        ]
+      }
+    ],
+    "design_validation_testing": [
+      {
+        "id": "TC001",
+        "name": "Fitness Card Alignment and Style Test",
+        "objective": "To ensure consistency in design inheritance and alignment among fitness cards.",
+        "coverage_element": "Alignment & Style Inheritance in Cards",
+        "preconditions": "",
+        "expected_results": "All cards should maintain consistent navy blue text elements against a white background with matched alignment. 7. Next Steps : Hover over multiple cards sequentially, beginning with Alignment & Style Inheritance in Cards to inspect further design parameters such as the presence of alignment, font, and text color consistency.",
+        "procedure": [
+          "Hover on multiple cards (e.g., Alignment & Style Inheritance in Cards, Alignment & Style Inheritance in Cards, Alignment & Style Inheritance in Cards) to observe design properties like text alignment within the card.",
+          "Inspect for any deviations from the specified color scheme and alignment in each card.",
+          "Document findings based on observation."
+        ]
+      }
+    ]
+  },
+  "element_requirement": [
+    "1. Leaderboard : A navigation button for accessing the leaderboard page",
+    "2. Table entries displaying user rank, name, number of workouts, and points on the leaderboard",
+    "3. Navigation cards for the page headers",
+    "4. Navigation cards",
+    "5. Homepage : Button for navigating to the homepage",
+    "6. Exercise Record : Button for navigating to exercise record",
+    "7. Fitness Diary : Button for viewing fitness diary entries",
+    "8. Total Workouts : Card displaying total workouts count",
+    "9. Total Distance : Card showing total distance covered",
+    "10. Total Volume : Card displaying total volume of exercises",
+    "11. Personal Bests : Card showing personal best achievements",
+    "12. Push Ups : Card detailing push-up exercise stats",
+    "13. Running : Card detailing running exercise stats",
+    "14. Squats : Card detailing squat exercise stats"
+  ]
+}

@@ -1,0 +1,198 @@
+{
+  "website_summary": {
+    "name": "Virtual Study Hub",
+    "description": "The website features a clean and organized interface with a focus on user interaction for creating and joining study groups, designed with a consistent alice blue background and steel blue components.",
+    "category": "User Interaction",
+    "appearance": "The website has a header with a welcoming message and a logout button. Below the header, there's a main content area divided into sections. The first section includes three interactive panels: \"My Study Groups,\" \"Create Study Group,\" and \"Join Study Group.\" These panels are styled with a steel blue background and white text. The \"Create Study Group\" panel contains fields for entering a group name and description, along with a button to create the group. Similarly, the \"Join Study Group\" panel has a field for entering a join code and a button to join a group. At the bottom, there's a \"Study Groups\" section intended to list available groups. The overall design uses a consistent alice blue background, enhancing readability and visual appeal.",
+    "functionality": "The website allows users to manage their study groups. Users can create new groups by providing a name and description, then clicking the \"Create Group\" button. They can also join existing groups using a unique join code. Additionally, the website provides a space for listing all study groups, though currently, it appears empty. Future functionalities might include sharing resources within groups, participating in project discussions, and accessing a personal center for viewing user information."
+  },
+  "test_cases": {
+    "functionality_testing": [
+      {
+        "id": "TC001",
+        "name": "Create Group Button Test",
+        "objective": "To verify that clicking the Create Group Button submits the form and creates the group.",
+        "coverage_element": "Create Group Button",
+        "preconditions": "The group name and description have been entered.",
+        "expected_results": "A confirmation message should appear, and the group should be listed under \"My Study Groups\". 7. Next Steps : The next step is to enter the group name \"Math Club\" into the Group Name field.",
+        "procedure": [
+          "Click on the Create Group Button.",
+          "Verify that a confirmation message appears indicating the successful creation of the group."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Group Description Input Test",
+        "objective": "To verify that the Group Description Input textarea allows text entry and handles input correctly.",
+        "coverage_element": "Group Description Input",
+        "preconditions": "The webpage is loaded, the \"Create Study Group\" card is visible, and the group name has been entered.",
+        "expected_results": "The textarea should accept the input and display \"A group for math enthusiasts\". 7. Next Steps : The next step is to enter the group description \"A group for math enthusiasts\" into the Group Description field.",
+        "procedure": [
+          "Type \"A group for math enthusiasts\" into the Group Description Input textarea.",
+          "Verify that the entered text appears in the textarea."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Group Name Input Test",
+        "objective": "To verify that the Group Name Input textbox allows text entry and handles input correctly.",
+        "coverage_element": "Group Name Input",
+        "preconditions": "The webpage is loaded and the \"Create Study Group\" card is visible.",
+        "expected_results": "The textbox should accept the input and display \"Math Club\".",
+        "procedure": [
+          "Type \"Math Club\" into the Group Name Input textbox.",
+          "Verify that the entered text appears in the textbox."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Join Code Input Test",
+        "objective": "To verify that the Join Code Input correctly handles the input of a join code.",
+        "coverage_element": "Join Code Input",
+        "preconditions": "The user has a valid join code to enter.",
+        "expected_results": "The \"My Study Groups\" section should display the newly joined group's name and description.",
+        "procedure": [
+          "Enter a valid join code in the Join Code Input.",
+          "Click on the Join Group Button.",
+          "Verify that the system processes the join request and updates the \"My Study Groups\" section accordingly."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Join Group Button Test",
+        "objective": "To verify that clicking the Join Group Button initiates the process of joining a study group.",
+        "coverage_element": "Join Group Button",
+        "preconditions": "The user has entered a valid join code in the Join Code Input.",
+        "expected_results": "The \"My Study Groups\" section should display the newly joined group's name and description.",
+        "procedure": [
+          "Enter a valid join code in the Join Code Input.",
+          "Click on the Join Group Button.",
+          "Verify that the system processes the join request and updates the \"My Study Groups\" section accordingly."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "View Group Button Test",
+        "objective": "To verify that clicking the View Group Button displays the details of the \"Math Club\" group.",
+        "coverage_element": "View Group Button",
+        "preconditions": "The \"Math Club\" group has been created and is listed under \"Study Groups.\"",
+        "expected_results": "The details of the \"Math Club\" group should be displayed. 7. Next Steps : The next step is to click the \"View Group\" button to display the details of the \"Math Club\" group.",
+        "procedure": [
+          "Click on the View Group Button.",
+          "Verify that the details of the \"Math Club\" group are displayed."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "Test Case for Group Description Textarea",
+        "objective": "To verify that the user can enter and submit a detailed study group description.",
+        "coverage_element": "Group Description Textarea : Textarea for entering the group description detailing in-depth information about the study group",
+        "preconditions": "The user is on the 'Create Study Group' page and ready to create a new study group.",
+        "expected_results": "The text entered into the Group Description Textarea is successfully submitted and stored.",
+        "procedure": [
+          "Step 1 : Navigate to the 'Create Study Group' panel.",
+          "Step 2 : Enter a detailed group description into the Group Description Textarea and submit the form."
+        ]
+      },
+      {
+        "id": "TC008",
+        "name": "Test Case for Logout Button Function",
+        "objective": "To verify that clicking the Logout Button successfully logs the user out of the application.",
+        "coverage_element": "Logout Button : Button to log out of the application",
+        "preconditions": "The user is logged in and the Logout Button is visible.",
+        "expected_results": "Upon clicking the Logout Button, the user is logged out and redirected to the login page.",
+        "procedure": [
+          "Step 1 : Log in to the application.",
+          "Step 2 : Click the Logout Button located in the header, and verify redirection to the login page."
+        ]
+      }
+    ],
+    "data_display_testing": [
+      {
+        "id": "TC001",
+        "name": "My Study Groups Display Test",
+        "objective": "To verify that the My Study Groups Card accurately displays the names and descriptions of all joined groups.",
+        "coverage_element": "My Study Groups Card",
+        "preconditions": "The user has successfully joined at least one study group.",
+        "expected_results": "The card should display all joined groups' information accurately. 7. Next Steps : The next step is to attempt joining a study group to see if the \"My Study Groups\" section gets updated.",
+        "procedure": [
+          "Hover over the My Study Groups Card.",
+          "Verify that the card displays the names and descriptions of all joined groups."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Test Case for Home Card Options",
+        "objective": "To verify that all options within the Home Card are displayed correctly and are accessible.",
+        "coverage_element": "Home Card : Card containing options for my study groups, creating a study group, and joining a study group",
+        "preconditions": "The user is logged in and viewing the main content area.",
+        "expected_results": "The Home Card displays all three options for 'My Study Groups,' 'Create a Study Group,' and 'Join a Study Group,' all of which are interactable.",
+        "procedure": [
+          "Step 1 : Log in to the application and navigate to the main content area.",
+          "Step 2 : Verify that the Home Card is present, and all three options are visible and interactable."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Test Case for Welcome Card Content",
+        "objective": "To verify that the Welcome Card displays the correct welcome message and logout option.",
+        "coverage_element": "Welcome Card : Card displaying welcome message and logout option",
+        "preconditions": "The user is logged in and viewing the main content area.",
+        "expected_results": "The Welcome Card is displayed with the correct welcome message tailored to the logged-in user and a functional logout option.",
+        "procedure": [
+          "Step 1 : Log in to the application and navigate to the main content area.",
+          "Step 2 : Verify that the Welcome Card includes the welcome message and the logout option for the user."
+        ]
+      }
+    ],
+    "design_validation_testing": [
+      {
+        "id": "TC001",
+        "name": "UI Design and Style Test: Button Background Colors",
+        "objective": "To evaluate the background color consistency of buttons.",
+        "coverage_element": "Button Styling",
+        "preconditions": "",
+        "expected_results": "All button background colors should match the specified steel blue.",
+        "procedure": [
+          "Observe the background color of buttons.",
+          "Compare the observed colors with the specified steel blue."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "UI Design and Style Test: Card Background Colors",
+        "objective": "To evaluate the background color consistency of card elements.",
+        "coverage_element": "Card Styling",
+        "preconditions": "",
+        "expected_results": "All card background colors should match the specified alice blue. 7. Next Steps : Next, we should hover over the Card Styling card to inspect its background color.",
+        "procedure": [
+          "Observe the background color of card elements.",
+          "Compare the observed colors with the specified alice blue."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "UI Design and Style Test: Color Palette",
+        "objective": "To evaluate the color consistency of the page background and component backgrounds.",
+        "coverage_element": "Color Scheme",
+        "preconditions": "",
+        "expected_results": "All background colors should match the specified alice blue and steel blue.",
+        "procedure": [
+          "Observe the background color of the entire page.",
+          "Check the background color of buttons, panels, and text fields.",
+          "Compare the observed colors with the specified alice blue and steel blue."
+        ]
+      }
+    ]
+  },
+  "element_requirement": [
+    "1. Group Name Input : Textbox for entering the group name when creating a new group",
+    "2. Group Description Textarea : Textarea for entering the group description detailing in-depth information about the study group",
+    "3. Create Group Button : Button for submitting the creation of a new group",
+    "4. Home Card : Card containing options for my study groups, creating a study group, and joining a study group",
+    "5. Welcome Card : Card displaying welcome message and logout option",
+    "6. Logout Button : Button to log out of the application",
+    "7. Join Code Input : Textbox for entering the join code when joining a group",
+    "8. Join Group Button : Button for submitting the join request for a group"
+  ]
+}

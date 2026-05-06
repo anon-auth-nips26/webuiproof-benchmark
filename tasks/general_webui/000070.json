@@ -1,0 +1,238 @@
+{
+  "website_summary": {
+    "name": "Poetic Muse Gallery",
+    "description": "The website features a clean and elegant design with a light goldenrod background and olive drab accents, providing a serene environment for poetry enthusiasts.",
+    "category": "Content Presentation",
+    "appearance": "The website has a minimalist and aesthetically pleasing design. The header is olive drab with white text, featuring the title \"Poetry Blog\" and navigation buttons for \"Home,\" \"Add Poem,\" and \"Filter.\" Below the header, there's a search bar for browsing poems. The main content area displays a grid of poetry cards, each with a title, author, date, a snippet of the poem, and the number of comments. The cards have a light goldenrod background with rounded edges and a subtle shadow, enhancing their visual appeal. The overall layout is well-organized, ensuring readability and user-friendliness.",
+    "functionality": "The website includes several key functionalities: \n- A search bar allows users to find specific poems by entering keywords.\n- Users can add their own poems via the \"Add Poem\" button.\n- The \"Filter\" option enables users to browse different types of poetry.\n- Each poem card includes a snippet of the poem and the number of comments, suggesting a commenting feature for user interaction."
+  },
+  "test_cases": {
+    "functionality_testing": [
+      {
+        "id": "TC001",
+        "name": "Add Poem Button Test",
+        "objective": "To verify that clicking the Add Poem button navigates to the poem submission page.",
+        "coverage_element": "Add Poem",
+        "preconditions": "User is on the poem detail page.",
+        "expected_results": "The user is redirected to the poem submission page.",
+        "procedure": [
+          "Click on the Add Poem button.",
+          "Verify navigation to the poem submission page."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Click Filter Dropdown to reveal options",
+        "objective": "Verify that the \"Filter\" dropdown expands and displays relevant options when clicked.",
+        "coverage_element": "Filter",
+        "preconditions": "The Filter dropdown button is visible on the page.",
+        "expected_results": "The dropdown menu should display filter options which may include a search bar. 7. Next Steps : Click the \"Filter\" dropdown to reveal the search bar if present.",
+        "procedure": [
+          "Click on the \"Filter\" dropdown button.",
+          "Check for a list of options, including a search bar if incorporated."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Content Input Test",
+        "objective": "To verify that the Content Input textarea accepts and displays the entered poem content.",
+        "coverage_element": "Content Input",
+        "preconditions": "User is on the poem submission page with the title already entered.",
+        "expected_results": "The textarea displays \"New Poem Content\".",
+        "procedure": [
+          "Type \"New Poem Content\" into the Content Input textarea.",
+          "Verify that the entered content is displayed in the textarea."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Poetry Card Tooltip Test",
+        "objective": "To verify that hovering over the Poetry Card shows the full excerpt tooltip.",
+        "coverage_element": "Poetry Card",
+        "preconditions": "The poetry blog page is open, with the \"Autumn Leaves\" card visible.",
+        "expected_results": "The tooltip containing the full poem excerpt should be displayed.",
+        "procedure": [
+          "Hover over the Poetry Card.",
+          "Verify that the full tooltip with the complete excerpt appears."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Scroll Up to Locate Search Bar",
+        "objective": "To verify that scrolling up reveals the search bar for entering keywords.",
+        "coverage_element": "[WINDOW]",
+        "preconditions": "The webpage is loaded and the current view doesn't show the search bar.",
+        "expected_results": "The search bar should become visible after scrolling up. 7. Next Steps : Scroll up to locate the search bar.",
+        "procedure": [
+          "Scroll up the webpage.",
+          "Verify if the search bar becomes visible."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Submit Button Test",
+        "objective": "To verify that clicking the Submit Button submits the poem.",
+        "coverage_element": "Submit Button",
+        "preconditions": "User is on the poem submission page with all fields filled out.",
+        "expected_results": "The poem is submitted and appears in the poetry grid.",
+        "procedure": [
+          "Click on the Submit Button.",
+          "Verify that the poem is submitted and appears in the poetry grid."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "Title Input Test",
+        "objective": "To verify that the Title Input textbox accepts and displays the entered title.",
+        "coverage_element": "Title Input",
+        "preconditions": "User is on the poem submission page.",
+        "expected_results": "The textbox displays \"New Poem Title\".",
+        "procedure": [
+          "Type \"New Poem Title\" into the Title Input textbox.",
+          "Verify that the entered title is displayed in the textbox."
+        ]
+      },
+      {
+        "id": "TC008",
+        "name": "Type Dropdown Test",
+        "objective": "To verify that the Type Dropdown allows selection of a poem type.",
+        "coverage_element": "Type Dropdown",
+        "preconditions": "User is on the poem submission page with the title and content already entered.",
+        "expected_results": "The selected type is displayed in the dropdown.",
+        "procedure": [
+          "Click on the Type Dropdown.",
+          "Select a type from the dropdown options.",
+          "Verify that the selected type is displayed in the dropdown."
+        ]
+      },
+      {
+        "id": "TC009",
+        "name": "Test Navigation to Homepage via Home Button",
+        "objective": "To verify that clicking the 'Home' button navigates the user to the homepage.",
+        "coverage_element": "Home : Button for navigating to the homepage",
+        "preconditions": "User is on any page other than the homepage.",
+        "expected_results": "The user is redirected to the homepage after clicking the 'Home' button.",
+        "procedure": [
+          "Navigate to a page other than the homepage.",
+          "Click the 'Home' button in the header."
+        ]
+      },
+      {
+        "id": "TC010",
+        "name": "Test Return to Homepage via Back to Home Button",
+        "objective": "To verify that clicking the 'Back to Home' button returns the user to the homepage.",
+        "coverage_element": "Back to Home : Button for returning to the homepage",
+        "preconditions": "User is on any page other than the homepage.",
+        "expected_results": "The user is redirected back to the homepage after clicking the 'Back to Home' button.",
+        "procedure": [
+          "Navigate to a page other than the homepage.",
+          "Click the 'Back to Home' button."
+        ]
+      },
+      {
+        "id": "TC011",
+        "name": "Test Adding a Comment to a Poem",
+        "objective": "To verify that users can add a comment to a poem.",
+        "coverage_element": "Add Comment : Button for adding a comment to the poem",
+        "preconditions": "User is viewing a poem card and logged into the application.",
+        "expected_results": "A new comment is successfully added to the poem and displayed.",
+        "procedure": [
+          "Navigate to a poem card.",
+          "Click the 'Add Comment' button and enter a comment."
+        ]
+      },
+      {
+        "id": "TC012",
+        "name": "Test Filter Option for Free Verse",
+        "objective": "To verify that selecting the 'Free Verse' option filters the poems accordingly.",
+        "coverage_element": "Free Verse : Option in the filter dropdown",
+        "preconditions": "Multiple poems exist in the database, including some categorized as 'Free Verse'.",
+        "expected_results": "Only poems categorized as 'Free Verse' are displayed after selecting the option.",
+        "procedure": [
+          "Open the filter dropdown.",
+          "Select the 'Free Verse' option and check the filtered results."
+        ]
+      }
+    ],
+    "data_display_testing": [
+      {
+        "id": "TC001",
+        "name": "Test Display of Poem Card Details",
+        "objective": "To verify that the poem card correctly displays all details of the poem 'Autumn Leaves'.",
+        "coverage_element": "Poem Card : Displays the poem \"Autumn Leaves\" with its details",
+        "preconditions": "The poem 'Autumn Leaves' exists in the database.",
+        "expected_results": "The poem card displays the title, author, date, snippet, and number of comments for 'Autumn Leaves'.",
+        "procedure": [
+          "Navigate to the poem card for 'Autumn Leaves'.",
+          "Verify that all details are correctly displayed."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Test Display of Comment Card",
+        "objective": "To verify that the comment card correctly displays the comment 'I love this!'",
+        "coverage_element": "Comment Card : Card displaying a comment \"I love this!\"",
+        "preconditions": "The comment 'I love this!' exists in the database associated with a poem.",
+        "expected_results": "The comment card displays the text 'I love this!' accurately.",
+        "procedure": [
+          "Navigate to the poem associated with the comment.",
+          "Locate and verify the display of the comment card."
+        ]
+      }
+    ],
+    "design_validation_testing": [
+      {
+        "id": "TC001",
+        "name": "UI Design and Style Test: Color Palette",
+        "objective": "To verify that the header has an olive drab background with white text and the poetry cards have a light goldenrod background with rounded edges.",
+        "coverage_element": "Color Scheme",
+        "preconditions": "",
+        "expected_results": "The header should have an olive drab background with white text, and the poetry cards should have a light goldenrod background with rounded edges. 7. Next Steps : Hover over the poetry card to confirm its background color and rounded edges.",
+        "procedure": [
+          "Observe the header and poetry cards.",
+          "Evaluate the background colors and text colors.",
+          "Check if the poetry cards have rounded edges."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "UI Design and Style Test: Comment Section",
+        "objective": "To verify that the comment section is visually consistent with the rest of the design.",
+        "coverage_element": "Comment Section",
+        "preconditions": "",
+        "expected_results": "The comment section should have a light goldenrod background with black text, matching the poetry card. 7. Next Steps : Since the header and poetry card design requirements have been confirmed, and no additional unseen elements have been discovered, the next step is to provide the final answer.",
+        "procedure": [
+          "Observe the comment section.",
+          "Evaluate the background color and text color.",
+          "Check if the comment section is visually consistent with the poetry card."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Test Visibility of Cancel Button Card",
+        "objective": "To verify that the cancel button is visible within the cancel button card.",
+        "coverage_element": "Cancel Button Card : Card containing the cancel button",
+        "preconditions": "The user is in a context where a cancel button is expected, such as a form or modal.",
+        "expected_results": "The cancel button is clearly visible and accessible within the card.",
+        "procedure": [
+          "Navigate to a context requiring a cancel button.",
+          "Verify the visibility and accessibility of the cancel button within the card."
+        ]
+      }
+    ]
+  },
+  "element_requirement": [
+    "1. Home : Button for navigating to the homepage",
+    "2. Title Input : Textbox for entering the poem title",
+    "3. Content Input : Textarea for entering the poem content",
+    "4. Back to Home : Button for returning to the homepage",
+    "5. Add Comment : Button for adding a comment to the poem",
+    "6. Poem Card : Displays the poem \"Autumn Leaves\" with its details",
+    "7. Type Dropdown : Dropdown menu for selecting the poem type",
+    "8. Free Verse : Option in the filter dropdown",
+    "9. Comment Card : Card displaying a comment \"I love this!\"",
+    "10. Add Poem Form Card : Card containing the form for adding a new poem",
+    "11. Cancel Button Card : Card containing the cancel button",
+    "12. Submit Button Card : Card containing the submit button"
+  ]
+}

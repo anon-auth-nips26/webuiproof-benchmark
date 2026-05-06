@@ -1,0 +1,242 @@
+{
+  "website_summary": {
+    "name": "Solar Energy Dashboard",
+    "description": "The website presents a comprehensive solar energy monitoring interface with real-time data visualization and analytics.",
+    "category": "Data Management",
+    "appearance": "The Solar Energy Dashboard features a clean and organized layout with distinct sections for real-time data and historical analysis. The main dashboard includes widgets displaying current power generation (3,500 W), power consumption (3,100 W), and battery status (80%). These widgets use gradient backgrounds and icons for easy identification. Below the dashboard, there’s a section for environmental conditions showing temperature (25°C), wind speed (9 km/h), air quality index (Good), and UV index (6). An energy analytics graph illustrates daily generation and consumption trends with a line chart. On the right side, a sidebar provides a system overview with energy flow percentages, system health status, quick actions buttons, and a data summary including today's generation, daily average, monthly total, and system status. The overall design uses a light theme with subtle shadows and rounded corners for a modern look.",
+    "functionality": "The website offers several key functionalities:\n- Real-time data display for power generation, consumption, and battery levels.\n- Environmental condition monitoring including temperature, wind speed, air quality, and UV index.\n- Energy analytics with a customizable line chart for daily, weekly, or monthly views.\n- System overview with detailed energy flow metrics, system health indicators, and quick action buttons for maintenance and settings.\n- Data summary providing insights into today's generation, daily averages, monthly totals, and system status.\n- Users can switch between metric and imperial units for environmental data.\n- The ability to expand advanced analytics for deeper insights into system efficiency and carbon offset."
+  },
+  "test_cases": {
+    "functionality_testing": [
+      {
+        "id": "TC001",
+        "name": "Analytics Navigation Test",
+        "objective": "Verify that clicking the Analytics Button correctly navigates to the Analytics section",
+        "coverage_element": "Analytics Button",
+        "preconditions": "User is on the main dashboard page",
+        "expected_results": "The Analytics page is displayed with relevant energy analytics data",
+        "procedure": [
+          "Click on the Analytics Button",
+          "Verify that the page navigates to the Analytics section"
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Analytics Sub-card Synchronization Test",
+        "objective": "Verify that the Analytics Sub-Cards update to display data corresponding to the selected time period in Time Period Tabs",
+        "coverage_element": "Analytics Sub-Cards",
+        "preconditions": "User is on the Analytics page, a Time Period Tab has been selected",
+        "expected_results": "The Analytics Sub-Cards update to display data for the newly selected time period",
+        "procedure": [
+          "Click on a different Time Period Tab",
+          "Observe the Analytics Sub-Cards"
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Energy Analytics Graph Test",
+        "objective": "To verify that the Energy Analytics Card graph updates to show generation and consumption data for the selected time period",
+        "coverage_element": "Energy Analytics Card",
+        "preconditions": "Solar Dashboard is loaded",
+        "expected_results": "The Energy Analytics Card graph should update to display generation and consumption data for the selected time period (daily, weekly, monthly)",
+        "procedure": [
+          "Click on the Daily button within the Energy Analytics Card",
+          "Observe the generation and consumption graph",
+          "Click on the Weekly button",
+          "Observe the updated generation and consumption graph",
+          "Click on the Monthly button",
+          "Observe the updated generation and consumption graph"
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Energy Analytics Tooltip Test",
+        "objective": "To verify that the tooltip on the Daily Energy Graph displays the correct power generation and consumption values for the hovered time point",
+        "coverage_element": "Daily Energy Graph",
+        "preconditions": "Solar Dashboard is loaded, Energy Analytics Card is set to Daily view",
+        "expected_results": "The tooltip on the Daily Energy Graph should display the power generation and consumption values at 10 : 00 that match the levels shown on the graph",
+        "procedure": [
+          "Hover over the 10 : 00 data point on the Daily Energy Graph",
+          "Observe the tooltip that appears",
+          "Verify that the tooltip shows the correct power generation in kW",
+          "Verify that the tooltip shows the correct power consumption in kW"
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Switch Between Time Period Views",
+        "objective": "To verify that users can switch between Daily, Weekly, and Monthly views using the Time Period Tabs.",
+        "coverage_element": "Time Period Tabs : Buttons to switch between Daily, Weekly, and Monthly views",
+        "preconditions": "The web application is open and the user is logged in.",
+        "expected_results": "The view should change according to the selected time period tab without any errors.",
+        "procedure": [
+          "Navigate to the Solar Energy Dashboard.",
+          "Click on the 'Weekly' tab and then the 'Monthly' tab."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Validate Navigation Buttons Functionality",
+        "objective": "To verify that the Navigation Buttons for system check, maintenance, analytics, and settings are functional.",
+        "coverage_element": "Navigation Buttons : Buttons for system check, maintenance, analytics, and settings",
+        "preconditions": "The web application is open and the user is logged in.",
+        "expected_results": "Each button should navigate to the corresponding section or page without any errors.",
+        "procedure": [
+          "Navigate to the Solar Energy Dashboard.",
+          "Click on each navigation button : system check, maintenance, analytics, and settings."
+        ]
+      }
+    ],
+    "data_display_testing": [
+      {
+        "id": "TC001",
+        "name": "Advanced Analytics Display Test",
+        "objective": "Verify that the Advanced Analytics Card displays correctly with relevant metrics",
+        "coverage_element": "Advanced Analytics Card",
+        "preconditions": "User is on the Analytics page",
+        "expected_results": "The Advanced Analytics Card displays additional metrics such as System Efficiency and Carbon Offset with accurate data",
+        "procedure": [
+          "Locate the Advanced Analytics Card",
+          "Observe the displayed metrics and data"
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Energy Flow Test",
+        "objective": "Verify that the Energy Flow card displays accurate energy flow data.",
+        "coverage_element": "Energy Flow Card",
+        "preconditions": "The Energy Flow card is visible.",
+        "expected_results": "The Energy Flow card displays accurate energy flow data. 7. Next Steps : As we have already verified the accuracy of two data points, we can conclude the task.",
+        "procedure": [
+          "Hover over the Energy Flow card.",
+          "Verify that the displayed data is accurate."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Power Consumption Card Display Test",
+        "objective": "To verify that the Power Consumption Card displays the current power consumption and percentage change",
+        "coverage_element": "Power Consumption Card",
+        "preconditions": "Solar Dashboard is loaded",
+        "expected_results": "The Power Consumption Card should display the current power consumption in watts and a percentage change",
+        "procedure": [
+          "Observe the Power Consumption Card",
+          "Verify that it shows a wattage value for current power consumption",
+          "Verify that it shows a percentage indicating change in consumption"
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Power Generation Card Display Test",
+        "objective": "To verify that the Power Generation Card displays the current power generation and percentage change",
+        "coverage_element": "Power Generation Card",
+        "preconditions": "Solar Dashboard is loaded",
+        "expected_results": "The Power Generation Card should display the current power generation in watts and a percentage change",
+        "procedure": [
+          "Observe the Power Generation Card",
+          "Verify that it shows a wattage value for current power generation",
+          "Verify that it shows a percentage indicating change in generation"
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Verify Battery Status Card Display",
+        "objective": "To verify that the Battery Status Card correctly displays the current battery charge level and status.",
+        "coverage_element": "Battery Status Card : Card indicating current battery charge level and status",
+        "preconditions": "The web application is open and the user is logged in.",
+        "expected_results": "The Battery Status Card should display the correct battery charge level and status without any errors.",
+        "procedure": [
+          "Navigate to the Solar Energy Dashboard.",
+          "Locate and observe the Battery Status Card."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Check Solar Dashboard Card Information",
+        "objective": "To verify that the Solar Dashboard Card displays accurate and up-to-date information.",
+        "coverage_element": "Solar Dashboard Card : Card displaying solar dashboard information",
+        "preconditions": "The web application is open and the user is logged in.",
+        "expected_results": "The Solar Dashboard Card should display the correct and current solar dashboard information.",
+        "procedure": [
+          "Navigate to the Solar Energy Dashboard.",
+          "Locate and review the information displayed in the Solar Dashboard Card."
+        ]
+      }
+    ],
+    "design_validation_testing": [
+      {
+        "id": "TC001",
+        "name": "Environmental Information Test:",
+        "objective": "Verify that the Environmental Conditions card displays accurate and detailed information about environmental factors.",
+        "coverage_element": "Card (Environmental Conditions)",
+        "preconditions": "The webpage is loaded, and the cards are visible.",
+        "expected_results": "The card should display accurate and detailed information about environmental factors. 7. Next Steps : The next step is to analyze the webpage's design and layout to ensure it adheres to the specified requirements, including color consistency and alignment checks.",
+        "procedure": [
+          "Hover over the Environmental Conditions card.",
+          "Verify that the card displays accurate and detailed information about temperature, wind speed, air quality, and UV index."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Card Expansion Test:",
+        "objective": "Verify that hovering over a card reveals additional information and changes the background color.",
+        "coverage_element": "Card (Solar Dashboard)",
+        "preconditions": "The webpage is loaded, and the cards are visible.",
+        "expected_results": "The card should expand to reveal additional information, and the background color should change to indicate interactivity. 7. Next Steps : The next step is to hover over another card to see if similar additional information is displayed and if the design remains consistent across different cards.",
+        "procedure": [
+          "Hover over the Solar Dashboard card.",
+          "Verify that additional information is displayed, and the background color of the card changes."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Card Layout Test:",
+        "objective": "Verify that the cards on the page are arranged in a consistent and visually appealing layout.",
+        "coverage_element": "Cards (C18)",
+        "preconditions": "The webpage is loaded, and the cards are visible.",
+        "expected_results": "The cards on the page should be arranged in a consistent and visually appealing layout. 7. Next Steps : The next step is to hover over one of the cards to see if any additional information is displayed.",
+        "procedure": [
+          "Observe the cards on the page and their layout.",
+          "Verify that the cards are arranged in a consistent and visually appealing pattern."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Energy Analytics Test:",
+        "objective": "Verify that the Energy Analytics card displays accurate and detailed information about energy generation and consumption.",
+        "coverage_element": "Card (Energy Analytics)",
+        "preconditions": "The webpage is loaded, and the cards are visible.",
+        "expected_results": "The card should display accurate and detailed information about energy generation and consumption. 7. Next Steps : The next step is to continue evaluating the webpage's design and layout to ensure it adheres to the specified requirements, including color consistency and alignment checks.",
+        "procedure": [
+          "Hover over the Energy Analytics card.",
+          "Verify that the card displays accurate and detailed information about energy generation and consumption."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Review Environmental Conditions Card Design",
+        "objective": "To verify that the Environmental Conditions Card adheres to the design standards of the application.",
+        "coverage_element": "Environmental Conditions Card : Card displaying environmental conditions",
+        "preconditions": "The web application is open and the user is logged in.",
+        "expected_results": "The Environmental Conditions Card should have a consistent design with other cards, including color scheme, font size, and layout.",
+        "procedure": [
+          "Navigate to the Solar Energy Dashboard.",
+          "Locate the Environmental Conditions Card and visually inspect its design."
+        ]
+      }
+    ]
+  },
+  "element_requirement": [
+    "1. Power Generation Card : Card displaying current power generation and percentage change",
+    "2. Power Consumption Card : Card showing current power consumption and percentage change",
+    "3. Battery Status Card : Card indicating current battery charge level and status",
+    "4. Energy Analytics Card : Card with a graph of power generation and consumption over time, with toggle buttons for daily, weekly, monthly views",
+    "5. Daily Energy Graph : Card showing power generation and consumption levels over each hour, with 10:00 data point highlighted on hover",
+    "6. Analytics Button : Button to access the Analytics section",
+    "7. Time Period Tabs : Buttons to switch between Daily, Weekly, and Monthly views",
+    "8. Navigation Buttons : Buttons for system check, maintenance, analytics, and settings",
+    "9. Solar Dashboard Card : Card displaying solar dashboard information",
+    "10. Environmental Conditions Card : Card displaying environmental conditions",
+    "11. Energy Flow Card : Card displaying energy flow information"
+  ]
+}

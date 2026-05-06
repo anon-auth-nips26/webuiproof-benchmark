@@ -1,0 +1,370 @@
+{
+  "website_summary": {
+    "name": "Gangsta SDK Developer Portal",
+    "description": "The website is sleek and modern, featuring vibrant colors and smooth animations that enhance the user experience while guiding developers through integrating AI video generation into iOS applications.",
+    "category": "User Interaction",
+    "appearance": "The website has a clean and professional design with a prominent header containing navigation links such as \"Introduction,\" \"Getting Started,\" \"Code Sample,\" and \"Showcase.\" The main content area includes sections like \"AI-Powered Video Generation for iOS,\" which highlights the service's purpose. There are interactive buttons like \"Get Started\" and \"See Examples,\" along with visually appealing cards describing features such as \"Easy Integration,\" \"Realistic AI,\" and \"Customizable.\" The footer contains social media links and documentation access. Animations like hover effects and transitions between sections add a dynamic feel, while the use of gradients and shadows creates depth.",
+    "functionality": "The website offers several functionalities aimed at iOS developers. It provides an introduction to the Gangsta SDK, including its benefits and key features. Developers can get started by signing up for an API key and installing the SDK via Swift Package Manager. Code samples demonstrate integration within iOS projects, and a showcase section displays real-world examples of generated videos. The site also includes a dark mode toggle for user preference adjustments."
+  },
+  "test_cases": {
+    "functionality_testing": [
+      {
+        "id": "TC001",
+        "name": "API Key Setup Steps Test",
+        "objective": "To verify the interaction outcomes of the API Key setup instructions Visit developer portal, Create account or log in, Generate new API key, Visit developer portal, Create account or log in, Generate new API key, and Visit developer portal, Create account or log in, Generate new API key.",
+        "coverage_element": "Visit developer portal, Create account or log in, Generate new API key",
+        "preconditions": "Being on the \"Getting Started\" page.",
+        "expected_results": "Interaction with each step should lead to the respective developer portal page actions or results. 7. Next Steps : Click on Visit developer portal to proceed with API Key setup steps.",
+        "procedure": [
+          "Click on Visit developer portal.",
+          "Click on Create account or log in.",
+          "Click on Generate new API key."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Code Sample Section Click Test",
+        "objective": "To verify that clicking the Code Sample tab navigates to the correct section and displays the expected code.",
+        "coverage_element": "Code Sample",
+        "preconditions": "The webpage is loaded, and no section has been selected yet.",
+        "expected_results": "The Code Sample section is displayed with the relevant code snippet.",
+        "procedure": [
+          "Click on the Code Sample tab.",
+          "Verify that the page transitions to the Code Sample section.",
+          "Confirm the visibility of the Swift code for `VideoGeneratorView.swift`."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Getting Started Navigation Test",
+        "objective": "To verify that clicking the Getting Started navigation link directs the user to the appropriate section.",
+        "coverage_element": "Getting Started",
+        "preconditions": "User is on the homepage.",
+        "expected_results": "The page should navigate to the \"Getting Started\" section. 7. Next Steps : Click on the \"Getting Started\" navigation link to proceed with the task.",
+        "procedure": [
+          "Click on the Getting Started navigation link.",
+          "Verify that the page navigates to the \"Getting Started\" section."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Scroll to Locate Showcase Section Test",
+        "objective": "To verify that further scrolling down reveals the \"Showcase\" section.",
+        "coverage_element": "[WINDOW]",
+        "preconditions": "The webpage has been scrolled once but the \"Showcase\" section is still not visible.",
+        "expected_results": "The \"Showcase\" section should be visible after further scrolling. 7. Next Steps : Scroll down further to locate the \"Showcase\" section.",
+        "procedure": [
+          "Scroll down the webpage again until the \"Showcase\" section is visible."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Navigation Link Introduction",
+        "objective": "To verify that clicking the 'Introduction' navigation link directs users to the introduction section.",
+        "coverage_element": "Introduction : Navigation link for the introduction section",
+        "preconditions": "User is on the homepage of the web application.",
+        "expected_results": "The user is directed to the introduction section of the website.",
+        "procedure": [
+          "Navigate to the homepage.",
+          "Click on the 'Introduction' navigation link."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Navigation Link Showcase",
+        "objective": "To verify that clicking the 'Showcase' navigation link directs users to the showcase section.",
+        "coverage_element": "Showcase : Navigation link for the showcase section",
+        "preconditions": "User is on the homepage of the web application.",
+        "expected_results": "The user is directed to the showcase section of the website.",
+        "procedure": [
+          "Navigate to the homepage.",
+          "Click on the 'Showcase' navigation link."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "Get Started Button",
+        "objective": "To verify that clicking the 'Get Started' button leads to the getting started guide.",
+        "coverage_element": "Get Started : Button leading to the getting started guide",
+        "preconditions": "User is on the homepage of the web application.",
+        "expected_results": "The user is directed to the getting started guide.",
+        "procedure": [
+          "Navigate to the homepage.",
+          "Click on the 'Get Started' button."
+        ]
+      },
+      {
+        "id": "TC008",
+        "name": "See Examples Button",
+        "objective": "To verify that clicking the 'See Examples' button displays examples.",
+        "coverage_element": "See Examples : Button to view examples",
+        "preconditions": "User is on the homepage of the web application.",
+        "expected_results": "Examples related to the service are displayed.",
+        "procedure": [
+          "Navigate to the homepage.",
+          "Click on the 'See Examples' button."
+        ]
+      }
+    ],
+    "data_display_testing": [
+      {
+        "id": "TC001",
+        "name": "General Information Card Display",
+        "objective": "To verify that the general information card about iOS video generation is correctly displayed.",
+        "coverage_element": "Card 0 : General information card about iOS video generation",
+        "preconditions": "User is on the relevant page of the web application.",
+        "expected_results": "The card is visible and contains accurate information about iOS video generation.",
+        "procedure": [
+          "Navigate to the relevant page.",
+          "Verify the visibility and content of the general information card."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Developer Portal Step",
+        "objective": "To verify that the step indicating to visit the developer portal is correctly displayed.",
+        "coverage_element": "Visit developer portal : Step indicating to visit the developer portal",
+        "preconditions": "User is on the relevant page of the web application.",
+        "expected_results": "The step is visible and correctly indicates visiting the developer portal.",
+        "procedure": [
+          "Navigate to the relevant page.",
+          "Verify the visibility and text of the step indicating to visit the developer portal."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Account Creation or Login Step",
+        "objective": "To verify that the step to create an account or log in is correctly displayed.",
+        "coverage_element": "Create account or log in : Step to create an account or log in",
+        "preconditions": "User is on the relevant page of the web application.",
+        "expected_results": "The step is visible and correctly indicates creating an account or logging in.",
+        "procedure": [
+          "Navigate to the relevant page.",
+          "Verify the visibility and text of the step to create an account or log in."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Examples Card Display",
+        "objective": "To verify that the card displaying examples of videos generated using AI is correctly shown.",
+        "coverage_element": "Card 1 : Examples of videos that can be generated using AI",
+        "preconditions": "User is on the relevant page of the web application.",
+        "expected_results": "The card is visible and contains examples of videos generated using AI.",
+        "procedure": [
+          "Navigate to the relevant page.",
+          "Verify the visibility and content of the examples card."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Real-World Examples Card Display",
+        "objective": "To verify that the card displaying real-world examples of video generation applications is correctly shown.",
+        "coverage_element": "Card 2 : Real-World Examples of video generation applications",
+        "preconditions": "User is on the relevant page of the web application.",
+        "expected_results": "The card is visible and contains real-world examples of video generation applications.",
+        "procedure": [
+          "Navigate to the relevant page.",
+          "Verify the visibility and content of the real-world examples card."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Code Integration Card Display",
+        "objective": "To verify that the code integration card with partial Swift code and a 'Show Full Code' link is correctly shown.",
+        "coverage_element": "Card 3 : Code Integration card with partial Swift code and a \"Show Full Code\" link",
+        "preconditions": "User is on the relevant page of the web application.",
+        "expected_results": "The card is visible and contains partial Swift code with a functional 'Show Full Code' link.",
+        "procedure": [
+          "Navigate to the relevant page.",
+          "Verify the visibility and content of the code integration card, then click the 'Show Full Code' link."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "AI Video Generation Demo Card Display",
+        "objective": "To verify that the AI video generation demo card is correctly shown.",
+        "coverage_element": "Card 4 : An AI Video Generation Demo",
+        "preconditions": "User is on the relevant page of the web application.",
+        "expected_results": "The card is visible and contains a functioning AI video generation demo.",
+        "procedure": [
+          "Navigate to the relevant page.",
+          "Verify the visibility and functionality of the AI video generation demo card."
+        ]
+      },
+      {
+        "id": "TC008",
+        "name": "Customizable Control Card Display",
+        "objective": "To verify that the customizable control card is correctly shown.",
+        "coverage_element": "Card 5 : Customizable Control card",
+        "preconditions": "User is on the relevant page of the web application.",
+        "expected_results": "The card is visible and contains customizable control options.",
+        "procedure": [
+          "Navigate to the relevant page.",
+          "Verify the visibility and content of the customizable control card."
+        ]
+      },
+      {
+        "id": "TC009",
+        "name": "Easy Integration Card Display",
+        "objective": "To verify that the easy integration card is correctly shown.",
+        "coverage_element": "Card 6 : Easy Integration card",
+        "preconditions": "User is on the relevant page of the web application.",
+        "expected_results": "The card is visible and contains information about easy integration.",
+        "procedure": [
+          "Navigate to the relevant page.",
+          "Verify the visibility and content of the easy integration card."
+        ]
+      },
+      {
+        "id": "TC010",
+        "name": "Realistic AI Card Display",
+        "objective": "To verify that the realistic AI card is correctly shown.",
+        "coverage_element": "Card 7 : Realistic AI card",
+        "preconditions": "User is on the relevant page of the web application.",
+        "expected_results": "The card is visible and contains information about realistic AI.",
+        "procedure": [
+          "Navigate to the relevant page.",
+          "Verify the visibility and content of the realistic AI card."
+        ]
+      },
+      {
+        "id": "TC011",
+        "name": "Getting Started Content Card Display",
+        "objective": "To verify that the getting started content card is correctly shown.",
+        "coverage_element": "Card 9 : Getting Started content card",
+        "preconditions": "User is on the relevant page of the web application.",
+        "expected_results": "The card is visible and contains getting started content.",
+        "procedure": [
+          "Navigate to the relevant page.",
+          "Verify the visibility and content of the getting started content card."
+        ]
+      },
+      {
+        "id": "TC012",
+        "name": "Code Sample Card Display",
+        "objective": "To verify that the code sample card is correctly shown.",
+        "coverage_element": "Card 11 : Code Sample card",
+        "preconditions": "User is on the relevant page of the web application.",
+        "expected_results": "The card is visible and contains a code sample.",
+        "procedure": [
+          "Navigate to the relevant page.",
+          "Verify the visibility and content of the code sample card."
+        ]
+      },
+      {
+        "id": "TC013",
+        "name": "Introduction Card Display",
+        "objective": "To verify that the introduction card is correctly shown.",
+        "coverage_element": "Card 12 : Introduction card",
+        "preconditions": "User is on the relevant page of the web application.",
+        "expected_results": "The card is visible and contains introductory content.",
+        "procedure": [
+          "Navigate to the relevant page.",
+          "Verify the visibility and content of the introduction card."
+        ]
+      },
+      {
+        "id": "TC014",
+        "name": "Dark Mode Card Display",
+        "objective": "To verify that the dark mode card is correctly shown.",
+        "coverage_element": "Card 13 : Dark Mode card",
+        "preconditions": "User is on the relevant page of the web application.",
+        "expected_results": "The card is visible and contains information about dark mode.",
+        "procedure": [
+          "Navigate to the relevant page.",
+          "Verify the visibility and content of the dark mode card."
+        ]
+      },
+      {
+        "id": "TC015",
+        "name": "Showcase Content Card Display",
+        "objective": "To verify that the showcase content card is correctly shown.",
+        "coverage_element": "Card 14 : Showcase content card",
+        "preconditions": "User is on the relevant page of the web application.",
+        "expected_results": "The card is visible and contains showcase content.",
+        "procedure": [
+          "Navigate to the relevant page.",
+          "Verify the visibility and content of the showcase content card."
+        ]
+      }
+    ],
+    "design_validation_testing": [
+      {
+        "id": "TC001",
+        "name": "UI Design and Style Test: Alignment of Cards",
+        "objective": "To verify that the alignment of cards in the lower sections is visually balanced and consistent in design.",
+        "coverage_element": "Alignment of cards within the lower content areas.",
+        "preconditions": "",
+        "expected_results": "Confirmation that the alignment of cards is visually balanced and consistent, ensuring a well-organized and aesthetically pleasing layout. 7. Next Steps : Next, I will scroll up to ensure that the alignment and color consistency of UI elements in the upper sections match those of the lower sections for a holistic evaluation of the webpage's design.",
+        "procedure": [
+          "Evaluate the alignment of cards to ensure they are evenly spaced and have similar sizes and shapes.",
+          "Cross-check the alignment with the guidelines to ensure all cards follow the same alignment principles.",
+          "Compare the alignment in this section with the upper sections for consistency."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "UI Design and Style Test: Color Palette",
+        "objective": "To verify the color scheme is consistent and meets design requirements across the UI elements.",
+        "coverage_element": "Design inheritance and style fidelity.",
+        "preconditions": "",
+        "expected_results": "Confirmation that the color palette is consistently applied across all elements with no deviation, ensuring visual coherence. 7. Next Steps : Next, I will interact with the Dark Mode toggle to evaluate the color scheme under a dark theme. This will allow evaluating the adaptation of the theme and its effect on consistency and alignment.",
+        "procedure": [
+          "Inspect the header, main text, and card elements to ensure they follow the color scheme of whites and blues.",
+          "Use tools or manually cross-check color codes for consistency and adherence to any design standards.",
+          "Ensure adequate contrasting of text over backgrounds for visibility."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "UI Design and Style Test: Layout and Alignment",
+        "objective": "To verify that the layout and alignment of UI elements remain consistent and visually balanced in dark mode.",
+        "coverage_element": "Layout and alignment of UI elements.",
+        "preconditions": "",
+        "expected_results": "Confirmation that the layout and alignment of UI elements are consistent and visually balanced in dark mode, matching the design guidelines. 7. Next Steps : Next, I will scroll down to inspect the alignment and color consistency of UI elements in the lower sections of the webpage.",
+        "procedure": [
+          "Inspect the header, main content area, and cards to ensure they are properly aligned and visually balanced.",
+          "Verify that buttons and text elements maintain their positions and sizes relative to other elements.",
+          "Compare the layout and alignment in dark mode with those in light mode to ensure consistency."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Toggle Dark Mode",
+        "objective": "To verify that the dark mode button toggles the theme between light and dark modes.",
+        "coverage_element": "🌙 Dark Mode : Button to toggle dark mode",
+        "preconditions": "User is on any page of the web application.",
+        "expected_results": "The theme of the website switches between light and dark modes upon clicking the button.",
+        "procedure": [
+          "Navigate to any page of the web application.",
+          "Click on the 'Dark Mode' button and observe the change in theme."
+        ]
+      }
+    ]
+  },
+  "element_requirement": [
+    "1. Introduction : Navigation link for the introduction section",
+    "2. Getting Started : Navigation link for the getting started section",
+    "3. Code Sample : Navigation link for the code sample section",
+    "4. Showcase : Navigation link for the showcase section",
+    "5. 🌙 Dark Mode : Button to toggle dark mode",
+    "6. Get Started : Button leading to the getting started guide",
+    "7. See Examples : Button to view examples",
+    "8. Card 0 : General information card about iOS video generation",
+    "9. Visit developer portal : Step indicating to visit the developer portal",
+    "10. Create account or log in : Step to create an account or log in",
+    "11. Generate new API key : Step to generate a new API key",
+    "12. Card 1 : Examples of videos that can be generated using AI",
+    "13. Card 2 : Real-World Examples of video generation applications",
+    "14. Card 3 : Code Integration card with partial Swift code and a \"Show Full Code\" link",
+    "15. Card 4 : An AI Video Generation Demo",
+    "16. Card 5 : Customizable Control card",
+    "17. Card 6 : Easy Integration card",
+    "18. Card 7 : Realistic AI card",
+    "19. Card 9 : Getting Started content card",
+    "20. Card 11 : Code Sample card",
+    "21. Card 12 : Introduction card",
+    "22. Card 13 : Dark Mode card",
+    "23. Card 14 : Showcase content card"
+  ]
+}

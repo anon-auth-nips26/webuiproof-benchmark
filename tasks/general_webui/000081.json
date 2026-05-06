@@ -1,0 +1,211 @@
+{
+  "website_summary": {
+    "name": "HTML CodeCraft Studio",
+    "description": "The website presents a sleek, dual-pane interface with a live HTML editor on the left and a real-time preview pane on the right, featuring a minimalist design with honeydew backgrounds and dark olive green accents.",
+    "category": "User Interaction",
+    "appearance": "The website features a clean and organized layout divided into two main sections: an HTML editor on the left and a preview pane on the right. The editor displays the HTML code with syntax highlighting, while the preview pane shows the rendered output of the code. The top navigation bar includes buttons for switching modes, saving projects/templates, accessing guides, and toggling dark mode. The bottom section provides options for managing projects and template pages. The overall design uses a honeydew background color with dark olive green highlights for buttons and icons, creating a visually appealing and functional workspace.",
+    "functionality": "The website offers several key functionalities: \n- A live HTML editor with syntax highlighting that allows users to write and edit HTML code.\n- A real-time preview pane that instantly reflects changes made in the editor.\n- Options to switch between HTML code and text editing modes.\n- Features for saving projects and templates.\n- A guide for users to learn more about the editor’s capabilities.\n- A console for debugging purposes.\n- Project management tools for organizing multiple HTML documents, images, and other files.\n- Dark mode toggle for better visibility in low-light conditions."
+  },
+  "test_cases": {
+    "functionality_testing": [
+      {
+        "id": "TC001",
+        "name": "Editor Pane Textarea Test",
+        "objective": "To verify that modifying the text in the Editor pane textarea updates the Preview pane content.",
+        "coverage_element": "Editor Pane Textarea",
+        "preconditions": "The Editor pane displays the initial text `<h1>Hello World!</h1>`.",
+        "expected_results": "The Preview pane should display \"Welcome!\" immediately after the text is modified in the Editor pane. 7. Next Steps : Modify the text in the Editor pane textarea to \"Welcome!\".",
+        "procedure": [
+          "Type \"Welcome!\" in the Editor pane textarea.",
+          "Verify that the Preview pane updates to display \"Welcome!\"."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Refresh Button Test",
+        "objective": "To verify that clicking the Refresh Button updates the preview.",
+        "coverage_element": "Refresh Button",
+        "preconditions": "The new paragraph is added in the Editor pane.",
+        "expected_results": "The preview should display the new paragraph.",
+        "procedure": [
+          "Click on the Refresh Button.",
+          "Verify that the preview updates to show the new paragraph."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Switch to HTML Mode Test",
+        "objective": "To verify that clicking the Switch to HTML Mode button toggles the editor back to HTML mode while retaining the content.",
+        "coverage_element": "Switch to HTML Mode",
+        "preconditions": "The editor is currently in Text mode with the content \"Hello World!\".",
+        "expected_results": "The editor should display the content in HTML format (`<h1>Hello World!</h1>`).",
+        "procedure": [
+          "Click on the Switch to HTML Mode button.",
+          "Verify that the editor switches to HTML mode and displays the content as HTML code."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Switch to Text Mode Test",
+        "objective": "To verify that clicking the Switch to Text Mode button toggles the editor to text mode.",
+        "coverage_element": "Switch to Text Mode",
+        "preconditions": "The editor is currently in HTML mode.",
+        "expected_results": "The editor should display the content in plain text format. 7. Next Steps : Click the \"Switch to Text Mode\" button to proceed with the task.",
+        "procedure": [
+          "Click on the Switch to Text Mode button.",
+          "Verify that the editor switches to text mode and displays plain text instead of HTML code."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Toggle Dark Mode Functionality",
+        "objective": "To verify that the dark mode can be toggled successfully.",
+        "coverage_element": "Dark Mode : Button to toggle dark mode",
+        "preconditions": "The application is running in light mode.",
+        "expected_results": "The application switches to dark mode when the button is clicked, and all elements adjust their colors accordingly.",
+        "procedure": [
+          "Click the 'Dark Mode' button in the top navigation bar.",
+          "Verify that the application switches to dark mode."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Save Project Button Functionality",
+        "objective": "To verify that the project can be saved successfully.",
+        "coverage_element": "Save Project : Button to save the project",
+        "preconditions": "A project is open and has been modified.",
+        "expected_results": "The project is saved without errors, and any modifications are preserved.",
+        "procedure": [
+          "Click the 'Save Project' button.",
+          "Verify that the project is saved by checking for confirmation messages or reloading the project."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "Save Template Button Functionality",
+        "objective": "To verify that the project can be saved as a template successfully.",
+        "coverage_element": "Save Template : Button to save as template",
+        "preconditions": "A project is open and ready to be saved as a template.",
+        "expected_results": "The project is saved as a template without errors, and it appears in the templates list.",
+        "procedure": [
+          "Click the 'Save Template' button.",
+          "Verify that the project is saved as a template by checking the templates list."
+        ]
+      },
+      {
+        "id": "TC008",
+        "name": "Guide Button Functionality",
+        "objective": "To verify that the guide can be accessed successfully.",
+        "coverage_element": "Guide : Button for guidance",
+        "preconditions": "The application is running and the user needs guidance.",
+        "expected_results": "The guide opens, providing the necessary information to assist the user.",
+        "procedure": [
+          "Click the 'Guide' button in the top navigation bar.",
+          "Verify that the guide content is displayed correctly."
+        ]
+      },
+      {
+        "id": "TC009",
+        "name": "Console Button Functionality",
+        "objective": "To verify that the console can be opened successfully.",
+        "coverage_element": "Console : Button to open console",
+        "preconditions": "The application is running and the user needs to access the console.",
+        "expected_results": "The console opens, allowing the user to view logs and other debugging information.",
+        "procedure": [
+          "Click the 'Console' button in the top navigation bar.",
+          "Verify that the console is displayed and operational."
+        ]
+      },
+      {
+        "id": "TC010",
+        "name": "New Project Button Functionality",
+        "objective": "To verify that a new project can be created successfully.",
+        "coverage_element": "+ New : Button to create a new project",
+        "preconditions": "The application is running and no project is currently open.",
+        "expected_results": "A new project is created, and the editor is initialized with default settings.",
+        "procedure": [
+          "Click the '+ New' button.",
+          "Verify that a new project is created and the editor is ready for use."
+        ]
+      }
+    ],
+    "data_display_testing": [
+      {
+        "id": "TC001",
+        "name": "Preview Card Display Test",
+        "objective": "To verify that the Preview Card displays the rendered HTML correctly.",
+        "coverage_element": "Preview Card",
+        "preconditions": "The new paragraph is added and the preview is refreshed.",
+        "expected_results": "The preview should show the heading and the new paragraph.",
+        "procedure": [
+          "Observe the content of the Preview Card.",
+          "Verify that the new paragraph is displayed correctly."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "HTML Editor Card Display",
+        "objective": "To verify that the HTML Editor Card displays the top navigation bar buttons correctly.",
+        "coverage_element": "HTML Editor Card : Displays the top navigation bar buttons",
+        "preconditions": "The application is running.",
+        "expected_results": "The HTML Editor Card shows all top navigation bar buttons clearly and in the correct order.",
+        "procedure": [
+          "Observe the HTML Editor Card.",
+          "Verify that all top navigation bar buttons are displayed correctly."
+        ]
+      }
+    ],
+    "design_validation_testing": [
+      {
+        "id": "TC001",
+        "name": "UI Design and Style Test: Button Styling",
+        "objective": "To verify that the buttons in the top navigation bar are styled with dark olive green.",
+        "coverage_element": "Button Styling",
+        "preconditions": "",
+        "expected_results": "All buttons should be styled with dark olive green.",
+        "procedure": [
+          "Observe the color of buttons Button Styling.",
+          "Compare with dark olive green."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "UI Design and Style Test: Editor Background Color",
+        "objective": "To verify that the background colors of the editor and preview sections are honeydew.",
+        "coverage_element": "Editor and Preview Background Color",
+        "preconditions": "",
+        "expected_results": "The editor and preview sections should display a honeydew background.",
+        "procedure": [
+          "Hover over Editor and Preview Background Color, Editor and Preview Background Color, and Editor and Preview Background Color to inspect backgrounds.",
+          "Compare the observed background colors with honeydew."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Editor Card Design Validation",
+        "objective": "To verify that the Editor Card adheres to the design specifications.",
+        "coverage_element": "Editor Card : Card containing the Editor pane",
+        "preconditions": "The application is running.",
+        "expected_results": "The Editor Card matches the design specifications, including color scheme, layout, and button styles.",
+        "procedure": [
+          "Inspect the Editor Card.",
+          "Verify that it matches the design specifications, focusing on color, layout, and button styles."
+        ]
+      }
+    ]
+  },
+  "element_requirement": [
+    "1. Dark Mode : Button to toggle dark mode",
+    "2. Switch to Text Mode : Button to switch the editor mode",
+    "3. Save Project : Button to save the project",
+    "4. Save Template : Button to save as template",
+    "5. Guide : Button for guidance",
+    "6. Console : Button to open console",
+    "7. Editor Pane : Textarea for writing HTML code",
+    "8. Refresh : Button to refresh the preview",
+    "9. + New : Button to create a new project",
+    "10. HTML Editor Card : Displays the top navigation bar buttons",
+    "11. Editor Card : Card containing the Editor pane",
+    "12. Preview Card : Card showing the preview of the HTML code"
+  ]
+}

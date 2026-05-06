@@ -1,0 +1,204 @@
+{
+  "website_summary": {
+    "name": "Community Q&A Hub",
+    "description": "The website features a clean and organized interface with a beige background and saddle brown accents, designed for easy interaction and readability.",
+    "category": "User Interaction",
+    "appearance": "The website has a simple yet effective design. It includes a header with the site logo (\"Ask & Answer\") and a tagline (\"Get answers to your questions\"). The main navigation area contains a search bar for finding existing questions and a button to submit new ones. On the left sidebar, there's a section titled \"Ask a Question,\" which includes a form for users to submit their queries. Below this, another section explains \"How it Works,\" outlining the three steps: asking a question, getting answers, and rating them. The central part of the page displays a message indicating no questions were found, suggesting users adjust their search or ask a new question. The footer provides links to additional resources such as About, Help, Privacy, and Terms. The overall color scheme uses beige for the background and saddle brown for the primary components, creating a warm and inviting atmosphere.",
+    "functionality": "The website offers several key functionalities. Users can submit questions via a dedicated form, which requires them to type their query into a text box and click a \"Submit Question\" button. There’s also a search bar allowing users to look for existing questions and answers. Additionally, the site enables users to get answers from the community and rate those answers to help others find the most useful responses. The footer links provide access to further information about the platform, including its policies and guidelines."
+  },
+  "test_cases": {
+    "functionality_testing": [
+      {
+        "id": "TC001",
+        "name": "Adjust Search Query Test",
+        "objective": "To verify that adjusting the search query in the Search Bar and resubmitting it triggers the search function and displays relevant results.",
+        "coverage_element": "Search Bar",
+        "preconditions": "The search bar contains a relevant keyword.",
+        "expected_results": "The search results should display a list of questions matching the new keyword. 7. Next Steps : Clear the current search query and enter a different keyword to see if any matching questions are found.",
+        "procedure": [
+          "Clear the current search query.",
+          "Enter a different keyword into the Search Bar.",
+          "Click the search icon or press Enter to submit the search query.",
+          "Verify that the search results are displayed."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Ask a Question Card Test",
+        "objective": "To verify that the Ask a Question Card displays correctly and allows users to enter questions.",
+        "coverage_element": "Ask a Question Card",
+        "preconditions": "The card is visible and accessible.",
+        "expected_results": "The question should be submitted without errors, and the card should display the entered question.",
+        "procedure": [
+          "Hover over the Ask a Question Card.",
+          "Click on the Question Input textbox.",
+          "Enter a question and click the Submit Question Button.",
+          "Verify that the question is submitted successfully."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Close Button Test",
+        "objective": "To verify that clicking the Close Button closes the search bar.",
+        "coverage_element": "Close Button",
+        "preconditions": "The close button is visible.",
+        "expected_results": "The search bar should be closed.",
+        "procedure": [
+          "Click on the Close Button.",
+          "Verify that the search bar is closed."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Footer Links Test",
+        "objective": "To verify that the footer links (About Link, Help Link, Privacy Link, Terms Link) are functional and visually aligned with the rest of the page.",
+        "coverage_element": "Footer Links",
+        "preconditions": "The footer links are visible and accessible.",
+        "expected_results": "Each footer link should load the corresponding page without errors, and the links should be visually aligned with the rest of the page. 7. Next Steps : Since we have scrolled through the entire page and observed the color consistency and element alignment, we can conclude the task.",
+        "procedure": [
+          "Click on each footer link (Footer Links, Footer Links, Footer Links, Footer Links).",
+          "Verify that the corresponding page loads correctly.",
+          "Observe the alignment and visual consistency of the footer links."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Question Input Box Test",
+        "objective": "To verify that the Question Input Box allows text entry and submission.",
+        "coverage_element": "Question Input Box",
+        "preconditions": "The webpage is loaded and ready for interaction.",
+        "expected_results": "The question should be submitted successfully and visible in the list of questions.",
+        "procedure": [
+          "Type a sample question into the Question Input Box.",
+          "Click the Submit Question Button.",
+          "Verify that the question is submitted successfully and appears in the list of questions."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Search Bar Test",
+        "objective": "To verify that the Search Bar allows users to enter search keywords and triggers the search function.",
+        "coverage_element": "Search Bar",
+        "preconditions": "The search bar is visible and accessible.",
+        "expected_results": "The search results should display a list of questions matching the entered keyword. 7. Next Steps : Enter a relevant keyword into the search bar to proceed with the search.",
+        "procedure": [
+          "Type a relevant keyword into the Search Bar.",
+          "Press Enter or click the search icon.",
+          "Verify that the search results are displayed."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "Search Submission Test",
+        "objective": "To verify that submitting the search query in the Search Bar triggers the search function and displays relevant results.",
+        "coverage_element": "Search Bar",
+        "preconditions": "The search bar contains a relevant keyword.",
+        "expected_results": "The search results should display a list of questions matching the entered keyword. 7. Next Steps : Submit the search query to see if any matching questions are found.",
+        "procedure": [
+          "Click the search icon or press Enter to submit the search query.",
+          "Verify that the search results are displayed."
+        ]
+      },
+      {
+        "id": "TC008",
+        "name": "Submit Question Button Test",
+        "objective": "To verify that clicking the Submit Question Button submits the entered question.",
+        "coverage_element": "Submit Question Button",
+        "preconditions": "A question has been entered into the Question Input Box.",
+        "expected_results": "The question should be submitted successfully and visible in the list of questions.",
+        "procedure": [
+          "Click the Submit Question Button.",
+          "Verify that the question is submitted successfully and appears in the list of questions."
+        ]
+      },
+      {
+        "id": "TC009",
+        "name": "Test New Question Button Functionality",
+        "objective": "To verify that clicking the 'New Question Button' initiates the process of asking a new question.",
+        "coverage_element": "New Question Button : Button to initiate asking a new question",
+        "preconditions": "User is logged into the application and is on the main page.",
+        "expected_results": "Upon clicking the 'New Question Button', the user should be directed to the 'Ask a Question' form.",
+        "procedure": [
+          "Navigate to the main page of the application.",
+          "Locate and click the 'New Question Button'."
+        ]
+      }
+    ],
+    "data_display_testing": [
+      {
+        "id": "TC001",
+        "name": "How it Works Card Test",
+        "objective": "To verify that the How it Works Card displays the correct instructions and is visually aligned with the rest of the page.",
+        "coverage_element": "How it Works Card",
+        "preconditions": "The card is visible and accessible.",
+        "expected_results": "The card should display the correct instructions without any alignment issues. 7. Next Steps : Continue scrolling down to ensure the entire page has been evaluated for color consistency and element alignment.",
+        "procedure": [
+          "Hover over the How it Works Card.",
+          "Observe the content and alignment of the card.",
+          "Verify that the instructions are clear and concise."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "No Questions Found Card Display Test",
+        "objective": "To verify that the No Questions Found Card displays the correct message when no questions are found.",
+        "coverage_element": "No Questions Found Card",
+        "preconditions": "No questions are found.",
+        "expected_results": "The No Questions Found Card should display the correct message. 7. Next Steps : The next step is to type a keyword into the search bar and press Enter to initiate a search.",
+        "procedure": [
+          "Perform a search that yields no results.",
+          "Verify that the No Questions Found Card displays the correct message."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Test New Question Card Display",
+        "objective": "To verify that the 'New Question Card' is correctly displayed and prompts users to ask new questions.",
+        "coverage_element": "New Question Card : Card prompting users to ask new questions",
+        "preconditions": "User is logged into the application and is on the main page.",
+        "expected_results": "The 'New Question Card' should be visible and contain clear instructions or prompts for asking new questions.",
+        "procedure": [
+          "Navigate to the main page of the application.",
+          "Verify the presence and content of the 'New Question Card'."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Test How It Works Card Content",
+        "objective": "To verify that the 'How It Works Card' accurately explains the process of asking a question.",
+        "coverage_element": "How It Works Card : Card explaining the process of asking a question",
+        "preconditions": "User is logged into the application and is on the main page.",
+        "expected_results": "The 'How It Works Card' should display the three steps : asking a question, getting answers, and rating them.",
+        "procedure": [
+          "Navigate to the main page of the application.",
+          "Check the content of the 'How It Works Card' for the specified steps."
+        ]
+      }
+    ],
+    "design_validation_testing": [
+      {
+        "id": "TC001",
+        "name": "Test User Profile Card Design",
+        "objective": "To verify that the 'User Profile Card' adheres to the application's design standards.",
+        "coverage_element": "User Profile Card : Card displaying user profile information",
+        "preconditions": "User is logged into the application and is on the main page.",
+        "expected_results": "The 'User Profile Card' should use the correct color scheme and layout consistent with the rest of the application.",
+        "procedure": [
+          "Navigate to the main page of the application.",
+          "Inspect the 'User Profile Card' for adherence to design standards."
+        ]
+      }
+    ]
+  },
+  "element_requirement": [
+    "1. Question Input Box : Textbox for entering the question",
+    "2. Submit Question Button : Button to submit the entered question",
+    "3. Search Bar : Search bar for finding questions and answers",
+    "4. New Question Button : Button to initiate asking a new question",
+    "5. New Question Card : Card prompting users to ask new questions",
+    "6. No Questions Found Card : Card indicating no questions found",
+    "7. How It Works Card : Card explaining the process of asking a question",
+    "8. Ask a Question Card : Card containing the question input box and submit button",
+    "9. User Profile Card : Card displaying user profile information"
+  ]
+}

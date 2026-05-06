@@ -1,0 +1,220 @@
+{
+  "website_summary": {
+    "name": "StreamHub",
+    "description": "StreamHub is a sleek, dark-themed platform designed for live streaming and community interaction, featuring a clean layout with live stream previews, chat functionalities, and personalized channel recommendations.",
+    "category": "User Interaction",
+    "appearance": "The website features a dark theme with a predominantly black background and white text, creating a modern and immersive viewing experience. The layout is divided into three main sections: the left sidebar lists followed and recommended channels, the central area displays live streams and categories, and the right sidebar contains a live chat interface. Live streams are presented with thumbnails indicating viewer counts and stream titles. The sidebar includes interactive elements such as clickable channel names and live status indicators. The chat section allows users to send messages and interact with others in real time.",
+    "functionality": "The website offers several key functions: users can browse and join live streams by clicking on channel names or stream thumbnails. A search bar at the top enables users to find specific content or channels. The chat feature facilitates real-time communication among users. Additionally, there are dropdown menus for browsing categories and accessing other site features. Users can also mark channels as favorites and receive notifications for new streams."
+  },
+  "test_cases": {
+    "functionality_testing": [
+      {
+        "id": "TC001",
+        "name": "Channel 1 Active Test",
+        "objective": "To verify that clicking the Channel 1 button changes its color as expected on the active state.",
+        "coverage_element": "Channel 1",
+        "preconditions": "Website is loaded and ready for interaction.",
+        "expected_results": "The button should change color on the active state.",
+        "procedure": [
+          "Click on the Channel 1 button.",
+          "Observe the color change on the active state."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Channel 1 Hover Test",
+        "objective": "To verify that hovering over the Channel 1 button changes its color as expected.",
+        "coverage_element": "Channel 1",
+        "preconditions": "Website is loaded and ready for interaction.",
+        "expected_results": "The button should change color on hover.",
+        "procedure": [
+          "Hover over the Channel 1 button.",
+          "Observe the color change on hover."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Channel 2 Active Test",
+        "objective": "To verify that clicking the Channel 2 button changes its color as expected on the active state.",
+        "coverage_element": "Channel 2",
+        "preconditions": "Website is loaded and ready for interaction.",
+        "expected_results": "The button should change color on the active state.",
+        "procedure": [
+          "Click on the Channel 2 button.",
+          "Observe the color change on the active state."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Channel 2 Hover Test",
+        "objective": "To verify that hovering over the Channel 2 button changes its color as expected.",
+        "coverage_element": "Channel 2",
+        "preconditions": "Website is loaded and ready for interaction.",
+        "expected_results": "The button should change color on hover.",
+        "procedure": [
+          "Hover over the Channel 2 button.",
+          "Observe the color change on hover."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Channel 3 Hover Test",
+        "objective": "To verify that hovering over the Channel 3 button changes its color as expected.",
+        "coverage_element": "Channel 3",
+        "preconditions": "Website is loaded and ready for interaction.",
+        "expected_results": "The button should change color on hover.",
+        "procedure": [
+          "Hover over the Channel 3 button.",
+          "Observe the color change on hover."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Hover over 12K viewer badge Test",
+        "objective": "To ensure that the viewer count displayed on the Live Stream Thumbnail. live stream with \"12K viewers\" remains accurate and does not fluctuate unexpectedly during a hover action.",
+        "coverage_element": "Live Stream Thumbnail.",
+        "preconditions": "The stream is live, and the viewer count is stable and visible.",
+        "expected_results": "The viewer count badge should remain stable at \"12K viewers,\" without showing any unexpected changes during the hover action. 7. Next Steps : Perform a hover action on the Live Stream Thumbnail. element which contains the \"12K viewers\" live stream, to continue the verification of viewer count accuracy as planned.",
+        "procedure": [
+          "Hover over the viewer count badge on the Live Stream Thumbnail.",
+          "Observe if the \"12K viewers\" count remains stable without unexpected fluctuations."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "Receive Message Test",
+        "objective": "To verify that messages sent by other users are received and displayed in the chat log.",
+        "coverage_element": "[Stream Chat] Section",
+        "preconditions": "The chat section is visible and the \"Send a message\" textbox is empty.",
+        "expected_results": "The message sent by the other user should appear in the chat log immediately after sending. 7. Next Steps : Since the message was successfully sent and received, the task is complete. Proceed to answer the task.",
+        "procedure": [
+          "Have another user send a message in the chat.",
+          "Verify that the message appears in the chat log."
+        ]
+      },
+      {
+        "id": "TC008",
+        "name": "Search Bar Test",
+        "objective": "To verify that entering \"Channel 1\" into the Search Bar and pressing Enter produces the expected search results.",
+        "coverage_element": "Search Bar",
+        "preconditions": "The search bar is empty and the page is fully loaded.",
+        "expected_results": "The search results should display \"Channel 1\" with its live status and viewer count. 7. Next Steps : Enter \"Channel 1\" into the search bar and press Enter to initiate the search.",
+        "procedure": [
+          "Type \"Channel 1\" into the Search Bar",
+          "Press Enter or click the Search Icon",
+          "Verify that the search results highlight \"Channel 1\" with its live status and viewer count."
+        ]
+      },
+      {
+        "id": "TC009",
+        "name": "Send a message Test",
+        "objective": "To verify that typing a message in the Send a message textbox and clicking the 😊Send button sends the message to the chat.",
+        "coverage_element": "Send a message, 😊Send",
+        "preconditions": "The chat section is visible and the \"Send a message\" textbox is empty.",
+        "expected_results": "The message \"Hello everyone!\" should appear in the chat log immediately after sending. 7. Next Steps : Type the message \"Hello everyone!\" in the \"Send a message\" textbox and press the Send button.",
+        "procedure": [
+          "Type \"Hello everyone!\" in the Send a message textbox.",
+          "Click on the 😊Send button.",
+          "Verify that the message \"Hello everyone!\" appears in the chat log."
+        ]
+      },
+      {
+        "id": "TC010",
+        "name": "Test Chat Card Functionality",
+        "objective": "To verify that the chat card allows users to send messages in the stream chat.",
+        "coverage_element": "Chat Card : Card for sending messages in the stream chat",
+        "preconditions": "A live stream is selected and the chat card is visible.",
+        "expected_results": "Users should be able to type and send messages in the chat without issues.",
+        "procedure": [
+          "Select a live stream.",
+          "Type a message in the chat card and send it."
+        ]
+      },
+      {
+        "id": "TC011",
+        "name": "Check Send Message Textbox",
+        "objective": "To verify that the textbox for typing messages functions correctly.",
+        "coverage_element": "Send a message : Textbox for typing messages",
+        "preconditions": "The chat card is open and ready for interaction.",
+        "expected_results": "The textbox should allow input and send the message when the enter key is pressed or the send button is clicked.",
+        "procedure": [
+          "Click on the textbox within the chat card.",
+          "Type a message and send it using both the enter key and the send button."
+        ]
+      },
+      {
+        "id": "TC012",
+        "name": "Browse Button Functionality",
+        "objective": "To verify that the browse button navigates to the content browsing page.",
+        "coverage_element": "Browse : Button for browsing content",
+        "preconditions": "The user is on the homepage where the browse button is visible.",
+        "expected_results": "Clicking the browse button should redirect the user to the content browsing page.",
+        "procedure": [
+          "Locate the browse button on the homepage.",
+          "Click the browse button and verify the redirection."
+        ]
+      }
+    ],
+    "data_display_testing": [
+      {
+        "id": "TC001",
+        "name": "Category Cards Display Test",
+        "objective": "To verify that the Category Cards display accurate category names and are properly aligned.",
+        "coverage_element": "Category Cards",
+        "preconditions": "Website is loaded and ready for interaction.",
+        "expected_results": "Category names should be accurately displayed and aligned. 7. Next Steps : Scroll down the page to observe more UI elements and ensure color consistency and alignment throughout the website.",
+        "procedure": [
+          "Hover over each Category Cards.",
+          "Verify that the category names are displayed correctly and aligned properly."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Verify Channel List Display",
+        "objective": "To verify that the list of followed and recommended channels with live status is correctly displayed.",
+        "coverage_element": "Channel List : List of followed and recommended channels with live status",
+        "preconditions": "User is logged in and has followed channels.",
+        "expected_results": "The channel list should display all followed and recommended channels along with their live status.",
+        "procedure": [
+          "Navigate to the homepage.",
+          "Check the left sidebar for the presence of the channel list."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Validate Stream Cards Information",
+        "objective": "To verify that the stream cards display correct viewer counts and game names.",
+        "coverage_element": "Stream Cards : Cards displaying live streams with viewer counts and game names",
+        "preconditions": "Live streams are available.",
+        "expected_results": "Each stream card should accurately show the current viewer count and the name of the game being streamed.",
+        "procedure": [
+          "Navigate to the central area displaying live streams.",
+          "Verify the information on each stream card."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Live Status Indicator Accuracy",
+        "objective": "To verify that the live status indicator correctly shows the live status of the channel.",
+        "coverage_element": "Live Status : Indicates live status of channel",
+        "preconditions": "Channels have varying statuses (live, not live).",
+        "expected_results": "The live status indicator should accurately reflect whether a channel is currently live or not.",
+        "procedure": [
+          "Navigate to the channel list.",
+          "Check the live status indicator for each channel and compare with actual live status."
+        ]
+      }
+    ],
+    "design_validation_testing": []
+  },
+  "element_requirement": [
+    "1. Search Bar : Text box for entering search queries",
+    "2. Channel List : List of followed and recommended channels with live status",
+    "3. Stream Cards : Cards displaying live streams with viewer counts and game names",
+    "4. Category Cards : Cards for different categories",
+    "5. Chat Card : Card for sending messages in the stream chat",
+    "6. Send a message : Textbox for typing messages",
+    "7. Browse : Button for browsing content",
+    "8. Live Status : Indicates live status of channel"
+  ]
+}

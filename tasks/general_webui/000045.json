@@ -1,0 +1,392 @@
+{
+  "website_summary": {
+    "name": "Paper Cup Manufacturing System Manager",
+    "description": "The website provides a comprehensive dashboard for managing inventory, production, and sales of paper cups with a clean and organized interface.",
+    "category": "Data Management",
+    "appearance": "The website features a sidebar menu with options such as Dashboard, Inventory, Production, Sales, Reports, Customers, and Settings. The main content area displays various sections including a dashboard with key metrics like Raw Materials, Finished Products, Customers, and Inventory Value. There are tables summarizing recent productions, sales, inventory, and sales summaries. The background is light goldenrod (#faf0e6), while UI elements like buttons and headers use olive drab (#6b8e23). The layout is responsive, adapting well to different screen sizes.",
+    "functionality": "The website allows users to manage raw materials and finished products through the Inventory section. It supports tracking production activities via the Production section and records sales transactions in the Sales section. Users can view detailed reports on inventory levels, production outputs, and sales performance. Additionally, it includes customer management features for recording customer details and sales history. Users can export data in Excel or PDF formats directly from the dashboard."
+  },
+  "test_cases": {
+    "functionality_testing": [
+      {
+        "id": "TC001",
+        "name": "Export Excel Test",
+        "objective": "To verify that clicking the Export Excel button initiates the download of an Excel file containing dashboard data.",
+        "coverage_element": "Export Excel",
+        "preconditions": "Dashboard page is open and loaded.",
+        "expected_results": "A download prompt for an Excel file should appear, confirming successful initiation of the export process. 7. Next Steps : Click the \"Export Excel\" button to initiate the export process and verify the download prompt.",
+        "procedure": [
+          "Click on the Export Excel button.",
+          "Verify that a download prompt appears for an Excel file."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Inventory Button Test",
+        "objective": "To verify that clicking the Inventory button navigates to the Inventory section.",
+        "coverage_element": "Inventory",
+        "preconditions": "The application is open and the user is on the Dashboard page.",
+        "expected_results": "The application should navigate to the Inventory section without errors.",
+        "procedure": [
+          "Click on the Inventory button.",
+          "Verify that the page transitions to the Inventory section."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Production Button Test",
+        "objective": "To verify that clicking the Production button navigates to the Production section.",
+        "coverage_element": "Production",
+        "preconditions": "The application is open and the user is on the Dashboard page.",
+        "expected_results": "The application should navigate to the Production section without errors.",
+        "procedure": [
+          "Click on the Production button.",
+          "Verify that the page transitions to the Production section."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Navigate to Dashboard Section",
+        "objective": "To verify that the button correctly navigates to the Dashboard section.",
+        "coverage_element": "Dashboard : Button for navigating to the Dashboard section",
+        "preconditions": "User is logged into the application.",
+        "expected_results": "The user is redirected to the Dashboard section upon clicking the button.",
+        "procedure": [
+          "Click on the 'Dashboard' navigation button.",
+          "Verify that the Dashboard section is displayed."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Navigate to Sales Section",
+        "objective": "To verify that the button correctly navigates to the Sales section.",
+        "coverage_element": "Sales : Button for navigating to the Sales section",
+        "preconditions": "User is logged into the application.",
+        "expected_results": "The user is redirected to the Sales section upon clicking the button.",
+        "procedure": [
+          "Click on the 'Sales' navigation button.",
+          "Verify that the Sales section is displayed."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Navigate to Reports Section",
+        "objective": "To verify that the button correctly navigates to the Reports section.",
+        "coverage_element": "Reports : Button for navigating to the Reports section",
+        "preconditions": "User is logged into the application.",
+        "expected_results": "The user is redirected to the Reports section upon clicking the button.",
+        "procedure": [
+          "Click on the 'Reports' navigation button.",
+          "Verify that the Reports section is displayed."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "Navigate to Customers Section",
+        "objective": "To verify that the button correctly navigates to the Customers section.",
+        "coverage_element": "Customers : Button for navigating to the Customers section",
+        "preconditions": "User is logged into the application.",
+        "expected_results": "The user is redirected to the Customers section upon clicking the button.",
+        "procedure": [
+          "Click on the 'Customers' navigation button.",
+          "Verify that the Customers section is displayed."
+        ]
+      },
+      {
+        "id": "TC008",
+        "name": "Navigate to Settings Section",
+        "objective": "To verify that the button correctly navigates to the Settings section.",
+        "coverage_element": "Settings : Button for navigating to the Settings section",
+        "preconditions": "User is logged into the application.",
+        "expected_results": "The user is redirected to the Settings section upon clicking the button.",
+        "procedure": [
+          "Click on the 'Settings' navigation button.",
+          "Verify that the Settings section is displayed."
+        ]
+      },
+      {
+        "id": "TC009",
+        "name": "Record New Production Entry",
+        "objective": "To verify that the button allows recording new production entries.",
+        "coverage_element": "Record Production : Button for recording new production entries",
+        "preconditions": "User is logged into the application and has access to record production entries.",
+        "expected_results": "The user can successfully record a new production entry.",
+        "procedure": [
+          "Click on the 'Record Production' button.",
+          "Enter valid production details and submit."
+        ]
+      },
+      {
+        "id": "TC010",
+        "name": "Navigate to Previous Page of Production Records",
+        "objective": "To verify that the button correctly navigates to the previous page of production records.",
+        "coverage_element": "Previous : Button for navigating to the previous page of production records",
+        "preconditions": "User is on a page with multiple pages of production records.",
+        "expected_results": "The user is redirected to the previous page of production records upon clicking the button.",
+        "procedure": [
+          "Navigate to a page with multiple pages of production records.",
+          "Click on the 'Previous' navigation button.",
+          "Verify that the previous page of production records is displayed."
+        ]
+      },
+      {
+        "id": "TC011",
+        "name": "Navigate to Next Page of Production Records",
+        "objective": "To verify that the button correctly navigates to the next page of production records.",
+        "coverage_element": "Next : Button for navigating to the next page of production records",
+        "preconditions": "User is on a page with multiple pages of production records.",
+        "expected_results": "The user is redirected to the next page of production records upon clicking the button.",
+        "procedure": [
+          "Navigate to a page with multiple pages of production records.",
+          "Click on the 'Next' navigation button.",
+          "Verify that the next page of production records is displayed."
+        ]
+      }
+    ],
+    "data_display_testing": [
+      {
+        "id": "TC001",
+        "name": "Inventory Summary Card Test",
+        "objective": "To verify that the Inventory Summary Card displays accurate and complete information about the inventory summary, specifically focusing on the \"Paper Roll 1\" data.",
+        "coverage_element": "Inventory Summary Card",
+        "preconditions": "The inventory summary section is visible",
+        "expected_results": "The displayed quantities and tooltips should match the actual inventory data for \"Paper Roll 1\".",
+        "procedure": [
+          "Hover over the \"Quantity\" column for \"Paper Roll 1\" in the Inventory Summary Card",
+          "Verify the tooltip or additional details for accuracy and alignment with the displayed data"
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Verify Dashboard Data Display",
+        "objective": "To verify that the card correctly summarizes dashboard-related data.",
+        "coverage_element": "Dashboard : Card summarizing dashboard-related data",
+        "preconditions": "User is on the Dashboard section.",
+        "expected_results": "The card displays accurate and relevant dashboard-related data.",
+        "procedure": [
+          "Navigate to the Dashboard section.",
+          "Check the content of the dashboard data card for accuracy and relevance."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Verify Inventory Data Display",
+        "objective": "To verify that the card correctly summarizes inventory-related data.",
+        "coverage_element": "Inventory : Card summarizing inventory-related data",
+        "preconditions": "User is on the Inventory section.",
+        "expected_results": "The card displays accurate and relevant inventory-related data.",
+        "procedure": [
+          "Navigate to the Inventory section.",
+          "Check the content of the inventory data card for accuracy and relevance."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Verify Production Data Display",
+        "objective": "To verify that the card correctly summarizes production-related data.",
+        "coverage_element": "Production : Card summarizing production-related data",
+        "preconditions": "User is on the Production section.",
+        "expected_results": "The card displays accurate and relevant production-related data.",
+        "procedure": [
+          "Navigate to the Production section.",
+          "Check the content of the production data card for accuracy and relevance."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Verify Sales Data Display",
+        "objective": "To verify that the card correctly summarizes sales-related data.",
+        "coverage_element": "Sales : Card summarizing sales-related data",
+        "preconditions": "User is on the Sales section.",
+        "expected_results": "The card displays accurate and relevant sales-related data.",
+        "procedure": [
+          "Navigate to the Sales section.",
+          "Check the content of the sales data card for accuracy and relevance."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Verify Reports Data Display",
+        "objective": "To verify that the card correctly summarizes reports-related data.",
+        "coverage_element": "Reports : Card summarizing reports-related data",
+        "preconditions": "User is on the Reports section.",
+        "expected_results": "The card displays accurate and relevant reports-related data.",
+        "procedure": [
+          "Navigate to the Reports section.",
+          "Check the content of the reports data card for accuracy and relevance."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "Verify Customer Data Display",
+        "objective": "To verify that the cards correctly summarize customer-related data.",
+        "coverage_element": "Customers : Card summarizing customer-related data",
+        "preconditions": "User is on the Customers section.",
+        "expected_results": "The cards display accurate and relevant customer-related data.",
+        "procedure": [
+          "Navigate to the Customers section.",
+          "Check the content of the customer data cards for accuracy and relevance."
+        ]
+      },
+      {
+        "id": "TC008",
+        "name": "Verify Settings Data Display",
+        "objective": "To verify that the card correctly summarizes settings-related data.",
+        "coverage_element": "Settings : Card summarizing settings-related data",
+        "preconditions": "User is on the Settings section.",
+        "expected_results": "The card displays accurate and relevant settings-related data.",
+        "procedure": [
+          "Navigate to the Settings section.",
+          "Check the content of the settings data card for accuracy and relevance."
+        ]
+      },
+      {
+        "id": "TC009",
+        "name": "Verify System Title and Date Display",
+        "objective": "To verify that the card correctly displays the system title and date.",
+        "coverage_element": "Paper Cup Manufacturing System : Card displaying the system title and date",
+        "preconditions": "User is logged into the application.",
+        "expected_results": "The card displays the correct system title and current date.",
+        "procedure": [
+          "Log into the application.",
+          "Check the content of the system title and date card for correctness."
+        ]
+      },
+      {
+        "id": "TC010",
+        "name": "Verify Raw Materials Count Display",
+        "objective": "To verify that the card correctly summarizes raw materials count.",
+        "coverage_element": "Raw Materials : Card summarizing raw materials count",
+        "preconditions": "User is logged into the application.",
+        "expected_results": "The card displays the accurate count of raw materials.",
+        "procedure": [
+          "Log into the application.",
+          "Check the content of the raw materials count card for accuracy."
+        ]
+      },
+      {
+        "id": "TC011",
+        "name": "Verify Finished Products Count Display",
+        "objective": "To verify that the card correctly summarizes finished products count.",
+        "coverage_element": "Finished Products : Card summarizing finished products count",
+        "preconditions": "User is logged into the application.",
+        "expected_results": "The card displays the accurate count of finished products.",
+        "procedure": [
+          "Log into the application.",
+          "Check the content of the finished products count card for accuracy."
+        ]
+      },
+      {
+        "id": "TC012",
+        "name": "Verify Total Inventory Value Display",
+        "objective": "To verify that the card correctly displays the total inventory value.",
+        "coverage_element": "Inventory Value : Card displaying total inventory value",
+        "preconditions": "User is logged into the application.",
+        "expected_results": "The card displays the accurate total inventory value.",
+        "procedure": [
+          "Log into the application.",
+          "Check the content of the total inventory value card for accuracy."
+        ]
+      },
+      {
+        "id": "TC013",
+        "name": "Verify Recent Productions Display",
+        "objective": "To verify that the card correctly displays recent production data.",
+        "coverage_element": "Recent Productions : Card displaying recent production data",
+        "preconditions": "User is logged into the application.",
+        "expected_results": "The card displays accurate recent production data.",
+        "procedure": [
+          "Log into the application.",
+          "Check the content of the recent productions card for accuracy."
+        ]
+      },
+      {
+        "id": "TC014",
+        "name": "Verify Recent Sales Display",
+        "objective": "To verify that the card correctly displays recent sales data.",
+        "coverage_element": "Recent Sales : Card displaying recent sales data",
+        "preconditions": "User is logged into the application.",
+        "expected_results": "The card displays accurate recent sales data.",
+        "procedure": [
+          "Log into the application.",
+          "Check the content of the recent sales card for accuracy."
+        ]
+      },
+      {
+        "id": "TC015",
+        "name": "Verify Inventory Summary Display",
+        "objective": "To verify that the card correctly displays detailed inventory summary.",
+        "coverage_element": "Inventory Summary Card : Contains detailed inventory summary such as material, quantities, thresholds, and statuses",
+        "preconditions": "User is logged into the application.",
+        "expected_results": "The card displays accurate detailed inventory summary.",
+        "procedure": [
+          "Log into the application.",
+          "Check the content of the inventory summary card for accuracy."
+        ]
+      },
+      {
+        "id": "TC016",
+        "name": "Verify Sales Summary Display",
+        "objective": "To verify that the card correctly summarizes sales by product and total sales.",
+        "coverage_element": "Sales Summary Card : Summarizes sales by product and total sales",
+        "preconditions": "User is logged into the application.",
+        "expected_results": "The card displays accurate sales summary by product and total sales.",
+        "procedure": [
+          "Log into the application.",
+          "Check the content of the sales summary card for accuracy."
+        ]
+      }
+    ],
+    "design_validation_testing": [
+      {
+        "id": "TC001",
+        "name": "UI Design and Style Test: Color Palette",
+        "objective": "To verify that the main content area background color matches light goldenrod (#faf0e6) and UI elements use olive drab.",
+        "coverage_element": "Color Scheme",
+        "preconditions": "",
+        "expected_results": "The main content area should have a background color matching light goldenrod (#faf0e6), and UI elements should consistently use olive drab. 7. Next Steps : Hover over the main content area to inspect the background color.",
+        "procedure": [
+          "Observe the main content area background color.",
+          "Compare the observed color with light goldenrod (#faf0e6).",
+          "Verify that UI elements like buttons and cards use olive drab."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Raw Materials Card Display Test",
+        "objective": "To verify that the [C8]",
+        "coverage_element": "",
+        "preconditions": "",
+        "expected_results": "",
+        "procedure": []
+      }
+    ]
+  },
+  "element_requirement": [
+    "1. Dashboard : Button for navigating to the Dashboard section",
+    "2. Dashboard : Card summarizing dashboard-related data",
+    "3. Inventory : Button for navigating to the Inventory section",
+    "4. Inventory : Card summarizing inventory-related data",
+    "5. Production : Button for navigating to the Production section",
+    "6. Production : Card summarizing production-related data",
+    "7. Sales : Button for navigating to the Sales section",
+    "8. Sales : Card summarizing sales-related data",
+    "9. Reports : Button for navigating to the Reports section",
+    "10. Reports : Card summarizing reports-related data",
+    "11. Customers : Button for navigating to the Customers section",
+    "12. Customers : Card summarizing customer-related data",
+    "13. Settings : Button for navigating to the Settings section",
+    "14. Settings : Card summarizing settings-related data",
+    "15. Paper Cup Manufacturing System : Card displaying the system title and date",
+    "16. Raw Materials : Card summarizing raw materials count",
+    "17. Finished Products : Card summarizing finished products count",
+    "18. Inventory Value : Card displaying total inventory value",
+    "19. Recent Productions : Card displaying recent production data",
+    "20. Recent Sales : Card displaying recent sales data",
+    "21. Inventory Summary Card : Contains detailed inventory summary such as material, quantities, thresholds, and statuses",
+    "22. Sales Summary Card : Summarizes sales by product and total sales",
+    "23. Record Production : Button for recording new production entries",
+    "24. Previous : Button for navigating to the previous page of production records",
+    "25. Next : Button for navigating to the next page of production records"
+  ]
+}

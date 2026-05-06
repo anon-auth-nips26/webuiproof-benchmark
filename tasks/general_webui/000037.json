@@ -1,0 +1,208 @@
+{
+  "website_summary": {
+    "name": "Shirt Customization Studio",
+    "description": "The website offers a sleek and interactive interface for users to customize their own shirts with various options and measurements.",
+    "category": "User Interaction",
+    "appearance": "The website features a clean and organized layout designed for user-friendly interaction. It includes a prominent header titled \"Customize Your Shirt,\" followed by a form divided into sections for selecting shirt models, fabrics, colors, and entering measurements such as neck, chest, waist, sleeve length, and shirt length. There is also a text area for additional notes. The design uses a floral white background color with dark goldenrod accents for buttons and other UI elements. The price is dynamically updated based on selections, and there is a \"Generate Design\" button at the bottom.",
+    "functionality": "The website enables users to customize shirts by choosing from predefined options like shirt models, fabrics, and colors. Users can input specific measurements for a personalized fit. Additional notes can be added for special requests. Once selections are made, users can generate a shirt design preview. The system calculates the total price based on the chosen options and allows users to proceed with ordering and payment."
+  },
+  "test_cases": {
+    "functionality_testing": [
+      {
+        "id": "TC001",
+        "name": "Chest (cm) Input Test",
+        "objective": "To verify that the Chest (cm) textbox accepts and displays the entered value accurately.",
+        "coverage_element": "Chest (cm)",
+        "preconditions": "The webpage is loaded and ready for input.",
+        "expected_results": "The textbox should display \"110\".",
+        "procedure": [
+          "Type \"110\" into the Chest (cm) textbox.",
+          "Verify that the textbox displays \"110\"."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Chest (cm) Measurement Test",
+        "objective": "To verify that inputting a value into the Chest (cm) measurement field produces the expected result.",
+        "coverage_element": "Chest (cm)",
+        "preconditions": "The webpage is open, and the shirt customization section is visible.",
+        "expected_results": "The input value should be accepted, and any related preview or calculations should reflect this change.",
+        "procedure": [
+          "Type \"105\" into the Chest (cm) measurement field."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Color Dropdown Test",
+        "objective": "To verify that the Color Dropdown allows selection of a color.",
+        "coverage_element": "Color Dropdown",
+        "preconditions": "Dropdown is visible and accessible.",
+        "expected_results": "The selected color is displayed in the dropdown field.",
+        "procedure": [
+          "Click on the Color Dropdown.",
+          "Select an option from the dropdown.",
+          "Verify that the selected option is displayed in the dropdown field."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Fabric Dropdown Test",
+        "objective": "To verify that the Fabric Dropdown allows selection of a fabric type.",
+        "coverage_element": "Fabric Dropdown",
+        "preconditions": "Dropdown is visible and accessible.",
+        "expected_results": "The selected fabric type is displayed in the dropdown field.",
+        "procedure": [
+          "Click on the Fabric Dropdown.",
+          "Select an option from the dropdown.",
+          "Verify that the selected option is displayed in the dropdown field."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Generate Design Button Test",
+        "objective": "To verify that clicking the Generate Design button produces the expected result.",
+        "coverage_element": "[Generate Design Button]",
+        "preconditions": "The webpage is open, the shirt customization section is visible, and the required fields are filled.",
+        "expected_results": "The design preview should reflect the entered measurements, and no errors should occur. 7. Next Steps : Begin by entering the neck measurement of 40 into the relevant field.",
+        "procedure": [
+          "Click the Generate Design button."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Neck (cm) Measurement Test",
+        "objective": "To verify that inputting a value into the Neck (cm) measurement field produces the expected result.",
+        "coverage_element": "Neck (cm)",
+        "preconditions": "The webpage is open, and the shirt customization section is visible.",
+        "expected_results": "The input value should be accepted, and any related preview or calculations should reflect this change.",
+        "procedure": [
+          "Type \"40\" into the Neck (cm) measurement field."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "Select Classic Shirt Model Test",
+        "objective": "To verify that selecting the Classic shirt model from the dropdown menu produces the expected result.",
+        "coverage_element": "Classic ($29.99)",
+        "preconditions": "The webpage is open, and the shirt customization section is visible.",
+        "expected_results": "The Classic shirt model should be selected, and any related preview or calculations should reflect this choice. 7. Next Steps : Select the Classic shirt model from the dropdown menu.",
+        "procedure": [
+          "Click on the Classic ($",
+          "99) option in the shirt model dropdown menu."
+        ]
+      },
+      {
+        "id": "TC008",
+        "name": "Select Fabric Test",
+        "objective": "To verify that selecting a fabric from the dropdown menu produces the expected result.",
+        "coverage_element": "Fabric dropdown menu",
+        "preconditions": "The webpage is open, and the shirt customization section is visible.",
+        "expected_results": "The selected fabric should be applied, and any related preview or calculations should reflect this choice. 7. Next Steps : Click on the Fabric dropdown menu to select a fabric.",
+        "procedure": [
+          "Click on the Fabric dropdown menu.",
+          "Select a fabric from the dropdown options."
+        ]
+      },
+      {
+        "id": "TC009",
+        "name": "Shirt Model Dropdown Test",
+        "objective": "To verify that the Shirt Model Dropdown allows selection of a shirt model.",
+        "coverage_element": "Shirt Model Dropdown",
+        "preconditions": "Dropdown is visible and accessible.",
+        "expected_results": "The selected shirt model is displayed in the dropdown field.",
+        "procedure": [
+          "Click on the Shirt Model Dropdown.",
+          "Select an option from the dropdown.",
+          "Verify that the selected option is displayed in the dropdown field."
+        ]
+      },
+      {
+        "id": "TC010",
+        "name": "Sleeve Length (cm) Measurement Test",
+        "objective": "To verify that inputting a value into the Sleeve Length (cm) measurement field produces the expected result.",
+        "coverage_element": "Sleeve Length (cm)",
+        "preconditions": "The webpage is open, and the shirt customization section is visible.",
+        "expected_results": "The input value should be accepted, and any related preview or calculations should reflect this change. 7. Next Steps : Enter the waist measurement of 90 into the relevant field.",
+        "procedure": [
+          "Type \"25\" into the Sleeve Length (cm) measurement field."
+        ]
+      },
+      {
+        "id": "TC011",
+        "name": "Slim Fit Selection Test",
+        "objective": "To verify that selecting the Slim Fit Option updates the shirt model and price accordingly.",
+        "coverage_element": "Slim Fit Option",
+        "preconditions": "Dropdown is open and the Slim Fit option is visible.",
+        "expected_results": "The Slim Fit option is selected, and the price updates to $34.99.",
+        "procedure": [
+          "Click on the Slim Fit Option.",
+          "Verify that the selected option is displayed in the dropdown field.",
+          "Verify that the price updates to $"
+        ]
+      },
+      {
+        "id": "TC012",
+        "name": "Waist (cm) Measurement Test",
+        "objective": "To verify that inputting a value into the Waist (cm) measurement field produces the expected result.",
+        "coverage_element": "Waist (cm)",
+        "preconditions": "The webpage is open, and the shirt customization section is visible.",
+        "expected_results": "The input value should be accepted, and any related preview or calculations should reflect this change.",
+        "procedure": [
+          "Type \"90\" into the Waist (cm) measurement field."
+        ]
+      },
+      {
+        "id": "TC013",
+        "name": "Test Shirt Length Input Functionality",
+        "objective": "To verify that the textbox for entering shirt length measurement functions correctly.",
+        "coverage_element": "Shirt Length (cm) : Textbox for entering shirt length measurement",
+        "preconditions": "The user is on the 'Customize Your Shirt' page and has selected a shirt model.",
+        "expected_results": "The entered shirt length value is accepted and displayed correctly without any errors.",
+        "procedure": [
+          "Enter a valid shirt length measurement in the 'Shirt Length (cm)' textbox.",
+          "Verify that the entered value is displayed correctly and does not cause any validation errors."
+        ]
+      }
+    ],
+    "data_display_testing": [
+      {
+        "id": "TC001",
+        "name": "Test Card 0 Customization Options Display",
+        "objective": "To verify that Card 0 displays additional customization options correctly.",
+        "coverage_element": "Card 0 : Card likely containing additional customization options",
+        "preconditions": "The user is on the 'Customize Your Shirt' page.",
+        "expected_results": "Card 0 should display all relevant customization options clearly and without any missing information.",
+        "procedure": [
+          "Navigate to Card 0 on the 'Customize Your Shirt' page.",
+          "Check that all expected customization options are visible and properly formatted."
+        ]
+      }
+    ],
+    "design_validation_testing": [
+      {
+        "id": "TC001",
+        "name": "Test Card 1 Customization Options Design",
+        "objective": "To verify that Card 1 maintains the design consistency with the rest of the page.",
+        "coverage_element": "Card 1 : Card likely containing additional customization options",
+        "preconditions": "The user is on the 'Customize Your Shirt' page.",
+        "expected_results": "Card 1 should have a consistent design with the floral white background and dark goldenrod accents, matching the overall theme.",
+        "procedure": [
+          "Navigate to Card 1 on the 'Customize Your Shirt' page.",
+          "Inspect the design of Card 1 to ensure it matches the overall design theme of the page."
+        ]
+      }
+    ]
+  },
+  "element_requirement": [
+    "1. Shirt Model Dropdown : Dropdown menu for selecting a shirt model",
+    "2. Fabric Dropdown : Dropdown menu for selecting a fabric type",
+    "3. Color Dropdown : Dropdown menu for selecting a color",
+    "4. Neck (cm) : Textbox for entering neck measurement",
+    "5. Chest (cm) : Textbox for entering chest measurement",
+    "6. Waist (cm) : Textbox for entering waist measurement",
+    "7. Sleeve Length (cm) : Textbox for entering sleeve length measurement",
+    "8. Shirt Length (cm) : Textbox for entering shirt length measurement",
+    "9. Card 0 : Card likely containing additional customization options",
+    "10. Card 1 : Card likely containing additional customization options"
+  ]
+}

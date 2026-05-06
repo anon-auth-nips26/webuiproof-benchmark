@@ -1,0 +1,278 @@
+{
+  "website_summary": {
+    "name": "Holiday Wishes Tree",
+    "description": "The website features a festive interface with a virtual Christmas tree where users can leave personalized messages and virtual gifts for friends.",
+    "category": "User Interaction",
+    "appearance": "The website has a clean and festive design with a pastel yellow background. On the left side, there is a stylized Christmas tree made up of three green triangles, with a brown base decorated with various gift icons. On the right side, there is a white card-like section with a dark blue header that reads \"Holiday Wishes Tree.\" Below the header, there is a description of the tree's purpose. Two prominent buttons, \"Create Tree\" and \"Decorate Tree,\" are displayed below the description. Further down, there are sections for \"Selected Gifts\" and \"Friend Messages,\" where users can view and add gifts and messages. At the bottom, there are buttons for sharing the tree, downloading an image, and saving it to a collection.",
+    "functionality": "The website allows users to create and decorate a virtual Christmas tree. Users can add gifts and personalized messages for friends. The \"Create Tree\" button initiates the creation of a new tree, while the \"Decorate Tree\" button allows users to customize their tree. Users can also view friend messages and selected gifts. Additionally, there are options to share the tree, download an image of it, and save it to a collection."
+  },
+  "test_cases": {
+    "functionality_testing": [
+      {
+        "id": "TC001",
+        "name": "Add Gift Button Test",
+        "objective": "To verify that clicking the Add Gift Button successfully allows users to select gifts.",
+        "coverage_element": "Add Gift Button",
+        "preconditions": "The website is loaded and the user is on the correct page.",
+        "expected_results": "",
+        "procedure": [
+          "Click on the Add Gift Button",
+          "Verify if the options to select a gift appear"
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Add Gift Test",
+        "objective": "Verify if clicking the \"Add Gift\" button allows the user to add a gift to the tree.",
+        "coverage_element": "Add Gift",
+        "preconditions": "The tree customization interface is open.",
+        "expected_results": "A gift should be added to the tree and listed in the \"Selected Gifts\" section.",
+        "procedure": [
+          "Click the \"Add Gift\" button.",
+          "Verify that a gift is added to the tree and appears in the \"Selected Gifts\" section."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Add Message Test",
+        "objective": "Verify if clicking the \"Add Message\" button allows the user to add a personalized message to the tree.",
+        "coverage_element": "Add Message",
+        "preconditions": "The tree customization interface is open.",
+        "expected_results": "A personalized message should be added to the tree and listed in the \"Friend Messages\" section. 7. Next Steps : Since the tree has been created and the expected result is achieved, the next step is to conclude the task.",
+        "procedure": [
+          "Click the \"Add Message\" button.",
+          "Verify that a message is added to the tree and appears in the \"Friend Messages\" section."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Create Tree Test",
+        "objective": "To verify that clicking the Create Tree button initiates the creation of a new Christmas tree.",
+        "coverage_element": "Create Tree",
+        "preconditions": "The application is open, and the \"Create Tree\" button is visible.",
+        "expected_results": "A new Christmas tree should appear, and the \"Selected Gifts\" section should show no gifts selected. 7. Next Steps : Click the \"Create Tree\" button to initiate the creation of a new Christmas tree.",
+        "procedure": [
+          "Click on the Create Tree button.",
+          "Verify that a new Christmas tree appears on the left side of the screen.",
+          "Check that the \"Selected Gifts\" section indicates no gifts have been selected yet."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Select Gift Test (Icons):",
+        "objective": "To ensure that clicking on specific gift icons correctly adds the gift to the \"Selected Gifts\" list.",
+        "coverage_element": "Ex : Cozy Socks Icon",
+        "preconditions": "The “Add Gift” button has already been clicked to reveal the gift selection menu.",
+        "expected_results": "",
+        "procedure": [
+          "Click on the desired gift icon, e.g., Cozy Socks Icon.",
+          "Verify interaction and check if the gift is added to the \"Selected Gifts\" section.",
+          "Next Steps : Select the \"Cozy Socks\" gift by clicking the corresponding icon. This will help move forward in adding a gift to finalize the first half of the task."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Tree Color Selection Test",
+        "objective": "To verify that clicking a color selection button changes the tree color accordingly.",
+        "coverage_element": "Color Selection Buttons",
+        "preconditions": "Tree customization interface is open with color buttons available.",
+        "expected_results": "The tree should display the chosen color after the button is clicked.",
+        "procedure": [
+          "Click on a color selection button, e.g., Blue.",
+          "Verify that the tree changes color to the selected option."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "🎮 Gift Icon Test",
+        "objective": "To verify that hovering over the 🎮 Gift Icon displays the correct message and gift details.",
+        "coverage_element": "🎮",
+        "preconditions": "The tree is loaded and visible.",
+        "expected_results": "The message and gift details should appear when hovering over the gift icon. 7. Next Steps : Hover over the 🎮 Gift Icon to check if the message and gift details are displayed correctly.",
+        "procedure": [
+          "Hover over the 🎮 Gift Icon.",
+          "Verify that the message and gift details are displayed correctly."
+        ]
+      },
+      {
+        "id": "TC008",
+        "name": "📖 Gift Icon Test",
+        "objective": "To verify that hovering over the 📖 Gift Icon displays the correct message and gift details.",
+        "coverage_element": "📖",
+        "preconditions": "The tree is loaded and visible.",
+        "expected_results": "The message and gift details should appear when hovering over the gift icon. 7. Next Steps : Hover over the 📖 Gift Icon to check if the message and gift details are displayed correctly.",
+        "procedure": [
+          "Hover over the 📖 Gift Icon.",
+          "Verify that the message and gift details are displayed correctly."
+        ]
+      },
+      {
+        "id": "TC009",
+        "name": "Test Create Tree Button Functionality",
+        "objective": "To verify that clicking the 'Create Tree' button initiates the process of creating a new tree.",
+        "coverage_element": "Create Tree : Button for creating a new tree",
+        "preconditions": "User is logged into the application and is on the main page.",
+        "expected_results": "A new tree creation interface should appear, allowing the user to customize their tree.",
+        "procedure": [
+          "Navigate to the main page of the application.",
+          "Click on the 'Create Tree' button."
+        ]
+      },
+      {
+        "id": "TC010",
+        "name": "Test Share Tree Button Functionality",
+        "objective": "To verify that clicking the 'Share Tree' button allows the user to share the tree with others.",
+        "coverage_element": "Share Tree : Button for sharing the tree with others",
+        "preconditions": "A tree has been created and the user is on the main page.",
+        "expected_results": "A sharing interface should appear, providing options to share the tree via email or social media.",
+        "procedure": [
+          "Navigate to the main page of the application.",
+          "Click on the 'Share Tree' button."
+        ]
+      },
+      {
+        "id": "TC011",
+        "name": "Test Download Image Button Functionality",
+        "objective": "To verify that clicking the 'Download Image' button downloads an image of the tree.",
+        "coverage_element": "Download Image : Button for downloading an image of the tree",
+        "preconditions": "A tree has been created and the user is on the main page.",
+        "expected_results": "An image file of the tree should be downloaded successfully.",
+        "procedure": [
+          "Navigate to the main page of the application.",
+          "Click on the 'Download Image' button."
+        ]
+      },
+      {
+        "id": "TC012",
+        "name": "Test Style Selection Buttons Functionality",
+        "objective": "To verify that clicking the style selection buttons changes the tree's style accordingly.",
+        "coverage_element": "Style Selection Buttons : Buttons for selecting tree styles like Modern, Classic, and Whimsical",
+        "preconditions": "A tree has been created and the user is on the main page.",
+        "expected_results": "The tree's appearance should change to reflect the selected style.",
+        "procedure": [
+          "Navigate to the main page of the application.",
+          "Click on one of the style selection buttons."
+        ]
+      }
+    ],
+    "data_display_testing": [
+      {
+        "id": "TC001",
+        "name": "Test Art Kit Text Display",
+        "objective": "To verify that the label indicating the art kit gift is correctly displayed.",
+        "coverage_element": "Art Kit Text : Label indicating the art kit gift.",
+        "preconditions": "The user is on the main page where gift labels are visible.",
+        "expected_results": "The text label for the art kit gift should be visible and correctly represented.",
+        "procedure": [
+          "Navigate to the main page of the application.",
+          "Verify the presence and display of the art kit text label."
+        ]
+      }
+    ],
+    "design_validation_testing": [
+      {
+        "id": "TC001",
+        "name": "UI Design and Style Test: Add Gift Button Hover Effect",
+        "objective": "To verify that the \"Add Gift\" button has the correct hover effect.",
+        "coverage_element": "Add Gift",
+        "preconditions": "The webpage is loaded, and the \"Add Gift\" button is visible.",
+        "expected_results": "The \"Add Gift\" button should have a noticeable hover effect, such as a color change or border change. 7. Next Steps : Hover over the \"Add Gift\" button to check its hover effect.",
+        "procedure": [
+          "Hover over the \"Add Gift\" button to observe the hover effect."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "UI Design and Style Test: Button Hover Effects",
+        "objective": "To ensure the [Decorate Tree] button has the correct design and induces an appropriate interaction state when hovered over.",
+        "coverage_element": "Decorate Tree",
+        "preconditions": "The webpage should be fully loaded, with the [Decorate Tree] button visible.",
+        "expected_results": "The [Decorate Tree] button should change in some design aspect, like color or border, indicating user interaction. 7. Next Steps : Hover over the 'Decorate Tree' button to evaluate its styling and functionality.",
+        "procedure": [
+          "Hover over the [Decorate Tree] button to visually confirm its design and presence of a suitable hover effect."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Test Candle Gift Icon Display",
+        "objective": "To verify that the candle gift icon is correctly displayed.",
+        "coverage_element": "🕯️ : Gift icon representing a candle",
+        "preconditions": "The user is on the main page where gift icons are visible.",
+        "expected_results": "The candle gift icon should be visible and correctly represented.",
+        "procedure": [
+          "Navigate to the main page of the application.",
+          "Verify the presence and display of the candle gift icon."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Test Coffee Gift Icon Display",
+        "objective": "To verify that the coffee gift icon is correctly displayed.",
+        "coverage_element": "☕ : Gift icon representing coffee",
+        "preconditions": "The user is on the main page where gift icons are visible.",
+        "expected_results": "The coffee gift icon should be visible and correctly represented.",
+        "procedure": [
+          "Navigate to the main page of the application.",
+          "Verify the presence and display of the coffee gift icon."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Test Plant Gift Icon Display",
+        "objective": "To verify that the plant gift icon is correctly displayed.",
+        "coverage_element": "🌱 : Gift icon representing a plant",
+        "preconditions": "The user is on the main page where gift icons are visible.",
+        "expected_results": "The plant gift icon should be visible and correctly represented.",
+        "procedure": [
+          "Navigate to the main page of the application.",
+          "Verify the presence and display of the plant gift icon."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Test Cookies Gift Icon Display",
+        "objective": "To verify that the cookies gift icon is correctly displayed.",
+        "coverage_element": "🍪 : Gift icon representing cookies",
+        "preconditions": "The user is on the main page where gift icons are visible.",
+        "expected_results": "The cookies gift icon should be visible and correctly represented.",
+        "procedure": [
+          "Navigate to the main page of the application.",
+          "Verify the presence and display of the cookies gift icon."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "Test Art Kit Icon Display",
+        "objective": "To verify that the art kit icon is correctly displayed.",
+        "coverage_element": "Art Kit Icon : Icon representing an art kit gift.",
+        "preconditions": "The user is on the main page where gift icons are visible.",
+        "expected_results": "The art kit icon should be visible and correctly represented.",
+        "procedure": [
+          "Navigate to the main page of the application.",
+          "Verify the presence and display of the art kit icon."
+        ]
+      }
+    ]
+  },
+  "element_requirement": [
+    "1. Create Tree : Button with a plus icon for initiating the creation of a new tree",
+    "2. Create Tree : Button for creating a new tree",
+    "3. Decorate Tree : Button for decorating the tree once created",
+    "4. Add Gift : Button for adding virtual gifts to the tree",
+    "5. Add Message Button : Button to add personalized messages in the \"Friend Messages\" section.",
+    "6. Share Tree : Button for sharing the tree with others",
+    "7. Download Image : Button for downloading an image of the tree",
+    "8. Save to Collection : Button for saving the tree to a collection",
+    "9. 🎮 : Gift icon representing a game console",
+    "10. Color Selection Buttons : Multiple buttons representing different tree color options",
+    "11. Tree Style Buttons : Buttons for selecting different tree styles like Modern, Classic, and Whimsical",
+    "12. 🎨 : Gift icon representing art supplies",
+    "13. Style Selection Buttons : Buttons for selecting tree styles like Modern, Classic, and Whimsical",
+    "14. 🕯️ : Gift icon representing a candle",
+    "15. ☕ : Gift icon representing coffee",
+    "16. 🌱 : Gift icon representing a plant",
+    "17. 🍪 : Gift icon representing cookies",
+    "18. Art Kit Icon : Icon representing an art kit gift.",
+    "19. Art Kit Text : Label indicating the art kit gift."
+  ]
+}

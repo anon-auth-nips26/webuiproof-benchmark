@@ -1,0 +1,211 @@
+{
+  "website_summary": {
+    "name": "Creative Designer Portfolio",
+    "description": "The website features a clean and elegant design with a peach puff background and Indian red accents, emphasizing the designer's creative work and professional background.",
+    "category": "Content Presentation",
+    "appearance": "The website has a minimalist yet visually appealing design. It features a peach puff background that provides a soft and inviting atmosphere. The primary color used for text and interactive elements is Indian red, which adds a vibrant contrast. The homepage prominently displays the designer's name, \"Jeanne Baker,\" followed by a tagline, \"Creative Designer Crafting Visual Stories.\" Below the tagline, there is a brief introduction highlighting the designer's 8 years of experience in creating compelling brand identities, websites, and print materials. A call-to-action button labeled \"View My Work\" invites users to explore the designer's portfolio. The navigation menu includes links to \"Home,\" \"About,\" \"Work,\" and \"Contact,\" ensuring easy access to various sections of the site. At the bottom, there is a footer with copyright information and social media links for Instagram, LinkedIn, and Twitter.",
+    "functionality": "The website offers several key functionalities:\n- **Navigation Menu:** Users can navigate to different sections such as Home, About, Work, and Contact using the top navigation bar.\n- **Portfolio Showcase:** The \"View My Work\" button leads users to a gallery or collection of the designer's projects.\n- **About Section:** Provides detailed information about the designer's background, skills, and experience.\n- **Contact Information:** Allows users to get in touch with the designer via email or social media platforms.\n- **Scroll Prompt:** Encourages users to scroll down to explore more content."
+  },
+  "test_cases": {
+    "functionality_testing": [
+      {
+        "id": "TC001",
+        "name": "ABOUT Button Test",
+        "objective": "To verify that clicking the ABOUT button navigates to the \"About\" section.",
+        "coverage_element": "ABOUT",
+        "preconditions": "The homepage is displayed.",
+        "expected_results": "The \"About\" section is displayed with relevant content about the designer. 7. Next Steps : Click on the \"ABOUT\" link to navigate to the \"About\" section.",
+        "procedure": [
+          "Click on the ABOUT button.",
+          "Verify that the page transitions smoothly to the \"About\" section."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "BRANDING Button Test",
+        "objective": "To verify that clicking the BRANDING button filters the works to show only branding-related projects.",
+        "coverage_element": "BRANDING",
+        "preconditions": "The user is on the \"Selected Works\" page.",
+        "expected_results": "Only branding-related projects should be displayed.",
+        "procedure": [
+          "Click on the BRANDING button.",
+          "Verify that only branding-related projects are displayed."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Category Filtering Test",
+        "objective": "To verify that clicking the category buttons filters the displayed works accordingly.",
+        "coverage_element": "Category Buttons",
+        "preconditions": "The \"Work\" section is loaded, and the category buttons are visible.",
+        "expected_results": "Only branding-related projects are displayed in the selected works grid.",
+        "procedure": [
+          "Click on the BRANDING button.",
+          "Verify that the displayed works are filtered to show only branding-related projects."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "HOME Button Test",
+        "objective": "To verify that clicking the HOME button navigates to the home page.",
+        "coverage_element": "HOME",
+        "preconditions": "The user is on the homepage.",
+        "expected_results": "The user should be redirected to the home page.",
+        "procedure": [
+          "Click on the HOME button.",
+          "Verify that the user is redirected to the home page."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Portfolio Item Hover Test",
+        "objective": "To verify that hovering over portfolio items displays detailed information.",
+        "coverage_element": "Portfolio Item 1, Portfolio Item 2",
+        "preconditions": "The \"WORK\" section is fully loaded with visible portfolio items.",
+        "expected_results": "Detailed information about the hovered portfolio items should be accurately displayed.",
+        "procedure": [
+          "Hover over Portfolio Item 1.",
+          "Verify that detailed information about the item is displayed.",
+          "Hover over Portfolio Item 2.",
+          "Verify that detailed information about the second item is displayed."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Project Card Interaction Test",
+        "objective": "To verify that clicking a project card navigates to the project details page.",
+        "coverage_element": "Project Cards",
+        "preconditions": "The \"Work\" section is loaded, and the project cards are visible.",
+        "expected_results": "The project details page for the Brand Identity project is displayed.",
+        "procedure": [
+          "Click on the BRAND IDENTITY card.",
+          "Verify that the page transitions to the project details page for the Brand Identity project."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "VIEW MY WORK Button Test",
+        "objective": "To verify that clicking the VIEW MY WORK button navigates to the \"Work\" section.",
+        "coverage_element": "VIEW MY WORK",
+        "preconditions": "The homepage is loaded, and the \"VIEW MY WORK\" button is visible.",
+        "expected_results": "The \"Work\" section is displayed with the designer's portfolio works.",
+        "procedure": [
+          "Click on the VIEW MY WORK button.",
+          "Verify that the page transitions to the \"Work\" section displaying the designer's portfolio works."
+        ]
+      },
+      {
+        "id": "TC008",
+        "name": "WORK Link Test",
+        "objective": "To verify that clicking the WORK link in the navigation bar successfully navigates to the \"Work\" section.",
+        "coverage_element": "WORK",
+        "preconditions": "The homepage is loaded, and the navigation bar is visible.",
+        "expected_results": "The \"Work\" section is displayed with the designer's portfolio works.",
+        "procedure": [
+          "Click on the WORK link in the navigation bar.",
+          "Verify that the page transitions to the \"Work\" section displaying the designer's portfolio works."
+        ]
+      },
+      {
+        "id": "TC009",
+        "name": "Test Contact Button Functionality",
+        "objective": "To verify that the 'CONTACT' button navigates to the contact section.",
+        "coverage_element": "CONTACT : Button for navigating to the contact section",
+        "preconditions": "The user is on the homepage of the web application.",
+        "expected_results": "The user is redirected to the contact section of the website.",
+        "procedure": [
+          "Step 1 : Click on the 'CONTACT' button located in the navigation menu.",
+          "Step 2 : Verify that the page navigates to the contact section."
+        ]
+      },
+      {
+        "id": "TC010",
+        "name": "Test View My Work Button Functionality",
+        "objective": "To verify that the 'VIEW MY WORK' button navigates to the designer's portfolio.",
+        "coverage_element": "VIEW MY WORK : Button for viewing the designer's work",
+        "preconditions": "The user is on the homepage of the web application.",
+        "expected_results": "The user is redirected to the designer's portfolio section.",
+        "procedure": [
+          "Step 1 : Click on the 'VIEW MY WORK' button located below the tagline.",
+          "Step 2 : Verify that the page navigates to the designer's portfolio section."
+        ]
+      }
+    ],
+    "data_display_testing": [
+      {
+        "id": "TC001",
+        "name": "Brand Identity Work Card Test",
+        "objective": "To verify the content and design of the brand identity work card.",
+        "coverage_element": "Card",
+        "preconditions": "The user is on the \"Selected Works\" page.",
+        "expected_results": "The card should display the correct image, title (\"Brand Identity\"), and year (\"2023\"). 7. Next Steps : Hover over the Card to verify its content and design.",
+        "procedure": [
+          "Hover over the Card.",
+          "Verify that the card displays the correct image, title, and year."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Experience and Education Display Test",
+        "objective": "To verify that the \"Experience\" and \"Education\" sections display accurate and relevant information about the designer.",
+        "coverage_element": "[Experience and Education Sections]",
+        "preconditions": "The \"About\" section is displayed.",
+        "expected_results": "The \"Experience\" and \"Education\" sections display accurate and relevant information about the designer. 7. Next Steps : Verify the content within the \"Experience\" and \"Education\" sections to ensure it meets the expected standards.",
+        "procedure": [
+          "Observe the \"Experience\" section for job titles, companies, and dates.",
+          "Observe the \"Education\" section for degree and dates.",
+          "Verify that the information matches the expected content."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Test Brand Identity Card Display",
+        "objective": "To verify that the 'BRAND IDENTITY' card is displayed correctly with the appropriate image.",
+        "coverage_element": "\"BRAND IDENTITY\" card with a picture of a person coding.",
+        "preconditions": "The user is on the homepage of the web application.",
+        "expected_results": "The 'BRAND IDENTITY' card is displayed with the correct image of a person coding.",
+        "procedure": [
+          "Step 1 : Scroll to the 'BRAND IDENTITY' card.",
+          "Step 2 : Verify that the card displays an image of a person coding."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Test Website Design Card Display",
+        "objective": "To verify that the 'WEBSITE DESIGN' card is displayed correctly with the appropriate image.",
+        "coverage_element": "\"WEBSITE DESIGN\" card with an image of two laptops.",
+        "preconditions": "The user is on the homepage of the web application.",
+        "expected_results": "The 'WEBSITE DESIGN' card is displayed with the correct image of two laptops.",
+        "procedure": [
+          "Step 1 : Scroll to the 'WEBSITE DESIGN' card.",
+          "Step 2 : Verify that the card displays an image of two laptops."
+        ]
+      }
+    ],
+    "design_validation_testing": [
+      {
+        "id": "TC001",
+        "name": "UI Design and Style Test: Color Palette",
+        "objective": "To evaluate the consistency of the color palette throughout the website.",
+        "coverage_element": "Color Scheme",
+        "preconditions": "",
+        "expected_results": "All elements should adhere to the specified color scheme.",
+        "procedure": [
+          "Observe the background color and ensure it matches the peach puff shade.",
+          "Verify that all text and buttons use the Indian red color consistently.",
+          "Compare against design best practices or requirements."
+        ]
+      }
+    ]
+  },
+  "element_requirement": [
+    "1. HOME : Button for navigating to the home page",
+    "2. ABOUT : Button for navigating to the about section",
+    "3. WORK : Button for navigating to the work section",
+    "4. CONTACT : Button for navigating to the contact section",
+    "5. VIEW MY WORK : Button for viewing the designer's work",
+    "6. Cards with project images and descriptions",
+    "7. \"BRAND IDENTITY\" card with a picture of a person coding.",
+    "8. \"WEBSITE DESIGN\" card with an image of two laptops."
+  ]
+}

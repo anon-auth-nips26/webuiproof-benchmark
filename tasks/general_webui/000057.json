@@ -1,0 +1,408 @@
+{
+  "website_summary": {
+    "name": "EduConnect Student Portal",
+    "description": "The website features a sleek and modern design with a gradient blue background and interactive charts, providing a personalized educational journey experience.",
+    "category": "Data Management",
+    "appearance": "The website has a clean and professional design with a gradient background transitioning from azure (#00A6FB) to midnight blue (#003554). It includes a top navigation bar with options like Dashboard, Profile, Find Programs, Applications, and Inbox. The main dashboard displays sections such as Program Matches with a bar chart, Available Programs with percentage match indicators, Top Matching Fields with a pie chart, and Your Progress with a progress bar. The layout is well-organized, with clear headings and visually appealing charts that enhance user interaction.",
+    "functionality": "The website offers several key functionalities:\n- **User Registration and Profile Management:** Students can register and manage their profiles, including personal details, qualifications, and career preferences.\n- **Advanced Matching Algorithm:** An algorithm matches students with suitable training programs based on their qualifications, location, field of study, and career interests.\n- **Program Application Process:** Students can easily apply for programs through an intuitive interface.\n- **Provider Access:** Training providers can access student information based on predefined criteria to communicate directly with potential candidates.\n- **Interactive Charts and Progress Tracking:** Visual representations help students understand their program matches and progress."
+  },
+  "test_cases": {
+    "functionality_testing": [
+      {
+        "id": "TC001",
+        "name": "Apply for Program Test",
+        "objective": "To verify that clicking the Apply button for the Tech Future Academy program submits the application.",
+        "coverage_element": "Apply",
+        "preconditions": "User is on the \"Find Programs\" page.",
+        "expected_results": "A confirmation message should appear indicating successful submission, and the application status should update accordingly. 7. Next Steps : Click the \"Apply\" button for the Tech Future Academy program to submit the application.",
+        "procedure": [
+          "Click on the Apply button for the Tech Future Academy program.",
+          "Verify that a confirmation message appears indicating successful submission."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Email Input Field Test",
+        "objective": "To verify that the Email Input Field accepts and saves the updated email address.",
+        "coverage_element": "Email Input Field[Interactive : Yes]",
+        "preconditions": "The current page displayed on the browser is the update profile form where the Email Input Field exists.",
+        "expected_results": "The updated email address is saved and displayed in the profile. 7. Next Steps : Type a new email address into the \"Email\" input field next, to update the personal details.",
+        "procedure": [
+          "Type a new email address into the Email Input Field.",
+          "Click on the Save Changes Button.",
+          "Verify that the updated email address is saved and displayed in the profile."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Find Programs Test",
+        "objective": "To verify that clicking the Find Programs button navigates to the program selection page.",
+        "coverage_element": "Find Programs",
+        "preconditions": "User is on the main dashboard page.",
+        "expected_results": "The program selection page should be displayed, allowing the user to select a program. 7. Next Steps : Click the \"Find Programs\" button to proceed to the program selection page.",
+        "procedure": [
+          "Click on the Find Programs button.",
+          "Verify that the program selection page is displayed."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Full Name Input Field Test",
+        "objective": "To verify that the Full Name Input Field accepts and saves the updated full name.",
+        "coverage_element": "Full Name Input Field[Interactive : Yes]",
+        "preconditions": "The current page displayed on the browser is the update profile form where the Full Name Input Field exists.",
+        "expected_results": "The updated full name is saved and displayed in the profile. 7. Next Steps : Type a new full name into the \"Full Name\" input field next, to update the personal details.",
+        "procedure": [
+          "Type a new full name into the Full Name Input Field.",
+          "Click on the Save Changes Button.",
+          "Verify that the updated full name is saved and displayed in the profile."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Phone Input Field Test",
+        "objective": "To verify that the Phone Input Field accepts and saves the updated phone number.",
+        "coverage_element": "Phone Input Field[Interactive : Yes]",
+        "preconditions": "The current page displayed on the browser is the update profile form where the Phone Input Field exists.",
+        "expected_results": "The updated phone number is saved and displayed in the profile. 7. Next Steps : Type a new phone number into the \"Phone\" input field next, to update the personal details.",
+        "procedure": [
+          "Type a new phone number into the Phone Input Field.",
+          "Click on the Save Changes Button.",
+          "Verify that the updated phone number is saved and displayed in the profile."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Profile Button Test",
+        "objective": "To verify clicking the Profile button navigates to the profile page as expected.",
+        "coverage_element": "Profile[Interactive : Yes]",
+        "preconditions": "The current page displayed on the browser is the main dashboard where the Profile button exists.",
+        "expected_results": "The user navigates to the profile page displaying the user's profile information.",
+        "procedure": [
+          "Click on the Profile Button.",
+          "Verify that the user is redirected to the profile page."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "Program Matches Chart Test",
+        "objective": "To verify that hovering over the \"Tech Future Academy\" bar in the Program Matches Card displays the correct tooltip.",
+        "coverage_element": "Program Matches",
+        "preconditions": "The dashboard is open, and the Program Matches section is visible.",
+        "expected_results": "The tooltip should display the correct match percentage for \"Tech Future Academy.\" 7. Next Steps : Hover over the \"Tech Future Academy\" bar in the Program Matches section to validate the tooltip's accuracy.",
+        "procedure": [
+          "Hover over the \"Tech Future Academy\" bar in the Program Matches Card.",
+          "Verify that the tooltip appears and displays the correct match percentage."
+        ]
+      },
+      {
+        "id": "TC008",
+        "name": "Update Profile Button Test",
+        "objective": "To verify clicking the Update Profile button leads to the profile update form.",
+        "coverage_element": "Update Profile[Interactive : Yes]",
+        "preconditions": "The current page displayed on the browser is the profile page where the Update Profile button exists.",
+        "expected_results": "The user navigates to the profile update form where they can enter new personal details. 7. Next Steps : Click the \"Update Profile\" button next, to access the form for updating personal details.",
+        "procedure": [
+          "Click on the Update Profile Button.",
+          "Verify that the user is redirected to the profile update form."
+        ]
+      },
+      {
+        "id": "TC009",
+        "name": "Verify Dashboard Navigation Button",
+        "objective": "To verify that the button successfully navigates users to the dashboard section.",
+        "coverage_element": "Dashboard : Button to navigate to the dashboard section",
+        "preconditions": "User is logged into the web application and on a page other than the dashboard.",
+        "expected_results": "User is redirected to the dashboard section upon clicking the button.",
+        "procedure": [
+          "Click on the 'Dashboard' button in the top navigation bar.",
+          "Verify that the user is navigated to the dashboard section."
+        ]
+      },
+      {
+        "id": "TC010",
+        "name": "Check Find Programs Card Functionality",
+        "objective": "To verify that the Find Programs Card enables users to search for programs.",
+        "coverage_element": "Find Programs Card : Likely contains program search functionalities",
+        "preconditions": "User is logged into the web application and the Find Programs Card is visible.",
+        "expected_results": "The search results are displayed correctly based on the input criteria.",
+        "procedure": [
+          "Enter search criteria into the Find Programs Card.",
+          "Verify that the search results match the entered criteria."
+        ]
+      },
+      {
+        "id": "TC011",
+        "name": "Test Location Input Field",
+        "objective": "To verify that the location input field accepts and displays the location correctly.",
+        "coverage_element": "Location Input Field : Textbox for entering the location",
+        "preconditions": "User is logged into the web application and accessing the location input field.",
+        "expected_results": "The text input matches the location entered by the user.",
+        "procedure": [
+          "Enter a location in the Location Input Field.",
+          "Verify that the entered location is displayed as typed."
+        ]
+      },
+      {
+        "id": "TC012",
+        "name": "Test Qualifications Input Field",
+        "objective": "To verify that the qualifications input field accepts and displays the qualifications correctly.",
+        "coverage_element": "Qualifications Input Field : Textbox for entering qualifications",
+        "preconditions": "User is logged into the web application and accessing the qualifications input field.",
+        "expected_results": "The text input matches the qualifications entered by the user.",
+        "procedure": [
+          "Enter qualifications in the Qualifications Input Field.",
+          "Verify that the entered qualifications are displayed as typed."
+        ]
+      },
+      {
+        "id": "TC013",
+        "name": "Test Career Interests Input Field",
+        "objective": "To verify that the career interests input field accepts and displays the career interests correctly.",
+        "coverage_element": "Career Interests Input Field : Textbox for entering career interests",
+        "preconditions": "User is logged into the web application and accessing the career interests input field.",
+        "expected_results": "The text input matches the career interests entered by the user.",
+        "procedure": [
+          "Enter career interests in the Career Interests Input Field.",
+          "Verify that the entered career interests are displayed as typed."
+        ]
+      },
+      {
+        "id": "TC014",
+        "name": "Test Save Changes Button Functionality",
+        "objective": "To verify that the Save Changes button successfully saves updated profile information.",
+        "coverage_element": "Save Changes Button : Button to save the updated profile information",
+        "preconditions": "User is logged into the web application, profile changes are made, and the Save Changes button is visible.",
+        "expected_results": "Profile information is updated and saved successfully upon clicking the button.",
+        "procedure": [
+          "Input changes in the relevant profile fields.",
+          "Click the Save Changes button and verify that the changes are saved."
+        ]
+      },
+      {
+        "id": "TC015",
+        "name": "Test Apply Button for Cyber Security School",
+        "objective": "To verify that the Apply button successfully submits an application for the Cyber Security School program.",
+        "coverage_element": "Apply : Button to apply for the Cyber Security School program",
+        "preconditions": "User is logged into the web application, all necessary information is entered, and the Apply button is visible.",
+        "expected_results": "The application for the Cyber Security School program is submitted successfully.",
+        "procedure": [
+          "Enter all necessary information required for the application.",
+          "Click the Apply button and verify that the application is submitted."
+        ]
+      }
+    ],
+    "data_display_testing": [
+      {
+        "id": "TC001",
+        "name": "Verify Application Status Test",
+        "objective": "To verify that the application status for the Tech Future Academy program has updated to \"Applied\".",
+        "coverage_element": "Applied",
+        "preconditions": "User has applied for the Tech Future Academy program.",
+        "expected_results": "The Applied button should be displayed, confirming the application status update. 7. Next Steps : Verify the application status for the Tech Future Academy program.",
+        "procedure": [
+          "Verify that the Applied button is displayed instead of the \"Apply\" button."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Validate Profile Card Information",
+        "objective": "To verify that the profile information is displayed correctly on the Profile Card.",
+        "coverage_element": "Profile Card : Likely displays the profile information",
+        "preconditions": "User is logged into the web application and the Profile Card is visible.",
+        "expected_results": "Profile card accurately displays the user's information such as name, profile picture, and basic profile details.",
+        "procedure": [
+          "Navigate to the Profile Card.",
+          "Verify that the displayed profile information matches the user's profile in the system."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Review Applications Card Data",
+        "objective": "To verify that the Applications Card accurately displays application-related data.",
+        "coverage_element": "Applications Card : Likely contains application-related data",
+        "preconditions": "User is logged into the web application and the Applications Card is visible.",
+        "expected_results": "The Applications Card displays relevant data such as application status, date, and associated programs.",
+        "procedure": [
+          "Navigate to the Applications Card.",
+          "Review and verify the displayed application data for accuracy."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Check Your Profile Card Details",
+        "objective": "To verify that the user's profile information is displayed correctly in the Your Profile Card.",
+        "coverage_element": "Your Profile Card : Displays the user's profile information",
+        "preconditions": "User is logged into the web application and the Your Profile Card is visible.",
+        "expected_results": "The user's profile information is correctly and completely displayed.",
+        "procedure": [
+          "Navigate to the Your Profile Card.",
+          "Verify that all the user's profile information is accurately displayed."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Examine Tech Future Academy Card Information",
+        "objective": "To verify that the Tech Future Academy card correctly displays program details.",
+        "coverage_element": "Tech Future Academy : Card displaying program details",
+        "preconditions": "User is logged into the web application and the Tech Future Academy card is visible.",
+        "expected_results": "The card accurately displays program details related to Tech Future Academy.",
+        "procedure": [
+          "Navigate to the Tech Future Academy card.",
+          "Review and verify the program details displayed in the card."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Review AI Learning Center Card Details",
+        "objective": "To verify that the AI Learning Center card correctly displays program details.",
+        "coverage_element": "AI Learning Center : Card displaying program details",
+        "preconditions": "User is logged into the web application and the AI Learning Center card is visible.",
+        "expected_results": "The card accurately displays program details related to AI Learning Center.",
+        "procedure": [
+          "Navigate to the AI Learning Center card.",
+          "Review and verify the program details displayed in the card."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "Test Tooltip for Tech Future Academy",
+        "objective": "To verify that the tooltip correctly displays the match percentage for Tech Future Academy.",
+        "coverage_element": "Tooltip : Card showing match percentage for Tech Future Academy",
+        "preconditions": "User is logged into the web application and the tooltip for Tech Future Academy is visible.",
+        "expected_results": "The tooltip accurately displays the match percentage for the user.",
+        "procedure": [
+          "Hover over the relevant section for the Tech Future Academy tooltip.",
+          "Verify that the tooltip displays the match percentage correctly."
+        ]
+      },
+      {
+        "id": "TC008",
+        "name": "Test Data Science Institute Match Percentage",
+        "objective": "To verify that the Data Science Institute card correctly shows the match percentage.",
+        "coverage_element": "Data Science Institute : Card showing match percentage",
+        "preconditions": "User is logged into the web application and the Data Science Institute card is visible.",
+        "expected_results": "The card accurately displays the match percentage for the user.",
+        "procedure": [
+          "Navigate to the Data Science Institute card.",
+          "Verify that the match percentage displayed on the card is accurate."
+        ]
+      },
+      {
+        "id": "TC009",
+        "name": "Test Digital Skills Hub Match Percentage",
+        "objective": "To verify that the Digital Skills Hub card correctly shows the match percentage.",
+        "coverage_element": "Digital Skills Hub : Card showing match percentage",
+        "preconditions": "User is logged into the web application and the Digital Skills Hub card is visible.",
+        "expected_results": "The card accurately displays the match percentage for the user.",
+        "procedure": [
+          "Navigate to the Digital Skills Hub card.",
+          "Verify that the match percentage displayed on the card is accurate."
+        ]
+      },
+      {
+        "id": "TC010",
+        "name": "Review Cyber Security School Program Card",
+        "objective": "To verify that the Cyber Security School card accurately displays program details.",
+        "coverage_element": "Cyber Security School : Card displaying program details",
+        "preconditions": "User is logged into the web application and the Cyber Security School card is visible.",
+        "expected_results": "The card accurately displays all necessary program details for the Cyber Security School.",
+        "procedure": [
+          "Navigate to the Cyber Security School card.",
+          "Review and verify the program details displayed in the card."
+        ]
+      }
+    ],
+    "design_validation_testing": [
+      {
+        "id": "TC001",
+        "name": "UI Design and Style Test: Alignment",
+        "objective": "To evaluate the alignment of elements in the navigation bar and main content sections.",
+        "coverage_element": "Layout & Organization",
+        "preconditions": "",
+        "expected_results": "All elements should be properly aligned with consistent styling. 7. Next Steps : The next step is to inspect the alignment of elements in the navigation bar and main content sections.",
+        "procedure": [
+          "Observe the alignment of elements in the navigation bar.",
+          "Check the alignment of cards and text in the main content sections.",
+          "Verify that all elements are properly aligned and styled consistently."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "UI Design and Style Test: Application Section",
+        "objective": "Validate design consistency and styling in the Applications section.",
+        "coverage_element": "Applications Section Styling",
+        "preconditions": "",
+        "expected_results": "The section should match the previously validated color scheme, maintaining alignment with other interface elements. 7. Next Steps : Observe the Applications section next for color and alignment consistency as planned.",
+        "procedure": [
+          "Hover over the Applications button.",
+          "Observe if the elements maintain styling coherence.",
+          "Inspect Application section's alignment and color scheme."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "UI Design and Style Test: Find Programs Section",
+        "objective": "To evaluate the color consistency and alignment in the Find Programs section.",
+        "coverage_element": "Color Scheme and Layout & Organization",
+        "preconditions": "",
+        "expected_results": "The Find Programs section should adhere to the specified color scheme and maintain proper alignment. 7. Next Steps : The next step is to inspect the Find Programs section for color consistency and alignment.",
+        "procedure": [
+          "Observe the color scheme and alignment in the Find Programs section.",
+          "Compare the colors and alignment with other sections.",
+          "Verify that the section maintains consistent styling and proper alignment."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "UI Design and Style Test: Inbox Section",
+        "objective": "To evaluate the color consistency and alignment in the Inbox section.",
+        "coverage_element": "Color Scheme and Layout & Organization",
+        "preconditions": "",
+        "expected_results": "The Inbox section should adhere to the specified color scheme and maintain proper alignment. 7. Next Steps : The next step is to inspect the Inbox section for color consistency and alignment.",
+        "procedure": [
+          "Hover over the Inbox button.",
+          "Observe the color scheme and alignment in the Inbox section.",
+          "Compare the colors and alignment with other sections.",
+          "Verify that the section maintains consistent styling and proper alignment."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "UI Design and Style Test: Overall Design Verification",
+        "objective": "To verify overall adherence to color scheme and alignment throughout all sections.",
+        "coverage_element": "Color Scheme, Alignment across all sections",
+        "preconditions": "",
+        "expected_results": "Outcome should reflect uniform color scheme and alignment throughout without any discrepancies. 7. Next Steps : Ensure the overall interface design arguably aligns withņ visually inspected sections adhering consistently to the color palette and alignment standards expected.",
+        "procedure": [
+          "Hover over remaining sections ensuring all are visually inspected for color scheme and alignment.",
+          "Confirm that every section mirrors the overall design parameters."
+        ]
+      }
+    ]
+  },
+  "element_requirement": [
+    "1. Dashboard : Button to navigate to the dashboard section",
+    "2. Profile : Button to navigate to the profile section",
+    "3. Profile Card : Likely displays the profile information",
+    "4. Find Programs : Button to search for available programs",
+    "5. Find Programs Card : Likely contains program search functionalities",
+    "6. Phone Input Field : Textbox for entering the phone number",
+    "7. Location Input Field : Textbox for entering the location",
+    "8. Applications Card : Likely contains application-related data",
+    "9. Program Matches : Card displaying program matches chart",
+    "10. Your Profile Card : Displays the user's profile information",
+    "11. Tech Future Academy : Card displaying program details",
+    "12. AI Learning Center : Card displaying program details",
+    "13. Qualifications Input Field : Textbox for entering qualifications",
+    "14. Career Interests Input Field : Textbox for entering career interests",
+    "15. Save Changes Button : Button to save the updated profile information",
+    "16. Tooltip : Card showing match percentage for Tech Future Academy",
+    "17. Data Science Institute : Card showing match percentage",
+    "18. Digital Skills Hub : Card showing match percentage",
+    "19. Applied : Button indicating the application status for the Tech Future Academy program",
+    "20. Apply : Button to apply for the Data Science Institute program",
+    "21. Apply : Button to apply for the Cyber Security School program",
+    "22. Cyber Security School : Card displaying program details"
+  ]
+}

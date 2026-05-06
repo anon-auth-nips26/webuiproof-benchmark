@@ -1,0 +1,291 @@
+{
+  "website_summary": {
+    "name": "Family Memory Portal",
+    "description": "The website presents a warm and respectful interface for remembering and celebrating loved ones with obituaries, multimedia memories, and condolences.",
+    "category": "Data Management",
+    "appearance": "The website features a clean and organized layout with a soft cornsilk background for the main page and peru-colored blocks for individual obituaries. At the top, there is a prominent header titled \"Family Events Portal\" followed by a tagline encouraging users to remember and celebrate their loved ones. Below the header, there is a search bar for finding obituaries. The main content area displays obituaries in rectangular blocks, each containing details such as the person's name, lifespan, a brief description, media options (image, video, audio), and a section for condolences. Each obituary block also includes a trash icon for deletion. On the right side, there are buttons for adding new obituaries and viewing statistics. The overall design is simple yet emotionally resonant, ensuring ease of use while maintaining respect for the subject matter.",
+    "functionality": "The website offers several key functionalities:\n- A search bar allows users to find specific obituaries by entering keywords.\n- Users can add new obituaries using the \"Add Obituary\" button.\n- Each obituary includes options to upload images, videos, and audio files as multimedia memories.\n- Visitors can leave condolences on obituaries via a text input field and a \"Send\" button.\n- There is a delete function represented by a trash icon next to each obituary for managing entries.\n- A \"Statistics\" button provides access to analytical data related to the obituaries."
+  },
+  "test_cases": {
+    "functionality_testing": [
+      {
+        "id": "TC001",
+        "name": "Add Obituary Button Test",
+        "objective": "To verify that clicking the Add Obituary Button navigates to the obituary form page.",
+        "coverage_element": "Add Obituary Button",
+        "preconditions": "The user is on the main page of the Family Events Portal.",
+        "expected_results": "The page should navigate to the obituary form page where the user can fill out the form fields. 7. Next Steps : Click the \"Add Obituary\" button to proceed with adding a new obituary.",
+        "procedure": [
+          "Click on the Add Obituary Button.",
+          "Verify that the page navigates to the obituary form page."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Fill Out Biography Field Test",
+        "objective": "To verify that the biography field can be filled out with the required information.",
+        "coverage_element": "Biography Textbox",
+        "preconditions": "The obituary form is visible on the page, and the name and lifespan fields are already filled out.",
+        "expected_results": "The biography field should be filled out with the correct information. 7. Next Steps : Fill out the biography field with the relevant information.",
+        "procedure": [
+          "Type \"A dedicated community leader and beloved educator\" in the Biography Textbox.",
+          "Verify that the biography field is filled out with the correct information."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Fill Out Lifespan Field Test",
+        "objective": "To verify that the lifespan field can be filled out with the required information.",
+        "coverage_element": "Lifespan Textbox",
+        "preconditions": "The obituary form is visible on the page, and the name field is already filled out.",
+        "expected_results": "The lifespan field should be filled out with the correct information. 7. Next Steps : Fill out the lifespan field with the relevant information.",
+        "procedure": [
+          "Type \"1940-2023\" in the Lifespan Textbox.",
+          "Verify that the lifespan field is filled out with the correct information."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Fill Out Obituary Form Test",
+        "objective": "To verify that the obituary form can be filled out with the required information.",
+        "coverage_element": "Name Textbox, Lifespan Textbox, Biography Textbox",
+        "preconditions": "The obituary form is visible on the page.",
+        "expected_results": "The form fields should be filled out with the correct information. 7. Next Steps : Fill out the form fields with the relevant information.",
+        "procedure": [
+          "Type \"Samuel Johnson\" in the Name Textbox.",
+          "Type \"1940-2023\" in the Lifespan Textbox.",
+          "Type \"Respected teacher and community leader\" in the Biography Textbox.",
+          "Verify that the form fields are filled out with the correct information."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Leave a condolence for John Doe Test",
+        "objective": "To test that the \"Leave a condolence\" input field for John Doe's obituary works and the condolence message is displayed accurately.",
+        "coverage_element": "\"Leave a condolence\" input field",
+        "preconditions": "John Doe's obituary card is visible and selected.",
+        "expected_results": "The condolence message should appear immediately below the input field for John Doe's obituary.",
+        "procedure": [
+          "Hover over the \"Leave a condolence\" input field for John Doe's obituary card using the action format for <card> \"C0\".",
+          "Type the condolence message.",
+          "Click the \"Send\" button.",
+          "Verify the message is displayed beneath the input field."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Search Input Test",
+        "objective": "To verify that entering \"John Doe\" into the Search Input textbox and pressing Enter displays the correct obituary card.",
+        "coverage_element": "Search Input",
+        "preconditions": "The search input field is empty.",
+        "expected_results": "The search results should display the obituary card for John Doe, including his name, lifespan, description, and media options. 7. Next Steps : Enter \"John Doe\" into the search field and press Enter to initiate the search.",
+        "procedure": [
+          "Type \"John Doe\" into the Search Input textbox.",
+          "Press Enter.",
+          "Verify that the search results display the John Doe Obituary Card."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "Submit a condolence for John Doe Test",
+        "objective": "To test that the \"Leave a condolence\" input field for John Doe's obituary works and the condolence message is submitted successfully.",
+        "coverage_element": "\"Leave a condolence\" input field,\"Send\" button",
+        "preconditions": "John Doe's obituary card is visible and selected, and the \"Leave a condolence\" input field is active.",
+        "expected_results": "The condolence message should appear immediately below the input field for John Doe's obituary.",
+        "procedure": [
+          "Type the condolence message into the \"Leave a condolence\" input field.",
+          "Click the \"Send\" button.",
+          "Verify the message is displayed beneath the input field."
+        ]
+      },
+      {
+        "id": "TC008",
+        "name": "Test Name Textbox Functionality",
+        "objective": "To verify that the Name Textbox allows users to enter the name of the deceased.",
+        "coverage_element": "Name Textbox : Textbox for entering the name of the deceased",
+        "preconditions": "User is on the page where they can add or edit an obituary.",
+        "expected_results": "The textbox accepts text input and displays the entered name.",
+        "procedure": [
+          "Navigate to the page where the Name Textbox is located.",
+          "Enter a name into the textbox and verify the text appears correctly."
+        ]
+      },
+      {
+        "id": "TC009",
+        "name": "Test Obituaries Button Navigation",
+        "objective": "To verify that clicking the Obituaries Button navigates to the Obituaries section.",
+        "coverage_element": "Obituaries Button : Button to navigate to the Obituaries section",
+        "preconditions": "User is on the main page of the application.",
+        "expected_results": "The user is redirected to the Obituaries section upon clicking the button.",
+        "procedure": [
+          "Locate and click the Obituaries Button.",
+          "Verify that the page navigates to the Obituaries section."
+        ]
+      },
+      {
+        "id": "TC010",
+        "name": "Test Statistics Button Navigation",
+        "objective": "To verify that clicking the Statistics Button navigates to the Statistics section.",
+        "coverage_element": "Statistics Button : Button to navigate to the Statistics section",
+        "preconditions": "User is on the main page of the application.",
+        "expected_results": "The user is redirected to the Statistics section upon clicking the button.",
+        "procedure": [
+          "Locate and click the Statistics Button.",
+          "Verify that the page navigates to the Statistics section."
+        ]
+      },
+      {
+        "id": "TC011",
+        "name": "Test Delete Button Functionality",
+        "objective": "To verify that the Delete Button successfully deletes an obituary.",
+        "coverage_element": "Delete Button : Button for deleting an obituary",
+        "preconditions": "An obituary exists and the user has permission to delete it.",
+        "expected_results": "The selected obituary is removed from the list after clicking the Delete Button.",
+        "procedure": [
+          "Select an obituary and click its corresponding Delete Button.",
+          "Verify that the obituary is no longer displayed in the list."
+        ]
+      },
+      {
+        "id": "TC012",
+        "name": "Test Condolences Textbox Functionality",
+        "objective": "To verify that the Condolences Textbox allows users to leave a condolence message.",
+        "coverage_element": "Condolences Textbox : Textbox for leaving a condolence message",
+        "preconditions": "User is viewing an obituary that includes the Condolences Textbox.",
+        "expected_results": "The textbox accepts text input and displays the entered condolence message.",
+        "procedure": [
+          "Navigate to an obituary page containing the Condolences Textbox.",
+          "Enter a condolence message into the textbox and verify the text appears correctly."
+        ]
+      },
+      {
+        "id": "TC013",
+        "name": "Test Image Media Button Functionality",
+        "objective": "To verify that the Image Media Button allows users to add an image to an obituary.",
+        "coverage_element": "Image Media Button : Button for adding an image to an obituary",
+        "preconditions": "User is editing an obituary and has access to the Image Media Button.",
+        "expected_results": "The button opens a file selection dialog allowing the user to choose and upload an image.",
+        "procedure": [
+          "Navigate to the edit page of an obituary.",
+          "Click the Image Media Button and verify the file selection dialog appears."
+        ]
+      },
+      {
+        "id": "TC014",
+        "name": "Test Video Media Button Functionality",
+        "objective": "To verify that the Video Media Button allows users to add a video to an obituary.",
+        "coverage_element": "Video Media Button : Button for adding a video to an obituary",
+        "preconditions": "User is editing an obituary and has access to the Video Media Button.",
+        "expected_results": "The button opens a file selection dialog allowing the user to choose and upload a video.",
+        "procedure": [
+          "Navigate to the edit page of an obituary.",
+          "Click the Video Media Button and verify the file selection dialog appears."
+        ]
+      },
+      {
+        "id": "TC015",
+        "name": "Test Audio Media Button Functionality",
+        "objective": "To verify that the Audio Media Button allows users to add audio to an obituary.",
+        "coverage_element": "Audio Media Button : Button for adding audio to an obituary",
+        "preconditions": "User is editing an obituary and has access to the Audio Media Button.",
+        "expected_results": "The button opens a file selection dialog allowing the user to choose and upload an audio file.",
+        "procedure": [
+          "Navigate to the edit page of an obituary.",
+          "Click the Audio Media Button and verify the file selection dialog appears."
+        ]
+      }
+    ],
+    "data_display_testing": [
+      {
+        "id": "TC001",
+        "name": "Verify Obituary Card Display Test",
+        "objective": "To verify that the obituary card for John Doe is displayed correctly with all relevant details after the search is executed.",
+        "coverage_element": "John Doe Obituary Card",
+        "preconditions": "The search results display the John Doe obituary card.",
+        "expected_results": "The obituary card for John Doe should display all the relevant details accurately. 7. Next Steps : Hover over the John Doe obituary card to ensure all details are displayed correctly.",
+        "procedure": [
+          "Hover over the John Doe Obituary Card.",
+          "Verify that the card displays John Doe's name, lifespan, description, media options, and condolences."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Verify condolence message display for John Doe Test",
+        "objective": "To verify that the condolence message \"Rest in peace, John.\" is displayed accurately beneath the input field for John Doe's obituary.",
+        "coverage_element": "John Doe's obituary card",
+        "preconditions": "John Doe's obituary card is visible and selected, the condolence message \"Rest in peace, John.\" has been submitted.",
+        "expected_results": "The condolence message \"Rest in peace, John.\" should appear immediately below the input field for John Doe's obituary.",
+        "procedure": [
+          "Navigate back to John Doe's obituary card.",
+          "Verify the message \"Rest in peace, John.\" is displayed beneath the input field."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Test Add Obituary Card Visibility",
+        "objective": "To verify that the Add Obituary Card is visible and prompts users to add an obituary.",
+        "coverage_element": "Add Obituary Card : Card prompting users to add an obituary",
+        "preconditions": "User is on the main page of the application.",
+        "expected_results": "The Add Obituary Card is visible and contains the correct prompt text.",
+        "procedure": [
+          "Navigate to the main page.",
+          "Verify the visibility and text content of the Add Obituary Card."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Test Jane Smith Obituary Card Display",
+        "objective": "To verify that Jane Smith's Obituary Card displays her obituary information correctly.",
+        "coverage_element": "Jane Smith Obituary Card : Card displaying Jane Smith's obituary information",
+        "preconditions": "User is on the page where Jane Smith's obituary is displayed.",
+        "expected_results": "The card displays all relevant information about Jane Smith accurately.",
+        "procedure": [
+          "Navigate to the page containing Jane Smith's Obituary Card.",
+          "Verify that all information on the card is displayed correctly."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Test Statistics Section Data",
+        "objective": "To verify that the Statistics Section displays accurate statistical data.",
+        "coverage_element": "Statistics Section : Section displaying statistics",
+        "preconditions": "User is on the page containing the Statistics Section.",
+        "expected_results": "The section displays all relevant statistics accurately.",
+        "procedure": [
+          "Navigate to the Statistics Section.",
+          "Verify the accuracy of the displayed statistical data."
+        ]
+      }
+    ],
+    "design_validation_testing": [
+      {
+        "id": "TC001",
+        "name": "Test Obituaries Section Layout",
+        "objective": "To verify that the Obituaries Section displays obituaries in a clear and organized manner.",
+        "coverage_element": "Obituaries Section : Section displaying obituaries",
+        "preconditions": "User is on the page containing the Obituaries Section.",
+        "expected_results": "The section displays all obituaries clearly with proper formatting and spacing.",
+        "procedure": [
+          "Navigate to the Obituaries Section.",
+          "Verify the layout and readability of the displayed obituaries."
+        ]
+      }
+    ]
+  },
+  "element_requirement": [
+    "1. Name Textbox : Textbox for entering the name of the deceased",
+    "2. Obituaries Button : Button to navigate to the Obituaries section",
+    "3. Statistics Button : Button to navigate to the Statistics section",
+    "4. Add Obituary Button : Button for adding a new obituary",
+    "5. Add Obituary Card : Card prompting users to add an obituary",
+    "6. Delete Button : Button for deleting an obituary",
+    "7. Condolences Textbox : Textbox for leaving a condolence message",
+    "8. John Doe Obituary Card : Card displaying John Doe's obituary information",
+    "9. Jane Smith Obituary Card : Card displaying Jane Smith's obituary information",
+    "10. Obituaries Section : Section displaying obituaries",
+    "11. Statistics Section : Section displaying statistics",
+    "12. Image Media Button : Button for adding an image to an obituary",
+    "13. Video Media Button : Button for adding a video to an obituary",
+    "14. Audio Media Button : Button for adding audio to an obituary"
+  ]
+}

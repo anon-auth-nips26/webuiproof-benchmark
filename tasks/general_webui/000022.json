@@ -1,0 +1,349 @@
+{
+  "website_summary": {
+    "name": "Customer Service Call Manager",
+    "description": "The website presents a clean and organized interface for managing customer service calls with a focus on client interaction and call tracking.",
+    "category": "Data Management",
+    "appearance": "The website features a modern and user-friendly design with a light pink background. It includes two main sections: \"Client Directory\" and \"Call Management.\" The \"Client Directory\" displays a list of clients with their names and contact numbers, allowing users to view details or show calls related to each client. The \"Call Management\" section enables users to track and manage customer calls, including options to mark calls as \"To-Do,\" \"Pending,\" or \"Completed.\" There are buttons for adding new clients and generating reports. The interface uses medium violet red for various components, enhancing visibility and usability. The header contains a logo and navigation options, while the footer provides additional controls.",
+    "functionality": "The website offers several key functionalities:\n- A search bar within the \"Client Directory\" allows users to find specific clients quickly.\n- Users can add new clients via the \"Add New Client\" button.\n- The \"Call Management\" section lets users log new calls, categorize them by status (To-Do, Pending, Completed), and filter calls by client or type.\n- Users can view detailed information about each call, including the reason for the call and due dates.\n- A \"Generate Report\" button facilitates the creation of comprehensive call logs for analysis.\n- Permission control ensures that only authorized users (like admins) can access certain features."
+  },
+  "test_cases": {
+    "functionality_testing": [
+      {
+        "id": "TC001",
+        "name": "Add New Client Button Test",
+        "objective": "To verify that clicking the Add New Client button opens the form to add a new client.",
+        "coverage_element": "Add New Client",
+        "preconditions": "The \"Client Directory\" section is visible.",
+        "expected_results": "The form for adding a new client should appear after clicking the button. 7. Next Steps : Click the \"Add New Client\" button to proceed with adding a new client.",
+        "procedure": [
+          "Click on the Add New Client button.",
+          "Verify that the form to add a new client appears."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Address Input Field Test",
+        "objective": "To verify that the Address textbox accepts input and updates the form.",
+        "coverage_element": "Address",
+        "preconditions": "The \"Create New Client\" form is open and the Name, Phone, and Email textboxes were filled with \"John Doe\", \"123-456-7890\", and \"example@example.com\" respectively.",
+        "expected_results": "The \"Address\" field should display the entered address accurately. 7. Next Steps : Enter an address \"123 Main St\" into the \"Address\" textbox to continue filling in required client information.",
+        "procedure": [
+          "Enter an address \"123 Main St\" into the Address textbox.",
+          "Verify that the text appears in the \"Address\" field."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "City Input Field Test",
+        "objective": "To verify that the City textbox accepts input and updates the form.",
+        "coverage_element": "City",
+        "preconditions": "The \"Create New Client\" form is open and the Name, Phone, Email, and Address textboxes were filled with \"John Doe\", \"123-456-7890\", \"example@example.com\", and \"123 Main St\" respectively.",
+        "expected_results": "The \"City\" field should display the entered city accurately. 7. Next Steps : Enter a city \"Anytown\" into the \"City\" textbox to continue filling in required client information.",
+        "procedure": [
+          "Enter a city \"Anytown\" into the City textbox.",
+          "Verify that the text appears in the \"City\" field."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Email Input Field Test",
+        "objective": "To verify that the Email textbox accepts input and updates the form.",
+        "coverage_element": "Email",
+        "preconditions": "The \"Create New Client\" form is open and the Name textbox was filled with \"John Doe\" and the Phone textbox was filled with \"123-456-7890\".",
+        "expected_results": "The \"Email\" field should display the entered email address accurately. 7. Next Steps : Enter an email address \"example@example.com\" into the \"Email\" textbox to continue filling in required client information.",
+        "procedure": [
+          "Enter an email \"example@example.com\" into the Email textbox.",
+          "Verify that the text appears in the \"Email\" field."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Name Input Field Test",
+        "objective": "To verify that the Name textbox accepts input and updates the form.",
+        "coverage_element": "Name",
+        "preconditions": "The \"Create New Client\" form is open.",
+        "expected_results": "The name field should display the entered text accurately. 7. Next Steps : Enter the client's name into the \"Name\" textbox as the first piece of required client information.",
+        "procedure": [
+          "Enter text into the Name textbox.",
+          "Verify the text appears in the name field."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Notes Section Interaction Test",
+        "objective": "To verify the right interaction is executed with the Notes card to input the additional client notes.",
+        "coverage_element": "Notes",
+        "preconditions": "The \"Create New Client\" form is open and has successfully filled the other fields from 6.",
+        "expected_results": "The \"Notes\" field should display the entered notes accurately if it becomes an input field after the interaction.",
+        "procedure": [
+          "Click on the Notes card to see if it reveals a hidden input area for notes.",
+          "If input area appears, type \"This is a test client.\".",
+          "Verify that the text appears in the \"Notes\" field."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "Phone Input Field Test",
+        "objective": "To verify that the Phone textbox accepts input and updates the form.",
+        "coverage_element": "Phone",
+        "preconditions": "The \"Create New Client\" form is open and the Name textbox was filled with \"John Doe\".",
+        "expected_results": "The \"Phone\" field should display the entered phone number accurately. 7. Next Steps : Enter a phone number \"123-456-7890\" into the \"Phone\" textbox as the next piece of required client information.",
+        "procedure": [
+          "Enter a phone number into the Phone textbox.",
+          "Verify the text appears in the \"Phone\" field."
+        ]
+      },
+      {
+        "id": "TC008",
+        "name": "Search Input Test",
+        "objective": "To verify that the search input field functions correctly.",
+        "coverage_element": "Search Input",
+        "preconditions": "The search input field is empty.",
+        "expected_results": "The search results should be displayed based on the entered query. 7. Next Steps : Perform the first test case to validate the background color.",
+        "procedure": [
+          "Click on the Search Input.",
+          "Enter a search query.",
+          "Press Enter or click the search button."
+        ]
+      },
+      {
+        "id": "TC009",
+        "name": "Show Calls Button Test",
+        "objective": "To verify that the show calls button functions correctly.",
+        "coverage_element": "Show Calls Button",
+        "preconditions": "The show calls button is visible.",
+        "expected_results": "The calls for the client should be displayed upon clicking the button. 7. Next Steps : Perform the next test case to validate the text field styling.",
+        "procedure": [
+          "Click on the Show Calls Button.",
+          "Verify that the calls for the client are displayed."
+        ]
+      },
+      {
+        "id": "TC010",
+        "name": "State Input Field Test",
+        "objective": "To verify that the State textbox accepts input and updates the form.",
+        "coverage_element": "State",
+        "preconditions": "The \"Create New Client\" form is open and the Name, Phone, Email, Address, and City textboxes were filled with \"John Doe\", \"123-456-7890\", \"example@example.com\", \"123 Main St\", and \"Anytown\" respectively.",
+        "expected_results": "The \"State\" field should display the entered state accurately. 7. Next Steps : Enter a state \"CA\" into the \"State\" textbox to continue filling in required client information.",
+        "procedure": [
+          "Enter a state \"CA\" into the State textbox.",
+          "Verify that the text appears in the \"State\" field."
+        ]
+      },
+      {
+        "id": "TC011",
+        "name": "View Details Button Test",
+        "objective": "To verify that hovering over the View Details button next to John Doe's logged call displays detailed information accurately.",
+        "coverage_element": "View Details",
+        "preconditions": "The logged call for John Doe is visible in the Call Management section.",
+        "expected_results": "Detailed information about the logged call should be displayed accurately. 7. Next Steps : Hover over the \"View Details\" button next to John Doe's logged call to check if detailed information is displayed accurately.",
+        "procedure": [
+          "Hover over the View Details button.",
+          "Verify that detailed information about the logged call, including client's name, contact number, complaint type, and due date, is displayed accurately."
+        ]
+      },
+      {
+        "id": "TC012",
+        "name": "Zip Input Field Test",
+        "objective": "To verify that the Zip textbox accepts input and updates the form.",
+        "coverage_element": "Zip",
+        "preconditions": "The \"Create New Client\" form is open and the Name, Phone, Email, Address, City, and State textboxes were filled with \"John Doe\", \"123-456-7890\", \"example@example.com\", \"123 Main St\", \"Anytown\", and \"CA\" respectively.",
+        "expected_results": "The \"Zip\" field should display the entered ZIP code accurately. 7. Next Steps : Enter a ZIP code \"90210\" into the \"Zip\" textbox to continue filling in required client information.",
+        "procedure": [
+          "Enter a ZIP code \"90210\" into the Zip textbox.",
+          "Verify that the text appears in the \"Zip\" field."
+        ]
+      },
+      {
+        "id": "TC013",
+        "name": "Test View Details Button for Jane Smith",
+        "objective": "To verify that clicking the 'View Details' button next to Jane Smith's logged call displays the correct call details.",
+        "coverage_element": "View Details : Button next to Jane Smith's logged call",
+        "preconditions": "User is logged into the application and navigated to the Call Management section.",
+        "expected_results": "The logged call details for Jane Smith should be displayed.",
+        "procedure": [
+          "Navigate to the Call Management section.",
+          "Click the 'View Details' button next to Jane Smith's logged call."
+        ]
+      },
+      {
+        "id": "TC014",
+        "name": "Test View Details Button for John Doe",
+        "objective": "To verify that clicking the 'View Details' button next to John Doe's logged call displays the correct call details.",
+        "coverage_element": "View Details : Button next to John Doe's logged call in Call Management",
+        "preconditions": "User is logged into the application and navigated to the Call Management section.",
+        "expected_results": "The logged call details for John Doe should be displayed.",
+        "procedure": [
+          "Navigate to the Call Management section.",
+          "Click the 'View Details' button next to John Doe's logged call."
+        ]
+      },
+      {
+        "id": "TC015",
+        "name": "Test Show Calls Button for Jane Smith",
+        "objective": "To verify that clicking the 'Show Calls' button associated with Jane Smith displays her call logs.",
+        "coverage_element": "Show Calls : Button associated with Jane Smith",
+        "preconditions": "User is logged into the application and navigated to the Client Directory section.",
+        "expected_results": "The call logs associated with Jane Smith should be displayed.",
+        "procedure": [
+          "Navigate to the Client Directory section.",
+          "Click the 'Show Calls' button associated with Jane Smith."
+        ]
+      },
+      {
+        "id": "TC016",
+        "name": "Test Download Report Button",
+        "objective": "To verify that clicking the 'Download Report' button allows the user to download the generated call log report.",
+        "coverage_element": "Download Report : Button to download the generated call log report",
+        "preconditions": "User is logged into the application and a report has been generated.",
+        "expected_results": "The user should be able to download the generated call log report.",
+        "procedure": [
+          "Navigate to the section where the report is available.",
+          "Click the 'Download Report' button."
+        ]
+      },
+      {
+        "id": "TC017",
+        "name": "Test Generate Report Button",
+        "objective": "To verify that clicking the 'Generate Report' button initiates the report generation process.",
+        "coverage_element": "Generate Report : Button for generating a call log report",
+        "preconditions": "User is logged into the application.",
+        "expected_results": "The report generation process should start, and the user should be notified once the report is ready.",
+        "procedure": [
+          "Navigate to the relevant section.",
+          "Click the 'Generate Report' button."
+        ]
+      }
+    ],
+    "data_display_testing": [
+      {
+        "id": "TC001",
+        "name": "Test Client Directory Section",
+        "objective": "To verify that the 'Client Directory' section correctly displays client management options.",
+        "coverage_element": "Client Directory : Section containing client management options",
+        "preconditions": "User is logged into the application.",
+        "expected_results": "The Client Directory section should display all client management options.",
+        "procedure": [
+          "Navigate to the Client Directory section.",
+          "Verify that all client management options are displayed."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Test Call Management Section",
+        "objective": "To verify that the 'Call Management' section correctly displays options for managing customer calls.",
+        "coverage_element": "Call Management : Section for managing customer calls",
+        "preconditions": "User is logged into the application.",
+        "expected_results": "The Call Management section should display all options for managing customer calls.",
+        "procedure": [
+          "Navigate to the Call Management section.",
+          "Verify that all call management options are displayed."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Test Logged Call Card for John Doe",
+        "objective": "To verify that the 'Logged Call Card' correctly displays John Doe's logged call details.",
+        "coverage_element": "Logged Call Card : Displays John Doe's logged call details",
+        "preconditions": "User is logged into the application and navigated to the Call Management section.",
+        "expected_results": "The Logged Call Card should display all details of John Doe's logged call.",
+        "procedure": [
+          "Navigate to the Call Management section.",
+          "Verify that the Logged Call Card displays John Doe's logged call details."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Test Update Information Card",
+        "objective": "To verify that the 'Update Information Card' correctly shows the last update timestamp and report generation option.",
+        "coverage_element": "Update Information Card : Shows last update timestamp and report generation option",
+        "preconditions": "User is logged into the application.",
+        "expected_results": "The Update Information Card should display the last update timestamp and report generation option.",
+        "procedure": [
+          "Navigate to the relevant section.",
+          "Verify that the Update Information Card displays the last update timestamp and report generation option."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Test Call Log Report Dialog",
+        "objective": "To verify that the 'Call Log Report Dialog' correctly displays instructions for downloading the report.",
+        "coverage_element": "Call Log Report Dialog : Displays instructions for downloading the report",
+        "preconditions": "User is logged into the application and a report has been generated.",
+        "expected_results": "The Call Log Report Dialog should display the correct instructions for downloading the report.",
+        "procedure": [
+          "Navigate to the section where the report is available.",
+          "Verify that the Call Log Report Dialog displays the correct instructions."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Test Client Complaint Card",
+        "objective": "To verify that the 'Client Complaint Card' correctly displays client complaints.",
+        "coverage_element": "Client Complaint Card : Displays client complaints",
+        "preconditions": "User is logged into the application.",
+        "expected_results": "The Client Complaint Card should display all client complaints.",
+        "procedure": [
+          "Navigate to the relevant section.",
+          "Verify that the Client Complaint Card displays all client complaints."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "Test Last Updated Card",
+        "objective": "To verify that the 'Last Updated Card' correctly shows the last update timestamp.",
+        "coverage_element": "Last Updated Card : Shows the last update timestamp",
+        "preconditions": "User is logged into the application.",
+        "expected_results": "The Last Updated Card should display the correct last update timestamp.",
+        "procedure": [
+          "Navigate to the relevant section.",
+          "Verify that the Last Updated Card displays the correct last update timestamp."
+        ]
+      }
+    ],
+    "design_validation_testing": [
+      {
+        "id": "TC001",
+        "name": "UI Design and Style Test: Background Color",
+        "objective": "To verify that the background color matches the specified light pink requirement.",
+        "coverage_element": "Background Color",
+        "preconditions": "",
+        "expected_results": "The background color should be light pink.",
+        "procedure": [
+          "Observe the background color of the webpage.",
+          "Compare it with the specified light pink color."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "UI Design and Style Test: Button Styling",
+        "objective": "To verify that all buttons are styled in medium violet red.",
+        "coverage_element": "Button Styling",
+        "preconditions": "",
+        "expected_results": "All buttons should be styled in medium violet red.",
+        "procedure": [
+          "Observe the styling of all buttons.",
+          "Compare it with the specified medium violet red color."
+        ]
+      }
+    ]
+  },
+  "element_requirement": [
+    "1. Add New Client : Button for adding a new client",
+    "2. View Details : Button next to John Doe's logged call",
+    "3. View Details : Button next to Jane Smith's logged call",
+    "4. View Details : Button next to John Doe's logged call in Call Management",
+    "5. Show Calls : Button associated with John Doe",
+    "6. Show Calls : Button associated with Jane Smith",
+    "7. Client Directory : Section containing client management options",
+    "8. Call Management : Section for managing customer calls",
+    "9. Logged Call Card : Displays John Doe's logged call details",
+    "10. Update Information Card : Shows last update timestamp and report generation option",
+    "11. Download Report : Button to download the generated call log report",
+    "12. Call Log Report Dialog : Displays instructions for downloading the report",
+    "13. Notes : Textarea for additional client notes",
+    "14. Generate Report : Button for generating a call log report",
+    "15. Client Complaint Card : Displays client complaints",
+    "16. Last Updated Card : Shows the last update timestamp"
+  ]
+}

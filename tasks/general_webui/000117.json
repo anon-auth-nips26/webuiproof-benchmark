@@ -1,0 +1,185 @@
+{
+  "website_summary": {
+    "name": "CodeCraft Editor",
+    "description": "The website resembles a sleek, modern code editor with a dark theme, featuring a header, sidebar for file navigation, and a main code editing area.",
+    "category": "User Interaction",
+    "appearance": "The website has a clean and professional design with a dark theme. The header includes a title \"Code Editor\" and buttons for \"Save\" and \"Run.\" The sidebar on the left, labeled \"EXPLORER,\" lists files like \"main.py\" and \"README.md\" for navigation. The main area is a code editor with a textarea for typing code, and the interface uses icons and text in a monospace font for a coding-friendly experience. The layout is structured with flexbox, ensuring components are well-spaced and visually appealing.",
+    "functionality": "The website allows users to navigate files using the sidebar, edit code in the main area, and save or run the code using the buttons in the header. The \"Save\" button indicates the save status, and the \"Run\" button likely executes the code. The code editor uses a textarea for input, updating the state as the user types."
+  },
+  "test_cases": {
+    "functionality_testing": [
+      {
+        "id": "TC001",
+        "name": "README.md File Test",
+        "objective": "To verify that clicking the README.md File in the sidebar displays its content in the main editing area.",
+        "coverage_element": "README.md File",
+        "preconditions": "The \"README.md\" file is visible in the sidebar.",
+        "expected_results": "The main editing area displays the content of \"README.md\". 7. Next Steps : Click on the \"README.md\" file in the sidebar to display its content in the main editing area.",
+        "procedure": [
+          "Click on the README.md File in the sidebar.",
+          "Verify that the content of \"README.md\" is displayed in the main editing area."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Run Button Test",
+        "objective": "To verify that clicking the Run Button executes the code in the main editing area.",
+        "coverage_element": "Run Button",
+        "preconditions": "The main editing area contains the code `print(\"Hello, World!\")`.",
+        "expected_results": "The code should execute successfully, and the output should be displayed. 7. Next Steps : Click the \"Run\" button to execute the code.",
+        "procedure": [
+          "Click on the Run Button.",
+          "Verify that the output \"Hello, World!\" is displayed."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Test Save Button Functionality",
+        "objective": "To verify that clicking the Save button successfully saves the current file.",
+        "coverage_element": "Saved Button : Button for saving the current file",
+        "preconditions": "The current file has unsaved changes and the application is in an editable state.",
+        "expected_results": "The current file is saved without errors, and any unsaved changes are no longer indicated.",
+        "procedure": [
+          "Step 1 : Perform an edit in the code editor to ensure there are unsaved changes.",
+          "Step 2 : Click the 'Save' button and verify that the changes are saved."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Test Sidebar Toggle Button Functionality",
+        "objective": "To verify that the Expand/Collapse button correctly toggles the sidebar visibility.",
+        "coverage_element": "Expand/Collapse Button : Button to expand or collapse the sidebar",
+        "preconditions": "The sidebar is initially visible.",
+        "expected_results": "The sidebar collapses when the button is clicked, and expands with another click.",
+        "procedure": [
+          "Step 1 : Click the 'Expand/Collapse' button and verify that the sidebar collapses.",
+          "Step 2 : Click the button again and verify that the sidebar expands."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Test Close Tab Button Functionality",
+        "objective": "To verify that clicking the Close Tab button will close the current tab.",
+        "coverage_element": "Close Tab Button : Button to close the current tab",
+        "preconditions": "The tab area contains at least one open file tab.",
+        "expected_results": "The selected tab is closed and removed from the tab bar.",
+        "procedure": [
+          "Step 1 : Select a file tab to be the current active tab.",
+          "Step 2 : Click the 'Close Tab' button and verify that the tab is closed."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Test Main.py Tab Functionality",
+        "objective": "To verify that the 'main.py' tab can be selected and displays the correct content.",
+        "coverage_element": "Main.py Tab : Tab for the main.py file",
+        "preconditions": "The 'main.py' file exists and the corresponding tab is present.",
+        "expected_results": "The 'main.py' tab is active and displaying the contents of the 'main.py' file.",
+        "procedure": [
+          "Step 1 : Click the 'main.py' tab in the tab bar.",
+          "Step 2 : Verify that the code editor displays the content of 'main.py'."
+        ]
+      }
+    ],
+    "data_display_testing": [
+      {
+        "id": "TC001",
+        "name": "Console Output Card Test",
+        "objective": "To verify that the Console Output Card displays the correct console output after executing the code.",
+        "coverage_element": "Console Output Card",
+        "preconditions": "The main editing area contains the code `print(\"Hello, World!\")`, and the \"Run\" button has been clicked.",
+        "expected_results": "The console output should match the expected result. 7. Next Steps : Investigate why the output does not match the expected result and make necessary adjustments to the code.",
+        "procedure": [
+          "Verify that the Console Output Card displays the expected output \"Hello, World!\"."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "README.md Content Display Test",
+        "objective": "To verify that selecting the README.md Tab loads its content in the code editor.",
+        "coverage_element": "README.md Tab",
+        "preconditions": "README.md is already opened as a tab, no content is displayed.",
+        "expected_results": "The README.md file contents are visible in the code editor, indicating successful loading. 7. Next Steps : Since the README.md tab is selected but content is not visible, performing a click on the README.md file in the sidebar again may resolve the issue, possibly by refreshing the tab connection or content.",
+        "procedure": [
+          "Confirm the README.md Tab is open.",
+          "Verify the content of README.md appears in the Code Editor."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Sidebar Width and File Icons Test",
+        "objective": "To verify that the sidebar width is `60px` and files are listed with appropriate icons.",
+        "coverage_element": "Sidebar section",
+        "preconditions": "The website is open and fully loaded.",
+        "expected_results": "Sidebar width should be `60px` and files should be listed with suitable icons.",
+        "procedure": [
+          "Measure the sidebar width.",
+          "Verify that files are listed with appropriate icons."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Verify File Name in Sidebar",
+        "objective": "To verify that the file name 'main.py' is displayed correctly in the sidebar.",
+        "coverage_element": "Main.py File : File name in the sidebar",
+        "preconditions": "The sidebar is expanded and the application is open with the explorer view.",
+        "expected_results": "The file named 'main.py' is listed in the sidebar.",
+        "procedure": [
+          "Step 1 : Check that the sidebar contains a file named 'main.py'."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Test Main.py File Tab Visibility",
+        "objective": "To verify that the 'main.py' file tab is visible when the corresponding file is opened.",
+        "coverage_element": "File Tab : Represents the \"main.py\" file tab",
+        "preconditions": "The 'main.py' file is selected in the sidebar.",
+        "expected_results": "The 'main.py' tab is visible at the top of the code editor area.",
+        "procedure": [
+          "Step 1 : Select the 'main.py' file in the sidebar.",
+          "Step 2 : Verify that the tab labeled 'main.py' is visible in the code editor area."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Test README.md File Tab Visibility",
+        "objective": "To verify that the 'README.md' file tab is visible when the corresponding file is opened.",
+        "coverage_element": "File Tab : Represents the \"README.md\" file tab",
+        "preconditions": "The 'README.md' file is selected in the sidebar.",
+        "expected_results": "The 'README.md' tab is visible at the top of the code editor area.",
+        "procedure": [
+          "Step 1 : Select the 'README.md' file in the sidebar.",
+          "Step 2 : Verify that the tab labeled 'README.md' is visible in the code editor area."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "Test Code Editor Display",
+        "objective": "To verify that the code editor displays the Python code as expected.",
+        "coverage_element": "Code Editor : Textarea containing the Python code `print(\"Line 1\\nLine 2\")`",
+        "preconditions": "The 'main.py' tab is open and selected.",
+        "expected_results": "The code editor displays the pre-defined Python code `print(\"Line 1\\nLine 2\")`.",
+        "procedure": [
+          "Step 1 : Ensure the 'main.py' tab is active.",
+          "Step 2 : Check that the code editor displays the Python code `print(\"Line 1\\nLine 2\")`."
+        ]
+      }
+    ],
+    "design_validation_testing": []
+  },
+  "element_requirement": [
+    "1. Saved Button : Button for saving the current file",
+    "2. Run Button : Button to execute the code written in the main editing area",
+    "3. Expand/Collapse Button : Button to expand or collapse the sidebar",
+    "4. Main.py File : File name in the sidebar",
+    "5. File Tab : Represents the \"main.py\" file tab",
+    "6. File Tab : Represents the \"README.md\" file tab",
+    "7. README.md File : File name in the sidebar",
+    "8. Close Tab Button : Button to close the current tab",
+    "9. Main.py Tab : Tab for the main.py file",
+    "10. README.md : File tab in the editor",
+    "11. Console Output Card : Displays the console output of the executed code",
+    "12. Code Editor : Textarea containing the Python code `print(\"Line 1\\nLine 2\")`",
+    "13. Explorer Card : Displays file names like \"main.py\" and \"README.md\""
+  ]
+}

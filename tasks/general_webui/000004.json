@@ -1,0 +1,303 @@
+{
+  "website_summary": {
+    "name": "Basketball Analytics Hub",
+    "description": "The website displays dynamic basketball statistics and offers analytical tools with a clean, professional design.",
+    "category": "Data Management",
+    "appearance": "The Basketball Analytics Hub is structured with a dashboard layout. The header includes a navigation bar with \"Dashboard,\" \"Predictions,\" and \"Advanced Stats\" options. The primary section features \"Team Standings,\" where teams are ranked with columns for wins, losses, and other statistics. Below, \"Recent Matches\" lists match results with home win indicators. The \"Player Statistics\" section provides detailed player data, including points, rebounds, assists, and shooting percentages. A footer contains branding and copyright information. The background is ghost white, while components like buttons and panels are styled in slate gray, presenting a modern and visible contrast.",
+    "functionality": "The website lets users explore team standings, view recent match results, and analyze player statistics. Navigation options in the header allow users to switch between dashboard views, make predictions, and access advanced basketball data. Users can hover over elements like match scores for additional details and click on team or player names to view more comprehensive profiles. It also features links for detailing in-depth information about data displays and provides interactive options such as viewing all matches or accessing more detailed player statistics."
+  },
+  "test_cases": {
+    "functionality_testing": [
+      {
+        "id": "TC001",
+        "name": "Dashboard Button Test",
+        "objective": "To verify that clicking the Dashboard button navigates to the dashboard section.",
+        "coverage_element": "Dashboard",
+        "preconditions": "The application is open and the dashboard button is visible.",
+        "expected_results": "The dashboard section should be visible, including the team standings table.",
+        "procedure": [
+          "Click on the Dashboard button.",
+          "Verify that the dashboard section is displayed."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Hover Over LeBron James Test",
+        "objective": "To verify that hovering over \"LeBron James\" displays additional stats.",
+        "coverage_element": "LeBron James",
+        "preconditions": "The \"Player Statistics\" section is visible.",
+        "expected_results": "Additional stats should be displayed when hovering over \"LeBron James.\" 7. Next Steps : Hover over the name \"LeBron James.\"",
+        "procedure": [
+          "Hover over the name \"LeBron James.\"",
+          "Verify that additional stats are displayed."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "More Info Button Test for Team Standings",
+        "objective": "To verify that additional details are provided upon clicking the more info button More Info for the team standings.",
+        "coverage_element": "More Info",
+        "preconditions": "Team standings are displayed.",
+        "expected_results": "Supplementary information related to team standings should be displayed.",
+        "procedure": [
+          "Click on the More Info button within Team Standings section."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Scroll to Player Statistics Section Test",
+        "objective": "To verify that scrolling down reveals the \"Player Statistics\" section.",
+        "coverage_element": "[WINDOW]",
+        "preconditions": "The webpage is loaded and currently displaying the \"Dashboard\" section.",
+        "expected_results": "The \"Player Statistics\" section should be visible after scrolling. 7. Next Steps : Scroll down the webpage to locate the \"Player Statistics\" section.",
+        "procedure": [
+          "Scroll down the webpage.",
+          "Verify that the \"Player Statistics\" section becomes visible."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Test Navigation to Predictions Section",
+        "objective": "To verify that clicking the 'Predictions' button navigates to the predictions section.",
+        "coverage_element": "Predictions : Button for navigating to the predictions section",
+        "preconditions": "User is logged into the Basketball Analytics Hub and is on the dashboard page.",
+        "expected_results": "The page should navigate to the predictions section upon clicking the 'Predictions' button.",
+        "procedure": [
+          "Click on the 'Predictions' button in the navigation bar.",
+          "Verify that the page navigates to the predictions section."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Test Navigation to Advanced Stats Section",
+        "objective": "To verify that clicking the 'Advanced Stats' button navigates to the advanced stats section.",
+        "coverage_element": "Advanced Stats : Button for navigating to the advanced stats section",
+        "preconditions": "User is logged into the Basketball Analytics Hub and is on the dashboard page.",
+        "expected_results": "The page should navigate to the advanced stats section upon clicking the 'Advanced Stats' button.",
+        "procedure": [
+          "Click on the 'Advanced Stats' button in the navigation bar.",
+          "Verify that the page navigates to the advanced stats section."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "Test Expansion of Recent Matches Section",
+        "objective": "To verify that clicking the 'View All' button expands the recent matches section.",
+        "coverage_element": "View All : A button for expanding recent matches section",
+        "preconditions": "User is logged into the Basketball Analytics Hub and is on the dashboard page.",
+        "expected_results": "The recent matches section should expand to show all matches upon clicking the 'View All' button.",
+        "procedure": [
+          "Click on the 'View All' button in the recent matches section.",
+          "Verify that the section expands to display all recent matches."
+        ]
+      }
+    ],
+    "data_display_testing": [
+      {
+        "id": "TC001",
+        "name": "Recent Match Display Test",
+        "objective": "To verify the display and initial overview given by the section [C1, C2, C3, C4].",
+        "coverage_element": "Recent Matches Cards",
+        "preconditions": "Scroll down if \"Recent Matches\" is not visible.",
+        "expected_results": "“Recent Matches” clearly presents recent match scores and updates in a summarized manner. 7. Next Steps : The next logical step is to click a team name in the \"Team Standings\" table to ensure navigation to the team's detailed stats as the original task goal specifies.",
+        "procedure": [
+          "Scroll and observe that recent matches data are accurately and clearly represented."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Test Display of Relevant Cards for Additional Information",
+        "objective": "To verify that the relevant cards for detailing additional information are displayed correctly.",
+        "coverage_element": "Relevant cards for detailing additional information/contexts like 'Recent Matches' which may relate with team standings",
+        "preconditions": "User is logged into the Basketball Analytics Hub and is on the dashboard page.",
+        "expected_results": "The relevant cards should display additional information correctly.",
+        "procedure": [
+          "Navigate to the relevant sections containing the cards.",
+          "Verify that the cards display additional information correctly."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Test Display of Player Column Header",
+        "objective": "To verify that the 'PLAYER' column header is displayed correctly.",
+        "coverage_element": "PLAYER : Column header for player names",
+        "preconditions": "User is logged into the Basketball Analytics Hub and is on the dashboard page.",
+        "expected_results": "The 'PLAYER' column header should be displayed correctly.",
+        "procedure": [
+          "Navigate to the 'Player Statistics' section.",
+          "Verify that the 'PLAYER' column header is displayed correctly."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Test Display of Points Scored Column Header",
+        "objective": "To verify that the 'PTS' column header is displayed correctly.",
+        "coverage_element": "PTS : Column header for points scored",
+        "preconditions": "User is logged into the Basketball Analytics Hub and is on the dashboard page.",
+        "expected_results": "The 'PTS' column header should be displayed correctly.",
+        "procedure": [
+          "Navigate to the 'Player Statistics' section.",
+          "Verify that the 'PTS' column header is displayed correctly."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Test Display of Rebounds Column Header",
+        "objective": "To verify that the 'REB' column header is displayed correctly.",
+        "coverage_element": "REB : Column header for rebounds",
+        "preconditions": "User is logged into the Basketball Analytics Hub and is on the dashboard page.",
+        "expected_results": "The 'REB' column header should be displayed correctly.",
+        "procedure": [
+          "Navigate to the 'Player Statistics' section.",
+          "Verify that the 'REB' column header is displayed correctly."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Test Display of Assists Column Header",
+        "objective": "To verify that the 'AST' column header is displayed correctly.",
+        "coverage_element": "AST : Column header for assists",
+        "preconditions": "User is logged into the Basketball Analytics Hub and is on the dashboard page.",
+        "expected_results": "The 'AST' column header should be displayed correctly.",
+        "procedure": [
+          "Navigate to the 'Player Statistics' section.",
+          "Verify that the 'AST' column header is displayed correctly."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "Test Display of Field Goal Percentage Column Header",
+        "objective": "To verify that the 'FG%' column header is displayed correctly.",
+        "coverage_element": "FG% : Column header for field goal percentage",
+        "preconditions": "User is logged into the Basketball Analytics Hub and is on the dashboard page.",
+        "expected_results": "The 'FG%' column header should be displayed correctly.",
+        "procedure": [
+          "Navigate to the 'Player Statistics' section.",
+          "Verify that the 'FG%' column header is displayed correctly."
+        ]
+      },
+      {
+        "id": "TC008",
+        "name": "Test Display of Three-Point Percentage Column Header",
+        "objective": "To verify that the '3P%' column header is displayed correctly.",
+        "coverage_element": "3P% : Column header for three-point percentage",
+        "preconditions": "User is logged into the Basketball Analytics Hub and is on the dashboard page.",
+        "expected_results": "The '3P%' column header should be displayed correctly.",
+        "procedure": [
+          "Navigate to the 'Player Statistics' section.",
+          "Verify that the '3P%' column header is displayed correctly."
+        ]
+      },
+      {
+        "id": "TC009",
+        "name": "Test Display of LeBron James' Points Scored",
+        "objective": "To verify that LeBron James' points scored are displayed correctly.",
+        "coverage_element": "28.5 : Points scored by LeBron James",
+        "preconditions": "User is logged into the Basketball Analytics Hub and is on the dashboard page.",
+        "expected_results": "LeBron James' points scored should be displayed as 28.5.",
+        "procedure": [
+          "Navigate to the 'Player Statistics' section.",
+          "Verify that LeBron James' points scored are displayed as 28.5."
+        ]
+      },
+      {
+        "id": "TC010",
+        "name": "Test Display of LeBron James' Rebounds",
+        "objective": "To verify that LeBron James' rebounds are displayed correctly.",
+        "coverage_element": "8.2 : Rebounds by LeBron James",
+        "preconditions": "User is logged into the Basketball Analytics Hub and is on the dashboard page.",
+        "expected_results": "LeBron James' rebounds should be displayed as 8.2.",
+        "procedure": [
+          "Navigate to the 'Player Statistics' section.",
+          "Verify that LeBron James' rebounds are displayed as 8.2."
+        ]
+      },
+      {
+        "id": "TC011",
+        "name": "Test Display of LeBron James' Assists",
+        "objective": "To verify that LeBron James' assists are displayed correctly.",
+        "coverage_element": "7.5 : Assists by LeBron James",
+        "preconditions": "User is logged into the Basketball Analytics Hub and is on the dashboard page.",
+        "expected_results": "LeBron James' assists should be displayed as 7.5.",
+        "procedure": [
+          "Navigate to the 'Player Statistics' section.",
+          "Verify that LeBron James' assists are displayed as 7.5."
+        ]
+      },
+      {
+        "id": "TC012",
+        "name": "Test Display of LeBron James' Field Goal Percentage",
+        "objective": "To verify that LeBron James' field goal percentage is displayed correctly.",
+        "coverage_element": "52.5% : Field goal percentage by LeBron James",
+        "preconditions": "User is logged into the Basketball Analytics Hub and is on the dashboard page.",
+        "expected_results": "LeBron James' field goal percentage should be displayed as 52.5%.",
+        "procedure": [
+          "Navigate to the 'Player Statistics' section.",
+          "Verify that LeBron James' field goal percentage is displayed as 52.5%."
+        ]
+      },
+      {
+        "id": "TC013",
+        "name": "Test Display of LeBron James' Three-Point Percentage",
+        "objective": "To verify that LeBron James' three-point percentage is displayed correctly.",
+        "coverage_element": "34.5% : Three-point percentage by LeBron James",
+        "preconditions": "User is logged into the Basketball Analytics Hub and is on the dashboard page.",
+        "expected_results": "LeBron James' three-point percentage should be displayed as 34.5%.",
+        "procedure": [
+          "Navigate to the 'Player Statistics' section.",
+          "Verify that LeBron James' three-point percentage is displayed as 34.5%."
+        ]
+      },
+      {
+        "id": "TC014",
+        "name": "Test Display of Player Statistics Card",
+        "objective": "To verify that the player statistics card is displayed correctly.",
+        "coverage_element": "Player Statistics Card : Card displaying player statistics",
+        "preconditions": "User is logged into the Basketball Analytics Hub and is on the dashboard page.",
+        "expected_results": "The player statistics card should display player statistics correctly.",
+        "procedure": [
+          "Navigate to the 'Player Statistics' section.",
+          "Verify that the player statistics card displays player statistics correctly."
+        ]
+      },
+      {
+        "id": "TC015",
+        "name": "Test Display of Match Card for Golden State Warriors vs New York Knicks",
+        "objective": "To verify that the match card for Golden State Warriors vs New York Knicks is displayed correctly.",
+        "coverage_element": "Match Card : Card displaying match information for Golden State Warriors vs New York Knicks",
+        "preconditions": "User is logged into the Basketball Analytics Hub and is on the dashboard page.",
+        "expected_results": "The match card should display match information for Golden State Warriors vs New York Knicks correctly.",
+        "procedure": [
+          "Navigate to the 'Recent Matches' section.",
+          "Verify that the match card for Golden State Warriors vs New York Knicks displays match information correctly."
+        ]
+      }
+    ],
+    "design_validation_testing": []
+  },
+  "element_requirement": [
+    "1. Dashboard : Button for navigating to the dashboard section",
+    "2. Predictions : Button for navigating to the predictions section",
+    "3. Advanced Stats : Button for navigating to the advanced stats section",
+    "4. More Info : Button providing additional information",
+    "5. Team Standings Table Displaying team names, wins, losses, win percentage, points for, and points against",
+    "6. Cards showing recent matches and additional information",
+    "7. View All : A button for expanding recent matches section",
+    "8. Relevant cards for detailing additional information/contexts like 'Recent Matches' which may relate with team standings",
+    "9. Recent Matches Card : Card displaying recent matches information",
+    "10. PLAYER : Column header for player names",
+    "11. PTS : Column header for points scored",
+    "12. REB : Column header for rebounds",
+    "13. AST : Column header for assists",
+    "14. FG% : Column header for field goal percentage",
+    "15. 3P% : Column header for three-point percentage",
+    "16. LeBron James : Player name",
+    "17. 28.5 : Points scored by LeBron James",
+    "18. 8.2 : Rebounds by LeBron James",
+    "19. 7.5 : Assists by LeBron James",
+    "20. 52.5% : Field goal percentage by LeBron James",
+    "21. 34.5% : Three-point percentage by LeBron James",
+    "22. Player Statistics Card : Card displaying player statistics",
+    "23. Match Card : Card displaying match information for Golden State Warriors vs New York Knicks"
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "website_summary": {
+    "name": "Stock Report Generator",
+    "description": "The website displays dynamic stock information and offers analytical tools with a clean, professional design.",
+    "category": "Data Management",
+    "appearance": "The website has a clear and organized layout with distinct sections. It features a navigation header with \"Stock Report Generator\" prominently displayed. Below this, there's a section for stock information which includes a live price update, volume, and market cap. The \"Historical Data\" section showcases price and volume over time with a line graph. Additionally, the \"Financial Metrics\" and \"Financial Summary\" tables present key financial indicators and revenue details in a tabular format. The \"Ownership Distribution\" offers a pie chart for visualizing investor distribution, while the \"Stock Performance\" shows a line graph of price trends. The footer includes a customizable report section with checkboxes for content selection (e.g., Overview, Financials) and a \"Download Report\" button. The background is white, and various components utilize navy blue for text and buttons, ensuring a consistent color scheme and modern appearance.",
+    "functionality": "The website allows users to generate customized stock reports. By selecting a company (default is \"Apple Inc.\"), users can filter search and view detailed information such as stock prices, changes in price, volume, market cap, and financial data. The site includes interactive features like hovering over data points on graphs for more detailed information. Users can also customize report content by selecting options like \"Overview\" and \"Financials,\" followed by downloading the generated report. This makes it easy to tailor the report to specific needs."
+  },
+  "test_cases": {
+    "functionality_testing": [
+      {
+        "id": "TC001",
+        "name": "Download Button Test",
+        "objective": "To verify that the Download Button triggers the report download process, providing complete standardized or customized report data.",
+        "coverage_element": "Download Button",
+        "preconditions": "The page is loaded, and a report is ready to be downloaded.",
+        "expected_results": "The downloading process visually starts, leading to successfully downloading a report file reflecting data on the UI.",
+        "procedure": [
+          "Click on the Download Button and confirm a download concern initiating accordingly."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Company Selector Test",
+        "objective": "To ensure that the Company Selector Button allows switching between different companies and accurately updates related stock information.",
+        "coverage_element": "Company Selector",
+        "preconditions": "The page is loaded, and the company is initially set to \"Apple Inc.\"",
+        "expected_results": "The displayed stock details should automatically update for the different company chosen.",
+        "procedure": [
+          "Click on the Company Selector Button and choose a different company from the dropdown list."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Apple Inc. Dropdown Test",
+        "objective": "To verify that clicking the Apple Inc. dropdown correctly updates the displayed information.",
+        "coverage_element": "Apple Inc.",
+        "preconditions": "The page is loaded with Apple Inc. data.",
+        "expected_results": "The selected stock's data should replace the current Apple Inc. data in all relevant sections.",
+        "procedure": [
+          "Click on the Apple Inc. Dropdown button.",
+          "Select a different stock symbol from the dropdown options.",
+          "Verify that the Stock Information, Historical Data, Financial Metrics, Financial Summary, and Ownership Distribution cards update with the new stock's information."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Switch to Summary View",
+        "objective": "To verify that clicking the button switches the display to a summary view.",
+        "coverage_element": "Summary Tab : Button that likely switches the display to a summary view",
+        "preconditions": "The user is logged into the application and is on the main page.",
+        "expected_results": "The display should change to show the summary view with relevant data.",
+        "procedure": [
+          "Click on the 'Summary Tab' button.",
+          "Verify that the screen transitions to the summary view."
+        ]
+      }
+    ],
+    "data_display_testing": [
+      {
+        "id": "TC001",
+        "name": "Report Customization Display Test",
+        "objective": "To confirm that the Report Customization Card correctly displays the various customization options for report content.",
+        "coverage_element": "Report Customization",
+        "preconditions": "The Report Customization card is visible on the page.",
+        "expected_results": "All options such as Overview, Financials, Valuation, Metrics are correctly shown, allowing customization settings to be set before downloading.",
+        "procedure": [
+          "Verify that all available options for selecting report contents are displayed on the card."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Stock Information Display Test",
+        "objective": "To verify that the Stock Information card displays accurate stock data for Microsoft Corporation.",
+        "coverage_element": "Stock Information",
+        "preconditions": "The stock has been changed to Microsoft Corporation.",
+        "expected_results": "The Stock Information card should display the correct data for Microsoft Corporation.",
+        "procedure": [
+          "Hover over the Stock Information card.",
+          "Verify that the card displays the correct price, change, volume, and market cap for Microsoft Corporation."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Historical Data Test",
+        "objective": "To verify that hovering over the two specific data points provides the expected tooltips with exact values for each selected date in the \"Historical Data\" chart.",
+        "coverage_element": "Historical Data",
+        "preconditions": "The \"Historical Data\" chart is visible and interactive.",
+        "expected_results": "The tooltips for both \"2023-04\" and \"2023-08\" should show exact values for these dates. 7. Next Steps : I need to start the testing by hovering over the data point for the date \"2023-04\".",
+        "procedure": [
+          "Hover over the data point for \"2023-04\" on the Historical Data card.",
+          "Verify that a tooltip appears with precise data for that date.",
+          "Repeat the process for the data point corresponding to \"2023-08\"."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Financial Metrics Display Test",
+        "objective": "To verify that the Financial Metrics card displays accurate financial metrics for Microsoft Corporation.",
+        "coverage_element": "Financial Metrics",
+        "preconditions": "The stock has been changed to Microsoft Corporation.",
+        "expected_results": "The Financial Metrics card should display the correct financial metrics data for Microsoft Corporation.",
+        "procedure": [
+          "Hover over the Financial Metrics card.",
+          "Verify that the card displays the correct financial metrics data for Microsoft Corporation."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Financial Summary Data Display",
+        "objective": "To verify that the card displays accurate revenue and income data.",
+        "coverage_element": "Financial Summary : Card with revenue and income data",
+        "preconditions": "The user is logged into the application and is on the main page.",
+        "expected_results": "The card should display up-to-date and correct revenue and income figures.",
+        "procedure": [
+          "Navigate to the 'Financial Summary' card.",
+          "Check that the revenue and income data are correctly displayed and updated."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Ownership Distribution Visualization",
+        "objective": "To verify that the card accurately represents the investor breakdown.",
+        "coverage_element": "Ownership Distribution : Card with investor breakdown",
+        "preconditions": "The user is logged into the application and is on the main page.",
+        "expected_results": "The card should display a pie chart that correctly visualizes the ownership distribution.",
+        "procedure": [
+          "Navigate to the 'Ownership Distribution' card.",
+          "Verify that the pie chart accurately reflects the investor distribution percentages."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "Ownership Distribution Breakdown Display",
+        "objective": "To verify that the further breakdowns connected with ownership distribution information are correctly visualized.",
+        "coverage_element": "Further breakdowns connected with ownership distribution information with percentage visuals",
+        "preconditions": "The user is logged into the application and is on the main page.",
+        "expected_results": "The breakdowns should be clearly displayed with accurate percentage visuals.",
+        "procedure": [
+          "Navigate to the ownership distribution breakdown section.",
+          "Check that all breakdowns are displayed with correct percentage visuals."
+        ]
+      },
+      {
+        "id": "TC008",
+        "name": "Stock Performance Data Visualization",
+        "objective": "To verify that the stock performance data is accurately visualized in cards.",
+        "coverage_element": "Stock Performance data visualized in cards",
+        "preconditions": "The user is logged into the application and is on the main page.",
+        "expected_results": "The cards should display accurate line graphs representing stock price trends.",
+        "procedure": [
+          "Navigate to the 'Stock Performance' section.",
+          "Verify that the line graphs in the cards accurately represent the stock price trends."
+        ]
+      }
+    ],
+    "design_validation_testing": [
+      {
+        "id": "TC001",
+        "name": "UI Design and Style Test: Background Color",
+        "objective": "To verify that the background color is consistently white (#FFFFFF) across the page.",
+        "coverage_element": "Background Color",
+        "preconditions": "",
+        "expected_results": "The background should be uniformly white (#FFFFFF).",
+        "procedure": [
+          "Observe the background color of the entire page.",
+          "Compare against the required white color (#FFFFFF)."
+        ]
+      }
+    ]
+  },
+  "element_requirement": [
+    "1. Company Selector : Button for selecting different companies, currently set to \"Apple Inc.\"",
+    "2. Summary Tab : Button that likely switches the display to a summary view",
+    "3. Download Button : Button likely for downloading the current or customized report",
+    "4. Stock Information : Card displaying current price, volume, and market cap data for Apple Inc.",
+    "5. Historical Data Card : Contains a historical data chart with price and volume over time",
+    "6. Financial Metrics Card : Displays key financial indicators",
+    "7. Financial Summary : Card with revenue and income data",
+    "8. Report Customization Card : Card enabling report customization with options like \"Overview\", \"Financials\", \"Valuation\", \"Metrics\", and a \"Download Report\" button",
+    "9. Ownership Distribution : Card with investor breakdown",
+    "10. Further breakdowns connected with ownership distribution information with percentage visuals",
+    "11. Stock Performance data visualized in cards"
+  ]
+}

@@ -1,0 +1,239 @@
+{
+  "website_summary": {
+    "name": "Harmony Health Clinic Website",
+    "description": "The Harmony Health Clinic website features a clean, user-friendly design with a light cyan background and cadet blue components, designed for easy navigation and informative content delivery.",
+    "category": "Content Presentation",
+    "appearance": "The Harmony Health Clinic website has a consistent light cyan background across all pages, paired with cadet blue components for a cohesive look. The navigation menu is prominently displayed at the top of the page, with links to \"Home,\" \"About Us,\" \"Services,\" and \"Contact.\" The homepage welcomes visitors with a hero section featuring the clinic's name and a call-to-action button for exploring services. The \"About Us\" section includes a brief description of the clinic’s mission and philosophy, alongside professional images of the medical facility. The \"Meet Our Team\" section highlights key staff members such as Dr. Sarah Johnson, Dr. Michael Chen, and Lisa Thompson, each with their respective titles and experience details. In the \"Our Services\" section, various healthcare services are listed with icons and brief descriptions. The \"Contact Us\" section provides clinic details such as address, phone number, and contact form for inquiries.",
+    "functionality": "The website offers a variety of functions aimed at facilitating user interaction and information access. Users can navigate through the clinic's services, learn about the medical team, and contact the clinic through the provided contact form. The \"Our Services\" section allows users to explore specific offerings, including primary care, specialist referrals, chronic disease management, women's health, pediatrics, and mental health. Additionally, the contact form enables users to submit their inquiries directly to the clinic. The \"About Us\" section provides a deeper understanding of the clinic's philosophy and facilities."
+  },
+  "test_cases": {
+    "functionality_testing": [
+      {
+        "id": "TC001",
+        "name": "Contact Navigation Test",
+        "objective": "To verify that clicking the Contact link navigates to the contact page.",
+        "coverage_element": "Contact",
+        "preconditions": "User is on the homepage.",
+        "expected_results": "The user is redirected to the contact page where the form can be filled out. 7. Next Steps : Click on the \"Contact\" link to navigate to the contact form page.",
+        "procedure": [
+          "Click on the Contact link.",
+          "Verify that the page transitions to the contact section."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Email Input Test",
+        "objective": "To verify that the Email textbox accepts a valid email address and handles it correctly.",
+        "coverage_element": "Email",
+        "preconditions": "User is on the contact page with the Name field filled.",
+        "expected_results": "The email \"johndoe@example.com\" is entered into the Email field without issues. 7. Next Steps : Enter a valid email address into the Email field.",
+        "procedure": [
+          "Type \"johndoe@example.com\" into the Email textbox.",
+          "Verify that the input is accepted and displayed correctly."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Name Input Test",
+        "objective": "To verify that the Name textbox accepts input and handles it correctly.",
+        "coverage_element": "Name",
+        "preconditions": "User is on the contact page.",
+        "expected_results": "The name \"John Doe\" is entered into the Name field without issues. 7. Next Steps : Enter valid information into the Name field.",
+        "procedure": [
+          "Type \"John Doe\" into the Name textbox.",
+          "Verify that the input is accepted and displayed correctly."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Phone Input Test",
+        "objective": "To verify that the Phone textbox accepts a valid phone number and handles it correctly.",
+        "coverage_element": "Phone",
+        "preconditions": "User is on the contact page with the Name and Email fields filled.",
+        "expected_results": "The phone number \"(555) 123-4567\" is entered into the Phone field without issues. 7. Next Steps : Enter a valid phone number into the Phone field.",
+        "procedure": [
+          "Type \"(555) 123-4567\" into the Phone textbox.",
+          "Verify that the input is accepted and displayed correctly."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Services Navigation Test",
+        "objective": "To verify that clicking the \"Services\" navigation link correctly directs the user to the \"Our Services\" section.",
+        "coverage_element": "Services",
+        "preconditions": "The user is on the homepage.",
+        "expected_results": "The \"Our Services\" section should be displayed, showing various healthcare services with icons and descriptions. 7. Next Steps : Click on the \"Services\" navigation link to proceed with the task.",
+        "procedure": [
+          "Click on the \"Services\" navigation link.",
+          "Verify that the page navigates to the \"Our Services\" section."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Home Link Functionality",
+        "objective": "To verify that clicking the 'Home' navigation link leads to the homepage.",
+        "coverage_element": "Home : Navigation link leading to the homepage",
+        "preconditions": "The website is fully loaded, and the user is on any page other than the homepage.",
+        "expected_results": "The user is redirected to the homepage, displaying the hero section and call-to-action button.",
+        "procedure": [
+          "Navigate to any page other than the homepage.",
+          "Click the 'Home' navigation link and verify redirection."
+        ]
+      }
+    ],
+    "data_display_testing": [
+      {
+        "id": "TC001",
+        "name": "Chronic Disease Management Hover Test",
+        "objective": "To verify that hovering over the Chronic Disease Management Card displays the correct service title and description.",
+        "coverage_element": "Chronic Disease Management Card",
+        "preconditions": "Currently on the services page.",
+        "expected_results": "The correct service title and description for chronic disease management are displayed. 7. Next Steps : Hover over the \"Chronic Disease Management\" card to continue verifying the data display accuracy.",
+        "procedure": [
+          "Hover over the Chronic Disease Management Card.",
+          "Verify that the correct service title and description are displayed."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Primary Care Hover Test",
+        "objective": "To verify that hovering over the Primary Care Card displays the correct service title and description.",
+        "coverage_element": "Primary Care Card",
+        "preconditions": "Currently on the services page.",
+        "expected_results": "The correct service title and description for primary care are displayed. 7. Next Steps : Hover over the \"Primary Care\" card to verify the data display accuracy.",
+        "procedure": [
+          "Hover over the Primary Care Card.",
+          "Verify that the correct service title and description are displayed."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Specialist Referrals Hover Test",
+        "objective": "To verify that hovering over the Specialist Referrals Card displays the correct service title and description.",
+        "coverage_element": "Specialist Referrals Card",
+        "preconditions": "Currently on the services page.",
+        "expected_results": "The correct service title and description for specialist referrals are displayed. 7. Next Steps : Hover over the \"Specialist Referrals\" card to verify the data display accuracy.",
+        "procedure": [
+          "Hover over the Specialist Referrals Card.",
+          "Verify that the correct service title and description are displayed."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "About Us Information Display",
+        "objective": "To verify that the 'About Us' section correctly displays the clinic's mission and philosophy.",
+        "coverage_element": "About Us : Navigation link providing information about the clinic",
+        "preconditions": "The website is fully loaded, and the user is on the page with the 'About Us' section.",
+        "expected_results": "The 'About Us' section shows the clinic’s mission and philosophy along with professional images of the facility.",
+        "procedure": [
+          "Navigate to the page containing the 'About Us' section.",
+          "Verify that the section displays the correct information and images."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Staff and Patient Testimonial Cards Display",
+        "objective": "To verify that the Staff and Patient testimonial cards are correctly displayed.",
+        "coverage_element": "Staff and Patient Testimonial Cards : Displaying information about medical staff and patient testimonials",
+        "preconditions": "The website is fully loaded, and the user is on the page with the testimonial cards.",
+        "expected_results": "The Staff and Patient testimonial cards are clearly visible with legible text and images.",
+        "procedure": [
+          "Navigate to the page containing the testimonial cards.",
+          "Verify the display and legibility of each card."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Service Offerings Cards Display",
+        "objective": "To verify that the Service Offerings cards are correctly displayed with icons and descriptions.",
+        "coverage_element": "Service Offerings Cards : Cards outlining various healthcare services provided by the clinic",
+        "preconditions": "The website is fully loaded, and the user is on the page with the service cards.",
+        "expected_results": "The Service Offerings cards display icons related to each service and their brief descriptions.",
+        "procedure": [
+          "Navigate to the page containing the service cards.",
+          "Verify that each card displays the correct icon and description."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "Women's Health Card Display",
+        "objective": "To verify that the Women's Health card is correctly displayed.",
+        "coverage_element": "Women's Health Card : Displays information about women's health services",
+        "preconditions": "The website is fully loaded, and the user is on the page with the service cards.",
+        "expected_results": "The Women's Health card displays the correct information related to women's health services.",
+        "procedure": [
+          "Navigate to the page containing the Women’s Health card.",
+          "Verify the card displays the correct information."
+        ]
+      },
+      {
+        "id": "TC008",
+        "name": "Pediatrics Card Display",
+        "objective": "To verify that the Pediatrics card is correctly displayed.",
+        "coverage_element": "Pediatrics Card : Displays information about pediatric services",
+        "preconditions": "The website is fully loaded, and the user is on the page with the service cards.",
+        "expected_results": "The Pediatrics card displays the correct information related to pediatric services.",
+        "procedure": [
+          "Navigate to the page containing the Pediatrics card.",
+          "Verify the card displays the correct information."
+        ]
+      },
+      {
+        "id": "TC009",
+        "name": "Mental Health Card Display",
+        "objective": "To verify that the Mental Health card is correctly displayed.",
+        "coverage_element": "Mental Health Card : Displays information about mental health services",
+        "preconditions": "The website is fully loaded, and the user is on the page with the service cards.",
+        "expected_results": "The Mental Health card displays the correct information related to mental health services.",
+        "procedure": [
+          "Navigate to the page containing the Mental Health card.",
+          "Verify the card displays the correct information."
+        ]
+      }
+    ],
+    "design_validation_testing": [
+      {
+        "id": "TC001",
+        "name": "UI Design and Style Test: Navigation Bar Color",
+        "objective": "To evaluate the color consistency of the navigation bar using `Home`, `About Us`, `Services`, and `Contact`.",
+        "coverage_element": "`Home`, `About Us`, `Services`, `Contact`",
+        "preconditions": "The webpage is displayed in its original view.",
+        "expected_results": "The navigation bar should display a consistent cadet blue color.",
+        "procedure": [
+          "Observe the color of the navigation bar.",
+          "Compare the color with the expected cadet blue."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "UI Design and Style Test: Service Cards Hover Effects",
+        "objective": "To assess the design and visibility of the hover effects on the service cards using `C11`.",
+        "coverage_element": "`Primary Care`, `Specialist Referrals`, `Chronic Disease Management`, `Women's Health`, `Pediatrics`, `Mental Health`",
+        "preconditions": "The \"Services\" section is displayed.",
+        "expected_results": "Hover effects, if any, should be subtle and consistent with other website design elements.",
+        "procedure": [
+          "Hover over each service card `C11`.",
+          "Observe if any hover effects are present and if they align with design intentions."
+        ]
+      }
+    ]
+  },
+  "element_requirement": [
+    "1. Harmony Health Clinic : Logo and title of the clinic",
+    "2. Home : Navigation link leading to the homepage",
+    "3. About Us : Navigation link providing information about the clinic",
+    "4. Services : Navigation link detailing the services offered",
+    "5. Contact : Navigation link directing to the contact page",
+    "6. Staff and Patient Testimonial Cards : Displaying information about medical staff and patient testimonials",
+    "7. Service Offerings Cards : Cards outlining various healthcare services provided by the clinic",
+    "8. Name : Textbox for entering the user's name",
+    "9. Email : Textbox for entering the user's email address",
+    "10. Phone : Textbox for entering the user's phone number",
+    "11. Subject : Textbox for entering the subject of the message",
+    "12. Specialist Referrals Card : Displays information about specialist referrals",
+    "13. Chronic Disease Management Card : Displays information about chronic disease management",
+    "14. Women's Health Card : Displays information about women's health services",
+    "15. Pediatrics Card : Displays information about pediatric services",
+    "16. Mental Health Card : Displays information about mental health services"
+  ]
+}

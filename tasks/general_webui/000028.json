@@ -1,0 +1,274 @@
+{
+  "website_summary": {
+    "name": "FishFest Competition Hub",
+    "description": "The website presents an elegant and user-friendly interface with a vibrant teal and mint cream color scheme, designed specifically for fishing enthusiasts to engage in contests, view results, and share photos.",
+    "category": "Data Management",
+    "appearance": "The FishFest website features a clean and modern layout with a navigation bar at the top. The primary color theme is teal and mint cream, creating a fresh, aquatic feel. The main sections include a welcoming home page with an enticing tagline, followed by sections dedicated to contests, gallery, and results. Each section is well-organized, displaying information clearly. The \"Exciting Contests\" section provides an overview of competitions, while the \"Stunning Gallery\" showcases user-submitted photos. The \"Live Results\" section is dedicated to updating standings in real-time. The site also features an aesthetically pleasing footer with quick links and contact information.",
+    "functionality": "The website allows users to register for contests and navigate to dedicated sections for contests, gallery, and results. It supports functionality such as viewing upcoming contests, browsing a photo gallery for sharing catches, and accessing a leaderboard for competition results. The sleek registration form lets users fill in necessary details like name, email, phone number, category, and method. The footer includes contact options and links, providing easy navigation for users."
+  },
+  "test_cases": {
+    "functionality_testing": [
+      {
+        "id": "TC001",
+        "name": "Email Input Test",
+        "objective": "To verify that the Email Input textbox accepts input and handles it correctly.",
+        "coverage_element": "Email Input",
+        "preconditions": "The user is on the registration page and has entered a name.",
+        "expected_results": "The email field should accept the input and display \"test@angler.com\". 7. Next Steps : Enter the test data into the email field.",
+        "procedure": [
+          "Type \"test@angler.com\" into the Email Input textbox."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Leaderboard Tooltip Test",
+        "objective": "To verify that hovering over leaderboard entries reveals tooltips with matching performance details.",
+        "coverage_element": "Leaderboard Card",
+        "preconditions": "User is on the results page and there are results available in the leaderboard.",
+        "expected_results": "A tooltip should appear with matching performance details when hovering over a leaderboard entry.",
+        "procedure": [
+          "Scroll to the leaderboard section.",
+          "Hover over a leaderboard entry.",
+          "Verify that a tooltip appears with matching performance details."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Name Input Test",
+        "objective": "To verify that the Name Input textbox accepts input and handles it correctly.",
+        "coverage_element": "Name Input",
+        "preconditions": "The user is on the registration page.",
+        "expected_results": "The name field should accept the input and display \"Test Angler\". 7. Next Steps : Enter the test data into the name field.",
+        "procedure": [
+          "Type \"Test Angler\" into the Name Input textbox."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Phone Number Input Test",
+        "objective": "To verify that the Phone Number Input textbox accepts input and handles it correctly.",
+        "coverage_element": "Phone Number Input",
+        "preconditions": "The user is on the registration page and has entered a name and email.",
+        "expected_results": "The phone number field should accept the input and display \"555-111-2222\". 7. Next Steps : Enter the test data into the phone number field.",
+        "procedure": [
+          "Type \"555-111-2222\" into the Phone Number Input textbox."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Register Button Test",
+        "objective": "To verify that clicking the Register button navigates to the registration page.",
+        "coverage_element": "Register",
+        "preconditions": "The user is on the homepage.",
+        "expected_results": "The user is redirected to the registration page. 7. Next Steps : Click the \"Register\" button to proceed with the registration process.",
+        "procedure": [
+          "Click on the Register button."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Results Navigation Link Test",
+        "objective": "To verify that clicking the Results navigation link correctly navigates to the results page.",
+        "coverage_element": "Results",
+        "preconditions": "User is on the homepage.",
+        "expected_results": "The page should navigate to the results section.",
+        "procedure": [
+          "Click on the Results navigation link.",
+          "Verify that the page navigates to the results section."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "View Contests Button Test",
+        "objective": "To verify that clicking the \"View Contests\" button navigates to the contests page.",
+        "coverage_element": "\"View Contests\"",
+        "preconditions": "On the FishFest homepage.",
+        "expected_results": "Successful navigation to the contests page. 7. Next Steps : Click the \"View Contests\" button to navigate to the contests page.",
+        "procedure": [
+          "Click on the \"View Contests\" button.",
+          "Verify navigation to the contests page."
+        ]
+      },
+      {
+        "id": "TC008",
+        "name": "Test Home Navigation Link",
+        "objective": "To verify that clicking the 'Home' navigation link redirects to the home page.",
+        "coverage_element": "Home : Navigation link for the home page",
+        "preconditions": "User is on any page of the FishFest website.",
+        "expected_results": "The user is redirected to the home page.",
+        "procedure": [
+          "Navigate to any page within the FishFest website.",
+          "Click on the 'Home' navigation link."
+        ]
+      },
+      {
+        "id": "TC009",
+        "name": "Test Gallery Navigation Link",
+        "objective": "To verify that clicking the 'Gallery' navigation link redirects to the gallery page.",
+        "coverage_element": "Gallery : Navigation link to the gallery page",
+        "preconditions": "User is on any page of the FishFest website.",
+        "expected_results": "The user is redirected to the gallery page.",
+        "procedure": [
+          "Navigate to any page within the FishFest website.",
+          "Click on the 'Gallery' navigation link."
+        ]
+      },
+      {
+        "id": "TC010",
+        "name": "Test Register Button Functionality",
+        "objective": "To verify that clicking the 'Register Button' submits the registration form.",
+        "coverage_element": "Register Button : Button for submitting the registration form",
+        "preconditions": "User has filled out all required fields in the registration form.",
+        "expected_results": "The registration form is submitted successfully, and a confirmation message is displayed.",
+        "procedure": [
+          "Fill out all required fields in the registration form.",
+          "Click on the 'Register Button'."
+        ]
+      },
+      {
+        "id": "TC011",
+        "name": "Test Register Now Button Functionality",
+        "objective": "To verify that clicking the 'Register Now' button initiates the registration process.",
+        "coverage_element": "Register Now : Button for initiating registration",
+        "preconditions": "User is on the registration page.",
+        "expected_results": "The registration process is initiated, and the user is directed to fill out the registration form.",
+        "procedure": [
+          "Navigate to the registration page.",
+          "Click on the 'Register Now' button."
+        ]
+      },
+      {
+        "id": "TC012",
+        "name": "Test View Contests Button Functionality",
+        "objective": "To verify that clicking the 'View Contests' button displays the contests section.",
+        "coverage_element": "View Contests : Button for viewing contests",
+        "preconditions": "User is on the main page or any other page where the 'View Contests' button is visible.",
+        "expected_results": "The contests section is displayed, showing details about various contests.",
+        "procedure": [
+          "Navigate to a page where the 'View Contests' button is visible.",
+          "Click on the 'View Contests' button."
+        ]
+      },
+      {
+        "id": "TC013",
+        "name": "Test Footer Navigation Card Links",
+        "objective": "To verify that all links within the footer navigation card are displayed and redirect to the correct pages.",
+        "coverage_element": "Footer Navigation Card : Contains links to home, contests, gallery, results, and register",
+        "preconditions": "User is on any page of the FishFest website.",
+        "expected_results": "All links within the footer navigation card are displayed and redirect to the correct respective pages.",
+        "procedure": [
+          "Navigate to any page within the FishFest website.",
+          "Click on each link within the footer navigation card and verify redirection."
+        ]
+      },
+      {
+        "id": "TC014",
+        "name": "Test Email Input Field",
+        "objective": "To verify that the email input field accepts valid email addresses.",
+        "coverage_element": "Email Input : Textbox for entering an email address",
+        "preconditions": "User is on the registration page.",
+        "expected_results": "The email input field only accepts valid email addresses and displays an error message for invalid entries.",
+        "procedure": [
+          "Navigate to the registration page.",
+          "Enter both valid and invalid email addresses into the email input field and observe the behavior."
+        ]
+      },
+      {
+        "id": "TC015",
+        "name": "Test Phone Number Input Field",
+        "objective": "To verify that the phone number input field accepts valid phone numbers.",
+        "coverage_element": "Phone Number Input : Textbox for entering the phone number",
+        "preconditions": "User is on the registration page.",
+        "expected_results": "The phone number input field only accepts valid phone numbers and displays an error message for invalid entries.",
+        "procedure": [
+          "Navigate to the registration page.",
+          "Enter both valid and invalid phone numbers into the phone number input field and observe the behavior."
+        ]
+      }
+    ],
+    "data_display_testing": [
+      {
+        "id": "TC001",
+        "name": "Test Welcome Card Display",
+        "objective": "To verify that the welcome card with FishFest logo and description is displayed correctly.",
+        "coverage_element": "Card 0 : Welcome card with FishFest logo and description",
+        "preconditions": "User is on the home page.",
+        "expected_results": "The welcome card is displayed with the correct FishFest logo and description.",
+        "procedure": [
+          "Navigate to the home page.",
+          "Verify the presence and content of the welcome card."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Test Registration Form Card Elements",
+        "objective": "To verify that all elements within the registration form card are displayed and functional.",
+        "coverage_element": "Registration Form Card : Contains fields for name, email, phone number, category, method, and a register button",
+        "preconditions": "User is on the registration page.",
+        "expected_results": "All elements within the registration form card are displayed correctly and are functional.",
+        "procedure": [
+          "Navigate to the registration page.",
+          "Verify the presence and functionality of each field and the register button."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Test Copyright Card Display",
+        "objective": "To verify that the copyright card is displayed correctly.",
+        "coverage_element": "Copyright Card : Card displaying copyright information",
+        "preconditions": "User is on any page of the FishFest website.",
+        "expected_results": "The copyright card is displayed with the correct copyright information.",
+        "procedure": [
+          "Navigate to any page within the FishFest website.",
+          "Scroll down to the bottom and verify the presence and content of the copyright card."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Test Category Dropdown Menu",
+        "objective": "To verify that the category dropdown menu displays all available categories.",
+        "coverage_element": "Category Dropdown : Dropdown menu for selecting a category",
+        "preconditions": "User is on the registration page.",
+        "expected_results": "The category dropdown menu displays all available categories without any missing options.",
+        "procedure": [
+          "Navigate to the registration page.",
+          "Open the category dropdown menu and verify all available categories are listed."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Test Method Dropdown Menu",
+        "objective": "To verify that the method dropdown menu displays all available methods.",
+        "coverage_element": "Method Dropdown : Dropdown menu for selecting a method",
+        "preconditions": "User is on the registration page.",
+        "expected_results": "The method dropdown menu displays all available methods without any missing options.",
+        "procedure": [
+          "Navigate to the registration page.",
+          "Open the method dropdown menu and verify all available methods are listed."
+        ]
+      }
+    ],
+    "design_validation_testing": []
+  },
+  "element_requirement": [
+    "1. Home : Navigation link for the home page",
+    "2. Contests : Navigation link to the contests page",
+    "3. Gallery : Navigation link to the gallery page",
+    "4. Results : Navigation link to the results page",
+    "5. Register : Navigation link to the registration page",
+    "6. Register Button : Button for submitting the registration form",
+    "7. Register Now : Button for initiating registration",
+    "8. View Contests : Button for viewing contests",
+    "9. Card 0 : Welcome card with FishFest logo and description",
+    "10. Registration Form Card : Contains fields for name, email, phone number, category, method, and a register button",
+    "11. Leaderboard Card : Card displaying the global leaderboard",
+    "12. Footer Navigation Card : Contains links to home, contests, gallery, results, and register",
+    "13. Copyright Card : Card displaying copyright information",
+    "14. Email : Label for the email input field",
+    "15. Email Input : Textbox for entering an email address",
+    "16. Phone Number : Label for the phone number input field",
+    "17. Phone Number Input : Textbox for entering the phone number",
+    "18. Category Dropdown : Dropdown menu for selecting a category",
+    "19. Method Dropdown : Dropdown menu for selecting a method"
+  ]
+}

@@ -1,0 +1,301 @@
+{
+  "website_summary": {
+    "name": "Health Tracker Dashboard",
+    "description": "The website presents a clean and organized interface for tracking food intake, exercise, and progress toward health and fitness goals.",
+    "category": "Data Management",
+    "appearance": "The website features a minimalist design with a light gray background and white card containers for different sections. At the top, there's a navigation bar with options such as \"Set Weight Goal\" and \"Export Data.\" Below this, users can select time frames (\"Today,\" \"This Week,\" \"This Month,\" \"Custom\") and tabs for \"Food,\" \"Exercise,\" \"Weight,\" and \"Progress.\" The main content area includes sections like \"Add Food,\" which allows users to input nutritional data, and \"Food Log,\" displaying logged food entries. There are also visual representations like charts for \"Macro Nutrients\" and \"Calories Overview,\" providing insights into dietary patterns.",
+    "functionality": "The website enables users to log their food consumption by entering details like carbs, protein, fat, fiber, and calories. Users can view their food logs within selected timeframes. Additionally, it offers functionalities for setting weight goals, exporting data, and tracking progress through various metrics. Charts and graphs help visualize macro nutrient distribution and calorie intake/expenditure."
+  },
+  "test_cases": {
+    "functionality_testing": [
+      {
+        "id": "TC001",
+        "name": "Add Food Button Test",
+        "objective": "To verify that clicking the Add Food button opens the food entry form.",
+        "coverage_element": "Add Food",
+        "preconditions": "",
+        "expected_results": "Food entry fields should appear enabling user to add new food entry details.",
+        "procedure": [
+          "Click on Add Food button located under the Add Food section."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Carbs Field Input Test",
+        "objective": "To verify that entering a valid number into the Carbs Field updates the field without errors.",
+        "coverage_element": "Carbs Field",
+        "preconditions": "",
+        "expected_results": "The Carbs Field should accept the input \"50\" without displaying an error message.",
+        "procedure": [
+          "Type \"50\" into the Carbs Field."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Save Weight Goal Test",
+        "objective": "To verify that clicking the Save Goal button saves the weight goal.",
+        "coverage_element": "Save Goal",
+        "preconditions": "The \"Set Weight Goal\" modal is open, and a weight goal value has been entered.",
+        "expected_results": "The weight goal is saved successfully, and a confirmation message is displayed. 7. Next Steps : Click the \"Save Goal\" button to save the weight goal.",
+        "procedure": [
+          "Click the Save Goal button.",
+          "Verify that the weight goal is saved and a confirmation message is displayed."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Set Weight Goal Test",
+        "objective": "To verify that clicking the Set Weight Goal button initiates the process for setting a weight goal.",
+        "coverage_element": "Set Weight Goal",
+        "preconditions": "The Health Tracker page is loaded.",
+        "expected_results": "The weight goal setting interface is displayed, allowing the user to enter a weight goal value. 7. Next Steps : Click the \"Set Weight Goal\" button to proceed with setting the weight goal.",
+        "procedure": [
+          "Click on the Set Weight Goal button.",
+          "Verify that the interface transitions to the weight goal setting screen or displays an input field for entering the weight goal."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Test Add Food Card Functionality",
+        "objective": "To verify that the Add Food card allows users to input food entries correctly.",
+        "coverage_element": "Add Food : Card Used to display the inputs for the food fields where users can add food entries.",
+        "preconditions": "User is logged into the application and navigated to the Food section.",
+        "expected_results": "The Add Food card should display input fields for food entries, and the user should be able to successfully add a food entry.",
+        "procedure": [
+          "Navigate to the Food section.",
+          "Enter valid data into the food fields and submit the entry."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Test Food Button Navigation",
+        "objective": "To verify that the Food button correctly navigates to the page for entering and managing food data.",
+        "coverage_element": "Food : Button Accesses the page for entering and managing food data",
+        "preconditions": "User is logged into the application.",
+        "expected_results": "Clicking the Food button should navigate the user to the food data entry and management page.",
+        "procedure": [
+          "Click on the Food button.",
+          "Verify that the user is redirected to the food data entry and management page."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "Test Progress Button Navigation",
+        "objective": "To verify that the Progress button correctly transitions to the progress tracking section.",
+        "coverage_element": "Progress : Button Transitions to the progress tracking section",
+        "preconditions": "User is logged into the application.",
+        "expected_results": "Clicking the Progress button should navigate the user to the progress tracking section.",
+        "procedure": [
+          "Click on the Progress button.",
+          "Verify that the user is redirected to the progress tracking section."
+        ]
+      },
+      {
+        "id": "TC008",
+        "name": "Test Set Weight Goal Button Functionality",
+        "objective": "To verify that the Set Weight Goal button allows users to set a weight goal.",
+        "coverage_element": "Set Weight Goal : Button for setting a weight goal",
+        "preconditions": "User is logged into the application.",
+        "expected_results": "Clicking the Set Weight Goal button should allow the user to set a weight goal.",
+        "procedure": [
+          "Click on the Set Weight Goal button.",
+          "Verify that the user can set a weight goal."
+        ]
+      },
+      {
+        "id": "TC009",
+        "name": "Test This Week Button Functionality",
+        "objective": "To verify that the This Week button correctly displays this week's data.",
+        "coverage_element": "This Week : Button for viewing this week's data",
+        "preconditions": "User is logged into the application.",
+        "expected_results": "Clicking the This Week button should display data for the current week.",
+        "procedure": [
+          "Click on the This Week button.",
+          "Verify that the data displayed corresponds to the current week."
+        ]
+      },
+      {
+        "id": "TC010",
+        "name": "Test Custom Date Selection Button Functionality",
+        "objective": "To verify that the Custom button allows users to select custom dates.",
+        "coverage_element": "Custom : Button for custom date selection",
+        "preconditions": "User is logged into the application.",
+        "expected_results": "Clicking the Custom button should allow the user to select custom dates.",
+        "procedure": [
+          "Click on the Custom button.",
+          "Verify that the user can select custom dates."
+        ]
+      },
+      {
+        "id": "TC011",
+        "name": "Test Exercise Button Navigation",
+        "objective": "To verify that the Exercise button correctly navigates to the exercise tab.",
+        "coverage_element": "Exercise : Button for navigating to the exercise tab",
+        "preconditions": "User is logged into the application.",
+        "expected_results": "Clicking the Exercise button should navigate the user to the exercise tab.",
+        "procedure": [
+          "Click on the Exercise button.",
+          "Verify that the user is redirected to the exercise tab."
+        ]
+      }
+    ],
+    "data_display_testing": [
+      {
+        "id": "TC001",
+        "name": "Protein Data Point Hover Test",
+        "objective": "To verify that hovering over the \"Protein\" data point in the Macro Nutrients Card displays the correct value.",
+        "coverage_element": "Macro Nutrients",
+        "preconditions": "The page is loaded, and the \"Macro Nutrients\" chart is visible.",
+        "expected_results": "The tooltip should display the accurate protein value corresponding to the logged food entries. 7. Next Steps : Hover over the \"Protein\" data point in the \"Macro Nutrients\" chart to continue verifying the accuracy of the displayed data.",
+        "procedure": [
+          "Hover over the \"Protein\" data point in the Macro Nutrients Card.",
+          "Verify that the tooltip shows the correct value."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Macro Nutrients Display Test",
+        "objective": "To verify that the Macro Nutrients Card displays accurate macro nutrient values.",
+        "coverage_element": "Macro Nutrients",
+        "preconditions": "The page is loaded, and the \"Macro Nutrients\" chart is visible.",
+        "expected_results": "The tooltips should display accurate values corresponding to the logged food entries. 7. Next Steps : Hover over the \"Carbs\" data point in the \"Macro Nutrients\" chart to begin verifying the accuracy of the displayed data.",
+        "procedure": [
+          "Hover over the \"Carbs\" data point in the Macro Nutrients Card.",
+          "Verify that the tooltip shows the correct value.",
+          "Repeat for the \"Protein\" data point."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Test Food Log Data Display",
+        "objective": "To verify that the Food Log card correctly displays the user's food log history.",
+        "coverage_element": "Food Log : Card detailing the user's food log history and provides space to enter and view logged meals",
+        "preconditions": "User has previously logged some meals.",
+        "expected_results": "The Food Log card should display all previously logged meals accurately.",
+        "procedure": [
+          "Navigate to the Food Log card.",
+          "Verify that all logged meals are displayed correctly."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Test Protein Field Input",
+        "objective": "To verify that the Protein Field accepts and displays input for protein values.",
+        "coverage_element": "Protein Field - Needs input for protein values",
+        "preconditions": "User is on the Add Food page.",
+        "expected_results": "The Protein Field should accept a valid protein value and display it correctly.",
+        "procedure": [
+          "Enter a valid protein value into the Protein Field.",
+          "Verify that the entered value is displayed correctly."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Test Fat Field Input",
+        "objective": "To verify that the Fat Field accepts and displays input for fat values.",
+        "coverage_element": "Fat Field - Needs input for fat values",
+        "preconditions": "User is on the Add Food page.",
+        "expected_results": "The Fat Field should accept a valid fat value and display it correctly.",
+        "procedure": [
+          "Enter a valid fat value into the Fat Field.",
+          "Verify that the entered value is displayed correctly."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Test Current Weight Input",
+        "objective": "To verify that the Current Weight field accepts and displays the current weight input.",
+        "coverage_element": "Current Weight (kg) : Input field for entering the current weight",
+        "preconditions": "User is on the Set Weight Goal page.",
+        "expected_results": "The Current Weight field should accept a valid weight value and display it correctly.",
+        "procedure": [
+          "Enter a valid current weight into the Current Weight field.",
+          "Verify that the entered value is displayed correctly."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "Test Goal Weight Input",
+        "objective": "To verify that the Goal Weight field accepts and displays the goal weight input.",
+        "coverage_element": "Goal Weight (kg) : Input field for entering the goal weight",
+        "preconditions": "User is on the Set Weight Goal page.",
+        "expected_results": "The Goal Weight field should accept a valid weight value and display it correctly.",
+        "procedure": [
+          "Enter a valid goal weight into the Goal Weight field.",
+          "Verify that the entered value is displayed correctly."
+        ]
+      },
+      {
+        "id": "TC008",
+        "name": "Test Timeframe Input",
+        "objective": "To verify that the Timeframe field accepts and displays the timeframe input.",
+        "coverage_element": "Timeframe (weeks) : Input field for entering the timeframe in weeks",
+        "preconditions": "User is on the relevant page where timeframe can be set.",
+        "expected_results": "The Timeframe field should accept a valid number of weeks and display it correctly.",
+        "procedure": [
+          "Enter a valid number of weeks into the Timeframe field.",
+          "Verify that the entered value is displayed correctly."
+        ]
+      },
+      {
+        "id": "TC009",
+        "name": "Test Calories Overview Data Display",
+        "objective": "To verify that the Calories Overview card correctly displays calorie information.",
+        "coverage_element": "Calories Overview : Card displaying calorie information",
+        "preconditions": "User has logged some food entries.",
+        "expected_results": "The Calories Overview card should display accurate calorie information based on logged food entries.",
+        "procedure": [
+          "Navigate to the Calories Overview card.",
+          "Verify that the displayed calorie information is accurate."
+        ]
+      }
+    ],
+    "design_validation_testing": [
+      {
+        "id": "TC001",
+        "name": "UI Design and Style Test: Color Palette",
+        "objective": "To verify that the background color matches the specified light gray shade and all buttons and text fields have the correct background and text colors.",
+        "coverage_element": "Color Scheme",
+        "preconditions": "",
+        "expected_results": "The background color should match the specified light gray shade, and all buttons and text fields should have the correct background and text colors. 7. Next Steps : Perform the UI Design and Style Test: Color Palette to validate the color consistency and alignment.",
+        "procedure": [
+          "Observe the background color of the page.",
+          "Evaluate the background and text colors of all buttons and text fields.",
+          "Compare against the specified design requirements."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Test Navigation Tabs Design",
+        "objective": "To verify that the Navigation Tabs card has the correct design and layout.",
+        "coverage_element": "Navigation Tabs : Card containing navigation buttons",
+        "preconditions": "User is logged into the application.",
+        "expected_results": "The Navigation Tabs card should have the correct design and layout as per the application's design guidelines.",
+        "procedure": [
+          "Navigate to the Navigation Tabs card.",
+          "Verify that the design and layout of the card match the application's design guidelines."
+        ]
+      }
+    ]
+  },
+  "element_requirement": [
+    "1. Add Food : Button for adding a new food entry",
+    "2. Add Food : Card Used to display the inputs for the food fields where users can add food entries.",
+    "3. Food Log : Card detailing the user's food log history and provides space to enter and view logged meals",
+    "4. Food : Button Accesses the page for entering and managing food data",
+    "5. Weight : Button Navigates to the weight-related section",
+    "6. Progress : Button Transitions to the progress tracking section",
+    "7. Carbs Field For entering carbohydrates values",
+    "8. Protein Field - Needs input for protein values",
+    "9. Fat Field - Needs input for fat values",
+    "10. Set Weight Goal : Button for setting a weight goal",
+    "11. Current Weight (kg) : Input field for entering the current weight",
+    "12. Goal Weight (kg) : Input field for entering the goal weight",
+    "13. This Week : Button for viewing this week's data",
+    "14. Timeframe (weeks) : Input field for entering the timeframe in weeks",
+    "15. Custom : Button for custom date selection",
+    "16. Exercise : Button for navigating to the exercise tab",
+    "17. Calories Overview : Card displaying calorie information",
+    "18. Navigation Tabs : Card containing navigation buttons"
+  ]
+}

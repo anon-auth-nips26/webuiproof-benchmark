@@ -1,0 +1,161 @@
+{
+  "website_summary": {
+    "name": "CleanEase Order Portal",
+    "description": "CleanEase Order Portal is a sleek, user-friendly platform designed for clients to order professional cleaning services with a modern and responsive interface.",
+    "category": "User Interaction",
+    "appearance": "The website features a clean and organized layout with a prominent header that includes the title \"Professional Cleaning Services\" and two action buttons: \"Get a Quote\" and \"Contact Us.\" The main content area is divided into four sections: \"Select Service,\" \"Quantity,\" \"Schedule Cleaning,\" and \"Order Summary.\" Each section is styled with rounded edges, soft shadows, and a light gray background for a modern look. The \"Select Service\" section offers three options: Apartment, Office, and Commercial, each with an icon and label. The \"Quantity\" section includes an input field for specifying the area in square meters. The \"Schedule Cleaning\" section has fields for selecting a date and time. The \"Order Summary\" section displays the selected service, area, date and time, and total cost, with a disabled \"Place Order\" button until all necessary fields are filled.",
+    "functionality": "The website allows users to select a cleaning service type (Apartment, Office, Commercial), specify the area in square meters, schedule a cleaning date and time, and view an order summary with the total cost. Users can also get a quote or contact the service provider directly. The order summary updates dynamically based on the user's selections, and the \"Place Order\" button becomes active once all required fields are completed."
+  },
+  "test_cases": {
+    "functionality_testing": [
+      {
+        "id": "TC001",
+        "name": "Apartment Service Selection Test",
+        "objective": "To verify that clicking the Apartment button correctly selects the apartment cleaning service.",
+        "coverage_element": "Apartment",
+        "preconditions": "UI is in the default state with no service selected.",
+        "expected_results": "The apartment service should be selected and indicated properly in the order summary section.",
+        "procedure": [
+          "Click on the Apartment Button.",
+          "Verify if the selection gets highlighted.",
+          "Confirm the Order Summary reflects the selected apartment service."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Commercial Service Selection Test",
+        "objective": "To verify that clicking the Commercial button selects the commercial service.",
+        "coverage_element": "Commercial",
+        "preconditions": "Initial state with no service selected.",
+        "expected_results": "The \"Service : \" field should display \"Commercial\".",
+        "procedure": [
+          "Click on the Commercial button.",
+          "Verify that the \"Service : \" field in the Order Summary Card updates to \"Commercial\"."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Date Input Test",
+        "objective": "To verify that the Date Input textbox allows users to enter a valid date.",
+        "coverage_element": "Date Input",
+        "preconditions": "The webpage is loaded and the date input field is visible.",
+        "expected_results": "The date input field should accept the entered date and display it correctly.",
+        "procedure": [
+          "Click on the Date Input textbox.",
+          "Enter a valid future date.",
+          "Verify that the date is accepted and displayed correctly."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Date and Time Selection Test",
+        "objective": "To verify that entering \"02/02/2024\" in the Date Input textbox and selecting \"13 : 00\" from the Time Dropdown updates the date and time in the order summary.",
+        "coverage_element": "Date Input, Time Dropdown",
+        "preconditions": "\"Commercial\" service selected, area set to \"100\".",
+        "expected_results": "The \"Date & Time : \" field should display \"02/02/2024 13:00\".",
+        "procedure": [
+          "Type \"02/02/2024\" into the Date Input textbox.",
+          "Select \"13 : 00\" from the Time Dropdown.",
+          "Verify that the \"Date & Time : \" field in the Order Summary Card updates to \"02/02/2024 13:00\"."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Office Button Test",
+        "objective": "To verify that clicking the Office button selects the office cleaning service.",
+        "coverage_element": "Office",
+        "preconditions": "The page is loaded, and no service is currently selected.",
+        "expected_results": "The \"Service : \" field should display \"Office.\"",
+        "procedure": [
+          "Click on the Office button.",
+          "Verify that the \"Service : \" field in the \"Order Summary\" section updates to \"Office.\""
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Place Order Button Test",
+        "objective": "To verify that the Place Order button is enabled/disabled based on form completion.",
+        "coverage_element": "Place Order",
+        "preconditions": "The \"Office\" service is selected, and the area is set to 50 m².",
+        "expected_results": "The button should be enabled if the form is valid. 7. Next Steps : Select the \"Office\" service by clicking the Office button.",
+        "procedure": [
+          "Click the Place Order button.",
+          "Verify the button's state and any feedback messages."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "Time Dropdown Test",
+        "objective": "To verify that the Time Dropdown allows users to select a valid time.",
+        "coverage_element": "Time Dropdown",
+        "preconditions": "The webpage is loaded and the time dropdown is visible.",
+        "expected_results": "The time dropdown should display the selected time correctly.",
+        "procedure": [
+          "Click on the Time Dropdown dropdown.",
+          "Select a valid time option.",
+          "Verify that the selected time is displayed correctly."
+        ]
+      },
+      {
+        "id": "TC008",
+        "name": "Test Get a Quote Button Functionality",
+        "objective": "To verify that clicking the 'Get a Quote' button initiates a quote request process.",
+        "coverage_element": "Get a Quote : Button for initiating a quote request",
+        "preconditions": "User is on the homepage of the web application.",
+        "expected_results": "A new page or form appears allowing the user to enter details for a quote request.",
+        "procedure": [
+          "Navigate to the homepage of the web application.",
+          "Click on the 'Get a Quote' button."
+        ]
+      },
+      {
+        "id": "TC009",
+        "name": "Test Contact Us Button Functionality",
+        "objective": "To verify that clicking the 'Contact Us' button allows users to contact the service provider.",
+        "coverage_element": "Contact Us : Button for contacting the service provider",
+        "preconditions": "User is on the homepage of the web application.",
+        "expected_results": "A contact form appears or a new page opens with contact information.",
+        "procedure": [
+          "Navigate to the homepage of the web application.",
+          "Click on the 'Contact Us' button."
+        ]
+      }
+    ],
+    "data_display_testing": [
+      {
+        "id": "TC001",
+        "name": "Service Field Verification Test",
+        "objective": "To verify that the \"Service : \" field in the \"Order Summary\" updates to \"Office\" after selecting the \"Office\" service.",
+        "coverage_element": "Service",
+        "preconditions": "The \"Office\" service is selected, and the area is set to 50 m².",
+        "expected_results": "The \"Service : \" field should display \"Office.\" 7. Next Steps: Verify that the \"Service:\" field in the \"Order Summary\" section displays \"Office.\"",
+        "procedure": [
+          "Verify that the \"Service : \" field in the \"Order Summary\" displays \"Office.\""
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Test Order Summary Card Data Display",
+        "objective": "To verify that the 'Order Summary Card' correctly displays the selected service and cost details.",
+        "coverage_element": "Order Summary Card : Displays summary of the selected service and cost details",
+        "preconditions": "User has selected a service, specified quantity, and scheduled cleaning.",
+        "expected_results": "The 'Order Summary Card' shows accurate details including the selected service, area, date and time, and total cost.",
+        "procedure": [
+          "Select a service, specify the area in square meters, and schedule a cleaning.",
+          "Verify that the 'Order Summary Card' displays all the entered information correctly."
+        ]
+      }
+    ],
+    "design_validation_testing": []
+  },
+  "element_requirement": [
+    "1. Get a Quote : Button for initiating a quote request",
+    "2. Contact Us : Button for contacting the service provider",
+    "3. Apartment : Button for selecting apartment cleaning service",
+    "4. Office : Button for selecting office cleaning service",
+    "5. Commercial : Button for selecting a commercial cleaning service",
+    "6. Place Order : Button for confirming and placing the order",
+    "7. Order Summary Card : Displays summary of the selected service and cost details",
+    "8. Time : Dropdown for selecting cleaning time slot"
+  ]
+}

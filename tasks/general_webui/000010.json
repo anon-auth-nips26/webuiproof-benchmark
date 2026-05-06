@@ -1,0 +1,162 @@
+{
+  "website_summary": {
+    "name": "Fortune Wheel Spinner",
+    "description": "The website features a vibrant and interactive design centered around a spinning wheel game with a prize list and user records.",
+    "category": "User Interaction",
+    "appearance": "The website has a clean and engaging layout with a prominent blue spinning wheel on the left side, featuring various prize segments such as Bronze Coupon, Silver Voucher, Gold Reward, Diamond Gift, Platinum Prize, and Mystery Box. The wheel is bordered by a bold dark red outline, matching the theme color used throughout the site. On the right side, there is a neatly organized prize list within a dark red box, listing all potential prizes with corresponding icons. Below the prize list, there is a button labeled \"View My Winning Records,\" inviting users to track their past spins. The overall background is a light gray, providing a neutral backdrop that highlights the colorful elements of the wheel and buttons.",
+    "functionality": "The website offers several key functionalities: users can spin the wheel by clicking the \"Spin the Wheel\" button located below the wheel. This action triggers the wheel to spin and eventually stop on a random prize segment. Users can also view a comprehensive prize list detailing all available rewards. Additionally, there is a feature allowing users to access their winning records, enabling them to keep track of their past spins and prizes won. The website ensures an interactive experience with clear calls-to-action and responsive design elements."
+  },
+  "test_cases": {
+    "functionality_testing": [
+      {
+        "id": "TC001",
+        "name": "Claim Prize Test",
+        "objective": "To verify that clicking the CLAIM PRIZE button allows the user to claim the won prize.",
+        "coverage_element": "CLAIM PRIZE",
+        "preconditions": "The spinning animation has completed, and the pop-up message with the \"CLAIM PRIZE\" button is visible.",
+        "expected_results": "The prize is claimed successfully, and the pop-up message disappears. 7. Next Steps : Click the \"CLAIM PRIZE\" button to claim the won prize.",
+        "procedure": [
+          "Click on the CLAIM PRIZE button.",
+          "Verify that the prize is claimed successfully."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "SPIN THE WHEEL Test",
+        "objective": "To verify that clicking the SPIN THE WHEEL button initiates the spinning animation and stops at a random prize.",
+        "coverage_element": "SPIN THE WHEEL",
+        "preconditions": "The wheel is static and the \"SPIN THE WHEEL\" button is visible.",
+        "expected_results": "The wheel spins, stops at a random prize, and the selected prize is clearly indicated. 7. Next Steps : Click the \"SPIN THE WHEEL\" button to initiate the spinning animation.",
+        "procedure": [
+          "Click on the SPIN THE WHEEL button.",
+          "Observe the spinning animation.",
+          "Verify that the wheel stops at a random prize and the selected prize is clearly indicated."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "VIEW MY WINNING RECORDS Test",
+        "objective": "To verify that clicking the VIEW MY WINNING RECORDS button correctly navigates to the winning records page.",
+        "coverage_element": "VIEW MY WINNING RECORDS",
+        "preconditions": "User is on the Wheel of Fortune page.",
+        "expected_results": "User should be redirected to a page displaying winning records.",
+        "procedure": [
+          "Click on the VIEW MY WINNING RECORDS button.",
+          "Verify navigation to the winning records page."
+        ]
+      }
+    ],
+    "data_display_testing": [
+      {
+        "id": "TC001",
+        "name": "Bronze Coupon Card Test",
+        "objective": "To verify that hovering over the Bronze Coupon Card displays the correct icon and textual details.",
+        "coverage_element": "Bronze Coupon Card",
+        "preconditions": "The webpage is loaded and the prize list is visible.",
+        "expected_results": "The Bronze Coupon Card displays the correct icon and textual details. 7. Next Steps : Hover over the first prize item, the Bronze Coupon card, to start verifying the prize list information.",
+        "procedure": [
+          "Hover over the Bronze Coupon Card.",
+          "Verify that the correct icon and textual details are displayed."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Diamond Gift Card Test",
+        "objective": "To verify that hovering over the Diamond Gift Card displays the correct icon and textual details.",
+        "coverage_element": "Diamond Gift Card",
+        "preconditions": "The webpage is loaded and the prize list is visible.",
+        "expected_results": "The Diamond Gift Card displays the correct icon and textual details. 7. Next Steps : Hover over the fourth prize item, the Diamond Gift card, to continue verifying the prize list information.",
+        "procedure": [
+          "Hover over the Diamond Gift Card.",
+          "Verify that the correct icon and textual details are displayed."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Gold Reward Card Test",
+        "objective": "To verify that hovering over the Gold Reward Card displays the correct icon and textual details.",
+        "coverage_element": "Gold Reward Card",
+        "preconditions": "The webpage is loaded and the prize list is visible.",
+        "expected_results": "The Gold Reward Card displays the correct icon and textual details. 7. Next Steps : Hover over the third prize item, the Gold Reward card, to continue verifying the prize list information.",
+        "procedure": [
+          "Hover over the Gold Reward Card.",
+          "Verify that the correct icon and textual details are displayed."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "My Winning Records Modal Test",
+        "objective": "To verify that the My Winning Records modal correctly displays the message when there are no winning records.",
+        "coverage_element": "My Winning Records",
+        "preconditions": "User clicks the \"VIEW MY WINNING RECORDS\" button.",
+        "expected_results": "The modal should appear with the correct message.",
+        "procedure": [
+          "Verify that the My Winning Records modal appears.",
+          "Check that the message \"No records yet. Spin the wheel to win prizes!\" is displayed."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Mystery Box Card Test",
+        "objective": "To verify that hovering over the Mystery Box Card displays the correct icon and textual details.",
+        "coverage_element": "Mystery Box Card",
+        "preconditions": "The webpage is loaded and the prize list is visible.",
+        "expected_results": "The Mystery Box Card displays the correct icon and textual details. 7. Next Steps : Hover over the sixth prize item, the Mystery Box card, to complete verifying the prize list information.",
+        "procedure": [
+          "Hover over the Mystery Box Card.",
+          "Verify that the correct icon and textual details are displayed."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Platinum Prize Card Test",
+        "objective": "To verify that hovering over the Platinum Prize Card displays the correct icon and textual details.",
+        "coverage_element": "Platinum Prize Card",
+        "preconditions": "The webpage is loaded and the prize list is visible.",
+        "expected_results": "The Platinum Prize Card displays the correct icon and textual details. 7. Next Steps : Hover over the fifth prize item, the Platinum Prize card, to continue verifying the prize list information.",
+        "procedure": [
+          "Hover over the Platinum Prize Card.",
+          "Verify that the correct icon and textual details are displayed."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "Silver Voucher Card Test",
+        "objective": "To verify that hovering over the Silver Voucher Card displays the correct icon and textual details.",
+        "coverage_element": "Silver Voucher Card",
+        "preconditions": "The webpage is loaded and the prize list is visible.",
+        "expected_results": "The Silver Voucher Card displays the correct icon and textual details. 7. Next Steps : Hover over the second prize item, the Silver Voucher card, to continue verifying the prize list information.",
+        "procedure": [
+          "Hover over the Silver Voucher Card.",
+          "Verify that the correct icon and textual details are displayed."
+        ]
+      }
+    ],
+    "design_validation_testing": [
+      {
+        "id": "TC001",
+        "name": "UI Design and Style Test: Prize List Styling",
+        "objective": "To verify that the prize list has a dark red background as specified.",
+        "coverage_element": "Prize List Styling",
+        "preconditions": "",
+        "expected_results": "The prize list should have a dark red background. 7. Next Steps : The next step is to perform the test cases suggested above to validate the UI design consistency.",
+        "procedure": [
+          "Observe the background color of the prize list.",
+          "Compare the observed color with the specified dark red color."
+        ]
+      }
+    ]
+  },
+  "element_requirement": [
+    "1. SPIN THE WHEEL : Button for spinning the wheel of fortune",
+    "2. Prize List : Cards displaying prize options",
+    "3. VIEW MY WINNING RECORDS : Button for viewing past winning records",
+    "4. My Winning Records : Modal displaying the message about no records",
+    "5. Bronze Coupon Card : Card displaying the Bronze Coupon prize with icon and text",
+    "6. Silver Voucher Card : Card displaying the Silver Voucher prize with icon and text",
+    "7. Gold Reward Card : Card displaying the Gold Reward prize with icon and text",
+    "8. Diamond Gift Card : Card displaying the Diamond Gift prize with icon and text",
+    "9. Platinum Prize Card : Card displaying the Platinum Prize with icon and text",
+    "10. Mystery Box Card : Card displaying the Mystery Box prize with icon and text"
+  ]
+}

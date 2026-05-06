@@ -1,0 +1,388 @@
+{
+  "website_summary": {
+    "name": "DriveHub Recruitment Portal",
+    "description": "The website features a clean and professional design with a white background and navy blue content blocks, offering a user-friendly interface for job seekers and employers in the transportation industry.",
+    "category": "User Interaction",
+    "appearance": "The website has a simple and intuitive layout. The top navigation bar includes links to Home, About Us, Jobs, and Contact, along with options to Register and Login. The main section welcomes users with a bold heading \"Welcome to DriveHub Recruitment\" and a tagline \"Connecting top drivers with leading transportation companies.\" Below this, there are two prominent buttons: \"Find Jobs\" and \"Post Jobs,\" which are color-coded for easy identification. The \"Featured Job Listings\" section is designed to showcase job opportunities in a grid format. The footer contains copyright information and links to Privacy Policy and Terms of Service, maintaining a professional appearance.",
+    "functionality": "The website offers several key functionalities: user registration and login, job searching for drivers, job posting for employers, and a contact form for inquiries. Users can create profiles, apply for jobs, and manage their contact information. Employers can view and manage their active job postings. The site also includes pages for About Us, Jobs, and Contact, providing comprehensive information and interaction options."
+  },
+  "test_cases": {
+    "functionality_testing": [
+      {
+        "id": "TC001",
+        "name": "Filters Button Test",
+        "objective": "To verify that clicking the Filters button applies the selected filters.",
+        "coverage_element": "Filters",
+        "preconditions": "User is on the \"Available Job Listings\" page and has entered \"driver\" in the \"Search jobs...\" textbox.",
+        "expected_results": "The filters should be applied, and the search results should be updated based on the selected filters. 7. Next Steps : Click the \"Filters\" button to apply the selected filters and refine the search results.",
+        "procedure": [
+          "Click on the Filters button.",
+          "Verify that the filters are applied and the search results are updated."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Find Jobs Button Hover Test",
+        "objective": "To verify that hovering over the Find Jobs button displays relevant job details.",
+        "coverage_element": "Find Jobs",
+        "preconditions": "Webpage is loaded, and the \"Find Jobs\" button is visible.",
+        "expected_results": "Hovering over the \"Find Jobs\" button should display the job details in the \"Featured Job Listings\" section.",
+        "procedure": [
+          "Hover over the Find Jobs button.",
+          "Observe any changes in the page's layout, particularly in the \"Featured Job Listings\" section.",
+          "Check if job title, company name, and other details are visible."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Footer Links Test",
+        "objective": "To ensure the Footer Links are functional and lead to the correct pages.",
+        "coverage_element": "Footer Links",
+        "preconditions": "On the homepage.",
+        "expected_results": "Both links should open the respective pages successfully. 7. Next Steps : Hover over the cards Footer Links to inspect their background and text colors as part of the color palette test.",
+        "procedure": [
+          "Click on the Privacy Policy link.",
+          "Verify navigation to the privacy policy page.",
+          "Click on the Terms of Service link.",
+          "Verify navigation to the terms of service page."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Job Location Textbox Test",
+        "objective": "To verify that the Location textbox accepts input and handles it correctly.",
+        "coverage_element": "Location",
+        "preconditions": "User is on the \"Post a New Job\" page with the job title and job description already filled out.",
+        "expected_results": "The textbox accepts the input and displays \"San Francisco, CA\". 7. Next Steps : Type \"San Francisco, CA\" into the \"Location\" textbox.",
+        "procedure": [
+          "Type \"San Francisco, CA\" into the Location textbox.",
+          "Verify that the input is accepted and displayed correctly."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Job Title Textbox Test",
+        "objective": "To verify that the Job Title textbox accepts input and handles it correctly.",
+        "coverage_element": "Job Title",
+        "preconditions": "User is on the \"Post a New Job\" page.",
+        "expected_results": "The textbox accepts the input and displays \"Software Engineer\". 7. Next Steps : Type \"Software Engineer\" into the \"Job Title\" textbox.",
+        "procedure": [
+          "Type \"Software Engineer\" into the Job Title textbox.",
+          "Verify that the input is accepted and displayed correctly."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Job Type Dropdown Selection Test",
+        "objective": "To verify that selecting a job type from the Type dropdown refines the search results.",
+        "coverage_element": "Type",
+        "preconditions": "User is on the \"Available Job Listings\" page and has entered \"driver\" in the \"Search jobs...\" textbox.",
+        "expected_results": "The search results should be updated to show only full-time jobs matching the keyword \"driver.\" 7. Next Steps : Select \"Full-time\" from the job type dropdown to refine the search results.",
+        "procedure": [
+          "Click on the Type dropdown.",
+          "Select \"Full-time\" from the dropdown options.",
+          "Verify that the search results are updated based on the selected job type."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "Login Button Test",
+        "objective": "To verify that clicking the Login button navigates to the login page.",
+        "coverage_element": "Login",
+        "preconditions": "User is on the homepage.",
+        "expected_results": "The user is redirected to the login page. 7. Next Steps : Click the \"Login\" button to proceed with logging in.",
+        "procedure": [
+          "Click on the Login button.",
+          "Verify navigation to the login page."
+        ]
+      },
+      {
+        "id": "TC008",
+        "name": "Login as Client Button Test",
+        "objective": "To verify that clicking the Login as Client button allows clients to log in.",
+        "coverage_element": "Login as Client",
+        "preconditions": "User is on the login page.",
+        "expected_results": "The user is redirected to the client dashboard or job posting page. 7. Next Steps : Click the \"Login as Client\" button to proceed with logging in as a client.",
+        "procedure": [
+          "Click on the Login as Client button.",
+          "Verify navigation to the client dashboard or job posting page."
+        ]
+      },
+      {
+        "id": "TC009",
+        "name": "Main Action Buttons Test",
+        "objective": "To ensure the Main Action Buttons are functional and lead to the correct sections.",
+        "coverage_element": "Main Action Buttons",
+        "preconditions": "On the homepage.",
+        "expected_results": "Both buttons should navigate to the respective sections successfully. 7. Next Steps : Hover over the Find Jobs card to continue evaluating the color scheme consistency.",
+        "procedure": [
+          "Click on the Find Jobs button.",
+          "Verify navigation to the job listings page.",
+          "Click on the Post Jobs button.",
+          "Verify navigation to the post jobs page."
+        ]
+      },
+      {
+        "id": "TC010",
+        "name": "Name Textbox Test",
+        "objective": "To verify that the Name textbox accepts input and allows the user to enter their name.",
+        "coverage_element": "Name",
+        "preconditions": "User is on the driver registration form.",
+        "expected_results": "The textbox should accept the input and display \"John Doe\". 7. Next Steps : Type \"John Doe\" into the \"Name\" textbox to proceed with filling out the registration form.",
+        "procedure": [
+          "Type \"John Doe\" into the Name textbox.",
+          "Verify that the entered text appears in the textbox."
+        ]
+      },
+      {
+        "id": "TC011",
+        "name": "Phone Textbox Test",
+        "objective": "To verify that the Phone textbox accepts input and allows the user to enter their phone number.",
+        "coverage_element": "Phone",
+        "preconditions": "User is on the driver registration form and has already filled out the \"Name\" and \"Email\" fields.",
+        "expected_results": "The textbox should accept the input and display \"1234567890\". 7. Next Steps : Type \"1234567890\" into the \"Phone\" textbox to proceed with filling out the registration form.",
+        "procedure": [
+          "Type \"1234567890\" into the Phone textbox.",
+          "Verify that the entered text appears in the textbox."
+        ]
+      },
+      {
+        "id": "TC012",
+        "name": "Register Button Test",
+        "objective": "To verify that clicking the Register button initiates the registration process.",
+        "coverage_element": "Register",
+        "preconditions": "User is on the homepage.",
+        "expected_results": "The registration form should be displayed, allowing the user to fill out the required details. 7. Next Steps : Click the \"Register\" button to proceed with the registration process.",
+        "procedure": [
+          "Click on the Register button.",
+          "Verify that the registration form appears."
+        ]
+      },
+      {
+        "id": "TC013",
+        "name": "Register as Driver Button Test",
+        "objective": "To verify that clicking the Register as Driver button proceeds with the driver registration process.",
+        "coverage_element": "Register as Driver",
+        "preconditions": "User is on the registration page.",
+        "expected_results": "The driver registration form should be displayed, allowing the user to fill out the required details. 7. Next Steps : Click the \"Register as Driver\" button to proceed with the driver registration process.",
+        "procedure": [
+          "Click on the Register as Driver button.",
+          "Verify that the driver registration form appears."
+        ]
+      },
+      {
+        "id": "TC014",
+        "name": "Search Jobs Textbox Test",
+        "objective": "To verify that the Search jobs... textbox accepts input and allows the user to search for jobs.",
+        "coverage_element": "Search jobs...",
+        "preconditions": "User is on the \"Available Job Listings\" page.",
+        "expected_results": "The textbox should accept the input and display \"driver\". 7. Next Steps : Type \"driver\" into the \"Search jobs...\" textbox to search for available job listings.",
+        "procedure": [
+          "Type \"driver\" into the Search jobs... textbox.",
+          "Verify that the entered text appears in the textbox."
+        ]
+      },
+      {
+        "id": "TC015",
+        "name": "Select Job Type Dropdown Test",
+        "objective": "To verify that the Select Job Type dropdown allows selection of a job type.",
+        "coverage_element": "Select Job Type",
+        "preconditions": "User is on the \"Post a New Job\" page with the job title, job description, location, and hourly rate already filled out.",
+        "expected_results": "The dropdown allows selection of a job type, and \"Full-time\" is displayed after selection. 7. Next Steps : Click on the \"Select Job Type\" dropdown and select \"Full-time\".",
+        "procedure": [
+          "Click on the Select Job Type dropdown.",
+          "Select \"Full-time\" from the dropdown options.",
+          "Verify that the selected job type is displayed correctly."
+        ]
+      },
+      {
+        "id": "TC016",
+        "name": "Test Logout Button Functionality",
+        "objective": "To verify that the Logout button logs the user out of their account successfully.",
+        "coverage_element": "Logout : Button to log out of the account",
+        "preconditions": "User is logged into their account on the application.",
+        "expected_results": "Upon clicking the Logout button, the user should be redirected to the login page and be logged out.",
+        "procedure": [
+          "Log into the application with valid credentials.",
+          "Click the Logout button and verify the user is logged out."
+        ]
+      },
+      {
+        "id": "TC017",
+        "name": "Test Register as Driver Button",
+        "objective": "To verify that the Register as Driver button navigates the user to the driver registration form.",
+        "coverage_element": "Register as Driver : Button for driver registration",
+        "preconditions": "User is not logged in and is on a page where the Register as Driver button is visible.",
+        "expected_results": "Upon clicking the Register as Driver button, the user should be directed to the driver registration page/form.",
+        "procedure": [
+          "Navigate to the page where the Register as Driver button is available.",
+          "Click the Register as Driver button and verify navigation to the registration form."
+        ]
+      },
+      {
+        "id": "TC018",
+        "name": "Test Register as Client Button",
+        "objective": "To verify that the Register as Client button navigates the user to the client registration form.",
+        "coverage_element": "Register as Client : Button for client registration",
+        "preconditions": "User is not logged in and is on a page where the Register as Client button is visible.",
+        "expected_results": "Upon clicking the Register as Client button, the user should be directed to the client registration page/form.",
+        "procedure": [
+          "Navigate to the page where the Register as Client button is available.",
+          "Click the Register as Client button and verify navigation to the registration form."
+        ]
+      },
+      {
+        "id": "TC019",
+        "name": "Verify Privacy Policy Footer Link",
+        "objective": "To verify that the Privacy Policy link in the footer is functional and directs to the correct page.",
+        "coverage_element": "Privacy Policy : Footer link to privacy policy",
+        "preconditions": "User is on any page of the application.",
+        "expected_results": "Upon clicking the Privacy Policy link, the user should be directed to a new page displaying the privacy policy details.",
+        "procedure": [
+          "Scroll to the footer of the page.",
+          "Click on the Privacy Policy link and verify that it opens the correct page."
+        ]
+      },
+      {
+        "id": "TC020",
+        "name": "Test Clear Filters Link Functionality",
+        "objective": "To verify that the Clear filters link clears all applied filters in the job listings section.",
+        "coverage_element": "Clear filters : Link for clearing applied filters",
+        "preconditions": "User is on the job listings page with multiple filters applied.",
+        "expected_results": "Upon clicking the Clear filters link, all applied filters should be cleared, and job listings should reset to default view.",
+        "procedure": [
+          "Apply multiple filters to job listings.",
+          "Click the Clear filters link and verify all filters are removed."
+        ]
+      },
+      {
+        "id": "TC021",
+        "name": "Verify Home Navigation Tab Functionality",
+        "objective": "To verify that the Home navigation tab directs the user to the homepage.",
+        "coverage_element": "Home : Navigation tab for the home page",
+        "preconditions": "User is on any page of the application.",
+        "expected_results": "Upon clicking the Home tab, the user should be directed to the homepage of the site.",
+        "procedure": [
+          "Click the Home navigation tab from any page.",
+          "Verify that the homepage is displayed."
+        ]
+      },
+      {
+        "id": "TC022",
+        "name": "Verify About Us Navigation Link",
+        "objective": "To verify that the About Us navigation link directs the user to the about us page.",
+        "coverage_element": "About Us : Navigation link to learn more about the company",
+        "preconditions": "User is on any page of the application.",
+        "expected_results": "Upon clicking the About Us navigation link, the user should be directed to the about us page.",
+        "procedure": [
+          "Click the About Us navigation link from any page.",
+          "Verify that the about us page is displayed."
+        ]
+      },
+      {
+        "id": "TC023",
+        "name": "Verify Contact Navigation Link",
+        "objective": "To verify that the Contact navigation link directs the user to the contact page.",
+        "coverage_element": "Contact : Navigation link for contacting the company",
+        "preconditions": "User is on any page of the application.",
+        "expected_results": "Upon clicking the Contact navigation link, the user should be directed to the contact page.",
+        "procedure": [
+          "Click the Contact navigation link from any page.",
+          "Verify that the contact page is displayed."
+        ]
+      }
+    ],
+    "data_display_testing": [
+      {
+        "id": "TC001",
+        "name": "Register Card Test",
+        "objective": "To ensure the Register card is displayed correctly and meets the design requirements.",
+        "coverage_element": "Register Card",
+        "preconditions": "On the homepage.",
+        "expected_results": "The card should have a navy blue background with white text. 7. Next Steps : Hover over the Register card to continue evaluating the color scheme consistency.",
+        "procedure": [
+          "Hover over the Register card.",
+          "Observe background and text colors.",
+          "Compare against the specified design requirements."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Verify Card Displays Registration Information",
+        "objective": "To verify that the card displaying registration-related information is correctly displayed.",
+        "coverage_element": "Register : Card displaying registration-related information",
+        "preconditions": "User is not logged in and is on the Registration page.",
+        "expected_results": "The card should display all required registration-related information clearly and accurately.",
+        "procedure": [
+          "Navigate to the registration page.",
+          "Check if the card with registration details is displayed."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Verify Driving Experience Textbox Accepts Input",
+        "objective": "To verify that the Driving Experience textbox allows the user to enter relevant data.",
+        "coverage_element": "Driving Experience : Textbox for entering driving experience",
+        "preconditions": "User is on the relevant form which contains the Driving Experience textbox.",
+        "expected_results": "The textbox should accept the inputted driving experience details without displaying any errors.",
+        "procedure": [
+          "Navigate to the form containing the Driving Experience textbox.",
+          "Enter valid driving experience details into the textbox."
+        ]
+      }
+    ],
+    "design_validation_testing": [
+      {
+        "id": "TC001",
+        "name": "UI Design and Style Test: Background Color",
+        "objective": "To verify that the background color of content blocks is consistently navy blue.",
+        "coverage_element": "Background Color",
+        "preconditions": "",
+        "expected_results": "All content blocks should have a navy blue background.",
+        "procedure": [
+          "Hover over Background Color cards and observe background color.",
+          "Compare against the specified design requirements."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "UI Design and Style Test: Text Color",
+        "objective": "To verify that the text color is consistently white for content blocks and black for the main content area.",
+        "coverage_element": "Text Color",
+        "preconditions": "",
+        "expected_results": "Content blocks should have white text. The main content area should have black text.",
+        "procedure": [
+          "Hover over Text Color cards and observe text color.",
+          "Verify text color in the main content area.",
+          "Compare against the specified design requirements."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Test Site Name Header Display",
+        "objective": "To verify that the site name header is displayed correctly.",
+        "coverage_element": "DriveHub Recruitment : Header displaying the site name",
+        "preconditions": "User is on any page of the application.",
+        "expected_results": "The header should display 'DriveHub Recruitment' prominently and correctly on every page.",
+        "procedure": [
+          "Navigate to any page of the application and verify the header text."
+        ]
+      }
+    ]
+  },
+  "element_requirement": [
+    "1. Register : Button for initiating the registration process",
+    "2. Register : Card displaying registration-related information",
+    "3. Logout : Button to log out of the account",
+    "4. Register as Driver : Button for driver registration",
+    "5. Register as Client : Button for client registration",
+    "6. Available Job Listings Filters Job Type All Types Full-time Part-time Contract Location All Locations No jobs found matching your criteria. Clear filters : Card displaying job listings and filters",
+    "7. Privacy Policy : Footer link to privacy policy",
+    "8. Clear filters : Link for clearing applied filters",
+    "9. Driving Experience : Textbox for entering driving experience",
+    "10. DriveHub Recruitment : Header displaying the site name",
+    "11. Home : Navigation tab for the home page",
+    "12. About Us : Navigation link to learn more about the company",
+    "13. Contact : Navigation link for contacting the company"
+  ]
+}

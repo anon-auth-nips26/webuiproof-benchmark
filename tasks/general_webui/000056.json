@@ -1,0 +1,196 @@
+{
+  "website_summary": {
+    "name": "Data Science Learning Hub",
+    "description": "The website presents a clean and organized interface for users to explore and engage with various data science courses, featuring a dark olive green theme with honeydew accents.",
+    "category": "User Interaction",
+    "appearance": "The website features a header with a logo and navigation options such as \"Courses,\" \"Grades,\" and a logout button. Below the header, there's a section titled \"Available Courses,\" which displays course cards for \"Python Basics,\" \"Data Analysis with Python,\" and \"Machine Learning Basics.\" Each card includes a title, brief description, progress bar, and a \"Start Learning\" button. The background uses a honeydew color, while the components are styled in dark olive green. Filters for \"All,\" \"Text,\" and \"Video\" content types are available above the course listings. A \"Student View\" toggle is also present.",
+    "functionality": "The website allows users to browse through available courses, filter them by content type, view course details, track progress via progress bars, and initiate learning sessions using the \"Start Learning\" buttons. It also supports user authentication, enabling access to personalized features like grades and logout functionality."
+  },
+  "test_cases": {
+    "functionality_testing": [
+      {
+        "id": "TC001",
+        "name": "Data Analysis with Python Card Test",
+        "objective": "To verify that hovering over the Data Analysis with Python card reveals accurate progress details.",
+        "coverage_element": "Data Analysis with Python",
+        "preconditions": "The course card is visible on the webpage.",
+        "expected_results": "The hover action should reveal accurate progress details matching the completion status shown in the progress bar. 7. Next Steps : Hover over the \"Data Analysis with Python\" course card to reveal progress details.",
+        "procedure": [
+          "Hover over the Data Analysis with Python card.",
+          "Observe the progress details displayed."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "All Filter Test",
+        "objective": "To verify that clicking the All filter button correctly displays all available courses.",
+        "coverage_element": "All",
+        "preconditions": "The \"Available Courses\" section is visible, and the \"Video\" filter is currently applied.",
+        "expected_results": "All courses should be visible after applying the \"All\" filter.",
+        "procedure": [
+          "Click on the All filter button.",
+          "Verify that all available courses are displayed."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Chapter Progress Verification Test",
+        "objective": "Validate the displayed progress aligns with user interactions.",
+        "coverage_element": "[Python Basics] Course Progress Indicators",
+        "preconditions": "User has completed one chapter out of two in the Python Basics course.",
+        "expected_results": "After marking the second chapter, the course should show a 100% completion status with respective visual cues updated. 7. Next Steps : Since the expected result is met, there are no further actions required apart from providing an end task statement.",
+        "procedure": [
+          "Click to mark the second chapter as completed.",
+          "Observe the progress bar for updates and ensure it reflects the change.",
+          "Verify the completion text and progress bar indicate \"2 out of 2 chapters completed.\""
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Chapter Selection Test",
+        "objective": "To verify that selecting a chapter from the list starts the learning process.",
+        "coverage_element": "Variables and Data Types, Python Syntax and Basics",
+        "preconditions": "On the Python Basics course page.",
+        "expected_results": "The selected chapter content is displayed, indicating the start of the learning process. 7. Next Steps : Select a chapter to start learning. Clicking on either \"Variables and Data Types\" or \"Python Syntax and Basics\" will initiate the learning process for that chapter.",
+        "procedure": [
+          "Click on the radio button for either Variables and Data Types or Python Syntax and Basics.",
+          "Verify that the selected chapter begins the learning process."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Mark as Completed Button Test",
+        "objective": "To verify that clicking the Mark as Completed button updates the progress for the selected chapter.",
+        "coverage_element": "Mark as Completed",
+        "preconditions": "On the Variables and Data Types chapter page.",
+        "expected_results": "The progress bar updates to show 1 out of 2 chapters completed. 7. Next Steps : Click the \"Mark as Completed\" button to update the progress for the \"Variables and Data Types\" chapter.",
+        "procedure": [
+          "Click on the Mark as Completed button.",
+          "Verify that the progress bar updates to reflect the completion of the chapter."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Start Learning Button Test",
+        "objective": "To verify that clicking the Start Learning button for Python Basics course initiates the course.",
+        "coverage_element": "Start Learning",
+        "preconditions": "On the main page with courses listed.",
+        "expected_results": "Navigation to the Python Basics course content page. 7. Next Steps : Click the \"Start Learning\" button for the \"Python Basics\" course to begin the course.",
+        "procedure": [
+          "Click on the Start Learning button for Python Basics.",
+          "Verify navigation to the course content page."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "Student View Toggle Test",
+        "objective": "To verify that toggling the \"Student View\" button alters the course display appropriately for student users.",
+        "coverage_element": "[Student View]",
+        "preconditions": "The homepage is loaded, and the \"Student View\" button is visible.",
+        "expected_results": "The course display should adjust to better suit student needs, potentially altering the visibility or presentation of certain elements.",
+        "procedure": [
+          "Click on the \"Student View\" button.",
+          "Observe any changes in the layout or information presented."
+        ]
+      },
+      {
+        "id": "TC008",
+        "name": "Video Filter Test",
+        "objective": "To verify that clicking the Video filter button correctly filters courses by video-based content.",
+        "coverage_element": "Video",
+        "preconditions": "The \"Available Courses\" section is visible, and the \"Text\" filter is currently applied.",
+        "expected_results": "Only courses containing video-based content should be visible after applying the filter.",
+        "procedure": [
+          "Click on the Video filter button.",
+          "Verify that only courses with video-based content are displayed."
+        ]
+      },
+      {
+        "id": "TC009",
+        "name": "Navigate to Courses Section",
+        "objective": "To verify that clicking the 'Courses' button navigates to the courses section.",
+        "coverage_element": "Courses : Button for navigating to the courses section",
+        "preconditions": "User is logged into the platform and is on the homepage.",
+        "expected_results": "The user is redirected to the courses section displaying all available courses.",
+        "procedure": [
+          "Click on the 'Courses' button in the header.",
+          "Verify that the page redirects to the courses section."
+        ]
+      },
+      {
+        "id": "TC010",
+        "name": "Logout Functionality",
+        "objective": "To verify that clicking the 'Logout' button logs the user out of the platform.",
+        "coverage_element": "Logout : Button for logging out of the platform",
+        "preconditions": "User is logged into the platform.",
+        "expected_results": "The user is logged out and redirected to the login page.",
+        "procedure": [
+          "Click on the 'Logout' button in the header.",
+          "Verify that the user is logged out and redirected to the login page."
+        ]
+      },
+      {
+        "id": "TC011",
+        "name": "Select First Chapter Radio Button",
+        "objective": "To verify that the radio button for selecting the first chapter functions correctly.",
+        "coverage_element": "Variables and Data Types : Radio button for selecting the first chapter",
+        "preconditions": "User is on the course page where chapters can be selected.",
+        "expected_results": "The 'Variables and Data Types' chapter is selected when the radio button is clicked.",
+        "procedure": [
+          "Locate the radio button for 'Variables and Data Types'.",
+          "Click on the radio button and verify that it is selected."
+        ]
+      },
+      {
+        "id": "TC012",
+        "name": "Start Data Analysis Course",
+        "objective": "To verify that clicking the 'Start Learning' button for Data Analysis with Python course starts the course.",
+        "coverage_element": "Start Learning : Button for starting the Data Analysis with Python course",
+        "preconditions": "User is on the courses section page.",
+        "expected_results": "The Data Analysis with Python course begins upon clicking the 'Start Learning' button.",
+        "procedure": [
+          "Click on the 'Start Learning' button under the Data Analysis with Python course card.",
+          "Verify that the course begins and the first lesson is displayed."
+        ]
+      },
+      {
+        "id": "TC013",
+        "name": "Start Machine Learning Course",
+        "objective": "To verify that clicking the 'Start Learning' button for Machine Learning Basics course starts the course.",
+        "coverage_element": "Start Learning : Button for starting the Machine Learning Basics course",
+        "preconditions": "User is on the courses section page.",
+        "expected_results": "The Machine Learning Basics course begins upon clicking the 'Start Learning' button.",
+        "procedure": [
+          "Click on the 'Start Learning' button under the Machine Learning Basics course card.",
+          "Verify that the course begins and the first lesson is displayed."
+        ]
+      }
+    ],
+    "data_display_testing": [
+      {
+        "id": "TC001",
+        "name": "Display Courses Section Card",
+        "objective": "To verify that the courses section card is displayed correctly.",
+        "coverage_element": "Courses : Card displaying the courses section",
+        "preconditions": "User is on the courses section page.",
+        "expected_results": "The courses section card is visible and contains the correct information.",
+        "procedure": [
+          "Navigate to the courses section.",
+          "Verify that the card displaying the courses section is present and contains accurate details."
+        ]
+      }
+    ],
+    "design_validation_testing": []
+  },
+  "element_requirement": [
+    "1. Courses : Button for navigating to the courses section",
+    "2. Courses : Card displaying the courses section",
+    "3. Logout : Button for logging out of the platform",
+    "4. Variables and Data Types : Radio button for selecting the first chapter",
+    "5. Python Syntax and Basics : Radio button for selecting the second chapter",
+    "6. Video : Button for filtering video-based courses",
+    "7. Start Learning : Button for starting the Python Basics course",
+    "8. Start Learning : Button for starting the Data Analysis with Python course",
+    "9. Start Learning : Button for starting the Machine Learning Basics course"
+  ]
+}

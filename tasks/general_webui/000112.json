@@ -1,0 +1,208 @@
+{
+  "website_summary": {
+    "name": "Social Media Profile Viewer",
+    "description": "The website presents a clean and modern Instagram-like profile page with a grid layout of posts, interactive buttons, and user details.",
+    "category": "User Interaction",
+    "appearance": "The website features a well-organized layout with a header containing the site title (\"Instagram Clone\"), navigation icons, and a user profile icon. Below the header, there's a sidebar displaying the user's avatar, username, bio, location, website link, join date, follower count, and a list of suggested users. The main content area showcases a grid of images representing the user's posts, some marked as videos or albums. Each post includes interaction icons for likes and comments, which appear when hovering over the image. The overall design uses a light theme with soft colors and rounded edges, creating a visually appealing and user-friendly interface.",
+    "functionality": "The website allows users to view their profile details, including posts, saved items, and tagged content. Users can edit their profile by clicking the \"Edit Profile\" button. They can also navigate through different sections using tabs such as Posts, Saved, and Tagged. The website supports interaction with posts via liking and commenting, indicated by icons that appear on hover. Additionally, users can explore suggested profiles and follow them directly from the sidebar."
+  },
+  "test_cases": {
+    "functionality_testing": [
+      {
+        "id": "TC001",
+        "name": "Comment Icon Click Test",
+        "objective": "To verify clicking the comment icon on the post card \"43241\" opens the comment popup box.",
+        "coverage_element": "Image Card \"43241\".",
+        "preconditions": "The post image card must be visible and the comment icon must be revealed upon hovering.",
+        "expected_results": "The comment popup box appears after clicking the comment icon.",
+        "procedure": [
+          "Click on the comment icon on the \"43241\" card.",
+          "Verify if the comment popup box appears."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Heart Icon Click Test",
+        "objective": "To verify clicking the heart icon on the post card \"43141\" increases the like count.",
+        "coverage_element": "Image Card \"43141\".",
+        "preconditions": "The post image card must be visible and the heart icon must be revealed upon hovering.",
+        "expected_results": "The like count increases after clicking the heart icon.",
+        "procedure": [
+          "Click on the heart icon on the \"43141\" card.",
+          "Verify if the like count increases."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Image Card Interaction Test",
+        "objective": "To verify hovering over the post card \"43141\" reveals the interaction icons.",
+        "coverage_element": "Image Card \"43141\".",
+        "preconditions": "The post image card must be visible.",
+        "expected_results": "Interaction icons become visible on hover.",
+        "procedure": [
+          "Hover over the \"43141\" card.",
+          "Check if interaction icons for liking and commenting appear."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Navigation Buttons Test",
+        "objective": "To verify that clicking the Navigation Buttons correctly switches views.",
+        "coverage_element": "Navigation Buttons",
+        "preconditions": "Current view is the profile page.",
+        "expected_results": "The view should switch to the correct section upon clicking the respective button.",
+        "procedure": [
+          "Click on the Navigation Button.",
+          "Verify that the view switches to the corresponding section."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Post Details Test",
+        "objective": "To verify that clicking on a post card navigates to the detailed view of the post.",
+        "coverage_element": "Post Card",
+        "preconditions": "The posts are visible on the screen.",
+        "expected_results": "Clicking on the post card should navigate to the detailed view of the post. 7. Next Steps : Click on the first post card to view its details.",
+        "procedure": [
+          "Click on the Post Card.",
+          "Verify that the detailed view of the post is displayed."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Edit Profile Button Functionality",
+        "objective": "To verify that the edit profile button leads to the edit profile page.",
+        "coverage_element": "Edit Profile Button : Button for editing the user's profile information",
+        "preconditions": "User must be logged in and have access to their profile page.",
+        "expected_results": "User is redirected to the edit profile page, where they can modify their profile information.",
+        "procedure": [
+          "Click on the edit profile button from the user's profile page.",
+          "Verify that the page redirects to the edit profile interface."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "Website Link Hyperlink Functionality",
+        "objective": "To verify that the website link directs to the correct external website.",
+        "coverage_element": "Website Link : Hyperlink to an external website",
+        "preconditions": "The website link must be present on the user's profile page.",
+        "expected_results": "Clicking on the website link should open the specified external website in a new tab.",
+        "procedure": [
+          "Identify the website link on the user's profile page.",
+          "Click on the website link and validate that it opens the correct external website in a new tab."
+        ]
+      },
+      {
+        "id": "TC008",
+        "name": "Like and Comment Buttons Functionality",
+        "objective": "To verify that the like and comment buttons under posts are functional.",
+        "coverage_element": "Like and Comment Buttons under each post",
+        "preconditions": "Posts must be visible in the main content area.",
+        "expected_results": "When a user clicks the like button, the count should increase by one. When clicking comment, a comment input field should appear.",
+        "procedure": [
+          "Hover over a post to reveal the like and comment buttons.",
+          "Click the like and comment buttons and verify the expected interactions."
+        ]
+      }
+    ],
+    "data_display_testing": [
+      {
+        "id": "TC001",
+        "name": "Image Cards Display Test",
+        "objective": "To verify that the Image Cards display the correct images.",
+        "coverage_element": "Image Cards",
+        "preconditions": "The image cards are visible on the page.",
+        "expected_results": "Each image card should display the correct image. 7. Next Steps : Scroll down to observe more UI elements and ensure design consistency throughout the page.",
+        "procedure": [
+          "Hover over each Image Card.",
+          "Verify that the correct image is displayed."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Edit Profile Card Data Display",
+        "objective": "To verify that the edit profile card correctly displays fields for name and bio.",
+        "coverage_element": "Edit Profile Card : Card containing the \"Edit Profile\" interface with fields for Name and Bio",
+        "preconditions": "User must be on the edit profile page.",
+        "expected_results": "The edit profile card displays text fields for Name and Bio that the user can interact with.",
+        "procedure": [
+          "Navigate to the edit profile page.",
+          "Verify the presence of input fields for Name and Bio under the edit profile card."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Profile Card Information Display",
+        "objective": "To verify that the profile card correctly displays user profile information and the edit profile option.",
+        "coverage_element": "Profile Card : Contains user profile information and edit profile option",
+        "preconditions": "User must be logged into their profile page.",
+        "expected_results": "The profile card shows the user's avatar, username, bio, and the edit profile option.",
+        "procedure": [
+          "Navigate to the user's profile page.",
+          "Check the content of the profile card to ensure all mentioned information is accurately displayed."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Navigation Card Options Display",
+        "objective": "To verify that the navigation card correctly displays options for Posts, Saved, and Tagged sections.",
+        "coverage_element": "Navigation Card : Contains navigation options for Posts, Saved, and Tagged sections",
+        "preconditions": "User must be on the profile page.",
+        "expected_results": "The navigation card shows options for navigating between Posts, Saved, and Tagged sections.",
+        "procedure": [
+          "Go to the user's profile page.",
+          "Verify that the navigation card shows options for Posts, Saved, and Tagged sections."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "View Selection Buttons Display",
+        "objective": "To verify that the view selection buttons for posts, saved, and tagged sections are displayed correctly.",
+        "coverage_element": "View Selection Buttons for posts, saved, and tagged sections",
+        "preconditions": "User should be in a position to see the post viewing options.",
+        "expected_results": "View selection buttons for posts, saved, and tagged sections are visible and selectable.",
+        "procedure": [
+          "Locate the view selection buttons under the user’s main content area.",
+          "Verify the visibility and interactability of buttons for posts, saved, and tagged sections."
+        ]
+      }
+    ],
+    "design_validation_testing": [
+      {
+        "id": "TC001",
+        "name": "UI Design and Style Test: Color Palette Continuation",
+        "objective": "To verify the consistency of the color scheme across the image cards and like/comment buttons in this section.",
+        "coverage_element": "Color Scheme",
+        "preconditions": "",
+        "expected_results": "All UI elements should maintain consistent styling with the specified color palette and pre-defined style guidelines.",
+        "procedure": [
+          "Observe the specified UI elements and their design properties",
+          "Evaluate specific design aspects such as color contrast, style consistency, etc.",
+          "Compare against design best practices or requirements"
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "UI Design and Style Test: Header Section",
+        "objective": "To evaluate the consistency of the design in the header section.",
+        "coverage_element": "Header Section Design",
+        "preconditions": "",
+        "expected_results": "All UI elements in the header section should maintain consistent styling with the specified design guidelines.",
+        "procedure": [
+          "Observe the specified UI elements and their design properties.",
+          "Evaluate specific design aspects such as color contrast, style consistency, etc.",
+          "Compare against design best practices or requirements."
+        ]
+      }
+    ]
+  },
+  "element_requirement": [
+    "1. Edit Profile Button : Button for editing the user's profile information",
+    "2. Edit Profile Card : Card containing the \"Edit Profile\" interface with fields for Name and Bio",
+    "3. Website Link : Hyperlink to an external website",
+    "4. Profile Card : Contains user profile information and edit profile option",
+    "5. Navigation Card : Contains navigation options for Posts, Saved, and Tagged sections",
+    "6. Like and Comment Buttons under each post",
+    "7. View Selection Buttons for posts, saved, and tagged sections"
+  ]
+}

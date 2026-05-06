@@ -1,0 +1,317 @@
+{
+  "website_summary": {
+    "name": "Campus Connect Forum",
+    "description": "The website displays an anonymous discussion platform with a sleek design, using honeydew as a background color and dark olive green for components, optimized for student engagement.",
+    "category": "User Interaction",
+    "appearance": "The website features a clean, structured layout with a navigation header at the top labeled \"Campus Connect.\" Below this is a main post section where discussion topics are listed. Each post has a title, user handle, time since posting, a brief description, and interaction icons for replies. The left sidebar includes categorized options for \"Academics,\" \"Campus Life,\" and \"Events,\" as well as \"Popular Tags\" which help users find relevant discussions quickly with clickable buttons. The search bar is prominently positioned above the post list for easy navigation. The color scheme is consistent with honeydew (light background) and dark olive green used for buttons and interactive elements, giving the site a professional yet approachable appearance.",
+    "functionality": "The website allows users to create new posts, search through existing posts via a search bar, and anonymously browse through topics categorized under \"Academics,\" \"Campus Life,\" and \"Events.\" Popular tags help users follow specific interests such as #Academics, #Events, etc. Students can interact with posts by clicking on a downward arrow, indicating replies or other forms of engagement. It supports notifications for updated posts and discussions. The platform is designed to protect user privacy by anonymizing users with handles like \"user123.\""
+  },
+  "test_cases": {
+    "functionality_testing": [
+      {
+        "id": "TC001",
+        "name": "#Academics Button Test",
+        "objective": "To verify that clicking the #Academics button filters the main post list to display only discussions tagged with #Academics.",
+        "coverage_element": "#Academics",
+        "preconditions": "The page is loaded, and the \"Popular Tags\" section is visible.",
+        "expected_results": "The main post list should display only discussions tagged with #Academics. 7. Next Steps : Click on the #Academics tag to filter the posts.",
+        "procedure": [
+          "Click on the #Academics button.",
+          "Verify that the main post list updates to display only discussions tagged with #Academics."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Enter Discussion Topic and Submit Post",
+        "objective": "To verify that entering a discussion topic in the textarea field and clicking the \"Post\" button results in the creation of a new post with the entered topic.",
+        "coverage_element": "Textarea for entering the post content, Button to submit the post",
+        "preconditions": "On the \"Create New Post\" modal.",
+        "expected_results": "A new post is created with the entered topic.",
+        "procedure": [
+          "Enter a discussion topic in the Textarea for entering the post content.",
+          "Click the Button to submit the post.",
+          "Verify that a new post appears in the main post list with the entered topic."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "New Post Button Test",
+        "objective": "To verify that clicking the New Post button navigates to the new post creation page.",
+        "coverage_element": "New Post",
+        "preconditions": "On the main discussion page.",
+        "expected_results": "The user is redirected to the new post creation page. 7. Next Steps : Click the \"New Post\" button to proceed with creating a new discussion topic.",
+        "procedure": [
+          "Click on the New Post button.",
+          "Verify navigation to the new post creation page."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Page Load Test",
+        "objective": "To verify that the webpage loads correctly and displays the required UI elements.",
+        "coverage_element": "Page Load",
+        "preconditions": "The webpage URL is correctly entered, and the browser is functioning properly.",
+        "expected_results": "The webpage should load successfully and display the required UI elements for further evaluation. 7. Next Steps : Attempt to reload the page or navigate to a different section of the website to see if the issue persists.",
+        "procedure": [
+          "Navigate to the specified webpage URL.",
+          "Wait for the page to load completely.",
+          "Verify that the page displays the expected UI elements such as buttons, cards, and text."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Post Title Hover Test",
+        "objective": "To verify that hovering over the post title displays the correct information.",
+        "coverage_element": "Post Title Card",
+        "preconditions": "The post is visible on the screen.",
+        "expected_results": "The post title should remain bold and visible, and no unexpected changes should occur. 7. Next Steps : Hover over the post title to observe any changes or additional information.",
+        "procedure": [
+          "Hover over the post title in the main content area.",
+          "Observe any changes or additional information displayed."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Verify Filtering Functionality with Alternative Tag",
+        "objective": "To verify if the filtering functionality works with a different tag, such as #Events.",
+        "coverage_element": "#Events",
+        "preconditions": "The page is loaded, and the \"Popular Tags\" section is visible.",
+        "expected_results": "The main post list should display only discussions tagged with #Events. 7. Next Steps : Click on the #Events tag to see if the filtering functionality works with a different tag.",
+        "procedure": [
+          "Click on the #Events button.",
+          "Verify that the main post list updates to display only discussions tagged with #Events."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "Add Reply Button Functionality",
+        "objective": "To verify that clicking the [Add Reply] button allows users to add replies to a discussion.",
+        "coverage_element": "Add Reply : Button for adding replies to a discussion",
+        "preconditions": "The user is logged in and viewing a discussion item.",
+        "expected_results": "The reply text field becomes visible, allowing the user to enter a reply.",
+        "procedure": [
+          "Step 1 : Navigate to a discussion page.",
+          "Step 2 : Click the [Add Reply] button."
+        ]
+      },
+      {
+        "id": "TC008",
+        "name": "Academics Category Filter Functionality",
+        "objective": "To verify that the [Academics Category] button filters posts accordingly.",
+        "coverage_element": "Academics Category : Button to filter posts by academics category",
+        "preconditions": "The user is on the main discussion page with multiple categories of posts.",
+        "expected_results": "Only posts related to the Academics category are displayed after clicking the button.",
+        "procedure": [
+          "Step 1 : Navigate to the discussion page.",
+          "Step 2 : Click the [Academics Category] button."
+        ]
+      },
+      {
+        "id": "TC009",
+        "name": "Campus Life Category Filter Functionality",
+        "objective": "To verify that the [Campus Life Category] button filters posts accordingly.",
+        "coverage_element": "Campus Life Category : Button to filter posts by campus life category",
+        "preconditions": "The user is on the main discussion page with multiple categories of posts.",
+        "expected_results": "Only posts related to the Campus Life category are displayed after clicking the button.",
+        "procedure": [
+          "Step 1 : Navigate to the discussion page.",
+          "Step 2 : Click the [Campus Life Category] button."
+        ]
+      },
+      {
+        "id": "TC010",
+        "name": "Cancel Button Functionality",
+        "objective": "To verify that the Cancel Card with the \"Cancel\" button button correctly cancels the current action.",
+        "coverage_element": "Cancel Card with the \"Cancel\" button",
+        "preconditions": "The user is in a context where an action can be canceled, such as in a reply form.",
+        "expected_results": "The current action is canceled, and the user is returned to the previous state.",
+        "procedure": [
+          "Step 1 : Enter a context where a cancel action is possible.",
+          "Step 2 : Click the Cancel Card with the \"Cancel\" button button."
+        ]
+      },
+      {
+        "id": "TC011",
+        "name": "Login Button Functionality",
+        "objective": "To verify that the [Login Button] navigates the user to the login page.",
+        "coverage_element": "Login Button : Button to access login page",
+        "preconditions": "The user is on a page where the [Login Button] is visible.",
+        "expected_results": "After clicking the button, the user is redirected to the login page.",
+        "procedure": [
+          "Step 1 : Navigate to a page that includes the [Login Button].",
+          "Step 2 : Click the [Login Button]."
+        ]
+      },
+      {
+        "id": "TC012",
+        "name": "Campus Life Tag Selection Functionality",
+        "objective": "To verify that the [#Campus Life] tag filters posts accordingly when selected.",
+        "coverage_element": "#Campus Life : Button for selecting the #Campus Life tag",
+        "preconditions": "The user is on the main discussion page with posts containing various tags.",
+        "expected_results": "Only posts tagged with #Campus Life are displayed.",
+        "procedure": [
+          "Step 1 : Navigate to the main discussion page.",
+          "Step 2 : Click the [#Campus Life] tag button."
+        ]
+      },
+      {
+        "id": "TC013",
+        "name": "Housing Tag Selection Functionality",
+        "objective": "To verify that the [#Housing] tag filters posts accordingly when selected.",
+        "coverage_element": "#Housing : Button for selecting the #Housing tag",
+        "preconditions": "The user is on the main discussion page with posts containing various tags.",
+        "expected_results": "Only posts tagged with #Housing are displayed.",
+        "procedure": [
+          "Step 1 : Navigate to the main discussion page.",
+          "Step 2 : Click the [#Housing] tag button."
+        ]
+      },
+      {
+        "id": "TC014",
+        "name": "Food Tag Selection Functionality",
+        "objective": "To verify that the [#Food] tag filters posts accordingly when selected.",
+        "coverage_element": "#Food : Button for selecting the #Food tag",
+        "preconditions": "The user is on the main discussion page with posts containing various tags.",
+        "expected_results": "Only posts tagged with #Food are displayed.",
+        "procedure": [
+          "Step 1 : Navigate to the main discussion page.",
+          "Step 2 : Click the [#Food] tag button."
+        ]
+      },
+      {
+        "id": "TC015",
+        "name": "Clubs Tag Selection Functionality",
+        "objective": "To verify that the [#Clubs] tag filters posts accordingly when selected.",
+        "coverage_element": "#Clubs : Button for selecting the #Clubs tag",
+        "preconditions": "The user is on the main discussion page with posts containing various tags.",
+        "expected_results": "Only posts tagged with #Clubs are displayed.",
+        "procedure": [
+          "Step 1 : Navigate to the main discussion page.",
+          "Step 2 : Click the [#Clubs] tag button."
+        ]
+      },
+      {
+        "id": "TC016",
+        "name": "Back Button Functionality",
+        "objective": "To verify that the [Back Button] navigates the user to the previous page.",
+        "coverage_element": "Back Button : Button to navigate back",
+        "preconditions": "The user is on a page other than the main page.",
+        "expected_results": "The user is navigated back to the previous page.",
+        "procedure": [
+          "Step 1 : Navigate to a page other than the main page.",
+          "Step 2 : Click the [Back Button]."
+        ]
+      },
+      {
+        "id": "TC017",
+        "name": "Events Category Filter Functionality",
+        "objective": "To verify that the [Events Category] button filters posts accordingly.",
+        "coverage_element": "Events Category : Button to filter posts by events category",
+        "preconditions": "The user is on the main discussion page with multiple categories of posts.",
+        "expected_results": "Only posts related to the Events category are displayed.",
+        "procedure": [
+          "Step 1 : Navigate to the main discussion page.",
+          "Step 2 : Click the [Events Category] button."
+        ]
+      },
+      {
+        "id": "TC018",
+        "name": "Reply Count Button Functionality",
+        "objective": "To verify that the [Reply Count] button allows users to view replies.",
+        "coverage_element": "Reply Count : Button to view replies",
+        "preconditions": "The user is viewing a discussion with replies.",
+        "expected_results": "The replies associated with the discussion are displayed.",
+        "procedure": [
+          "Step 1 : Navigate to a discussion page with replies.",
+          "Step 2 : Click the [Reply Count] button."
+        ]
+      },
+      {
+        "id": "TC019",
+        "name": "Reply Count Dropdown Functionality",
+        "objective": "To verify that the [Reply Count Dropdown] button allows users to view additional replies.",
+        "coverage_element": "Reply Count Dropdown : Button to view more replies",
+        "preconditions": "The user is viewing a discussion with multiple replies.",
+        "expected_results": "Additional replies associated with the discussion are displayed.",
+        "procedure": [
+          "Step 1 : Navigate to a discussion page with multiple replies.",
+          "Step 2 : Click the [Reply Count Dropdown] button."
+        ]
+      }
+    ],
+    "data_display_testing": [
+      {
+        "id": "TC001",
+        "name": "Metadata Display Test",
+        "objective": "To verify that the metadata is correctly displayed.",
+        "coverage_element": "Metadata Card",
+        "preconditions": "The post is visible on the screen.",
+        "expected_results": "The metadata should be correctly displayed with the user handle and timestamp. 7. Next Steps : Observe the metadata and replies to ensure they are correctly displayed.",
+        "procedure": [
+          "Observe the metadata of the post.",
+          "Verify that it includes the user handle and timestamp."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Content Description and Replies Display Test",
+        "objective": "To verify that the content description and replies are correctly displayed.",
+        "coverage_element": "Content Description and Replies Card",
+        "preconditions": "The post is visible on the screen.",
+        "expected_results": "The content description should be correctly displayed without any formatting issues, and the replies should be correctly displayed with the user handle and timestamp. 7. Next Steps : Observe the content description and replies to ensure they are correctly displayed.",
+        "procedure": [
+          "Observe the content description of the post.",
+          "Verify that it is legible and formatted correctly.",
+          "Observe the replies section.",
+          "Verify that the replies are correctly displayed with the user handle and timestamp."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Discussion Card Data Display",
+        "objective": "To verify that the [Discussion Card] displays main discussion and replies correctly.",
+        "coverage_element": "Discussion Card : Displays the main discussion and replies",
+        "preconditions": "A discussion post with replies exists.",
+        "expected_results": "The discussion card displays the main topic, user information, and all replies accurately.",
+        "procedure": [
+          "Step 1 : Navigate to a discussion page that has replies.",
+          "Step 2 : Verify the content displayed in the discussion card."
+        ]
+      }
+    ],
+    "design_validation_testing": [
+      {
+        "id": "TC001",
+        "name": "Categories and Tags Card Design",
+        "objective": "To verify that the [Categories and Tags Card] adheres to the intended design.",
+        "coverage_element": "Categories and Tags Card : Card displaying categories and tags",
+        "preconditions": "The user is viewing the main discussion page.",
+        "expected_results": "The categories and tags card is properly styled and positioned according to the design specifications.",
+        "procedure": [
+          "Step 1 : Navigate to the discussion page.",
+          "Step 2 : Visually inspect the appearance of the categories and tags card."
+        ]
+      }
+    ]
+  },
+  "element_requirement": [
+    "1. New Post Button : Button to create a new post",
+    "2. Add Reply : Button for adding replies to a discussion",
+    "3. Discussion Card : Displays the main discussion and replies",
+    "4. Categories and Tags Card : Card displaying categories and tags",
+    "5. Academics Category : Button to filter posts by academics category",
+    "6. Campus Life Category : Button to filter posts by campus life category",
+    "7. #Academics : Button for selecting the #Academics tag",
+    "8. Cancel Card with the \"Cancel\" button",
+    "9. Login Button : Button to access login page",
+    "10. #Events : Button for selecting the #Events tag",
+    "11. #Campus Life : Button for selecting the #Campus Life tag",
+    "12. #Housing : Button for selecting the #Housing tag",
+    "13. #Food : Button for selecting the #Food tag",
+    "14. #Clubs : Button for selecting the #Clubs tag",
+    "15. Back Button : Button to navigate back",
+    "16. Events Category : Button to filter posts by events category",
+    "17. Reply Count : Button to view replies",
+    "18. Reply Count Dropdown : Button to view more replies"
+  ]
+}

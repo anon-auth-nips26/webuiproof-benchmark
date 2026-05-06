@@ -1,0 +1,266 @@
+{
+  "website_summary": {
+    "name": "Wild Animal Detection Hub",
+    "description": "The website features a clean and organized layout with a misty rose background and firebrick UI elements, designed for monitoring and alerting users about wild animal sightings.",
+    "category": "User Interaction",
+    "appearance": "The website has a minimalist design with a misty rose background and firebrick accents for UI elements. It is divided into two main sections: \"Detected Animals\" and \"Animal Gallery.\" The \"Detected Animals\" section displays a placeholder message indicating no detections yet. The \"Animal Gallery\" section showcases various wild animals, each with a photo, a brief description, and an \"Alert OFF\" button. Each animal is color-coded with a small colored dot next to its name. The header includes the title \"Wild Animal Detection\" and a subtitle describing the system's purpose. The overall layout is responsive, with a grid structure for the animal profiles that adjusts based on screen size.",
+    "functionality": "The website allows users to browse profiles of different wild animals, each with a unique color code. Users can toggle SMS alerts for each animal by clicking the \"Alert OFF\" button. The system is designed to detect animals in real-time and notify users via SMS when a specific animal is spotted. Users can also clear recent observations from the \"Detected Animals\" section. The website is built with Next.js and includes interactive elements like buttons and hover effects for a better user experience."
+  },
+  "test_cases": {
+    "functionality_testing": [
+      {
+        "id": "TC001",
+        "name": "Clear Button Test",
+        "objective": "To verify that clicking the Clear Button clears the detection records.",
+        "coverage_element": "Clear Button",
+        "preconditions": "The \"Detected Animals\" section is visible with records.",
+        "expected_results": "The detection records should be cleared, and an appropriate message should be displayed.",
+        "procedure": [
+          "Click on the Clear Button.",
+          "Verify that the detection records are cleared."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Elephant Profile Hover Test",
+        "objective": "Verify that hovering over the Elephant profile enlarges the image and keeps the description accurate.",
+        "coverage_element": "Elephant Profile",
+        "preconditions": "The \"Animal Gallery\" section is visible.",
+        "expected_results": "The elephant profile image should enlarge upon hovering, and the description should remain accurate and easy to read. 7. Next Steps : Perform a hover action on the \"Elephant\" profile to verify the expected behavior.",
+        "procedure": [
+          "Hover over the Elephant profile.",
+          "Observe if the profile image enlarges and the description remains accurate."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Toggle Alert Status Button",
+        "objective": "To verify that the Alert OFF button successfully toggles the alert status.",
+        "coverage_element": "Alert OFF Button : Button to toggle alert status",
+        "preconditions": "User is on the Animal Gallery page where the alert toggle buttons are visible.",
+        "expected_results": "The alert status is toggled from OFF to ON, and the button text changes accordingly.",
+        "procedure": [
+          "Click on the 'Alert OFF' button for any animal profile.",
+          "Verify that the alert status changes to 'ON' and the button displays 'Alert ON'."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Toggle Alert ON Button for Lion Profile",
+        "objective": "To verify that the Alert ON button successfully toggles the alert status for Lion profile.",
+        "coverage_element": "\"Alert ON\" Button for Lion profile",
+        "preconditions": "User is on the Animal Gallery page where the Lion profile's alert toggle buttons are visible.",
+        "expected_results": "The alert status is toggled from ON to OFF, and the button text changes accordingly.",
+        "procedure": [
+          "Click on the 'Alert ON' button for the Lion profile.",
+          "Verify that the alert status changes to 'OFF' and the button displays 'Alert OFF'."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Clear Map Button Functionality",
+        "objective": "To verify that the Clear Button effectively clears the map of any current markers or data.",
+        "coverage_element": "Clear Button : Button to clear the map",
+        "preconditions": "User is on the map section of the application with markers present.",
+        "expected_results": "The map should be cleared of all markers, returning to its initial state.",
+        "procedure": [
+          "Add several markers to the map.",
+          "Click the 'Clear Button' and verify that all markers are removed from the map."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Info Button Functionality",
+        "objective": "To verify that the Info Button successfully redirects to an animal information page.",
+        "coverage_element": "Info Button : Button to view animal information",
+        "preconditions": "User is on a page where the Info Button for an animal is available.",
+        "expected_results": "The user is redirected to a page displaying additional information about the selected animal.",
+        "procedure": [
+          "Click on the 'Info Button' for any animal.",
+          "Verify that the user is redirected to a page with detailed information about the selected animal."
+        ]
+      }
+    ],
+    "data_display_testing": [
+      {
+        "id": "TC001",
+        "name": "Display Zebra Profile",
+        "objective": "To verify that the Zebra profile card correctly displays the profile image and description.",
+        "coverage_element": "Zebra Profile : Card displaying the zebra profile image and description",
+        "preconditions": "The Zebra profile card is included in the Animal Gallery page.",
+        "expected_results": "The Zebra profile card should display the correct image and a brief description.",
+        "procedure": [
+          "Navigate to the Animal Gallery page.",
+          "Confirm that the Zebra profile card shows the correct image and description."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Display Cheetah Profile",
+        "objective": "To verify that the Cheetah profile card correctly displays the profile image and description.",
+        "coverage_element": "Cheetah Profile : Card displaying the cheetah profile image and description",
+        "preconditions": "The Cheetah profile card is included in the Animal Gallery page.",
+        "expected_results": "The Cheetah profile card should display the correct image and a brief description.",
+        "procedure": [
+          "Navigate to the Animal Gallery page.",
+          "Confirm that the Cheetah profile card shows the correct image and description."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Display Hyena Profile",
+        "objective": "To verify that the Hyena profile card correctly displays the profile image and description.",
+        "coverage_element": "Hyena Profile : Card displaying the hyena profile image and description",
+        "preconditions": "The Hyena profile card is included in the Animal Gallery page.",
+        "expected_results": "The Hyena profile card should display the correct image and a brief description.",
+        "procedure": [
+          "Navigate to the Animal Gallery page.",
+          "Confirm that the Hyena profile card shows the correct image and description."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Display Wild Dog Profile",
+        "objective": "To verify that the Wild Dog profile card correctly displays the profile image and description.",
+        "coverage_element": "Wild Dog Profile : Card displaying the wild dog profile image and description",
+        "preconditions": "The Wild Dog profile card is included in the Animal Gallery page.",
+        "expected_results": "The Wild Dog profile card should display the correct image and a brief description.",
+        "procedure": [
+          "Navigate to the Animal Gallery page.",
+          "Confirm that the Wild Dog profile card shows the correct image and description."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Display Leopard Profile",
+        "objective": "To verify that the Leopard profile card correctly displays the profile image and description.",
+        "coverage_element": "Leopard Profile : Card displaying the leopard profile image and description",
+        "preconditions": "The Leopard profile card is included in the Animal Gallery page.",
+        "expected_results": "The Leopard profile card should display the correct image and a brief description.",
+        "procedure": [
+          "Navigate to the Animal Gallery page.",
+          "Confirm that the Leopard profile card shows the correct image and description."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Hyena Profile Card with Description",
+        "objective": "To verify that the Hyena profile card with an extended description is displayed correctly.",
+        "coverage_element": "Hyena Profile Card with description",
+        "preconditions": "The detailed Hyena profile card is included in the Animal Gallery page.",
+        "expected_results": "The Hyena profile card should display the correct image, a brief description, and the extended description.",
+        "procedure": [
+          "Navigate to the Animal Gallery page.",
+          "Confirm that the Hyena profile card shows the correct image, brief description, and extended description."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "Wild Dog Profile Card with Description",
+        "objective": "To verify that the Wild Dog profile card with an extended description is displayed correctly.",
+        "coverage_element": "Wild Dog Profile Card with description",
+        "preconditions": "The detailed Wild Dog profile card is included in the Animal Gallery page.",
+        "expected_results": "The Wild Dog profile card should display the correct image, a brief description, and the extended description.",
+        "procedure": [
+          "Navigate to the Animal Gallery page.",
+          "Confirm that the Wild Dog profile card shows the correct image, brief description, and extended description."
+        ]
+      },
+      {
+        "id": "TC008",
+        "name": "Leopard Profile Card with Description",
+        "objective": "To verify that the Leopard profile card with an extended description is displayed correctly.",
+        "coverage_element": "Leopard Profile Card with description",
+        "preconditions": "The detailed Leopard profile card is included in the Animal Gallery page.",
+        "expected_results": "The Leopard profile card should display the correct image, a brief description, and the extended description.",
+        "procedure": [
+          "Navigate to the Animal Gallery page.",
+          "Confirm that the Leopard profile card shows the correct image, brief description, and extended description."
+        ]
+      },
+      {
+        "id": "TC009",
+        "name": "Detected Animals Section Placeholder",
+        "objective": "To verify that the 'Detected Animals' section correctly displays a placeholder message when no detections are made.",
+        "coverage_element": "Detected Animals Section : Card displaying the message \"No detections yet. Monitoring wildlife...\"",
+        "preconditions": "No animals have been detected in the system.",
+        "expected_results": "The 'Detected Animals' section should display the message 'No detections yet. Monitoring wildlife...'.",
+        "procedure": [
+          "Navigate to the 'Detected Animals' section.",
+          "Confirm that the placeholder message is displayed properly."
+        ]
+      },
+      {
+        "id": "TC010",
+        "name": "Display Giraffe Profile",
+        "objective": "To verify that the Giraffe profile card correctly displays the profile image and description.",
+        "coverage_element": "Giraffe Profile : Card displaying the giraffe profile image and description",
+        "preconditions": "The Giraffe profile card is included in the Animal Gallery page.",
+        "expected_results": "The Giraffe profile card should display the correct image and a brief description.",
+        "procedure": [
+          "Navigate to the Animal Gallery page.",
+          "Confirm that the Giraffe profile card shows the correct image and description."
+        ]
+      },
+      {
+        "id": "TC011",
+        "name": "Zebra Observation Card Display",
+        "objective": "To verify that the Zebra Observation card correctly displays observation details.",
+        "coverage_element": "Zebra Observation : Card displaying zebra observation details",
+        "preconditions": "The Zebra Observation card is part of a detected observations section.",
+        "expected_results": "The Zebra Observation card should display accurate observation details.",
+        "procedure": [
+          "Navigate to the detected observations section.",
+          "Verify that the Zebra Observation card shows the correct observation details."
+        ]
+      },
+      {
+        "id": "TC012",
+        "name": "Elephant Observation Card Display",
+        "objective": "To verify that the Elephant Observation card correctly displays observation details.",
+        "coverage_element": "Elephant Observation : Card displaying elephant observation details",
+        "preconditions": "The Elephant Observation card is part of a detected observations section.",
+        "expected_results": "The Elephant Observation card should display accurate observation details.",
+        "procedure": [
+          "Navigate to the detected observations section.",
+          "Verify that the Elephant Observation card shows the correct observation details."
+        ]
+      }
+    ],
+    "design_validation_testing": [
+      {
+        "id": "TC001",
+        "name": "UI Design and Style Test: Color Palette",
+        "objective": "To evaluate the color scheme consistency of the webpage, focusing on the background, header, and footer.",
+        "coverage_element": "Color Scheme",
+        "preconditions": "",
+        "expected_results": "The background should be misty rose, and the header and footer should consistently use the firebrick theme. 7. Next Steps : Perform the first test case to validate the color scheme of the webpage.",
+        "procedure": [
+          "Observe the background color and compare it to the misty rose requirement.",
+          "Inspect the header and footer for the presence of the firebrick theme.",
+          "Compare the observed colors against the design requirements."
+        ]
+      }
+    ]
+  },
+  "element_requirement": [
+    "1. Alert OFF Button : Button to toggle alert status",
+    "2. Zebra Profile : Card displaying the zebra profile image and description",
+    "3. Cheetah Profile : Card displaying the cheetah profile image and description",
+    "4. Hyena Profile : Card displaying the hyena profile image and description",
+    "5. Wild Dog Profile : Card displaying the wild dog profile image and description",
+    "6. Leopard Profile : Card displaying the leopard profile image and description",
+    "7. Hyena Profile Card with description",
+    "8. Wild Dog Profile Card with description",
+    "9. \"Alert ON\" Button for Lion profile",
+    "10. Leopard Profile Card with description",
+    "11. Clear Button : Button labeled \"Clear\" intended for clearing detection records",
+    "12. Clear Button : Button to clear the map",
+    "13. Detected Animals Section : Card displaying the message \"No detections yet. Monitoring wildlife...\"",
+    "14. Elephant Profile : Card displaying the elephant profile image and description",
+    "15. Giraffe Profile : Card displaying the giraffe profile image and description",
+    "16. Zebra Observation : Card displaying zebra observation details",
+    "17. Elephant Observation : Card displaying elephant observation details",
+    "18. Info Button : Button to view animal information"
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "website_summary": {
+    "name": "Fundraiser Day Promotional Portal",
+    "description": "The website is designed with a vibrant and inviting layout, featuring gradient colors and interactive sections to promote a fundraising event.",
+    "category": "Content Presentation",
+    "appearance": "The website features a clean and modern design with a gradient background transitioning from rose to amber tones. At the top, there's a prominent header introducing the \"Fundraiser Day\" event with a bold title and a brief description. Below the header, there are three distinct sections: \n1. Offers: Highlighting exclusive deals, discounts, and early bird specials with colorful boxes and clear call-to-action buttons.\n2. Testimonials: A section showcasing quotes from past fundraisers with their roles and photos, arranged in a horizontally scrollable carousel.\n3. Company Information: A footer area providing details about Rise N' Shine Ltd, including contact information and links to various pages like About Us, Our Mission, and FAQ.",
+    "functionality": "The website includes several functional elements:\n1. Call-to-action buttons (\"Start Shopping,\" \"Learn More\") encouraging users to engage further.\n2. An automatically moving carousel for displaying offers, allowing users to view different promotions sequentially.\n3. A testimonial section with a horizontal scroll feature for browsing through various user reviews.\n4. A footer with links to additional pages and contact details for the organization."
+  },
+  "test_cases": {
+    "functionality_testing": [
+      {
+        "id": "TC001",
+        "name": "Learn More Button Test",
+        "objective": "To verify that clicking the Learn More button provides additional information about the Fundraiser Day event.",
+        "coverage_element": "Learn More",
+        "preconditions": "The webpage is loaded, and the \"Learn More\" button is visible.",
+        "expected_results": "Detailed information about the Fundraiser Day event should be displayed after clicking the \"Learn More\" button. 7. Next Steps : Click on the \"Learn More\" button to proceed with the task.",
+        "procedure": [
+          "Click on the Learn More button.",
+          "Verify that detailed information about the Fundraiser Day event is displayed."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Page Load and Button Functionality Verification",
+        "objective": "To verify if the page loads correctly and the Start Shopping button functions as expected.",
+        "coverage_element": "Start Shopping",
+        "preconditions": "The page should load completely with all elements visible.",
+        "expected_results": "The page should load correctly, with the homepage displaying including the Start Shopping button, and clicking it should redirect to the shopping section. 7. Next Steps : Since the page is not loading and the \"Start Shopping\" button is not visible, attempting to scroll up may help bring any hidden elements into view or prompt the page to load correctly.",
+        "procedure": [
+          "Refresh the webpage.",
+          "Confirm page content displays completely with no loading issues.",
+          "Click on the Start Shopping button.",
+          "Verify if the page redirects to the shopping section."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Test Special Discount Card Functionality",
+        "objective": "To verify that clicking the 'Special Discount' card leads to the relevant product page.",
+        "coverage_element": "Special Discount : Card advertising a 15% discount on fundraising merchandise",
+        "preconditions": "User is on the homepage and the 'Special Discount' card is visible.",
+        "expected_results": "Upon clicking the 'Special Discount' card, the user is directed to the page featuring discounted fundraising merchandise.",
+        "procedure": [
+          "Navigate to the homepage.",
+          "Click on the 'Special Discount' card."
+        ]
+      }
+    ],
+    "data_display_testing": [
+      {
+        "id": "TC001",
+        "name": "Alex Johnson Testimonial Display Test",
+        "objective": "To verify that the Alex Johnson Testimonial card accurately displays the testimonial.",
+        "coverage_element": "Alex Johnson Testimonial",
+        "preconditions": "The \"Testimonials\" section is visible.",
+        "expected_results": "The testimonial is accurately displayed.",
+        "procedure": [
+          "Hover over the Alex Johnson Testimonial card.",
+          "Verify that the testimonial is displayed correctly."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Check Fundraiser Day Card Data Display",
+        "objective": "To verify that the 'Fundraiser Day' card displays the correct event details.",
+        "coverage_element": "Fundraiser Day : Card promoting the fundraising event",
+        "preconditions": "User is on the homepage and the 'Fundraiser Day' card is visible.",
+        "expected_results": "The 'Fundraiser Day' card shows accurate event details including date, time, and location.",
+        "procedure": [
+          "Navigate to the homepage.",
+          "Review the content displayed in the 'Fundraiser Day' card."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Confirm Early Bird Special Card Data Accuracy",
+        "objective": "To verify that the 'Early Bird Special' card displays the correct discount information.",
+        "coverage_element": "Early Bird Special : Card offering a 10% discount for early orders",
+        "preconditions": "User is on the homepage and the 'Early Bird Special' card is visible.",
+        "expected_results": "The 'Early Bird Special' card accurately displays the 10% discount offer and any associated conditions.",
+        "procedure": [
+          "Navigate to the homepage.",
+          "Review the content displayed in the 'Early Bird Special' card."
+        ]
+      }
+    ],
+    "design_validation_testing": [
+      {
+        "id": "TC001",
+        "name": "UI Design and Style Test: Call-to-Action Buttons",
+        "objective": "To evaluate the design and style of the call-to-action buttons, ensuring they are visually appealing and consistent with the overall design.",
+        "coverage_element": "Call-to-Action Design",
+        "preconditions": "",
+        "expected_results": "The call-to-action buttons should be visually appealing and consistent with the overall design, maintaining the specified font, size, and color. 7. Next Steps : Hover over the next card Call-to-Action Design to continue evaluating the color consistency and alignment.",
+        "procedure": [
+          "Observe the design and style of the call-to-action buttons, including font, size, and color.",
+          "Compare the design and style of all call-to-action buttons to ensure consistency.",
+          "Verify that the call-to-action buttons adhere to the specified design requirements."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "UI Design and Style Test: Color Palette",
+        "objective": "To evaluate the consistency of the color scheme, ensuring the background matches the cornsilk shade and all text/buttons maintain consistent color schemes.",
+        "coverage_element": "Color Scheme",
+        "preconditions": "",
+        "expected_results": "The background should match the cornsilk shade, and all text/buttons should maintain consistent color schemes as per the design. 7. Next Steps : Hover over the cards to observe their design properties and verify color consistency.",
+        "procedure": [
+          "Observe the background color and compare it to the cornsilk shade.",
+          "Check the color consistency of text and buttons across the page.",
+          "Compare against the specified design requirements."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Validate Exclusive Offer Card Design",
+        "objective": "To verify that the 'Exclusive Offer' card has the correct design elements.",
+        "coverage_element": "Exclusive Offer : Card offering free delivery on orders over $50",
+        "preconditions": "User is on the homepage and the 'Exclusive Offer' card is visible.",
+        "expected_results": "The 'Exclusive Offer' card displays the correct colors, fonts, and layout according to the design specifications.",
+        "procedure": [
+          "Navigate to the homepage.",
+          "Visually inspect the design of the 'Exclusive Offer' card."
+        ]
+      }
+    ]
+  },
+  "element_requirement": [
+    "1. Start Shopping : Button for initiating shopping activities",
+    "2. Learn More : Button for accessing more information about the Fundraiser Day event",
+    "3. Fundraiser Day : Card promoting the fundraising event",
+    "4. Exclusive Offer : Card offering free delivery on orders over $50",
+    "5. Special Discount : Card advertising a 15% discount on fundraising merchandise",
+    "6. Early Bird Special : Card offering a 10% discount for early orders",
+    "7. Alex Johnson Testimonial : Card containing Alex Johnson's testimonial"
+  ]
+}

@@ -1,0 +1,358 @@
+{
+  "website_summary": {
+    "name": "TransHub Ticket Booking Platform",
+    "description": "The website features a sleek, modern design with a dark gradient background and vibrant purple and blue accents, offering a user-friendly interface for booking bus and railway tickets.",
+    "category": "User Interaction",
+    "appearance": "The website has a clean and professional design with a dark gradient background transitioning from deep blue to purple, creating a sophisticated look. The header includes a logo with a bus icon and the brand name \"TransHub\" in bold, colorful letters. Navigation options such as \"Login\" and \"Register\" buttons are prominently displayed. A central hero section highlights the tagline \"Your Journey, Your Way\" with a call-to-action button for booking. Below, there's a search feature for routes, which currently shows no results but offers a \"New Search\" button. The footer contains quick links, legal information, and a newsletter subscription form, ensuring easy access to various functionalities. Social media icons and contact details are also present for additional user engagement.",
+    "functionality": "The website allows users to search for bus and railway routes using a dedicated search bar. Users can book tickets through the \"Book Now\" button, which likely leads to a booking page with real-time seat availability and pricing. Secure payment options are available for completing transactions. Registered users can log in to manage their bookings, profiles, and access help/support. The site also provides a newsletter subscription feature for updates. The responsive design ensures usability on both mobile and desktop devices."
+  },
+  "test_cases": {
+    "functionality_testing": [
+      {
+        "id": "TC001",
+        "name": "Date Selector Test",
+        "objective": "To verify that the Date Selector allows users to select a valid travel date.",
+        "coverage_element": "Date Selector",
+        "preconditions": "The date selector is accessible.",
+        "expected_results": "The selected travel date should be displayed in the field, confirming that the date selector functions correctly.",
+        "procedure": [
+          "Click on the Date Selector.",
+          "Select a travel date from the calendar.",
+          "Verify that the selected travel date is displayed in the field."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Departure Location Selector Test",
+        "objective": "To verify that the Departure Location Selector allows users to select a valid departure location.",
+        "coverage_element": "Departure Location Selector",
+        "preconditions": "The departure location dropdown is accessible.",
+        "expected_results": "The selected departure location should be displayed in the field, confirming that the dropdown menu functions correctly.",
+        "procedure": [
+          "Click on the Departure Location Selector.",
+          "Select a departure location from the dropdown options.",
+          "Verify that the selected departure location is displayed in the field."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Destination Selector Test",
+        "objective": "To verify that the Destination Selector allows users to select a valid destination.",
+        "coverage_element": "Destination Selector",
+        "preconditions": "The destination dropdown is accessible.",
+        "expected_results": "The selected destination should be displayed in the field, confirming that the dropdown menu functions correctly.",
+        "procedure": [
+          "Click on the Destination Selector.",
+          "Select a destination from the dropdown options.",
+          "Verify that the selected destination is displayed in the field."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Checkbox Agreement Test",
+        "objective": "To verify that the Checkbox for agreeing to terms and policies accepts input and handles it correctly.",
+        "coverage_element": "Checkbox for agreeing to terms and policies",
+        "preconditions": "The registration form is displayed.",
+        "expected_results": "The checkbox should be checked and the form should accept the agreement.",
+        "procedure": [
+          "Click on the Checkbox for agreeing to terms and policies.",
+          "Verify that the checkbox is checked and the form accepts the agreement."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Departure Location Dropdown Test",
+        "objective": "To verify that selecting a departure location from the Departure Location Dropdown updates the search form accordingly.",
+        "coverage_element": "Departure Location Dropdown",
+        "preconditions": "The search form is open and ready for input.",
+        "expected_results": "The selected departure location should be displayed in the search form, updating the search criteria. 7. Next Steps : Select a departure location from the dropdown menu to proceed with the route search.",
+        "procedure": [
+          "Click on the Departure Location Dropdown.",
+          "Select a departure location from the dropdown options.",
+          "Verify that the selected departure location is displayed in the search form."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Test Search Button Functionality",
+        "objective": "To verify that the search button executes a search action correctly.",
+        "coverage_element": "Search Button : Button marked for executing a search action",
+        "preconditions": "User is on the homepage and has entered valid search criteria.",
+        "expected_results": "The search results page should display relevant results based on the input criteria.",
+        "procedure": [
+          "Enter valid search criteria into the search fields.",
+          "Click the 'Search Button'."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "Test Book Now Button Functionality",
+        "objective": "To verify that the book now button initiates a booking session.",
+        "coverage_element": "Book Now Button : Button for initiating a booking session",
+        "preconditions": "User is logged in and selects a route to book.",
+        "expected_results": "A new window or modal should open allowing the user to proceed with the booking process.",
+        "procedure": [
+          "Select a route to book.",
+          "Click the 'Book Now Button'."
+        ]
+      },
+      {
+        "id": "TC008",
+        "name": "Test Your Journey Card Functionality",
+        "objective": "To verify that the 'Your Journey Card' offers booking and information options.",
+        "coverage_element": "Your Journey Card : Card offering booking and information",
+        "preconditions": "User is on the homepage.",
+        "expected_results": "The card should provide interactive elements for booking and display relevant journey information.",
+        "procedure": [
+          "Navigate to the homepage.",
+          "Interact with elements within the 'Your Journey Card'."
+        ]
+      },
+      {
+        "id": "TC009",
+        "name": "Test Search Routes Button Functionality",
+        "objective": "To verify that the search routes button submits the search query.",
+        "coverage_element": "Search Routes Button : Button for submitting the search query",
+        "preconditions": "User is on the search page and has entered valid search criteria.",
+        "expected_results": "The search results page should display relevant results based on the input criteria.",
+        "procedure": [
+          "Enter valid search criteria into the search fields.",
+          "Click the 'Search Routes Button'."
+        ]
+      },
+      {
+        "id": "TC010",
+        "name": "Test Search Routes Button Functionality",
+        "objective": "To verify that the search routes button searches for routes.",
+        "coverage_element": "Search Routes Button : Button for searching routes",
+        "preconditions": "User is on the search page and has entered valid search criteria.",
+        "expected_results": "The search results page should display relevant results based on the input criteria.",
+        "procedure": [
+          "Enter valid search criteria into the search fields.",
+          "Click the 'Search Routes Button'."
+        ]
+      },
+      {
+        "id": "TC011",
+        "name": "Test Navigation Card Functionality",
+        "objective": "To verify that the navigation card provides functional navigation options.",
+        "coverage_element": "Navigation Card : Card containing navigation options",
+        "preconditions": "User is on the homepage.",
+        "expected_results": "Each navigation option should lead to the corresponding page or section.",
+        "procedure": [
+          "Navigate to the homepage.",
+          "Click on different navigation options within the 'Navigation Card'."
+        ]
+      },
+      {
+        "id": "TC012",
+        "name": "Test Subscribe Button Functionality",
+        "objective": "To verify that the subscribe button allows users to subscribe to the newsletter.",
+        "coverage_element": "Subscribe Button : Button for subscribing to newsletter",
+        "preconditions": "User is on the homepage and has entered a valid email address.",
+        "expected_results": "The user should receive a confirmation message indicating successful subscription.",
+        "procedure": [
+          "Enter a valid email address.",
+          "Click the 'Subscribe Button'."
+        ]
+      },
+      {
+        "id": "TC013",
+        "name": "Test My Bookings Button Functionality",
+        "objective": "To verify that the my bookings button allows users to view their bookings.",
+        "coverage_element": "My Bookings Button : Button for viewing bookings",
+        "preconditions": "User is logged in.",
+        "expected_results": "The user should be redirected to a page displaying their bookings.",
+        "procedure": [
+          "Log in to the account.",
+          "Click the 'My Bookings Button'."
+        ]
+      },
+      {
+        "id": "TC014",
+        "name": "Test My Profile Button Functionality",
+        "objective": "To verify that the my profile button allows users to access their profile.",
+        "coverage_element": "My Profile Button : Button for accessing profile",
+        "preconditions": "User is logged in.",
+        "expected_results": "The user should be redirected to their profile page.",
+        "procedure": [
+          "Log in to the account.",
+          "Click the 'My Profile Button'."
+        ]
+      },
+      {
+        "id": "TC015",
+        "name": "Test Help & Support Button Functionality",
+        "objective": "To verify that the help & support button provides assistance.",
+        "coverage_element": "Help & Support Button : Button for assistance",
+        "preconditions": "User is on the homepage.",
+        "expected_results": "The user should be redirected to a page or modal providing support options.",
+        "procedure": [
+          "Navigate to the homepage.",
+          "Click the 'Help & Support Button'."
+        ]
+      },
+      {
+        "id": "TC016",
+        "name": "Test Terms of Service Button Functionality",
+        "objective": "To verify that the terms of service button displays the terms of service.",
+        "coverage_element": "Terms of Service Button : Button for terms of service",
+        "preconditions": "User is on the homepage.",
+        "expected_results": "The user should be redirected to a page displaying the terms of service.",
+        "procedure": [
+          "Navigate to the homepage.",
+          "Click the 'Terms of Service Button'."
+        ]
+      },
+      {
+        "id": "TC017",
+        "name": "Test Privacy Policy Button Functionality",
+        "objective": "To verify that the privacy policy button displays the privacy policy.",
+        "coverage_element": "Privacy Policy Button : Button for privacy policy",
+        "preconditions": "User is on the homepage.",
+        "expected_results": "The user should be redirected to a page displaying the privacy policy.",
+        "procedure": [
+          "Navigate to the homepage.",
+          "Click the 'Privacy Policy Button'."
+        ]
+      },
+      {
+        "id": "TC018",
+        "name": "Test Cookie Policy Button Functionality",
+        "objective": "To verify that the cookie policy button displays the cookie policy.",
+        "coverage_element": "Cookie Policy Button : Button for cookie policy",
+        "preconditions": "User is on the homepage.",
+        "expected_results": "The user should be redirected to a page displaying the cookie policy.",
+        "procedure": [
+          "Navigate to the homepage.",
+          "Click the 'Cookie Policy Button'."
+        ]
+      },
+      {
+        "id": "TC019",
+        "name": "Test Email Input Functionality",
+        "objective": "To verify that the email input textbox accepts valid email addresses.",
+        "coverage_element": "Email Input : Textbox for entering email address",
+        "preconditions": "User is on the homepage.",
+        "expected_results": "The textbox should accept valid email addresses and reject invalid ones.",
+        "procedure": [
+          "Enter a valid email address.",
+          "Enter an invalid email address."
+        ]
+      }
+    ],
+    "data_display_testing": [
+      {
+        "id": "TC001",
+        "name": "No Routes Found Card Display Test",
+        "objective": "To verify that the No Routes Found Card displays the correct message when no routes are found.",
+        "coverage_element": "No Routes Found Card",
+        "preconditions": "The search criteria do not match any available routes.",
+        "expected_results": "The No Routes Found Card should display the specified message, aiding users in understanding the search outcome.",
+        "procedure": [
+          "Perform a search using invalid criteria expected to return no routes.",
+          "Verify that the No Routes Found Card displays the correct message : \"No routes found. Please try a different search.\""
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Test Transport Type Selector Display",
+        "objective": "To verify that the transport type selector displays all available options.",
+        "coverage_element": "Transport Type Selector : Dropdown menu for selecting the transport type",
+        "preconditions": "User is on the search page.",
+        "expected_results": "The dropdown should display all available transport types without any missing options.",
+        "procedure": [
+          "Navigate to the search page.",
+          "Open the 'Transport Type Selector' dropdown."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Test Seat Class Selector Display",
+        "objective": "To verify that the seat class selector displays all available seat classes.",
+        "coverage_element": "Seat Class Selector : Dropdown menu for selecting the seat class",
+        "preconditions": "User is on the booking page.",
+        "expected_results": "The dropdown should display all available seat classes without any missing options.",
+        "procedure": [
+          "Navigate to the booking page.",
+          "Open the 'Seat Class Selector' dropdown."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Test Date Card Display",
+        "objective": "To verify that the date card displays the correct selected travel date.",
+        "coverage_element": "Date Card : Card displaying the selected travel date",
+        "preconditions": "User has selected a travel date.",
+        "expected_results": "The card should display the selected travel date accurately.",
+        "procedure": [
+          "Select a travel date.",
+          "Verify the display on the 'Date Card'."
+        ]
+      }
+    ],
+    "design_validation_testing": [
+      {
+        "id": "TC001",
+        "name": "Test Trans Hub Search Login Register Design",
+        "objective": "To verify that the card aggregating search, login, and register options is visually consistent with the design guidelines.",
+        "coverage_element": "Trans Hub Search Login Register : Card aggregating search, login, and register options",
+        "preconditions": "User is on the homepage.",
+        "expected_results": "The card should match the design specifications including color, font, and layout.",
+        "procedure": [
+          "Navigate to the homepage.",
+          "Visually inspect the 'Trans Hub Search Login Register' card."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Test Search for Routes Card Design",
+        "objective": "To verify that the card containing the search form matches the design specifications.",
+        "coverage_element": "Search for Routes Card : Card containing the search form",
+        "preconditions": "User is on the search page.",
+        "expected_results": "The card should match the design specifications including color, font, and layout.",
+        "procedure": [
+          "Navigate to the search page.",
+          "Visually inspect the 'Search for Routes Card'."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Test Subscribe Card Design",
+        "objective": "To verify that the subscribe card matches the design specifications.",
+        "coverage_element": "Subscribe Card : Card for subscription options",
+        "preconditions": "User is on the homepage.",
+        "expected_results": "The card should match the design specifications including color, font, and layout.",
+        "procedure": [
+          "Navigate to the homepage.",
+          "Visually inspect the 'Subscribe Card'."
+        ]
+      }
+    ]
+  },
+  "element_requirement": [
+    "1. Search Button : Button marked for executing a search action",
+    "2. Departure Location Selector : Dropdown menu for selecting the departure location",
+    "3. Destination Selector : Dropdown menu for selecting the destination",
+    "4. Book Now Button : Button for initiating a booking session",
+    "5. Transport Type Selector : Dropdown menu for selecting the transport type",
+    "6. Trans Hub Search Login Register : Card aggregating search, login, and register options",
+    "7. Your Journey Card : Card offering booking and information",
+    "8. No Routes Found Card : Displays when routes aren't found",
+    "9. Seat Class Selector : Dropdown menu for selecting the seat class",
+    "10. Search Routes Button : Button for submitting the search query",
+    "11. Search Routes Button : Button for searching routes",
+    "12. Search for Routes Card : Card containing the search form",
+    "13. Date Card : Card displaying the selected travel date",
+    "14. Navigation Card : Card containing navigation options",
+    "15. Subscribe Card : Card for subscription options",
+    "16. Subscribe Button : Button for subscribing to newsletter",
+    "17. My Bookings Button : Button for viewing bookings",
+    "18. My Profile Button : Button for accessing profile",
+    "19. Help & Support Button : Button for assistance",
+    "20. Terms of Service Button : Button for terms of service",
+    "21. Privacy Policy Button : Button for privacy policy",
+    "22. Cookie Policy Button : Button for cookie policy",
+    "23. Email Input : Textbox for entering email address"
+  ]
+}

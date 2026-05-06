@@ -1,0 +1,354 @@
+{
+  "website_summary": {
+    "name": "Blue-Collar Connector Hub",
+    "description": "The website features an ivory background with forest green interactive elements for a clean and professional look, designed to connect skilled blue-collar workers with potential employers.",
+    "category": "User Interaction",
+    "appearance": "The website features an elegant design with a prominent header containing the site's name \"Blue-Collar Connect.\" The color scheme extensively uses ivory as the background color for a neutral and clean look, while interactive elements such as buttons and highlighted text are styled with forest green for a vibrant contrast. The top navigation bar provides options for \"Jobs,\" \"Post a Job,\" and \"About Us.\" A search function with an accompanying placeholder and filters option is placed prominently within the main content area. The footer provides additional links for \"Quick Links,\" \"Resources,\" and \"Contact Us,\" ensuring easy navigation and resource access.",
+    "functionality": "The website includes the following functions:\n- Search bar that allows users to search for available workers or job listings.\n- Buttons for users to either create a profile or post a job, facilitating user-driven interactions.\n- Filters option for more refined searching of jobs or workers.\n- Relevant links such as \"Find Workers,\" \"Find Jobs,\" \"Post a Job,\" \"FAQ,\" \"Terms of Service,\" \"Privacy Policy,\" and \"Contact Form\" in the footer, aiding in user empowerment and engagement.\n- Displays search results dynamically with a message indicating \"No workers match your search criteria\" if the search parameters yield no matches."
+  },
+  "test_cases": {
+    "functionality_testing": [
+      {
+        "id": "TC001",
+        "name": "Category Selection Test",
+        "objective": "To verify that selecting a specific category from the All Categories dropdown menu refines the search results.",
+        "coverage_element": "All Categories",
+        "preconditions": "The job title \"electrician\" is entered in the search bar.",
+        "expected_results": "The page should display a list of jobs related to \"electrician\" in the \"Electrical\" category if any are available. 7. Next Steps : Select \"Electrical\" from the \"All Categories\" dropdown menu and click the search button again to refine the search.",
+        "procedure": [
+          "Select \"Electrical\" from the All Categories dropdown menu.",
+          "Click on the Search Button."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Create Profile Test",
+        "objective": "To verify that clicking the Create Profile button initiates the profile creation process.",
+        "coverage_element": "Create Profile",
+        "preconditions": "User is on the main page.",
+        "expected_results": "The system should navigate to the profile creation page.",
+        "procedure": [
+          "Click on the Create Profile button."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Email Input Test",
+        "objective": "To verify that the Email Input textbox accepts and handles input correctly.",
+        "coverage_element": "Email Input",
+        "preconditions": "User is on the profile creation form with the name field filled.",
+        "expected_results": "The textbox should accept the input and display \"john@example.com\".",
+        "procedure": [
+          "Type \"john@example.com\" into the Email Input textbox."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Filters Menu Test",
+        "objective": "To verify that clicking the Filters button opens the filters menu and allows users to apply various filters to refine their job search.",
+        "coverage_element": "Filters",
+        "preconditions": "The job title \"electrician\" is entered in the search bar.",
+        "expected_results": "The filters menu should open, displaying various filter options that can be applied to refine the job search. 7. Next Steps : Click the \"Filters\" button to open the filters menu and explore additional options for refining the job search.",
+        "procedure": [
+          "Click on the Filters button."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Filters Option Test",
+        "objective": "To verify that clicking the Filters Button opens the filters menu and allows users to apply various filters.",
+        "coverage_element": "Filters Button",
+        "preconditions": "User is on the jobs page.",
+        "expected_results": "The filters menu should appear, allowing users to apply various filters to refine their job search. 7. Next Steps : Click on the \"Filters\" button to open the filters menu and see if it can help us find any job listings.",
+        "procedure": [
+          "Click on the Filters Button.",
+          "Verify that the filters menu appears and allows users to apply various filters."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Highest Pay Sorting Test",
+        "objective": "To verify that clicking the Highest Pay button sorts the job listings by highest pay.",
+        "coverage_element": "Highest Pay",
+        "preconditions": "The job title \"electrician\" is entered in the search bar.",
+        "expected_results": "The job listings should be sorted by highest pay if any jobs are available. 7. Next Steps : Click the \"Highest Pay\" button to sort the job listings by highest pay and see if any relevant jobs become available.",
+        "procedure": [
+          "Click on the Highest Pay button."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "Job Search Test",
+        "objective": "To verify that entering a job title into the Search Bar and pressing Enter initiates a search for relevant jobs.",
+        "coverage_element": "Search Bar",
+        "preconditions": "User is on the \"Jobs\" tab page.",
+        "expected_results": "The page should display a list of jobs related to \"electrician.\" 7. Next Steps : Enter the job title \"electrician\" into the search bar and press Enter.",
+        "procedure": [
+          "Type \"electrician\" into the Search Bar.",
+          "Press Enter."
+        ]
+      },
+      {
+        "id": "TC008",
+        "name": "Jobs Navigation Test",
+        "objective": "To verify that clicking the Jobs navigation link directs the user to the job listings page.",
+        "coverage_element": "Jobs",
+        "preconditions": "User is on the homepage.",
+        "expected_results": "The page should navigate to the job listings section. 7. Next Steps : Click on the \"Jobs\" tab to proceed with the task.",
+        "procedure": [
+          "Click on the Jobs navigation link."
+        ]
+      },
+      {
+        "id": "TC009",
+        "name": "Name Input Test",
+        "objective": "To verify that the Name Input textbox accepts and handles input correctly.",
+        "coverage_element": "Name Input",
+        "preconditions": "User is on the profile creation form.",
+        "expected_results": "The textbox should accept the input and display \"John Doe\".",
+        "procedure": [
+          "Type \"John Doe\" into the Name Input textbox."
+        ]
+      },
+      {
+        "id": "TC010",
+        "name": "Newest Sorting Test",
+        "objective": "To verify that clicking the Newest button sorts the job listings by newest.",
+        "coverage_element": "Newest",
+        "preconditions": "The job title \"electrician\" is entered in the search bar.",
+        "expected_results": "The job listings should be sorted by newest if any jobs are available. 7. Next Steps : Click the \"Newest\" button to sort the job listings by newest and see if any relevant jobs become available.",
+        "procedure": [
+          "Click on the Newest button."
+        ]
+      },
+      {
+        "id": "TC011",
+        "name": "Phone Input Test",
+        "objective": "To verify that the Phone Input textbox accepts and handles input correctly.",
+        "coverage_element": "Phone Input",
+        "preconditions": "User is on the profile creation form with the name and email fields filled.",
+        "expected_results": "The textbox should accept the input and display \"(555) 123-4567\".",
+        "procedure": [
+          "Type \"(555) 123-4567\" into the Phone Input textbox."
+        ]
+      },
+      {
+        "id": "TC012",
+        "name": "Search Refinement Test",
+        "objective": "To verify that using the All Categories and All Job Types dropdown menus to refine the search criteria yields relevant job listings.",
+        "coverage_element": "All Categories, All Job Types",
+        "preconditions": "The job title \"electrician\" is entered in the search bar.",
+        "expected_results": "The page should display a list of full-time electrical jobs related to \"electrician\" if any are available. 7. Next Steps : Select \"Electrical\" from the \"All Categories\" dropdown menu and \"Full Time\" from the \"All Job Types\" dropdown menu, then click the search button again to refine the search.",
+        "procedure": [
+          "Select \"Electrical\" from the All Categories dropdown menu.",
+          "Select \"Full Time\" from the All Job Types dropdown menu.",
+          "Click on the Search Button."
+        ]
+      },
+      {
+        "id": "TC013",
+        "name": "Search Submission Test",
+        "objective": "To verify that clicking the Search Button submits the search query and displays relevant job listings.",
+        "coverage_element": "Search Button",
+        "preconditions": "The job title \"electrician\" is entered in the search bar.",
+        "expected_results": "The page should display a list of jobs related to \"electrician\" if any are available. 7. Next Steps : Click the search button to submit the search query.",
+        "procedure": [
+          "Click on the Search Button."
+        ]
+      },
+      {
+        "id": "TC014",
+        "name": "Sorting Options Test",
+        "objective": "To verify that clicking the Newest and Highest Pay buttons sorts the job listings accordingly.",
+        "coverage_element": "Newest, Highest Pay",
+        "preconditions": "The job title \"electrician\" is entered in the search bar.",
+        "expected_results": "The job listings should be sorted by newest and highest pay respectively if any jobs are available. 7. Next Steps : Click the \"Newest\" button to sort the job listings by newest and see if any relevant jobs become available.",
+        "procedure": [
+          "Click on the Newest button.",
+          "Click on the Highest Pay button."
+        ]
+      },
+      {
+        "id": "TC015",
+        "name": "Terms of Service Overlay Test",
+        "objective": "To verify that clicking the Close button closes the Terms of Service overlay and returns the user to the main page.",
+        "coverage_element": "Close",
+        "preconditions": "The Terms of Service overlay is active.",
+        "expected_results": "The Terms of Service overlay should close, revealing the main page content. 7. Next Steps : Click the \"Close\" button on the Terms of Service overlay to dismiss it and continue testing the job search functionality.",
+        "procedure": [
+          "Click on the Close button."
+        ]
+      },
+      {
+        "id": "TC016",
+        "name": "Work Experience Textarea Test",
+        "objective": "To verify that the Work Experience Textarea accepts and handles input correctly.",
+        "coverage_element": "Work Experience Textarea",
+        "preconditions": "User is on the profile creation form with the name, email, and phone fields filled.",
+        "expected_results": "The textarea should accept the input and display \"Describing my work experience...\".",
+        "procedure": [
+          "Type \"Describing my work experience...\" into the Work Experience Textarea."
+        ]
+      },
+      {
+        "id": "TC017",
+        "name": "About Us Button Functionality",
+        "objective": "To verify that clicking the About Us Button leads to the correct page with information about the platform.",
+        "coverage_element": "About Us Button : Button for learning about the platform",
+        "preconditions": "User is on the homepage.",
+        "expected_results": "The About Us page is loaded with the correct content.",
+        "procedure": [
+          "Navigate to the homepage.",
+          "Click on the 'About Us' button."
+        ]
+      },
+      {
+        "id": "TC018",
+        "name": "Workers Button Functionality",
+        "objective": "To verify that the Workers Button navigates to the correct page displaying a list of workers.",
+        "coverage_element": "Workers Button : Button for viewing workers",
+        "preconditions": "User is on the homepage.",
+        "expected_results": "The Workers page is loaded, showing the list of available workers.",
+        "procedure": [
+          "Navigate to the homepage.",
+          "Click on the 'Workers' button and verify the workers list is displayed."
+        ]
+      },
+      {
+        "id": "TC019",
+        "name": "Terms of Service Button Functionality",
+        "objective": "To verify that the Terms of Service Button leads to the Terms of Service page.",
+        "coverage_element": "Terms of Service Button : Button for viewing terms of service",
+        "preconditions": "User is on the homepage.",
+        "expected_results": "The Terms of Service page is loaded with the correct content.",
+        "procedure": [
+          "Navigate to the homepage.",
+          "Click on the 'Terms of Service' button and verify the terms of service content is displayed."
+        ]
+      },
+      {
+        "id": "TC020",
+        "name": "Privacy Policy Button Functionality",
+        "objective": "To verify that the Privacy Policy Button navigates to the Privacy Policy page.",
+        "coverage_element": "Privacy Policy Button : Button for viewing privacy policy",
+        "preconditions": "User is on the homepage.",
+        "expected_results": "The Privacy Policy page is loaded with the correct content.",
+        "procedure": [
+          "Navigate to the homepage.",
+          "Click on the 'Privacy Policy' button and verify the privacy policy content is displayed."
+        ]
+      },
+      {
+        "id": "TC021",
+        "name": "Contact Form Button Functionality",
+        "objective": "To verify that the Contact Form Button leads to the Contact Form for user input.",
+        "coverage_element": "Contact Form Button : Button for accessing contact form",
+        "preconditions": "User is on the homepage.",
+        "expected_results": "The Contact Form is loaded for user interaction.",
+        "procedure": [
+          "Navigate to the homepage.",
+          "Click on the 'Contact Form' button and verify the form for contact is displayed."
+        ]
+      }
+    ],
+    "data_display_testing": [
+      {
+        "id": "TC001",
+        "name": "Categories Card Data Display",
+        "objective": "To verify that the Categories Card correctly displays the list of job categories.",
+        "coverage_element": "Categories Card : Card listing job categories",
+        "preconditions": "User is on the homepage.",
+        "expected_results": "The Categories Card displays all job categories with no missing or incorrect data.",
+        "procedure": [
+          "Navigate to the homepage.",
+          "Review the 'Categories Card' for the complete and accurate list of job categories."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Job Types Card Data Display",
+        "objective": "To verify that the Job Types Card correctly displays the list of job types.",
+        "coverage_element": "Job Types Card : Card listing job types",
+        "preconditions": "User is on the homepage.",
+        "expected_results": "The Job Types Card displays all job types with no missing or incorrect data.",
+        "procedure": [
+          "Navigate to the homepage.",
+          "Review the 'Job Types Card' for the complete and accurate list of job types."
+        ]
+      }
+    ],
+    "design_validation_testing": [
+      {
+        "id": "TC001",
+        "name": "UI Design and Style Test: Card Alignment",
+        "objective": "To evaluate the alignment and spacing of the cards throughout the website.",
+        "coverage_element": "Card Alignment",
+        "preconditions": "",
+        "expected_results": "All cards should be properly aligned with consistent spacing between them. 7. Next Steps : Hover over the second card (Card Alignment) to check its design properties and ensure it meets the task requirements.",
+        "procedure": [
+          "Hover over each card and observe its position relative to other elements.",
+          "Evaluate the spacing and alignment of the cards.",
+          "Compare against design best practices or requirements."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "UI Design and Style Test: Color Palette",
+        "objective": "To evaluate the consistency of the color scheme throughout the website.",
+        "coverage_element": "Color Scheme",
+        "preconditions": "",
+        "expected_results": "All UI elements should maintain consistent styling with the specified ivory background and forest green interactive elements. 7. Next Steps : Hover over the cards to check their design properties and ensure they meet the task requirements.",
+        "procedure": [
+          "Observe the specified UI elements and their design properties.",
+          "Evaluate specific design aspects such as color contrast, style consistency, etc.",
+          "Compare against design best practices or requirements."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "UI Design and Style Test: Overall Evaluation",
+        "objective": "To conduct a final evaluation of the entire website's design properties, focusing on the header, navigation bar, main content area, and footer.",
+        "coverage_element": "Overall Website Design",
+        "preconditions": "",
+        "expected_results": "The entire website should maintain consistent styling with the specified ivory background and forest green interactive elements, along with proper alignment and visual balance. 7. Next Steps : Conduct a final evaluation of the entire website's design properties to ensure all elements meet the task requirements.",
+        "procedure": [
+          "Observe the overall design properties of the website.",
+          "Evaluate the color scheme, alignment, and visual balance of all elements.",
+          "Compare against design best practices or requirements."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Blue Collar Connect Card Design Validation",
+        "objective": "To verify that the BLUE-COLLAR CONNECT Card displays the correct branding and styling according to the website’s design.",
+        "coverage_element": "BLUE-COLLAR CONNECT Card : Card with platform branding",
+        "preconditions": "User is on the homepage.",
+        "expected_results": "The card displays the correct branding and follows the website’s design guidelines.",
+        "procedure": [
+          "Navigate to the homepage.",
+          "Visually inspect the 'BLUE-COLLAR CONNECT Card' for proper branding and design."
+        ]
+      }
+    ]
+  },
+  "element_requirement": [
+    "1. Create Profile : Button for starting profile creation",
+    "2. Jobs : Navigation link to access job listings",
+    "3. Phone Input : Textbox for entering phone number",
+    "4. About Us Button : Button for learning about the platform",
+    "5. Search Bar : Input field for entering search queries",
+    "6. Work Experience Textarea : Textarea for describing work experience",
+    "7. BLUE-COLLAR CONNECT Card : Card with platform branding",
+    "8. Workers Button : Button for viewing workers",
+    "9. All Categories : Dropdown menu for selecting job categories",
+    "10. All Job Types : Dropdown menu for selecting job types",
+    "11. Newest : Button to sort jobs by newest",
+    "12. Highest Pay : Button to sort jobs by highest pay",
+    "13. Terms of Service Button : Button for viewing terms of service",
+    "14. Privacy Policy Button : Button for viewing privacy policy",
+    "15. Filters Card : Card containing filter options",
+    "16. Contact Form Button : Button for accessing contact form",
+    "17. Categories Card : Card listing job categories",
+    "18. Job Types Card : Card listing job types"
+  ]
+}

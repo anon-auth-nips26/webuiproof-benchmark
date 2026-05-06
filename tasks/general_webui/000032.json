@@ -1,0 +1,255 @@
+{
+  "website_summary": {
+    "name": "Whistleblower Voices",
+    "description": "The website features a clean and professional design with an azure background and midnight blue UI components, offering a secure platform for anonymous reporting and discussions.",
+    "category": "User Interaction",
+    "appearance": "The website has a structured layout with a header containing a logo and a search bar. Below the header, there's a navigation menu with options like \"Report,\" \"Discussions,\" and \"News & Blog.\" The main content area includes sections for submitting anonymous reports, displaying recent reports, and providing contact details. The footer contains links for quick navigation, social media icons, and contact information. The overall design uses an azure background with midnight blue accents for buttons, links, and other interactive elements.",
+    "functionality": "The website offers several key functionalities:\n- An anonymous reporting feature allowing users to submit titles, descriptions, and evidence related to their reports.\n- A discussion forum enabling users to engage in conversations and share opinions.\n- A search bar for finding specific topics or keywords within the site.\n- A news and blog section for publishing the latest articles and updates.\n- Contact information and links for further engagement."
+  },
+  "test_cases": {
+    "functionality_testing": [
+      {
+        "id": "TC001",
+        "name": "Report Tab Test",
+        "objective": "To verify that clicking the Report Tab navigates to the reporting section.",
+        "coverage_element": "Report Tab",
+        "preconditions": "The website is open and the navigation tabs are visible.",
+        "expected_results": "The reporting section should be displayed after clicking the report tab.",
+        "procedure": [
+          "Click on the Report Tab.",
+          "Verify that the reporting section is displayed."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Submit Report Button Test",
+        "objective": "To verify that clicking the Submit Report Button submits the report.",
+        "coverage_element": "Submit Report Button",
+        "preconditions": "The reporting section is displayed and the report form is filled out.",
+        "expected_results": "A confirmation message should appear and the report should be reflected in the \"Recent Reports\" section. 7. Next Steps : Click on the \"Report\" tab to navigate to the reporting section.",
+        "procedure": [
+          "Click on the Submit Report Button.",
+          "Verify that a confirmation message appears and the report is reflected in the \"Recent Reports\" section."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Description Input Test",
+        "objective": "To verify that the Description Input accepts and displays the entered text.",
+        "coverage_element": "Description Input",
+        "preconditions": "The reporting section is displayed.",
+        "expected_results": "The entered text should be displayed in the description input field.",
+        "procedure": [
+          "Enter text into the Description Input.",
+          "Verify that the entered text is displayed in the description input field."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Discussion Message Input Test",
+        "objective": "To verify that entering a message in the Discussion Message Textarea works as expected.",
+        "coverage_element": "Discussion Message Textarea",
+        "preconditions": "The discussion title has been entered.",
+        "expected_results": "The message should be displayed correctly in the text area. 7. Next Steps : Enter a message in the discussion message text area.",
+        "procedure": [
+          "Enter a message in the Discussion Message Textarea.",
+          "Verify that the message is displayed correctly in the text area."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Discussions Tab Test",
+        "objective": "To verify that clicking the Discussions button navigates to the discussions section.",
+        "coverage_element": "Discussions",
+        "preconditions": "The current page is displaying the \"Anonymous Reporting\" section.",
+        "expected_results": "The page should navigate to the discussions section. 7. Next Steps : Click on the \"Discussions\" tab to navigate to the discussions section.",
+        "procedure": [
+          "Click on the Discussions button.",
+          "Verify that the page navigates to the discussions section."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Evidence Input Test",
+        "objective": "To verify that the Evidence Input accepts and displays the entered text.",
+        "coverage_element": "Evidence Input",
+        "preconditions": "The reporting section is displayed.",
+        "expected_results": "The entered text should be displayed in the evidence input field. 7. Next Steps : Enter relevant information into the \"Title,\" \"Description,\" and \"Evidence\" fields.",
+        "procedure": [
+          "Enter text into the Evidence Input.",
+          "Verify that the entered text is displayed in the evidence input field."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "Navigation Tabs Test",
+        "objective": "To verify that clicking the Report Tab, Discussions Tab, and News & Blog Tab navigates to the respective sections.",
+        "coverage_element": "Report Tab, Discussions Tab, News & Blog Tab",
+        "preconditions": "The user is on the homepage.",
+        "expected_results": "The page should navigate to the respective sections when clicking on the navigation tabs.",
+        "procedure": [
+          "Click on the Report Tab.",
+          "Verify that the page navigates to the report section.",
+          "Click on the Discussions Tab.",
+          "Verify that the page navigates to the discussions section.",
+          "Click on the News & Blog Tab.",
+          "Verify that the page navigates to the news and blog section."
+        ]
+      },
+      {
+        "id": "TC008",
+        "name": "Post Discussion Test",
+        "objective": "To verify that clicking the Post Discussion Button posts a new discussion.",
+        "coverage_element": "Post Discussion Button",
+        "preconditions": "The \"Discussions\" tab is active, and a discussion title and message have been entered.",
+        "expected_results": "The new discussion should be displayed in the list of recent discussions. 7. Next Steps : Enter a discussion title and message, then click the \"Post Discussion\" button.",
+        "procedure": [
+          "Enter a discussion title in the Discussion Title Textarea.",
+          "Enter a discussion message in the Discussion Message Textarea.",
+          "Click on the Post Discussion Button.",
+          "Verify that the new discussion is displayed in the list of recent discussions."
+        ]
+      },
+      {
+        "id": "TC009",
+        "name": "Search Input Test",
+        "objective": "To verify that the Search Input textbox allows users to enter search queries.",
+        "coverage_element": "Search Input",
+        "preconditions": "The search input field is empty.",
+        "expected_results": "The search results should display the \"Recent Reports\" section.",
+        "procedure": [
+          "Type \"recent reports\" into the Search Input textbox.",
+          "Click on the Search Button.",
+          "Verify that the search results display the \"Recent Reports\" section."
+        ]
+      },
+      {
+        "id": "TC010",
+        "name": "Submission Confirmation Test",
+        "objective": "Validate the existence and visibility of a confirmation message or notification post-submit to reassure successful processing.",
+        "coverage_element": "[A hypothetical confirmation message or notification, possibly a modal or banner]; Submit Report Button",
+        "preconditions": "The report information is filled out and submitted.",
+        "expected_results": "A visible confirmation message should appear to reassure the user about the successful submission. 7. Next Steps : Since all form fields have been reset, and the recent report includes the test submission, verify the report's presence under \"Recent Reports\" by Hovering over the [A hypothetical confirmation message or notification, possibly a modal or banner]; Submit Report Button card to check for additional details that may confirm its inclusion post-submission.",
+        "procedure": [
+          "Check for any visible confirmation messages or changes in UI post-submit.",
+          "If no visible confirmation, experiment with hovering over or clicking around the submit button area to detect hidden notifications or states."
+        ]
+      },
+      {
+        "id": "TC011",
+        "name": "Title Input Test",
+        "objective": "To verify that the Title Input accepts and displays the entered text.",
+        "coverage_element": "Title Input",
+        "preconditions": "The reporting section is displayed.",
+        "expected_results": "The entered text should be displayed in the title input field.",
+        "procedure": [
+          "Enter text into the Title Input.",
+          "Verify that the entered text is displayed in the title input field."
+        ]
+      },
+      {
+        "id": "TC012",
+        "name": "Footer Card Functionality Test",
+        "objective": "To verify that the footer card functions correctly, including the back-to-top link.",
+        "coverage_element": "Footer Card : A card containing copyright information and a back-to-top link",
+        "preconditions": "The user is at the bottom of the web application page.",
+        "expected_results": "The back-to-top link successfully navigates the user to the top of the page.",
+        "procedure": [
+          "Scroll down to the bottom of the page.",
+          "Click on the back-to-top link in the footer card and verify the page scrolls to the top."
+        ]
+      },
+      {
+        "id": "TC013",
+        "name": "Navigation Tabs Card Functionality Test",
+        "objective": "To verify that the navigation tabs card allows users to navigate between different sections.",
+        "coverage_element": "Navigation Tabs Card : A card containing navigation tabs for different sections",
+        "preconditions": "The user is on the main page of the web application.",
+        "expected_results": "Clicking on each navigation tab successfully redirects the user to the corresponding section.",
+        "procedure": [
+          "Navigate to the main page of the web application.",
+          "Click on each navigation tab ('Report', 'Discussions', 'News & Blog') and verify redirection."
+        ]
+      },
+      {
+        "id": "TC014",
+        "name": "Search Button Functionality Test",
+        "objective": "To verify that the search button initiates the search function.",
+        "coverage_element": "Search Button : A button to initiate the search",
+        "preconditions": "The user is on the main page of the web application and enters a search query.",
+        "expected_results": "Clicking the search button triggers the search function with the entered query.",
+        "procedure": [
+          "Enter a valid search query in the search bar.",
+          "Click the search button and verify that the search results are displayed."
+        ]
+      }
+    ],
+    "data_display_testing": [
+      {
+        "id": "TC001",
+        "name": "Anonymous Reporting Card Display Test",
+        "objective": "To verify that the Anonymous Reporting Card displays the correct fields for submitting a report.",
+        "coverage_element": "Anonymous Reporting Card",
+        "preconditions": "The user is on the homepage.",
+        "expected_results": "The Anonymous Reporting Card should display the correct fields for submitting a report. 7. Next Steps : Scroll down to locate the \"Recent Reports\" section.",
+        "procedure": [
+          "Verify that the Anonymous Reporting Card contains the fields for entering the report title, description, and evidence."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Verify Whistleblower Voices Card Display",
+        "objective": "To verify that the whistleblower voices information is correctly displayed.",
+        "coverage_element": "Whistleblower Voices Card : Card displaying whistleblower voices information",
+        "preconditions": "The user is on the main page of the web application.",
+        "expected_results": "The whistleblower voices card is visible and displays the correct information.",
+        "procedure": [
+          "Navigate to the main page of the web application.",
+          "Locate and verify the content within the whistleblower voices card."
+        ]
+      }
+    ],
+    "design_validation_testing": [
+      {
+        "id": "TC001",
+        "name": "UI Design and Style Test: Color Palette",
+        "objective": "To evaluate the color scheme consistency and style uniformity of the UI elements.",
+        "coverage_element": "Color Scheme",
+        "preconditions": "",
+        "expected_results": "All UI elements should maintain consistent styling with the specified color scheme and have appropriate contrast ratios.",
+        "procedure": [
+          "Observe the specified UI elements and their design properties.",
+          "Evaluate specific design aspects such as color contrast, style consistency, etc.",
+          "Compare against design best practices or requirements."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Header Card Design Validation",
+        "objective": "To verify that the header card adheres to the design specifications.",
+        "coverage_element": "Header Card : A card containing the site header",
+        "preconditions": "The user is on any page of the web application.",
+        "expected_results": "The header card displays the logo and search bar with the specified azure background and midnight blue accents.",
+        "procedure": [
+          "Navigate to any page of the web application.",
+          "Inspect the header card for the correct design elements and color scheme."
+        ]
+      }
+    ]
+  },
+  "element_requirement": [
+    "1. Report Tab : Button for navigating to the report section",
+    "2. Discussions : Button for navigating to the discussions section",
+    "3. Title Input : Textbox for entering the title of the report",
+    "4. Description Input : Textarea for entering the description of the report",
+    "5. Evidence Input : Textarea for entering evidence related to the report",
+    "6. Submit Report Button : Button for submitting the report",
+    "7. Whistleblower Voices Card : Card displaying whistleblower voices information",
+    "8. Footer Card : A card containing copyright information and a back-to-top link",
+    "9. Header Card : A card containing the site header",
+    "10. Navigation Tabs Card : A card containing navigation tabs for different sections",
+    "11. Should Whistleblowers Be Protected? Card : Card displaying a recent discussion",
+    "12. Search Input : A textbox for entering search queries",
+    "13. Search Button : A button to initiate the search"
+  ]
+}

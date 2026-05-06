@@ -1,0 +1,185 @@
+{
+  "website_summary": {
+    "name": "Voting Portal Hub",
+    "description": "The website features a sleek, modern interface with a dark gradient background and vibrant purple accents, designed for intuitive user interaction and clear data visualization.",
+    "category": "User Interaction",
+    "appearance": "The website has a clean and organized layout divided into two main sections. On the left side, there is a voting panel titled \"Vote Now,\" which lists four voting options (A, B, C, and D) along with their respective vote counts and percentages. Each option is accompanied by a progress bar indicating its current vote share. Below the options, buttons allow users to select their choice and cast their vote. On the right side, a \"Vote Results\" section displays a bar chart illustrating the live voting results for each option. The chart uses a gradient color scheme for easy differentiation. Below the chart, additional details such as total votes, the leading option, and the vote difference are presented clearly. The overall design emphasizes clarity and user-friendliness with a dark theme and strategic use of colors.",
+    "functionality": "The website enables users to participate in a voting process by selecting one of four options and submitting their vote. It includes interactive buttons for choosing options and casting votes. The live results are dynamically updated and displayed through a bar chart and summary statistics. Users can also reset their selection if needed. The site ensures real-time data visualization, allowing participants to monitor the voting progress instantly."
+  },
+  "test_cases": {
+    "functionality_testing": [
+      {
+        "id": "TC001",
+        "name": "Cast Vote Test",
+        "objective": "To verify that clicking the Cast Vote button submits the vote.",
+        "coverage_element": "Cast Vote",
+        "preconditions": "Option B is selected.",
+        "expected_results": "The vote is submitted.",
+        "procedure": [
+          "Click on the Cast Vote button.",
+          "Verify that the vote is submitted."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Option A Hover Test",
+        "objective": "To verify that hovering over the bar for Option A in the bar chart displays the correct vote count and percentage.",
+        "coverage_element": "Bar Chart",
+        "preconditions": "The webpage is loaded, and the bar chart is visible.",
+        "expected_results": "The tooltip should show the accurate vote count and percentage for Option A. 7. Next Steps : Hover over the bar representing Option A in the bar chart to check the tooltip.",
+        "procedure": [
+          "Hover over the bar representing Option A in the bar chart.",
+          "Verify that the tooltip displays the correct vote count and percentage for Option A."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Option B Test",
+        "objective": "To verify that clicking the Option B button selects Option B.",
+        "coverage_element": "Option B",
+        "preconditions": "The voting page is loaded.",
+        "expected_results": "Option B is selected.",
+        "procedure": [
+          "Click on the Option B button.",
+          "Verify that Option B is selected."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Option C Test",
+        "objective": "To verify that clicking the Option C button selects Option C.",
+        "coverage_element": "Option C",
+        "preconditions": "No prior selections made.",
+        "expected_results": "Option C is selected, and the UI reflects this change.",
+        "procedure": [
+          "Click on the Option C button.",
+          "Verify that Option C is visually indicated as selected."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Reset Button Test",
+        "objective": "To verify that clicking the Reset button clears any vote selection.",
+        "coverage_element": "Reset",
+        "preconditions": "An option has been selected.",
+        "expected_results": "All vote selections are cleared.",
+        "procedure": [
+          "Click on the Reset button.",
+          "Verify that no options are visually indicated as selected."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Test Option A Selection Functionality",
+        "objective": "To verify that the button for selecting Option A functions correctly and registers the vote.",
+        "coverage_element": "Option A : Button for selecting Option A",
+        "preconditions": "The voting system is active and no votes have been cast yet.",
+        "expected_results": "After clicking the button, the system should register a vote for Option A and update the vote count accordingly.",
+        "procedure": [
+          "Step 1 : Click the button for selecting Option A.",
+          "Step 2 : Verify that the vote count for Option A increases by one."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "Test Option D Selection Functionality",
+        "objective": "To verify that the button for selecting Option D functions correctly and registers the vote.",
+        "coverage_element": "Option D : Button for selecting Option D",
+        "preconditions": "The voting system is active and no votes have been cast yet.",
+        "expected_results": "After clicking the button, the system should register a vote for Option D and update the vote count accordingly.",
+        "procedure": [
+          "Step 1 : Click the button for selecting Option D.",
+          "Step 2 : Verify that the vote count for Option D increases by one."
+        ]
+      }
+    ],
+    "data_display_testing": [
+      {
+        "id": "TC001",
+        "name": "Bar Chart Verification Test",
+        "objective": "To verify that the bar chart in the Bar Chart card reflects the updated vote count for Option B.",
+        "coverage_element": "Bar Chart",
+        "preconditions": "The vote has been submitted and the vote count for Option B has increased by one.",
+        "expected_results": "The bar for Option B reflects 21 votes. 7. Next Steps : Hover over the \"Bar Chart\" card to verify the updated vote count for Option B.",
+        "procedure": [
+          "Verify that the bar for Option B in the Bar Chart card corresponds to 21 votes."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Vote Count Verification Test",
+        "objective": "To verify that the vote count for Option B has increased by one in the Vote Results card.",
+        "coverage_element": "Vote Results",
+        "preconditions": "The vote has been submitted.",
+        "expected_results": "The vote count for Option B is 21. 7. Next Steps : Hover over the \"Vote Results\" card to verify the updated vote count for Option B.",
+        "procedure": [
+          "Verify that the vote count for Option B in the Vote Results card is"
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Verify Live Results Summary Display",
+        "objective": "To verify that the card summarizing total votes and leading option correctly displays the latest voting data.",
+        "coverage_element": "Live Results : Card summarizing total votes and leading option",
+        "preconditions": "The voting system is active with at least one vote cast.",
+        "expected_results": "The card should display the correct total number of votes and identify the leading option accurately.",
+        "procedure": [
+          "Step 1 : Cast a vote for any option.",
+          "Step 2 : Verify that the 'Live Results' card updates to reflect the new total votes and identifies the correct leading option."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Test Individual Voting Options Cards Display",
+        "objective": "To verify that cards representing individual voting options display the correct information including vote counts and percentages.",
+        "coverage_element": "Cards representing individual voting options",
+        "preconditions": "The voting system is active with at least one vote cast.",
+        "expected_results": "Each card should display the correct vote count and percentage for its respective option.",
+        "procedure": [
+          "Step 1 : Cast votes for different options.",
+          "Step 2 : Verify that each card updates to show the accurate vote count and percentage for its option."
+        ]
+      }
+    ],
+    "design_validation_testing": [
+      {
+        "id": "TC001",
+        "name": "UI Design and Style Test: Overall Design Consistency",
+        "objective": "To evaluate the overall design consistency across the page with the specified white and navy theme.",
+        "coverage_element": "Overall design consistency",
+        "preconditions": "",
+        "expected_results": "The entire page should adhere to the specified design standards, with a white background and navy components. 7. Next Steps : Perform a final design inspection focusing on the overall design consistency across the page.",
+        "procedure": [
+          "Observe the background color and component styles across the entire page.",
+          "Compare the observed design with the specified white and navy theme.",
+          "Verify if the gradient effects and font colors align with the requirements."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Validate Vote Now Card Layout",
+        "objective": "To verify that the card containing voting options and buttons is displayed correctly according to the design specifications.",
+        "coverage_element": "Vote Now : Card containing voting options and buttons",
+        "preconditions": "The web application is loaded and visible.",
+        "expected_results": "The 'Vote Now' card should be properly aligned, with all voting options and buttons clearly visible and accessible.",
+        "procedure": [
+          "Step 1 : Load the web application.",
+          "Step 2 : Visually inspect the 'Vote Now' card to ensure it meets the design requirements."
+        ]
+      }
+    ]
+  },
+  "element_requirement": [
+    "1. Option A : Button for selecting Option A",
+    "2. Option B : Button for selecting Option B",
+    "3. Option C : Button for selecting Option C",
+    "4. Option D : Button for selecting Option D",
+    "5. Cast Vote : Button for submitting the vote",
+    "6. Reset : Button to reset the vote selection",
+    "7. Vote Results : Card displaying live vote results and summary stats",
+    "8. Bar Chart : Card showing the bar chart for vote distribution",
+    "9. Live Results : Card summarizing total votes and leading option",
+    "10. Vote Now : Card containing voting options and buttons",
+    "11. Cards representing individual voting options"
+  ]
+}

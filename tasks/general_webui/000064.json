@@ -1,0 +1,213 @@
+{
+  "website_summary": {
+    "name": "Shipping Industry Pulse",
+    "description": "The website delivers concise maritime logistics news, company profiles, and event updates with a visually appealing rosy brown and old lace color scheme.",
+    "category": "Content Presentation",
+    "appearance": "The website features a professional design with clean typography. Header navigation includes options for Home, Companies, Events, and an Admin dropdown. The homepage prominently displays \"The Pulse of Global Shipping\" banner. Underneath, it highlights sections for the latest news updates, organized by category (industry news, technology, sustainability). Next, \"Featured Companies\" and \"Upcoming Events\" are presented in a grid format, with brief summaries, dates, and locations. Colors like old lace and rosy brown are consistently used for the background and elements, respectively, creating a cohesive aesthetic. A footer provides utility links and copyright notice.",
+    "functionality": "The site allows users to browse the latest shipping industry news, view detailed company profiles, and learn about upcoming events. A \"Subscribe Now\" button enables users to register for newsletters. Administrators have access to an admin menu to manage content. Each section includes interactive buttons—\n\n- **\"Read more →\"** in news and featured company segments provides detailed information.\n- **\"View Details →\"** in upcoming events links to event-specific content.\n- **\"View All News,\" \"View All Companies,\" and \"View All Events\"** aggregate their respective categories for more options."
+  },
+  "test_cases": {
+    "functionality_testing": [
+      {
+        "id": "TC001",
+        "name": "Redirect to Detailed Company Profile Test",
+        "objective": "To verify that clicking the \"View Profile →\" button for Pacific Logistics Inc redirects to a detailed company profile.",
+        "coverage_element": "View Profile →",
+        "preconditions": "The webpage is loaded and the View Profile → button is visible.",
+        "expected_results": "The page redirects to a detailed company profile for Pacific Logistics Inc. 7. Next Steps : Click on the \"View Profile →\" button for Pacific Logistics Inc to verify if it redirects to a detailed company profile.",
+        "procedure": [
+          "Click on the View Profile → button for Pacific Logistics Inc.",
+          "Verify that the page redirects to a detailed company profile."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Close Button Test",
+        "objective": "To verify that clicking the Close Button closes the event details modal.",
+        "coverage_element": "Close Button",
+        "preconditions": "The event details modal is open.",
+        "expected_results": "The event details modal is closed, and the events list is displayed. 7. Next Steps : Click on the \"Close\" button to close the event details modal and return to the events list.",
+        "procedure": [
+          "Click on the Close Button.",
+          "Verify that the event details modal is closed and the events list is visible again."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Email Address Input Test",
+        "objective": "To verify that the Email Address Input textbox accepts valid email addresses.",
+        "coverage_element": "Email Address Input",
+        "preconditions": "Subscription form is open.",
+        "expected_results": "The subscription request should be submitted successfully, and a confirmation message should appear. 7. Next Steps : Enter a valid email address in the email address textbox and click the \"Subscribe\" button to submit the subscription request.",
+        "procedure": [
+          "Enter a valid email address in the Email Address Input textbox.",
+          "Click the Subscribe Button.",
+          "Verify that the subscription request is submitted successfully."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Events Button Test",
+        "objective": "To verify that clicking the Events button redirects to the events section.",
+        "coverage_element": "Events",
+        "preconditions": "The user is on the homepage.",
+        "expected_results": "Successful redirection to the events section displaying a list of events. 7. Next Steps : Click on the \"Events\" button to navigate to the events section as per the task requirement.",
+        "procedure": [
+          "Click on the Events button.",
+          "Verify redirection to the events section."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Search Functionality Test",
+        "objective": "To verify that the search functionality works as expected by searching for a specific event.",
+        "coverage_element": "Search Input",
+        "preconditions": "The user is on the events page.",
+        "expected_results": "The search results display the International Shipping Summit event. 7. Next Steps : Perform a search for the \"International Shipping Summit\" event to verify the search functionality.",
+        "procedure": [
+          "Type \"International Shipping Summit\" into the Search Input textbox.",
+          "Press Enter or click the search icon (if available).",
+          "Verify that the search results display the International Shipping Summit event."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Subscribe Now Button Test",
+        "objective": "To verify that clicking the Subscribe Now button initiates the subscription process.",
+        "coverage_element": "Subscribe Now",
+        "preconditions": "User is on the homepage.",
+        "expected_results": "The mail icon should be displayed, indicating the subscription process has started. 7. Next Steps : Click the \"Subscribe Now\" button to initiate the subscription process.",
+        "procedure": [
+          "Click on the Subscribe Now button.",
+          "Verify that the mail icon is displayed."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "View Details Button Test",
+        "objective": "To verify that clicking the View Details button for the International Shipping Summit event opens the detailed view of the event.",
+        "coverage_element": "View Details",
+        "preconditions": "The user is on the events page.",
+        "expected_results": "The detailed view of the International Shipping Summit event is shown. 7. Next Steps : Click on the \"View Details\" button for the International Shipping Summit event to verify the detailed view functionality.",
+        "procedure": [
+          "Click on the View Details button associated with the International Shipping Summit event.",
+          "Verify that the detailed view of the event is displayed."
+        ]
+      },
+      {
+        "id": "TC008",
+        "name": "Test Subscribe Button Functionality",
+        "objective": "To verify that the Subscribe Button submits the subscription request successfully.",
+        "coverage_element": "Subscribe Button : Button to submit the subscription request",
+        "preconditions": "User is on the homepage and not currently subscribed.",
+        "expected_results": "After clicking the Subscribe Button, the user should be redirected to a confirmation page indicating successful subscription.",
+        "procedure": [
+          "Navigate to the homepage.",
+          "Locate and click the 'Subscribe Button'."
+        ]
+      },
+      {
+        "id": "TC009",
+        "name": "Test View Profile Button for Atlantic Freight Solutions",
+        "objective": "To verify that the View Profile button correctly navigates to the Atlantic Freight Solutions profile.",
+        "coverage_element": "View Profile → : Button for viewing Atlantic Freight Solutions profile",
+        "preconditions": "User is on the homepage and the Atlantic Freight Solutions card is visible.",
+        "expected_results": "Clicking the 'View Profile' button should navigate the user to the detailed profile page of Atlantic Freight Solutions.",
+        "procedure": [
+          "Navigate to the homepage.",
+          "Locate the Atlantic Freight Solutions card and click the 'View Profile' button."
+        ]
+      },
+      {
+        "id": "TC010",
+        "name": "Test View Profile Button for Global Shipping Corp",
+        "objective": "To verify that the View Profile button correctly navigates to the Global Shipping Corp profile.",
+        "coverage_element": "View Profile → : Button for viewing Global Shipping Corp profile",
+        "preconditions": "User is on the homepage and the Global Shipping Corp card is visible.",
+        "expected_results": "Clicking the 'View Profile' button should navigate the user to the detailed profile page of Global Shipping Corp.",
+        "procedure": [
+          "Navigate to the homepage.",
+          "Locate the Global Shipping Corp card and click the 'View Profile' button."
+        ]
+      },
+      {
+        "id": "TC011",
+        "name": "Test Admin Dropdown Menu Functionality",
+        "objective": "To verify that the Admin dropdown menu displays the correct administrative functions.",
+        "coverage_element": "Admin : Dropdown menu for administrative functions",
+        "preconditions": "User has administrative privileges and is logged into the system.",
+        "expected_results": "The dropdown menu should display all available administrative functions when clicked.",
+        "procedure": [
+          "Log in with administrative credentials.",
+          "Click the 'Admin' dropdown menu and verify the list of functions."
+        ]
+      },
+      {
+        "id": "TC012",
+        "name": "Test View All News Card Functionality",
+        "objective": "To verify that the View All News card navigates to the page displaying all news articles.",
+        "coverage_element": "View All News : Card for viewing all news",
+        "preconditions": "User is on the homepage and the View All News card is visible.",
+        "expected_results": "Clicking the 'View All News' card should redirect the user to a page listing all news articles.",
+        "procedure": [
+          "Navigate to the homepage.",
+          "Locate and click the 'View All News' card."
+        ]
+      }
+    ],
+    "data_display_testing": [
+      {
+        "id": "TC001",
+        "name": "Test Atlantic Freight Solutions Card Data Display",
+        "objective": "To verify that the Atlantic Freight Solutions card displays the correct company information.",
+        "coverage_element": "Atlantic Freight Solutions : Card displaying company information",
+        "preconditions": "User is on the homepage and the Atlantic Freight Solutions card is visible.",
+        "expected_results": "The card should display accurate and up-to-date information about Atlantic Freight Solutions.",
+        "procedure": [
+          "Navigate to the homepage.",
+          "Verify the content displayed in the Atlantic Freight Solutions card."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Test Sustainable Shipping Forum Card Data Display",
+        "objective": "To verify that the Sustainable Shipping Forum card displays the correct event information.",
+        "coverage_element": "Sustainable Shipping Forum : Card displaying event information",
+        "preconditions": "User is on the homepage and the Sustainable Shipping Forum card is visible.",
+        "expected_results": "The card should display accurate and up-to-date information about the Sustainable Shipping Forum event.",
+        "procedure": [
+          "Navigate to the homepage.",
+          "Verify the content displayed in the Sustainable Shipping Forum card."
+        ]
+      }
+    ],
+    "design_validation_testing": [
+      {
+        "id": "TC001",
+        "name": "UI Design and Style Test: Color Palette",
+        "objective": "To evaluate the color scheme consistency of the background and buttons.",
+        "coverage_element": "Color Scheme",
+        "preconditions": "",
+        "expected_results": "The background should be old lace, and the button should be rosy brown. 7. Next Steps : Hover over the main content card Color Scheme to observe the background color more closely.",
+        "procedure": [
+          "Observe the background color of Color Scheme.",
+          "Observe the color of the Subscribe Now button.",
+          "Compare against the required colors : old lace for the background and rosy brown for the button."
+        ]
+      }
+    ]
+  },
+  "element_requirement": [
+    "1. Subscribe Now : Button with the text \"Subscribe Now\" and a mail icon",
+    "2. Subscribe Button : Button to submit the subscription request",
+    "3. View Profile → : Button for viewing Pacific Logistics Inc profile",
+    "4. View Profile → : Button for viewing Atlantic Freight Solutions profile",
+    "5. View Profile → : Button for viewing Global Shipping Corp profile",
+    "6. Admin : Dropdown menu for administrative functions",
+    "7. View Details Buttons : Buttons for viewing more information about specific events",
+    "8. Atlantic Freight Solutions : Card displaying company information",
+    "9. Sustainable Shipping Forum : Card displaying event information",
+    "10. View All Events : Card for viewing all events",
+    "11. View All News : Card for viewing all news"
+  ]
+}

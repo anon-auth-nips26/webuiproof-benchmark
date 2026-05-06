@@ -1,0 +1,311 @@
+{
+  "website_summary": {
+    "name": "Detective Case Tracker",
+    "description": "The website has a sleek beige background and a structured layout with modular cards, rendering a professional detective agency interface for case management and tracking.",
+    "category": "Data Management",
+    "appearance": "The website features a beige background with components styled in saddle brown, ensuring a cohesive and professional appearance. It includes a left-hand side navigation menu with options like 'Cases', 'Reports', 'Work Hours', 'Expenses', and 'Assignments'. To the right, the main panel displays case cards arranged in a grid. Each card lists case details such as the case title, description, status (e.g., 'In Progress', 'Open', 'Closed'), and metadata like date, hours logged, and expenses. A 'New Case' button is visible at the top right within the main content area, facilitating user-initiated case creation.",
+    "functionality": "The website offers functionality for managing detective cases. Functions include browsing existing cases displayed on case cards, creating new cases via a dedicated 'New Case' button, viewing case details, logging work hours and expenses, and seeing service assignment sheets. Users can click on any case card to get in-depth information about the case. The 'New Case' button opens a modal dialog where users can enter information like case title and details."
+  },
+  "test_cases": {
+    "functionality_testing": [
+      {
+        "id": "TC001",
+        "name": "Case Details Input Test",
+        "objective": "To verify that the Case Details textarea accepts and displays the entered text correctly.",
+        "coverage_element": "Case Details",
+        "preconditions": "The \"New Case\" form is open, and the \"Case Title\" field is filled.",
+        "expected_results": "The textarea should display \"Test Case Details\" accurately. 7. Next Steps : Enter \"Test Case Details\" into the \"Case Details\" textarea.",
+        "procedure": [
+          "Type \"Test Case Details\" into the Case Details textarea.",
+          "Verify that the entered text is displayed correctly in the textarea."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Case Selection Test",
+        "objective": "To verify that selecting the \"CASE-001 - Missing Person - Sarah Johnson\" case from the dropdown menu is successful.",
+        "coverage_element": "Dropdown menu for selecting a case",
+        "preconditions": "On the \"Log Work Hours\" form with the \"Select Case\" dropdown expanded.",
+        "expected_results": "The \"CASE-001 - Missing Person - Sarah Johnson\" case is successfully selected. 7. Next Steps : Select the \"CASE-001 - Missing Person - Sarah Johnson\" case from the dropdown menu.",
+        "procedure": [
+          "Click on \"CASE-001 - Missing Person - Sarah Johnson\" from the dropdown options.",
+          "Verify that the case is selected and the dropdown closes."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Case Title Input Test",
+        "objective": "To verify that the Case Title input field accepts and displays the entered text correctly.",
+        "coverage_element": "Case Title",
+        "preconditions": "The \"New Case\" form is open and visible.",
+        "expected_results": "The input field should display \"Test Case Title\" accurately. 7. Next Steps : Enter \"Test Case Title\" into the \"Case Title\" input field.",
+        "procedure": [
+          "Type \"Test Case Title\" into the Case Title input field.",
+          "Verify that the entered text is displayed correctly in the input field."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Cases Button Test",
+        "objective": "To verify that clicking the Cases button navigates to the Cases section.",
+        "coverage_element": "Cases",
+        "preconditions": "On the main Case Management page.",
+        "expected_results": "Navigation to the Cases section is successful. 7. Next Steps : Click on the \"Cases\" button to navigate to the Cases section.",
+        "procedure": [
+          "Click on the Cases button.",
+          "Verify navigation to the Cases section."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Create Case Button Test",
+        "objective": "To verify that clicking the Create Case button submits the new case successfully.",
+        "coverage_element": "Create Case",
+        "preconditions": "The \"New Case\" form is open, and both the \"Case Title\" and \"Case Details\" fields are filled.",
+        "expected_results": "A new case card should appear in the main content area with the title \"Test Case Title\" and the status \"In Progress\". 7. Next Steps : Click the \"Create Case\" button to submit the new case.",
+        "procedure": [
+          "Click on the Create Case button.",
+          "Verify that the new case card appears in the main content area with the correct title and status."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Missing Person - Sarah Johnson Case Card Click Test",
+        "objective": "To verify that clicking on the Missing Person - Sarah Johnson card navigates to the case details page.",
+        "coverage_element": "Missing Person - Sarah Johnson",
+        "preconditions": "On the Cases section page, hovering over the Missing Person - Sarah Johnson card.",
+        "expected_results": "Navigation to the case details page is successful. 7. Next Steps : Click on the \"Missing Person - Sarah Johnson\" case card to view its details.",
+        "procedure": [
+          "Click on the Missing Person - Sarah Johnson card.",
+          "Verify navigation to the case details page."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "Missing Person - Sarah Johnson Case Card Test",
+        "objective": "To verify that hovering over the Missing Person - Sarah Johnson card provides the necessary details.",
+        "coverage_element": "Missing Person - Sarah Johnson",
+        "preconditions": "On the Cases section page.",
+        "expected_results": "The card displays the case details correctly. 7. Next Steps : Hover over the \"Missing Person - Sarah Johnson\" case card to view its details.",
+        "procedure": [
+          "Hover over the Missing Person - Sarah Johnson card.",
+          "Verify that the card displays the case details."
+        ]
+      },
+      {
+        "id": "TC008",
+        "name": "Missing Person - Sarah Johnson Case Details Test",
+        "objective": "To verify that there is an alternative way to access the details of the \"Missing Person - Sarah Johnson\" case.",
+        "coverage_element": "\"Missing Person - Sarah Johnson\"",
+        "preconditions": "On the Cases section page, hovering over the \"Missing Person - Sarah Johnson\" card.",
+        "expected_results": "An alternative way to access the case details is found and verified. 7. Next Steps : Look for other interactive elements related to the \"Missing Person - Sarah Johnson\" case and interact with them to access the case details.",
+        "procedure": [
+          "Look for other interactive elements related to the \"Missing Person - Sarah Johnson\" case.",
+          "Interact with those elements to access the case details."
+        ]
+      },
+      {
+        "id": "TC009",
+        "name": "New Case Button Test",
+        "objective": "To verify that clicking the New Case button initiates the new case creation process.",
+        "coverage_element": "New Case",
+        "preconditions": "The main content area is visible with the \"New Case\" button.",
+        "expected_results": "The interface should display fields for entering the case title and details. 7. Next Steps : Click the \"New Case\" button to proceed with creating a new case.",
+        "procedure": [
+          "Click on the New Case button.",
+          "Verify that the interface transitions to a form or input screen for creating a new case."
+        ]
+      },
+      {
+        "id": "TC010",
+        "name": "Test Create New Case Form Elements",
+        "objective": "To verify that the 'Create New Case' form elements function correctly.",
+        "coverage_element": "Create New Case : Card containing the form elements for creating a new case",
+        "preconditions": "The user is logged into the application and has clicked the 'New Case' button.",
+        "expected_results": "The form elements should allow input and submission without errors.",
+        "procedure": [
+          "Click the 'New Case' button.",
+          "Fill out the form and submit it."
+        ]
+      },
+      {
+        "id": "TC011",
+        "name": "Test Cancel Button Functionality",
+        "objective": "To verify that the 'Cancel' button works as expected.",
+        "coverage_element": "Cancel : Button within the card",
+        "preconditions": "The user is logged into the application and is in the process of creating a new case.",
+        "expected_results": "Clicking the 'Cancel' button should return the user to the previous screen without saving changes.",
+        "procedure": [
+          "Click the 'New Case' button.",
+          "Click the 'Cancel' button and observe the result."
+        ]
+      },
+      {
+        "id": "TC012",
+        "name": "Test Navigation to Reports Section",
+        "objective": "To verify that the 'Reports' button navigates to the correct section.",
+        "coverage_element": "Reports : Button for navigating to the Reports section",
+        "preconditions": "The user is logged into the application.",
+        "expected_results": "Clicking the 'Reports' button should navigate the user to the Reports section.",
+        "procedure": [
+          "Click the 'Reports' button in the navigation menu.",
+          "Verify that the user is redirected to the Reports section."
+        ]
+      },
+      {
+        "id": "TC013",
+        "name": "Test Navigation to Work Hours Section",
+        "objective": "To verify that the 'Work Hours' button navigates to the correct section.",
+        "coverage_element": "Work Hours : Button for navigating to the Work Hours section",
+        "preconditions": "The user is logged into the application.",
+        "expected_results": "Clicking the 'Work Hours' button should navigate the user to the Work Hours section.",
+        "procedure": [
+          "Click the 'Work Hours' button in the navigation menu.",
+          "Verify that the user is redirected to the Work Hours section."
+        ]
+      },
+      {
+        "id": "TC014",
+        "name": "Test Navigation to Expenses Section",
+        "objective": "To verify that the 'Expenses' button navigates to the correct section.",
+        "coverage_element": "Expenses : Button for navigating to the Expenses section",
+        "preconditions": "The user is logged into the application.",
+        "expected_results": "Clicking the 'Expenses' button should navigate the user to the Expenses section.",
+        "procedure": [
+          "Click the 'Expenses' button in the navigation menu.",
+          "Verify that the user is redirected to the Expenses section."
+        ]
+      },
+      {
+        "id": "TC015",
+        "name": "Test Navigation to Assignments Section",
+        "objective": "To verify that the 'Assignments' button navigates to the correct section.",
+        "coverage_element": "Assignments : Button for navigating to the Assignments section",
+        "preconditions": "The user is logged into the application.",
+        "expected_results": "Clicking the 'Assignments' button should navigate the user to the Assignments section.",
+        "procedure": [
+          "Click the 'Assignments' button in the navigation menu.",
+          "Verify that the user is redirected to the Assignments section."
+        ]
+      },
+      {
+        "id": "TC016",
+        "name": "Test Textarea for Entering Notes",
+        "objective": "To verify that the textarea for entering notes functions correctly.",
+        "coverage_element": "Textarea for entering notes",
+        "preconditions": "The user is logged into the application and is in a section where notes can be entered.",
+        "expected_results": "The textarea should allow text entry and save the notes upon submission.",
+        "procedure": [
+          "Locate the textarea for entering notes.",
+          "Enter text into the textarea and submit."
+        ]
+      }
+    ],
+    "data_display_testing": [
+      {
+        "id": "TC001",
+        "name": "Check Display of Case Cards",
+        "objective": "To verify that all case cards display correctly.",
+        "coverage_element": "Cards for Cases, Reports, Work Hours, Expenses, and Assignments",
+        "preconditions": "The user is logged into the application and is on the main page.",
+        "expected_results": "All case cards should be displayed with correct titles, descriptions, statuses, dates, hours, and costs.",
+        "procedure": [
+          "Navigate to the main page of the application.",
+          "Verify that each card displays the correct information."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Validate Existing Case Cards Information",
+        "objective": "To verify that existing case cards show accurate information.",
+        "coverage_element": "Existing case cards with titles, descriptions, statuses, dates, hours, and costs",
+        "preconditions": "The user is logged into the application and is on the main page.",
+        "expected_results": "Each existing case card should accurately display its title, description, status, date, hours logged, and costs.",
+        "procedure": [
+          "Navigate to the main page of the application.",
+          "Inspect each existing case card for accuracy."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Test Display of Case Details in Cards",
+        "objective": "To verify that case cards display detailed information correctly.",
+        "coverage_element": "Case cards displaying case titles, descriptions, statuses, dates, hours logged, and expenses",
+        "preconditions": "The user is logged into the application and is on the main page.",
+        "expected_results": "Each case card should display the correct title, description, status, date, hours logged, and expenses.",
+        "procedure": [
+          "Navigate to the main page of the application.",
+          "Inspect each case card for the correct display of details."
+        ]
+      }
+    ],
+    "design_validation_testing": [
+      {
+        "id": "TC001",
+        "name": "UI Design and Style Test: Case Card Styling",
+        "objective": "To verify that the case cards have rounded corners and shadows.",
+        "coverage_element": "Case Card Styling",
+        "preconditions": "",
+        "expected_results": "The case cards should have rounded corners and shadows. 7. Next Steps : Perform the test cases to verify the design requirements.",
+        "procedure": [
+          "Observe the styling of the case cards.",
+          "Compare against the specified design requirements."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "UI Design and Style Test: Color Palette",
+        "objective": "To verify that the background color is beige and the text color is saddle brown.",
+        "coverage_element": "Color Scheme",
+        "preconditions": "",
+        "expected_results": "The background should be beige, and the text should be saddle brown.",
+        "procedure": [
+          "Observe the background color and text color.",
+          "Compare against the specified design requirements."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "UI Design and Style Test: Sidebar Styling",
+        "objective": "To verify that the sidebar has a saddle brown background and the text is beige.",
+        "coverage_element": "Sidebar Styling",
+        "preconditions": "",
+        "expected_results": "The sidebar background should be saddle brown, and the text should be beige.",
+        "procedure": [
+          "Observe the sidebar background color and text color.",
+          "Compare against the specified design requirements."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Verify New Case Button Visual Representation",
+        "objective": "To verify that the 'New Case' button is correctly represented visually.",
+        "coverage_element": "New Case : Card representing the button visually",
+        "preconditions": "The user is logged into the application and is on the main page.",
+        "expected_results": "The 'New Case' button should be displayed as a card with appropriate styling matching the application theme.",
+        "procedure": [
+          "Navigate to the main page of the application.",
+          "Locate and visually inspect the 'New Case' button card."
+        ]
+      }
+    ]
+  },
+  "element_requirement": [
+    "1. New Case : Button for initiating a new case creation process",
+    "2. New Case : Card representing the button visually",
+    "3. Cases : Button for navigating to the Cases section",
+    "4. Cards for Cases, Reports, Work Hours, Expenses, and Assignments",
+    "5. Existing case cards with titles, descriptions, statuses, dates, hours, and costs",
+    "6. Test Case Title Test Case Details : Card representing the newly created case",
+    "7. Create New Case : Card containing the form elements for creating a new case",
+    "8. Create Case : Button within the card",
+    "9. Cancel : Button within the card",
+    "10. Reports : Button for navigating to the Reports section",
+    "11. Work Hours : Button for navigating to the Work Hours section",
+    "12. Expenses : Button for navigating to the Expenses section",
+    "13. Assignments : Button for navigating to the Assignments section",
+    "14. Textarea for entering notes",
+    "15. Button for logging hours",
+    "16. Case cards displaying case titles, descriptions, statuses, dates, hours logged, and expenses"
+  ]
+}

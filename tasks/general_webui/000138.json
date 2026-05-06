@@ -1,0 +1,145 @@
+{
+  "website_summary": {
+    "name": "English Article Decision Guide",
+    "description": "The website presents a clean and professional interface featuring an interactive decision tree for choosing the correct English articles (\"a,\" \"an,\" \"the,\" or none).",
+    "category": "Content Presentation",
+    "appearance": "The website is divided into two main sections. On the left side, there is an interactive decision tree diagram that guides users through a series of questions to determine the appropriate English article for a given noun. The tree uses blue paths for \"Yes\" answers and red paths for \"No\" answers, leading to circles indicating the final article choice. The right side contains explanatory text blocks detailing the rules and exceptions for using \"a,\" \"an,\" \"the,\" and no article. These blocks are styled with headings, bullet points, and highlighted notes for clarity. The overall design is minimalistic, with a light background and well-spaced elements for easy readability.",
+    "functionality": "The website offers an interactive decision tree that users can navigate by clicking on \"Yes\" or \"No\" buttons corresponding to questions about the noun in question. It also provides detailed explanations and examples of article usage on the right-hand side. Users can hide the article explanation or reset the decision tree using buttons at the top. The content is educational, aiming to help users understand and apply the rules of English articles effectively."
+  },
+  "test_cases": {
+    "functionality_testing": [
+      {
+        "id": "TC001",
+        "name": "Hide Article Button Test",
+        "objective": "To verify that clicking the Hide Article Button hides the article explanation.",
+        "coverage_element": "Hide Article Button",
+        "preconditions": "Article explanation is visible.",
+        "expected_results": "The article explanation should be hidden after clicking the button.",
+        "procedure": [
+          "Click on the Hide Article Button.",
+          "Verify that the article explanation is hidden."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Reset Tree Button Test",
+        "objective": "To verify that clicking the Reset Tree button resets the decision tree.",
+        "coverage_element": "Reset Tree",
+        "preconditions": "Decision tree is modified.",
+        "expected_results": "The decision tree should be reset to its initial state after clicking the button. 7. Next Steps : Perform the second test case to check the alignment of decision tree nodes and paths.",
+        "procedure": [
+          "Modify the decision tree.",
+          "Click on the Reset Tree button.",
+          "Verify that the decision tree is reset to its initial state."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Yes for Countable Button Test",
+        "objective": "To verify that clicking the Yes for Countable button correctly displays the subsequent decision.",
+        "coverage_element": "Yes for Countable",
+        "preconditions": "The decision tree is in the initial state with no selections made.",
+        "expected_results": "The decision tree should proceed to the next decision : \"Does it start with a consonant sound?\".",
+        "procedure": [
+          "Click on the Yes for Countable button."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Test No Button for Countable Question",
+        "objective": "To verify that clicking the 'No' button for countability correctly updates the decision path.",
+        "coverage_element": "No for Countable : Button labeled \"No\" for answering the question about countability",
+        "preconditions": "The user is at the countability question node in the decision tree.",
+        "expected_results": "The decision path should change to red, indicating a 'No' answer, and navigate to the next relevant question or conclusion.",
+        "procedure": [
+          "Navigate to the countability question node in the decision tree.",
+          "Click the 'No' button and observe the path and subsequent navigation."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Test No Button for Consonant Sound Question",
+        "objective": "To verify that clicking the 'No' button for consonant sound correctly updates the decision path.",
+        "coverage_element": "No for Consonant Sound : Button labeled \"No\" for answering the question about starting with a consonant sound",
+        "preconditions": "The user is at the consonant sound question node in the decision tree.",
+        "expected_results": "The decision path should change to red, indicating a 'No' answer, and navigate to the next relevant question or conclusion.",
+        "procedure": [
+          "Navigate to the consonant sound question node in the decision tree.",
+          "Click the 'No' button and observe the path and subsequent navigation."
+        ]
+      }
+    ],
+    "data_display_testing": [
+      {
+        "id": "TC001",
+        "name": "Decision Tree Node Alignment Test",
+        "objective": "To verify the alignment of decision tree nodes and paths.",
+        "coverage_element": "Decision Tree Nodes",
+        "preconditions": "Decision tree is visible.",
+        "expected_results": "All nodes and paths should be neatly aligned without any issues.",
+        "procedure": [
+          "Observe the alignment of decision tree nodes and paths.",
+          "Check for any overlapping or misalignment issues."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Final Decision Verification Test",
+        "objective": "To verify that the final decision circle displays \"Use 'an'\" after navigating the decision tree as per the procedure.",
+        "coverage_element": "Final decision circle",
+        "preconditions": "The decision tree is at the final decision stage after selecting \"No\" for the consonant sound.",
+        "expected_results": "The final decision circle should display \"Use 'an'\".",
+        "procedure": [
+          "Observe the final decision circle."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Initial State Verification Test",
+        "objective": "To verify that the decision tree is in its initial state after clicking the \"Reset Tree\" button.",
+        "coverage_element": "Yes/No buttons forming the decision tree nodes",
+        "preconditions": "The \"Reset Tree\" button has been clicked.",
+        "expected_results": "The decision tree should be in its initial state with no selections made.",
+        "procedure": [
+          "Observe the decision tree nodes.",
+          "Verify that none of the nodes are highlighted or selected."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Test Article Explanation Card Display",
+        "objective": "To verify that the article explanation card displays the correct information clearly and accurately.",
+        "coverage_element": "Article Explanation Card : Card containing the article explanations",
+        "preconditions": "The user is viewing the article explanation section.",
+        "expected_results": "The card should display all necessary article explanations with clear headings, bullet points, and highlighted notes.",
+        "procedure": [
+          "Navigate to the article explanation section.",
+          "Review the content displayed in the article explanation card for completeness and clarity."
+        ]
+      }
+    ],
+    "design_validation_testing": [
+      {
+        "id": "TC001",
+        "name": "UI Design and Style Test: Color Palette",
+        "objective": "To evaluate the consistency of the color scheme between the decision tree and article explanation areas.",
+        "coverage_element": "Color Scheme",
+        "preconditions": "",
+        "expected_results": "The background colors should be consistent and visually appealing.",
+        "procedure": [
+          "Observe the background colors of the decision tree area and article explanation area.",
+          "Compare the colors for consistency.",
+          "Verify if the colors adhere to design best practices."
+        ]
+      }
+    ]
+  },
+  "element_requirement": [
+    "1. Yes for Countable : Button labeled \"Yes\" for answering the question about countability",
+    "2. No for Countable : Button labeled \"No\" for answering the question about countability",
+    "3. Hide Article : Button to hide specific information",
+    "4. Reset Tree : Button to reset the decision tree process",
+    "5. No for Consonant Sound : Button labeled \"No\" for answering the question about starting with a consonant sound",
+    "6. Article Explanation Card : Card containing the article explanations"
+  ]
+}

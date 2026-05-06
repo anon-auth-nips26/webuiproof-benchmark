@@ -1,0 +1,241 @@
+{
+  "website_summary": {
+    "name": "Multi-Company Financial Dashboard",
+    "description": "The website is a sleek, data-centric dashboard designed with a vibrant teal and mint cream color scheme, enabling users to seamlessly manage and visualize financial information from multiple companies.",
+    "category": "Data Management",
+    "appearance": "The Multi-Company Financial Dashboard features a clean and organized layout. The left sidebar, styled in teal, contains navigation options for Dashboards, Companies, Financials, Reports, and Analysis. The main content area has a mint cream background that complements the teal elements. The top section includes a welcome message, a logout button, and a navigation toggle. \n\nThe main dashboard showcases financial metrics like Total Revenue, Total Expenses, and Total Profit prominently with bold teal text, giving users a quick overview. Visualizations such as bar charts for Revenue Breakdown, Profit Margin, and Area charts for Quarterly Growth Trends are neatly presented within white bordered boxes with teal accents. The footer displays a Company Performance Comparison bar chart, further enhancing cross-company analysis. The overall design is modern, and every component adheres to the specified color theme.",
+    "functionality": "The website offers comprehensive functionalities for financial data management. It includes a search bar for quick company lookup within the top-right section with a placeholder that says \"Search companies...\". A filters button is also present to refine displayed data. Select Companies functionality is available through a dropdown menu, enabling data selection from a list of companies. \n\nUsers can browse financial data specific to each company via various navigation buttons providing different financial perspectives. Different charts and bar graphs provide visual comparisons aiding complex data analysis. Additionally, the dashboard supports real-time financial reporting and analysis thus facilitating informed decision-making processes."
+  },
+  "test_cases": {
+    "functionality_testing": [
+      {
+        "id": "TC001",
+        "name": "Filters Button Test",
+        "objective": "To ensure that clicking Filters Button enables filtering options for more precise data retrieval.",
+        "coverage_element": "Filters Button.",
+        "preconditions": "The Filters Button is visible.",
+        "expected_results": "The expected filtering options for refining financial data appear after the click.",
+        "procedure": [
+          "Click on Filters Button.",
+          "Verify if relevant filtering options are displayed."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Revenue Checkbox Test",
+        "objective": "To verify that selecting the Revenue checkbox refines the financial data accordingly.",
+        "coverage_element": "Revenue",
+        "preconditions": "The filter options are visible.",
+        "expected_results": "The financial data should display only revenue-related metrics after selecting the checkbox.",
+        "procedure": [
+          "Click on the Revenue checkbox.",
+          "Verify that the financial data is updated to reflect the revenue filter."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Search Bar Test",
+        "objective": "To verify that entering \"TechCorp\" into the search bar Search Bar and pressing Enter/Clicking Search icon filters data accordingly.",
+        "coverage_element": "Search Bar.",
+        "preconditions": "Search bar is visible, ready for input.",
+        "expected_results": "Data relevant to \"TechCorp\" is shown on all financial metrics cards.",
+        "procedure": [
+          "Type \"TechCorp\" into Search Bar and press Enter or click the search icon.",
+          "Verify that financial cards and data reflect relevant information for \"TechCorp\"."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Test Select Companies Dropdown Functionality",
+        "objective": "To verify that the dropdown menu for selecting companies functions correctly.",
+        "coverage_element": "Select Companies Button : Dropdown menu for selecting or displaying a list of companies",
+        "preconditions": "User is logged into the application and on the main dashboard page.",
+        "expected_results": "Dropdown menu opens, displaying a list of available companies for selection.",
+        "procedure": [
+          "Click on the 'Select Companies Button'.",
+          "Verify that the dropdown menu appears and lists all available companies."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Test Expenses Filter Checkbox Functionality",
+        "objective": "To verify that the Expenses checkbox functions correctly as a filter option.",
+        "coverage_element": "Expenses : Checkbox for selecting expenses as a filter option",
+        "preconditions": "User is logged into the application and on the main dashboard page.",
+        "expected_results": "When selected, the dashboard updates to reflect only expense-related data.",
+        "procedure": [
+          "Navigate to the main dashboard page.",
+          "Select the 'Expenses' checkbox and verify that the dashboard filters to show expense-related data."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Test Profit Filter Checkbox Functionality",
+        "objective": "To verify that the Profit checkbox functions correctly as a filter option.",
+        "coverage_element": "Profit : Checkbox for selecting profit as a filter option",
+        "preconditions": "User is logged into the application and on the main dashboard page.",
+        "expected_results": "When selected, the dashboard updates to reflect only profit-related data.",
+        "procedure": [
+          "Navigate to the main dashboard page.",
+          "Select the 'Profit' checkbox and verify that the dashboard filters to show profit-related data."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "Test Logout Button Functionality",
+        "objective": "To verify that the Logout Button functions correctly.",
+        "coverage_element": "Logout Button : Button for logging out",
+        "preconditions": "User is logged into the application.",
+        "expected_results": "Upon clicking the Logout Button, the user is successfully logged out and redirected to the login page.",
+        "procedure": [
+          "Click on the 'Logout Button'.",
+          "Verify that the user is logged out and redirected to the login page."
+        ]
+      },
+      {
+        "id": "TC008",
+        "name": "Test Dashboard Navigation Button Functionality",
+        "objective": "To verify that the Dashboard Button navigates to the dashboard page.",
+        "coverage_element": "Dashboard Button : Button for navigating to the dashboard",
+        "preconditions": "User is logged into the application.",
+        "expected_results": "Upon clicking the Dashboard Button, the user is navigated to the dashboard page.",
+        "procedure": [
+          "Click on the 'Dashboard Button'.",
+          "Verify that the user is navigated to the dashboard page."
+        ]
+      },
+      {
+        "id": "TC009",
+        "name": "Test Companies Navigation Button Functionality",
+        "objective": "To verify that the Companies Button navigates to the companies section.",
+        "coverage_element": "Companies Button : Button for navigating to the companies section",
+        "preconditions": "User is logged into the application.",
+        "expected_results": "Upon clicking the Companies Button, the user is navigated to the companies section.",
+        "procedure": [
+          "Click on the 'Companies Button'.",
+          "Verify that the user is navigated to the companies section."
+        ]
+      },
+      {
+        "id": "TC010",
+        "name": "Test Financials Navigation Button Functionality",
+        "objective": "To verify that the Financials Button navigates to the financials section.",
+        "coverage_element": "Financials Button : Button for navigating to the financials section",
+        "preconditions": "User is logged into the application.",
+        "expected_results": "Upon clicking the Financials Button, the user is navigated to the financials section.",
+        "procedure": [
+          "Click on the 'Financials Button'.",
+          "Verify that the user is navigated to the financials section."
+        ]
+      },
+      {
+        "id": "TC011",
+        "name": "Test Reports Navigation Button Functionality",
+        "objective": "To verify that the Reports Button navigates to the reports section.",
+        "coverage_element": "Reports Button : Button for navigating to the reports section",
+        "preconditions": "User is logged into the application.",
+        "expected_results": "Upon clicking the Reports Button, the user is navigated to the reports section.",
+        "procedure": [
+          "Click on the 'Reports Button'.",
+          "Verify that the user is navigated to the reports section."
+        ]
+      },
+      {
+        "id": "TC012",
+        "name": "Test Analysis Navigation Button Functionality",
+        "objective": "To verify that the Analysis Button navigates to the analysis section.",
+        "coverage_element": "Analysis Button : Button for navigating to the analysis section",
+        "preconditions": "User is logged into the application.",
+        "expected_results": "Upon clicking the Analysis Button, the user is navigated to the analysis section.",
+        "procedure": [
+          "Click on the 'Analysis Button'.",
+          "Verify that the user is navigated to the analysis section."
+        ]
+      },
+      {
+        "id": "TC013",
+        "name": "Test Documents Navigation Button Functionality",
+        "objective": "To verify that the Documents Button navigates to the documents section.",
+        "coverage_element": "Documents Button : Button for navigating to the documents section",
+        "preconditions": "User is logged into the application.",
+        "expected_results": "Upon clicking the Documents Button, the user is navigated to the documents section.",
+        "procedure": [
+          "Click on the 'Documents Button'.",
+          "Verify that the user is navigated to the documents section."
+        ]
+      }
+    ],
+    "data_display_testing": [
+      {
+        "id": "TC001",
+        "name": "Test Total Expenses Card Data Display",
+        "objective": "To verify that the Total Expenses Card accurately displays the overall expenses.",
+        "coverage_element": "Total Expenses Card : Card showing overall expenses",
+        "preconditions": "User is logged into the application and on the main dashboard page.",
+        "expected_results": "Total Expenses Card displays the correct amount of overall expenses.",
+        "procedure": [
+          "Navigate to the main dashboard page.",
+          "Verify that the Total Expenses Card shows the accurate total expenses value."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Test Total Profit Card Data Display",
+        "objective": "To verify that the Total Profit Card accurately displays the total profit figures.",
+        "coverage_element": "Total Profit Card : Card displaying total profit figures",
+        "preconditions": "User is logged into the application and on the main dashboard page.",
+        "expected_results": "Total Profit Card displays the correct amount of total profit.",
+        "procedure": [
+          "Navigate to the main dashboard page.",
+          "Verify that the Total Profit Card shows the accurate total profit value."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Test Quarterly Growth Trends Cards Data Display",
+        "objective": "To verify that the Quarterly Growth Trends Cards accurately display quarterly profit trends.",
+        "coverage_element": "Quarterly Growth Trends Cards displaying quarterly profit trends",
+        "preconditions": "User is logged into the application and on the main dashboard page.",
+        "expected_results": "Quarterly Growth Trends Cards display the correct quarterly profit trends.",
+        "procedure": [
+          "Navigate to the main dashboard page.",
+          "Verify that the Quarterly Growth Trends Cards show accurate quarterly profit trend data."
+        ]
+      }
+    ],
+    "design_validation_testing": [
+      {
+        "id": "TC001",
+        "name": "Test Profit Margin Chart Design",
+        "objective": "To verify that the Profit Margin Chart adheres to the specified design theme.",
+        "coverage_element": "Profit Margin Chart : Card displaying the profit margin chart",
+        "preconditions": "User is logged into the application and on the main dashboard page.",
+        "expected_results": "Profit Margin Chart is displayed within a white bordered box with teal accents, matching the application's design theme.",
+        "procedure": [
+          "Navigate to the main dashboard page.",
+          "Verify that the Profit Margin Chart is styled according to the specified design theme."
+        ]
+      }
+    ]
+  },
+  "element_requirement": [
+    "1. Search Bar : Text box with placeholder \"Search companies...\" for searching companies",
+    "2. Filters Button : Button for filtering company-related data",
+    "3. Select Companies Button : Dropdown menu for selecting or displaying a list of companies",
+    "4. Total Revenue Card : Card displaying total revenue information",
+    "5. Total Expenses Card : Card showing overall expenses",
+    "6. Total Profit Card : Card displaying total profit figures",
+    "7. Profit Margin Chart : Card displaying the profit margin chart",
+    "8. Quarterly Growth Trends Cards displaying quarterly profit trends",
+    "9. Revenue : Checkbox for selecting revenue as a filter option",
+    "10. Expenses : Checkbox for selecting expenses as a filter option",
+    "11. Profit : Checkbox for selecting profit as a filter option",
+    "12. Logout Button : Button for logging out",
+    "13. Dashboard Button : Button for navigating to the dashboard",
+    "14. Companies Button : Button for navigating to the companies section",
+    "15. Financials Button : Button for navigating to the financials section",
+    "16. Reports Button : Button for navigating to the reports section",
+    "17. Analysis Button : Button for navigating to the analysis section",
+    "18. Documents Button : Button for navigating to the documents section"
+  ]
+}

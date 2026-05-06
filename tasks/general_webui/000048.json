@@ -1,0 +1,236 @@
+{
+  "website_summary": {
+    "name": "Attendance Tracker System",
+    "description": "The website displays an elegant and user-friendly interface with a clear focus on managing and tracking employee attendance.",
+    "category": "Data Management",
+    "appearance": "The website features a clean and modern design. It includes a navigation header with an attendance tracker logo, search functionality, notifications, and user profile access. On the left side, a sidebar displays user information, such as \"Guest\" with \"No role,\" and options for \"My Profile\" and \"Settings.\" There is also a prominent orange \"Login\" button. The main content area in the center welcomes users and prompts them to log in to continue, featuring a \"Login\" button. Colors used are primarily papaya whip as the base, with dark orange highlights for components like buttons.",
+    "functionality": "The website provides functionalities for guest users and logged-in users. It allows guests to view basic profile and settings options and prompts them to log in. Once logged in, employees can likely clock in and out and view their attendance records. Administrators presumably have additional capabilities, such as viewing all employees' records and performing statistical analysis. The website also includes a footer with copyright information."
+  },
+  "test_cases": {
+    "functionality_testing": [
+      {
+        "id": "TC001",
+        "name": "Accessing My Profile Through Dropdown Menu Test:",
+        "objective": "Ensure interaction with the user dropdown menu followed by selecting the \"My Profile\" option takes the user to the profile settings page.",
+        "coverage_element": "Dropdown Menu,My Profile Button",
+        "preconditions": "The user must be logged in to access the dropdown menu.",
+        "expected_results": "Successful navigation to the profile settings page.",
+        "procedure": [
+          "Click on the User Dropdown.",
+          "Click on the option for My Profile.",
+          "Verify the redirect to the user's profile settings page."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Correct My Profile Button Identification and Click Test",
+        "objective": "To verify clicking the correct My Profile Button navigates to the profile page",
+        "coverage_element": "My Profile Button",
+        "preconditions": "User is on the homepage.",
+        "expected_results": "The user is redirected to the profile page displaying their information.",
+        "procedure": [
+          "Click on the My Profile Button.",
+          "Verify navigation to the profile page."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Login Button Test",
+        "objective": "To verify that clicking the Login Button redirects the user to the login form.",
+        "coverage_element": "Login Button",
+        "preconditions": "The user is on the homepage of the Attendance Tracker.",
+        "expected_results": "The user should be redirected to the login form. 7. Next Steps : Click the \"Login\" button to proceed to the login form.",
+        "procedure": [
+          "Click on the Login Button.",
+          "Verify that the user is redirected to the login form."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "My Profile Button Test",
+        "objective": "To verify that clicking the My Profile Button navigates to the profile page.",
+        "coverage_element": "My Profile Button",
+        "preconditions": "User is on the homepage.",
+        "expected_results": "The user is redirected to the profile page displaying their information.",
+        "procedure": [
+          "Click on the My Profile Button.",
+          "Verify navigation to the profile page."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Test Sidebar Menu Navigation",
+        "objective": "To verify that the sidebar menu options are clickable and navigate to the correct pages.",
+        "coverage_element": "Sidebar Menu : Contains navigation options like \"My Profile,\" \"Settings,\" and \"Login\"",
+        "preconditions": "User is on the homepage and not logged in.",
+        "expected_results": "Clicking on each option should navigate to the corresponding page or display the login prompt.",
+        "procedure": [
+          "Step 1 : Click on the 'My Profile' option in the sidebar menu.",
+          "Step 2 : Verify navigation to the profile page or display of the login prompt."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Test User Dropdown Menu Options",
+        "objective": "To verify that the user dropdown menu includes all profile options.",
+        "coverage_element": "User Button : User dropdown which includes profile options",
+        "preconditions": "User is on the homepage.",
+        "expected_results": "The user dropdown menu should include options for 'My Profile', 'Settings', and 'Login'.",
+        "procedure": [
+          "Step 1 : Click on the user button to open the dropdown menu.",
+          "Step 2 : Verify that all profile options are present in the dropdown menu."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "Test Profile Options Dropdown",
+        "objective": "To verify that the profile options dropdown menu includes the correct options.",
+        "coverage_element": "Profile Options : Dropdown menu with \"My Profile\", \"Settings\", \"Login\" under user menu",
+        "preconditions": "User is on the homepage.",
+        "expected_results": "The dropdown menu should include 'My Profile', 'Settings', and 'Login' options.",
+        "procedure": [
+          "Step 1 : Click on the user button to open the dropdown menu.",
+          "Step 2 : Verify that the dropdown menu includes the correct options."
+        ]
+      },
+      {
+        "id": "TC008",
+        "name": "Test My Profile Button in Dropdown",
+        "objective": "To verify that the 'My Profile' button in the dropdown menu navigates to the correct page.",
+        "coverage_element": "My Profile button in the dropdown",
+        "preconditions": "User is on the homepage.",
+        "expected_results": "Clicking the 'My Profile' button should navigate to the profile page or display the login prompt.",
+        "procedure": [
+          "Step 1 : Click on the user button to open the dropdown menu.",
+          "Step 2 : Click on the 'My Profile' button and verify navigation."
+        ]
+      },
+      {
+        "id": "TC009",
+        "name": "Test Profile and Settings Cards Navigation",
+        "objective": "To verify that the profile and settings cards navigate to the correct pages.",
+        "coverage_element": "Profile and Settings Cards : Cards for navigating to profile and settings",
+        "preconditions": "User is on the homepage.",
+        "expected_results": "Clicking on the profile and settings cards should navigate to the corresponding pages.",
+        "procedure": [
+          "Step 1 : Click on the profile card.",
+          "Step 2 : Verify navigation to the profile page. Repeat for the settings card."
+        ]
+      },
+      {
+        "id": "TC010",
+        "name": "Test Settings Card Options",
+        "objective": "To verify that the settings card contains the correct options.",
+        "coverage_element": "Settings Card : Card containing settings options",
+        "preconditions": "User is on the homepage.",
+        "expected_results": "The settings card should display the correct settings options.",
+        "procedure": [
+          "Step 1 : Click on the settings card.",
+          "Step 2 : Verify that the settings card contains the correct options."
+        ]
+      },
+      {
+        "id": "TC011",
+        "name": "Test Login Option Functionality",
+        "objective": "To verify that the login option initiates the login process.",
+        "coverage_element": "Login Option : Option to initiate login process",
+        "preconditions": "User is on the homepage.",
+        "expected_results": "Clicking the login option should initiate the login process.",
+        "procedure": [
+          "Step 1 : Click on the login option.",
+          "Step 2 : Verify that the login process is initiated."
+        ]
+      }
+    ],
+    "data_display_testing": [
+      {
+        "id": "TC001",
+        "name": "Test Main Content Card Welcome Message",
+        "objective": "To verify that the main content card displays the welcome message correctly.",
+        "coverage_element": "Main Content Card : Contains a welcome message and displays a \"Login\" button",
+        "preconditions": "User is on the homepage.",
+        "expected_results": "The welcome message should be displayed correctly on the main content card.",
+        "procedure": [
+          "Step 1 : Navigate to the homepage.",
+          "Step 2 : Verify that the welcome message is displayed on the main content card."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Test Footer Card Copyright Information",
+        "objective": "To verify that the footer card displays the copyright information correctly.",
+        "coverage_element": "Footer Card : Footer displaying copyright information",
+        "preconditions": "User is on any page of the application.",
+        "expected_results": "The footer card should display the correct copyright information.",
+        "procedure": [
+          "Step 1 : Scroll down to the footer of any page.",
+          "Step 2 : Verify that the copyright information is displayed correctly."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Test Attendance Tracker Cards Title",
+        "objective": "To verify that the attendance tracker cards display the correct title.",
+        "coverage_element": "Attendance Tracker Cards : Cards displaying attendance tracker title",
+        "preconditions": "User is on the homepage.",
+        "expected_results": "The attendance tracker cards should display the correct title.",
+        "procedure": [
+          "Step 1 : Navigate to the homepage.",
+          "Step 2 : Verify that the attendance tracker cards display the correct title."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Test Various Cards Information and Options",
+        "objective": "To verify that various cards display the correct information and options.",
+        "coverage_element": "Cards : Various cards with information and options",
+        "preconditions": "User is on the homepage.",
+        "expected_results": "All cards should display the correct information and options.",
+        "procedure": [
+          "Step 1 : Navigate to the homepage.",
+          "Step 2 : Verify that all cards display the correct information and options."
+        ]
+      }
+    ],
+    "design_validation_testing": [
+      {
+        "id": "TC001",
+        "name": "Button/Icon Color Test",
+        "objective": "Ensure all buttons and icons display a dark orange color.",
+        "coverage_element": "[0, 3-6, 2]",
+        "preconditions": "The page is loaded.",
+        "expected_results": "The color of all elements will match the prescribed dark orange.",
+        "procedure": [
+          "Visually assess the buttons and icons.",
+          "Use a color picker on targeted elements."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Test Header Navigation Bar Elements",
+        "objective": "To verify that the header navigation bar includes all necessary interface elements.",
+        "coverage_element": "Header : Top navigation bar including other interface elements like search and user",
+        "preconditions": "User is on the homepage.",
+        "expected_results": "The header should include the attendance tracker logo, search functionality, notifications, and user profile access.",
+        "procedure": [
+          "Step 1 : Navigate to the homepage.",
+          "Step 2 : Verify the presence of all elements in the header navigation bar."
+        ]
+      }
+    ]
+  },
+  "element_requirement": [
+    "1. Sidebar Menu : Contains navigation options like \"My Profile,\" \"Settings,\" and \"Login\"",
+    "2. Main Content Card : Contains a welcome message and displays a \"Login\" button",
+    "3. Footer Card : Footer displaying copyright information",
+    "4. Header : Top navigation bar including other interface elements like search and user",
+    "5. User Button : User dropdown which includes profile options",
+    "6. Profile Options : Dropdown menu with \"My Profile\", \"Settings\", \"Login\" under user menu",
+    "7. Attendance Tracker Cards : Cards displaying attendance tracker title",
+    "8. My Profile button in the dropdown",
+    "9. Profile and Settings Cards : Cards for navigating to profile and settings",
+    "10. Settings Card : Card containing settings options",
+    "11. Cards : Various cards with information and options",
+    "12. Login Option : Option to initiate login process"
+  ]
+}

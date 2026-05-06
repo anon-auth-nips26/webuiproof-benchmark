@@ -1,0 +1,372 @@
+{
+  "website_summary": {
+    "name": "Travel Accommodation Finder",
+    "description": "The website provides a clean and intuitive interface for searching accommodations, featuring a prominent search bar, filter options, and a footer with additional resources.",
+    "category": "User Interaction",
+    "appearance": "The website has a minimalist design with a white background and a navigation bar at the top containing options such as \"Stays,\" \"Experiences,\" and \"Online Experiences.\" A central search bar allows users to specify location, dates, and guests. Below the search bar, there are buttons for applying filters and selecting national parks. When no results are found, a message prompts users to adjust their filters. The footer includes sections for support, community, hosting, and general Airbnb information, along with links to privacy policies and company details.",
+    "functionality": "The website offers a search function where users can enter a location, select dates, and specify the number of guests. It also includes filter options for refining search results. Users can explore various categories like stays, experiences, and online experiences. The footer provides access to support, community engagement, hosting resources, and company information."
+  },
+  "test_cases": {
+    "functionality_testing": [
+      {
+        "id": "TC001",
+        "name": "Apply National Parks Filter Test",
+        "objective": "To verify that selecting the \"National Parks\" filter applies the filter correctly.",
+        "coverage_element": "Filters Card",
+        "preconditions": "The filters menu is open, and the national park filter is visible.",
+        "expected_results": "",
+        "procedure": [
+          "Click on the Filters Card.",
+          "Select the \"National Parks\" filter.",
+          "Click on the Filters Card"
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Filters Button Test",
+        "objective": "To verify that clicking the Filters Button opens the filters menu.",
+        "coverage_element": "Filters Button",
+        "preconditions": "The webpage is loaded and the filters button is visible.",
+        "expected_results": "The filters menu should be displayed upon clicking the button.",
+        "procedure": [
+          "Click on the Filters Button.",
+          "Verify that the filters menu is opened."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Guests Filter Test",
+        "objective": "To verify that selecting the Guests Filter applies the filter correctly.",
+        "coverage_element": "Guests Filter",
+        "preconditions": "The filters menu is open and the guests filter is visible.",
+        "expected_results": "The search results should only include stays for the selected number of guests. 7. Next Steps : The next step is to click on the Filters Button to open the filters menu and verify if the filters are applied correctly.",
+        "procedure": [
+          "Click on the Guests Filter.",
+          "Verify that the filter is applied and the search results are updated."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Location Button Test",
+        "objective": "To verify that clicking the Location button allows the user to enter a location.",
+        "coverage_element": "Location",
+        "preconditions": "The webpage is loaded and the location is not set.",
+        "expected_results": "The location input field is displayed, allowing the user to enter a location. 7. Next Steps : Click on the \"Location\" button to proceed with entering the location.",
+        "procedure": [
+          "Click on the Location button.",
+          "Verify that the location input field is displayed."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "National Parks Filter Test",
+        "objective": "To verify that selecting the National Parks Filter applies the filter correctly.",
+        "coverage_element": "National Parks Filter",
+        "preconditions": "The filters menu is open and the national parks filter is visible.",
+        "expected_results": "The search results should only include stays related to national parks.",
+        "procedure": [
+          "Click on the National Parks Filter.",
+          "Verify that the filter is applied and the search results are updated."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Search Destination Textbox Test",
+        "objective": "To verify that entering a location in the Search destinations... textbox produces the expected search results.",
+        "coverage_element": "Search destinations...",
+        "preconditions": "The destination search modal is open and the location is not set.",
+        "expected_results": "The search results display available stays in New York City. 7. Next Steps : Enter \"New York City\" in the location field.",
+        "procedure": [
+          "Enter \"New York City\" in the Search destinations... textbox.",
+          "Verify that the search results display available stays in New York City."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "Close Filters Menu Button",
+        "objective": "To verify that the close button correctly closes the filters menu.",
+        "coverage_element": "Close Button : Button to close the filters menu",
+        "preconditions": "Filters menu is open.",
+        "expected_results": "The filters menu should close upon clicking the close button.",
+        "procedure": [
+          "Navigate to the filters menu page.",
+          "Click the close button to close the filters menu."
+        ]
+      },
+      {
+        "id": "TC008",
+        "name": "Toggle Filters Menu Button",
+        "objective": "To verify that the toggle button correctly opens the filters menu.",
+        "coverage_element": "Filters Toggle : Button to toggle the filters menu",
+        "preconditions": "Filters menu is initially closed.",
+        "expected_results": "The filters menu should open upon clicking the toggle button.",
+        "procedure": [
+          "Navigate to the page where the filters toggle is available.",
+          "Click the toggle button to open the filters menu."
+        ]
+      },
+      {
+        "id": "TC009",
+        "name": "Select Cabin Property Type Button",
+        "objective": "To verify that the cabin property type button selects the cabin type correctly.",
+        "coverage_element": "Cabin Property Type : Button selecting cabin property type",
+        "preconditions": "User is on the property selection page.",
+        "expected_results": "The cabin property type should be selected after clicking the button.",
+        "procedure": [
+          "Navigate to the property selection page.",
+          "Click the cabin property type button."
+        ]
+      },
+      {
+        "id": "TC010",
+        "name": "Select One Guest Button",
+        "objective": "To verify that the guest selection button sets the number of guests to 1.",
+        "coverage_element": "Guests1 guest : Button for selecting number of guests",
+        "preconditions": "User is on the guest selection page.",
+        "expected_results": "The number of guests should be set to 1 after clicking the button.",
+        "procedure": [
+          "Navigate to the guest selection page.",
+          "Click the button for selecting one guest."
+        ]
+      },
+      {
+        "id": "TC011",
+        "name": "Select Apartment Property Type Button",
+        "objective": "To verify that the apartment property type button selects the apartment type correctly.",
+        "coverage_element": "Apartment Property Type : Button selecting apartment property type",
+        "preconditions": "User is on the property selection page.",
+        "expected_results": "The apartment property type should be selected after clicking the button.",
+        "procedure": [
+          "Navigate to the property selection page.",
+          "Click the apartment property type button."
+        ]
+      },
+      {
+        "id": "TC012",
+        "name": "Select Barn Property Type Button",
+        "objective": "To verify that the barn property type button selects the barn type correctly.",
+        "coverage_element": "Barn Property Type : Button selecting barn property type",
+        "preconditions": "User is on the property selection page.",
+        "expected_results": "The barn property type should be selected after clicking the button.",
+        "procedure": [
+          "Navigate to the property selection page.",
+          "Click the barn property type button."
+        ]
+      },
+      {
+        "id": "TC013",
+        "name": "Select Beach Destinations Button",
+        "objective": "To verify that the beach destinations button selects beach locations correctly.",
+        "coverage_element": "Beach Destinations : Button for selecting beach destinations",
+        "preconditions": "User is on the destination selection page.",
+        "expected_results": "The beach destinations should be selected after clicking the button.",
+        "procedure": [
+          "Navigate to the destination selection page.",
+          "Click the beach destinations button."
+        ]
+      },
+      {
+        "id": "TC014",
+        "name": "Select Online Experiences Button",
+        "objective": "To verify that the online experiences button selects online experiences correctly.",
+        "coverage_element": "Online Experiences : Button for selecting online experiences",
+        "preconditions": "User is on the experiences selection page.",
+        "expected_results": "The online experiences should be selected after clicking the button.",
+        "procedure": [
+          "Navigate to the experiences selection page.",
+          "Click the online experiences button."
+        ]
+      },
+      {
+        "id": "TC015",
+        "name": "Select Kitchen Amenities Button",
+        "objective": "To verify that the kitchen button adds a kitchen to the amenities list.",
+        "coverage_element": "Kitchen : Button selecting kitchen as an amenity",
+        "preconditions": "User is on the amenities selection page.",
+        "expected_results": "The kitchen should be added to the amenities list after clicking the button.",
+        "procedure": [
+          "Navigate to the amenities selection page.",
+          "Click the kitchen amenities button."
+        ]
+      },
+      {
+        "id": "TC016",
+        "name": "Select Treehouse Property Type Button",
+        "objective": "To verify that the treehouse property type button selects the treehouse type correctly.",
+        "coverage_element": "Treehouse Property Type : Button selecting treehouse property type",
+        "preconditions": "User is on the property selection page.",
+        "expected_results": "The treehouse property type should be selected after clicking the button.",
+        "procedure": [
+          "Navigate to the property selection page.",
+          "Click the treehouse property type button."
+        ]
+      },
+      {
+        "id": "TC017",
+        "name": "Select Hot Tub Amenities Button",
+        "objective": "To verify that the hot tub button adds a hot tub to the amenities list.",
+        "coverage_element": "Hot Tub : Button selecting hot tub as an amenity",
+        "preconditions": "User is on the amenities selection page.",
+        "expected_results": "The hot tub should be added to the amenities list after clicking the button.",
+        "procedure": [
+          "Navigate to the amenities selection page.",
+          "Click the hot tub amenities button."
+        ]
+      },
+      {
+        "id": "TC018",
+        "name": "Select Gym Amenities Button",
+        "objective": "To verify that the gym button adds a gym to the amenities list.",
+        "coverage_element": "Gym : Button selecting gym as an amenity",
+        "preconditions": "User is on the amenities selection page.",
+        "expected_results": "The gym should be added to the amenities list after clicking the button.",
+        "procedure": [
+          "Navigate to the amenities selection page.",
+          "Click the gym amenities button."
+        ]
+      },
+      {
+        "id": "TC019",
+        "name": "Select Elevator Amenities Button",
+        "objective": "To verify that the elevator button adds an elevator to the amenities list.",
+        "coverage_element": "Elevator : Button selecting elevator as an amenity",
+        "preconditions": "User is on the amenities selection page.",
+        "expected_results": "The elevator should be added to the amenities list after clicking the button.",
+        "procedure": [
+          "Navigate to the amenities selection page.",
+          "Click the elevator amenities button."
+        ]
+      },
+      {
+        "id": "TC020",
+        "name": "Select Fireplace Amenities Button",
+        "objective": "To verify that the fireplace button adds a fireplace to the amenities list.",
+        "coverage_element": "Fireplace : Button selecting fireplace as an amenity",
+        "preconditions": "User is on the amenities selection page.",
+        "expected_results": "The fireplace should be added to the amenities list after clicking the button.",
+        "procedure": [
+          "Navigate to the amenities selection page.",
+          "Click the fireplace amenities button."
+        ]
+      },
+      {
+        "id": "TC021",
+        "name": "Select Kitchenette Amenities Button",
+        "objective": "To verify that the kitchenette button adds a kitchenette to the amenities list.",
+        "coverage_element": "Kitchenette : Button selecting kitchenette as an amenity",
+        "preconditions": "User is on the amenities selection page.",
+        "expected_results": "The kitchenette should be added to the amenities list after clicking the button.",
+        "procedure": [
+          "Navigate to the amenities selection page.",
+          "Click the kitchenette amenities button."
+        ]
+      },
+      {
+        "id": "TC022",
+        "name": "Select Solar Power Amenities Button",
+        "objective": "To verify that the solar power button adds solar power to the amenities list.",
+        "coverage_element": "Solar Power : Button selecting solar power as an amenity",
+        "preconditions": "User is on the amenities selection page.",
+        "expected_results": "The solar power should be added to the amenities list after clicking the button.",
+        "procedure": [
+          "Navigate to the amenities selection page.",
+          "Click the solar power amenities button."
+        ]
+      },
+      {
+        "id": "TC023",
+        "name": "Select Stargazing Deck Amenities Button",
+        "objective": "To verify that the stargazing deck button adds a stargazing deck to the amenities list.",
+        "coverage_element": "Stargazing Deck : Button selecting stargazing deck as an amenity",
+        "preconditions": "User is on the amenities selection page.",
+        "expected_results": "The stargazing deck should be added to the amenities list after clicking the button.",
+        "procedure": [
+          "Navigate to the amenities selection page.",
+          "Click the stargazing deck amenities button."
+        ]
+      },
+      {
+        "id": "TC024",
+        "name": "Select Hottub Amenities Button",
+        "objective": "To verify that the hottub button adds a hottub to the amenities list.",
+        "coverage_element": "Hottub : Button selecting hottub as an amenity",
+        "preconditions": "User is on the amenities selection page.",
+        "expected_results": "The hottub should be added to the amenities list after clicking the button.",
+        "procedure": [
+          "Navigate to the amenities selection page.",
+          "Click the hottub amenities button."
+        ]
+      },
+      {
+        "id": "TC025",
+        "name": "Select Dock Amenities Button",
+        "objective": "To verify that the dock button adds a dock to the amenities list.",
+        "coverage_element": "Dock : Button selecting dock as an amenity",
+        "preconditions": "User is on the amenities selection page.",
+        "expected_results": "The dock should be added to the amenities list after clicking the button.",
+        "procedure": [
+          "Navigate to the amenities selection page.",
+          "Click the dock amenities button."
+        ]
+      }
+    ],
+    "data_display_testing": [
+      {
+        "id": "TC001",
+        "name": "Stays Display Test",
+        "objective": "To verify that the Card 0 card correctly displays the detailed information for each stay.",
+        "coverage_element": "Card 0",
+        "preconditions": "Stays are displayed.",
+        "expected_results": "The detailed information for the stay should be correctly displayed. 7. Next Steps : Since no stays are displayed, the next step is to try adjusting the filters to see if any stays become available. This can be done by clicking the Filters button and selecting different filter options.",
+        "procedure": [
+          "Hover over the Card 0 card.",
+          "Verify that the detailed information for the stay is displayed."
+        ]
+      }
+    ],
+    "design_validation_testing": [
+      {
+        "id": "TC001",
+        "name": "Design Validation of Filters National Parks Card",
+        "objective": "To verify that the design of the national parks filter card adheres to the expected design standards.",
+        "coverage_element": "Filters National Parks 1 guest : Card displaying filters and guest information",
+        "preconditions": "User is on the page where filters and guest information is displayed.",
+        "expected_results": "The card should display with the correct color scheme, font sizes, and layout according to the design standards.",
+        "procedure": [
+          "Navigate to the page where the filters and guest information card is displayed.",
+          "Visually inspect the card against the design mockups."
+        ]
+      }
+    ]
+  },
+  "element_requirement": [
+    "1. Close Button : Button to close the filters menu",
+    "2. Filters Toggle : Button to toggle the filters menu",
+    "3. Cabin Property Type : Button selecting cabin property type",
+    "4. Guests1 guest : Button for selecting number of guests",
+    "5. Apartment Property Type : Button selecting apartment property type",
+    "6. Barn Property Type : Button selecting barn property type",
+    "7. Beach Destinations : Button for selecting beach destinations",
+    "8. National Parks Filter : Button representing the selected filter for national parks",
+    "9. Guests Filter : Button representing the selected filter for guests",
+    "10. Card 0 : Card displaying information",
+    "11. Filters Card : Card displaying the applied filters",
+    "12. Search destinations... : Textbox for entering destination",
+    "13. Online Experiences : Button for selecting online experiences",
+    "14. Kitchen : Button selecting kitchen as an amenity",
+    "15. Washer : Button selecting washer as an amenity",
+    "16. Parking : Button selecting parking as an amenity",
+    "17. Cultural Experiences : Button for selecting cultural experiences",
+    "18. Filters National Parks 1 guest : Card displaying filters and guest information",
+    "19. Treehouse Property Type : Button selecting treehouse property type",
+    "20. Hot Tub : Button selecting hot tub as an amenity",
+    "21. Gym : Button selecting gym as an amenity",
+    "22. Elevator : Button selecting elevator as an amenity",
+    "23. Fireplace : Button selecting fireplace as an amenity",
+    "24. Kitchenette : Button selecting kitchenette as an amenity",
+    "25. Solar Power : Button selecting solar power as an amenity",
+    "26. Stargazing Deck : Button selecting stargazing deck as an amenity",
+    "27. Hottub : Button selecting hottub as an amenity",
+    "28. Dock : Button selecting dock as an amenity"
+  ]
+}

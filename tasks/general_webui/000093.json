@@ -1,0 +1,314 @@
+{
+  "website_summary": {
+    "name": "Imagination Hub",
+    "description": "The website has a sleek, modern interface with a dark azure mist theme, rendering user-generated content in a grid layout designed for shared creativity and engagement.",
+    "category": "User Interaction",
+    "appearance": "The website features a clean and organized layout with a dark slate blue color palette and an azure mist background, giving it a sophisticated yet inviting atmosphere. At the top of the page, there’s a header with the title \"World of Imagination\" displayed prominently in large font, along with two actionable buttons for \"Light Mode\" and \"Menu.\" Below this, there is a search bar enabling users to find specific content. The main content area consists of a responsive grid with cards, each displaying a user's post that includes a placeholder image, post content, and interaction buttons such as like, dislike, and comments. The footer is minimal but includes the website's name along with the copyright notice.",
+    "functionality": "The website allows users to browse and engage with creative works. Users can search for specific posts via a search bar. Each post includes options for liking, disliking, and commenting, represented by buttons detailing the number of interactions. The sleek interface also contains a button for switching to a light mode for users preferring a less intense color scheme. The menu likely provides additional navigation and functionalities, though it's not expanded in the current screenshot."
+  },
+  "test_cases": {
+    "functionality_testing": [
+      {
+        "id": "TC001",
+        "name": "Dislike Button Tooltip Test for Eighth Post",
+        "objective": "To verify that hovering over the dislike button (Dislike Button) of the eighth post provides accurate tooltip information.",
+        "coverage_element": "Dislike Button",
+        "preconditions": "The page is loaded and the eighth post is visible.",
+        "expected_results": "A tooltip should appear with accurate information related to dislikes.",
+        "procedure": [
+          "Hover over the dislike button (Dislike Button) of the eighth post.",
+          "Verify that a tooltip appears with accurate information."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Dislike Button Tooltip Test for Eleventh Post",
+        "objective": "To verify that hovering over the dislike button (Dislike Button) of the eleventh post provides accurate tooltip information.",
+        "coverage_element": "Dislike Button",
+        "preconditions": "The page is loaded and the eleventh post is visible.",
+        "expected_results": "A tooltip should appear with accurate information related to dislikes.",
+        "procedure": [
+          "Hover over the dislike button (Dislike Button) of the eleventh post.",
+          "Verify that a tooltip appears with accurate information."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Dislike Button Tooltip Test for Fifth Post",
+        "objective": "To verify that hovering over the dislike button (Dislike Button) of the fifth post provides accurate tooltip information.",
+        "coverage_element": "Dislike Button",
+        "preconditions": "The page is loaded and the fifth post is visible.",
+        "expected_results": "A tooltip should appear with accurate information related to dislikes.",
+        "procedure": [
+          "Hover over the dislike button (Dislike Button) of the fifth post.",
+          "Verify that a tooltip appears with accurate information."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Dislike Button Tooltip Test for Fourteenth Post",
+        "objective": "To verify that hovering over the dislike button (Dislike Button) of the fourteenth post provides accurate tooltip information.",
+        "coverage_element": "Dislike Button",
+        "preconditions": "The page is loaded and the fourteenth post is visible.",
+        "expected_results": "A tooltip should appear with accurate information related to dislikes.",
+        "procedure": [
+          "Hover over the dislike button (Dislike Button) of the fourteenth post.",
+          "Verify that a tooltip appears with accurate information."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Dislike Button Tooltip Test for Fourth Post",
+        "objective": "To verify that hovering over the dislike button (Dislike Button) of the fourth post provides accurate tooltip information.",
+        "coverage_element": "Dislike Button",
+        "preconditions": "The page is loaded and the fourth post is visible.",
+        "expected_results": "A tooltip should appear with accurate information related to dislikes.",
+        "procedure": [
+          "Hover over the dislike button (Dislike Button) of the fourth post.",
+          "Verify that a tooltip appears with accurate information."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Dislike Button Tooltip Test for Ninth Post",
+        "objective": "To verify that hovering over the dislike button (Dislike Button) of the ninth post provides accurate tooltip information.",
+        "coverage_element": "Dislike Button",
+        "preconditions": "The page is loaded and the ninth post is visible.",
+        "expected_results": "A tooltip should appear with accurate information related to dislikes.",
+        "procedure": [
+          "Hover over the dislike button (Dislike Button) of the ninth post.",
+          "Verify that a tooltip appears with accurate information."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "Dislike Button Tooltip Test for Second Post",
+        "objective": "To verify that hovering over the dislike button (Dislike Button) of the second post provides accurate tooltip information.",
+        "coverage_element": "Dislike Button",
+        "preconditions": "The page is loaded and the second post is visible.",
+        "expected_results": "A tooltip should appear with accurate information related to dislikes.",
+        "procedure": [
+          "Hover over the dislike button (Dislike Button) of the second post.",
+          "Verify that a tooltip appears with accurate information."
+        ]
+      },
+      {
+        "id": "TC008",
+        "name": "Dislike Button Tooltip Test for Sixth Post",
+        "objective": "To verify that hovering over the dislike button (Dislike Button) of the sixth post provides accurate tooltip information.",
+        "coverage_element": "Dislike Button",
+        "preconditions": "The page is loaded and the sixth post is visible.",
+        "expected_results": "A tooltip should appear with accurate information related to dislikes.",
+        "procedure": [
+          "Hover over the dislike button (Dislike Button) of the sixth post.",
+          "Verify that a tooltip appears with accurate information."
+        ]
+      },
+      {
+        "id": "TC009",
+        "name": "Dislike Button Tooltip Test for Tenth Post",
+        "objective": "To verify that hovering over the dislike button (Dislike Button) of the tenth post provides accurate tooltip information.",
+        "coverage_element": "Dislike Button",
+        "preconditions": "The page is loaded and the tenth post is visible.",
+        "expected_results": "A tooltip should appear with accurate information related to dislikes.",
+        "procedure": [
+          "Hover over the dislike button (Dislike Button) of the tenth post.",
+          "Verify that a tooltip appears with accurate information."
+        ]
+      },
+      {
+        "id": "TC010",
+        "name": "Dislike Button Tooltip Test for Thirteenth Post",
+        "objective": "To verify that hovering over the dislike button (Dislike Button) of the thirteenth post provides accurate tooltip information.",
+        "coverage_element": "Dislike Button",
+        "preconditions": "The page is loaded and the thirteenth post is visible.",
+        "expected_results": "A tooltip should appear with accurate information related to dislikes.",
+        "procedure": [
+          "Hover over the dislike button (Dislike Button) of the thirteenth post.",
+          "Verify that a tooltip appears with accurate information."
+        ]
+      },
+      {
+        "id": "TC011",
+        "name": "Dislike Button Tooltip Test",
+        "objective": "To verify that hovering over the dislike button (Dislike Button) provides accurate tooltip information.",
+        "coverage_element": "Dislike Button",
+        "preconditions": "The page is loaded and the first post is visible.",
+        "expected_results": "A tooltip should appear with accurate information related to dislikes.",
+        "procedure": [
+          "Hover over the dislike button (Dislike Button) of the first post.",
+          "Verify that a tooltip appears with accurate information."
+        ]
+      },
+      {
+        "id": "TC012",
+        "name": "Like Button Test",
+        "objective": "To verify that clicking the Like Button in Like Button updates the like count.",
+        "coverage_element": "Like Button",
+        "preconditions": "The post in Like Button is visible.",
+        "expected_results": "The like count in Like Button should increase by 1.",
+        "procedure": [
+          "Click on the Like Button in Like Button.",
+          "Verify that the like count increases."
+        ]
+      },
+      {
+        "id": "TC013",
+        "name": "Like Button Tooltip Test",
+        "objective": "To verify that hovering over the like button (Like Button) provides accurate tooltip information.",
+        "coverage_element": "Like Button",
+        "preconditions": "The page is loaded and the first post is visible.",
+        "expected_results": "A tooltip should appear with accurate information related to likes.",
+        "procedure": [
+          "Hover over the like button (Like Button) of the first post.",
+          "Verify that a tooltip appears with accurate information."
+        ]
+      },
+      {
+        "id": "TC014",
+        "name": "Search Input Functional Test",
+        "objective": "To verify that the search input allows users to enter search queries and that the search function is triggered.",
+        "coverage_element": "Search Input : A text box for entering search queries",
+        "preconditions": "The web application is open and the user is on the main page where the search input is visible.",
+        "expected_results": "The user should be able to type a search query into the search input and the interface should be ready to initiate a search.",
+        "procedure": [
+          "Step 1 : Enter a search term into the search input box.",
+          "Step 2 : Press the Enter key to initiate the search function."
+        ]
+      },
+      {
+        "id": "TC015",
+        "name": "Search Button Functionality Test",
+        "objective": "To verify that the search button correctly initiates the search function.",
+        "coverage_element": "Search Button : Button next to the search textbox providing a search function",
+        "preconditions": "A search query is already typed in the search input and the web application is in a ready state.",
+        "expected_results": "Clicking the search button should initiate the search function with the entered query.",
+        "procedure": [
+          "Step 1 : Type a query into the search input box.",
+          "Step 2 : Click the search button and verify that the search results are displayed."
+        ]
+      },
+      {
+        "id": "TC016",
+        "name": "Menu Button Functionality Test",
+        "objective": "To verify that the menu button opens the menu options.",
+        "coverage_element": "Menu : Button to open menu options",
+        "preconditions": "The web application is open, and the menu button is visible.",
+        "expected_results": "Clicking the menu button should reveal the menu options to the user.",
+        "procedure": [
+          "Step 1 : Click the menu button located in the header.",
+          "Step 2 : Verify that the menu options are displayed."
+        ]
+      },
+      {
+        "id": "TC017",
+        "name": "Content Card Buttons Functionality Test",
+        "objective": "To verify that the interaction buttons within content cards function as expected.",
+        "coverage_element": "Content Card Buttons : Various buttons within content cards including interaction options",
+        "preconditions": "A user is viewing a content card with various interaction buttons available.",
+        "expected_results": "Each button should perform its intended function when clicked (e.g., like, dislike, comment).",
+        "procedure": [
+          "Step 1 : Locate a content card with interaction buttons.",
+          "Step 2 : Click each button (like, dislike, comment) and verify the intended action occurs."
+        ]
+      },
+      {
+        "id": "TC018",
+        "name": "User Post Card Interaction Test",
+        "objective": "To verify that user post cards have functional like, dislike, and comment options.",
+        "coverage_element": "Card : User post card with like, dislike, and comment options",
+        "preconditions": "The user is on the main page and post cards with interaction options are displayed.",
+        "expected_results": "Users should be able to like, dislike, or comment on posts without any issues.",
+        "procedure": [
+          "Step 1 : Select a user post card and click on the like, dislike, and comment buttons.",
+          "Step 2 : Confirm that each action is reflected in the post's statistics and the comment section is opened for comments."
+        ]
+      }
+    ],
+    "data_display_testing": [
+      {
+        "id": "TC001",
+        "name": "Comment Count Display Test for Eighth Post",
+        "objective": "To verify that the comment count (Comment Count Button) matches the actual comments shown for the eighth post.",
+        "coverage_element": "Comment Count Button",
+        "preconditions": "The page is loaded and the eighth post is visible.",
+        "expected_results": "The displayed comments should match the count shown on the button.",
+        "procedure": [
+          "Click on the comment count button (Comment Count Button).",
+          "Verify that the displayed comments match the count."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Comment Count Display Test for Eleventh Post",
+        "objective": "To verify that the comment count (Comment Count Button) matches the actual comments shown for the eleventh post.",
+        "coverage_element": "Comment Count Button",
+        "preconditions": "The page is loaded and the eleventh post is visible.",
+        "expected_results": "The displayed comments should match the count shown on the button.",
+        "procedure": [
+          "Click on the comment count button (Comment Count Button).",
+          "Verify that the displayed comments match the count."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Comment Count Display Test for Fifth Post",
+        "objective": "To verify that the comment count (Comment Count Button) matches the actual comments shown for the fifth post.",
+        "coverage_element": "Comment Count Button",
+        "preconditions": "The page is loaded and the fifth post is visible.",
+        "expected_results": "The displayed comments should match the count shown on the button.",
+        "procedure": [
+          "Click on the comment count button (Comment Count Button).",
+          "Verify that the displayed comments match the count."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Comment Count Display Test for Fourteenth Post",
+        "objective": "To verify that the comment count (Comment Count Button) matches the actual comments shown for the fourteenth post.",
+        "coverage_element": "Comment Count Button",
+        "preconditions": "The page is loaded and the fourteenth post is visible.",
+        "expected_results": "The displayed comments should match the count shown on the button.",
+        "procedure": [
+          "Click on the comment count button (Comment Count Button).",
+          "Verify that the displayed comments match the count."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Post Cards Data Display Test",
+        "objective": "To verify that post cards correctly display user posts with placeholder text.",
+        "coverage_element": "Post Cards : Cards displaying user posts with placeholder text",
+        "preconditions": "The main content area is visible and ready for display.",
+        "expected_results": "Each post card should display the placeholder text and be formatted consistently.",
+        "procedure": [
+          "Step 1 : Scroll through the main content area.",
+          "Step 2 : Verify that all post cards show the correct placeholder text and formatting."
+        ]
+      }
+    ],
+    "design_validation_testing": [
+      {
+        "id": "TC001",
+        "name": "UI Design and Style Test: Color Palette",
+        "objective": "To verify that the website’s color scheme is consistently in line with the azure mist background and dark slate blue components requirements.",
+        "coverage_element": "Color Scheme",
+        "preconditions": "",
+        "expected_results": "All elements should maintain a clean interface and consistent style in accordance with azure mist background and dark slate blue components.",
+        "procedure": [
+          "Hover over Color Scheme to Color Scheme items to evaluate the design for color consistency.",
+          "Ensure that no color deviation occurs from the specified design guidelines."
+        ]
+      }
+    ]
+  },
+  "element_requirement": [
+    "1. Search Input : A text box for entering search queries",
+    "2. Search Button : Button next to the search textbox providing a search function",
+    "3. Post Cards : Cards displaying user posts with placeholder text",
+    "4. Menu : Button to open menu options",
+    "5. Content Card Buttons : Various buttons within content cards including interaction options",
+    "6. Like Button : Button to like post in [C2]",
+    "7. Card : User post card with like, dislike, and comment options"
+  ]
+}

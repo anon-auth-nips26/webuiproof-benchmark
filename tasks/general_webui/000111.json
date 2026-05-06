@@ -1,0 +1,175 @@
+{
+  "website_summary": {
+    "name": "Galactic Explorer",
+    "description": "The website presents an interactive cosmic map featuring various galaxies with vibrant colors and dynamic connections, inviting users to explore celestial wonders.",
+    "category": "User Interaction",
+    "appearance": "The website features a visually engaging design centered around a cosmic theme. It displays a dark background resembling outer space, dotted with numerous small, glowing stars in white and yellow hues. At the center, there's a prominent title \"GALACTIC EXPLORATION\" in bold, uppercase letters with a purple hue and a subtle glow effect. Below the title, a brief introduction invites users to embark on a journey through the cosmos, exploring various galaxies. The galaxies are represented by colorful circles connected by dashed lines, forming a network-like structure. Each galaxy is labeled with its name, such as Andromeda Galaxy, Triangulum Galaxy, and Centaurus A. The bottom of the page includes a call-to-action button encouraging users to click on a galaxy for more details.",
+    "functionality": "The website offers several interactive features. Users can click on individual galaxies to learn more about their characteristics, types, and positions in the universe. The site also provides a visual representation of the relative distances between galaxies using connecting lines. Additionally, the website uses animations to enhance the user experience, such as glowing effects on the stars and smooth transitions when selecting a galaxy. There is no visible search bar or data entry fields, focusing instead on direct interaction with the visual elements."
+  },
+  "test_cases": {
+    "functionality_testing": [
+      {
+        "id": "TC001",
+        "name": "Andromeda Galaxy Circle Test",
+        "objective": "To verify that clicking the Andromeda Galaxy Circle opens the detailed information about the Andromeda Galaxy.",
+        "coverage_element": "Andromeda Galaxy Circle",
+        "preconditions": "The current overlay displaying Milky Way information is open.",
+        "expected_results": "A new section or overlay should appear displaying detailed information about the Andromeda Galaxy. 7. Next Steps : Click on the Andromeda Galaxy circle to proceed with the task.",
+        "procedure": [
+          "Click on the Andromeda Galaxy Circle.",
+          "Verify that a new section or overlay appears displaying detailed information about the Andromeda Galaxy."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Hover Over Connection Line Test",
+        "objective": "To verify that hovering over the dashed line connecting the Milky Way and Triangulum Galaxy highlights it.",
+        "coverage_element": "Milky Way Card, Triangulum Galaxy Card",
+        "preconditions": "The dashed line connecting the Milky Way and Triangulum Galaxy is visible.",
+        "expected_results": "The dashed line should become more prominent, possibly changing color or thickness. 7. Next Steps : Hover over the dashed line connecting the Milky Way and Triangulum Galaxy to observe any changes in its appearance.",
+        "procedure": [
+          "Hover over the dashed line connecting the Milky Way and Triangulum Galaxy.",
+          "Observe any changes in the appearance of the dashed line."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Whirlpool Galaxy Selection Test",
+        "objective": "To verify that clicking the Whirlpool Galaxy correctly displays the detailed information for the Whirlpool Galaxy.",
+        "coverage_element": "Whirlpool Galaxy",
+        "preconditions": "The galactic exploration screen is open.",
+        "expected_results": "The Whirlpool Galaxy detailed information card should be displayed, allowing for further verification of the data points. 7. Next Steps : The next step is to click on the Whirlpool Galaxy label to display its detailed information card.",
+        "procedure": [
+          "Click on the Whirlpool Galaxy.",
+          "Verify that the information card for the Whirlpool Galaxy is displayed."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Verify Sombrero Galaxy Card Functionality",
+        "objective": "To verify that clicking on the Sombrero Galaxy Card leads to the correct detailed information page.",
+        "coverage_element": "Sombrero Galaxy Card : Card associated with the Sombrero Galaxy for displaying detailed information",
+        "preconditions": "The user is on the Galactic Exploration page.",
+        "expected_results": "Clicking on the Sombrero Galaxy Card should navigate the user to the detailed information page for the Sombrero Galaxy.",
+        "procedure": [
+          "Navigate to the Galactic Exploration page.",
+          "Locate and click on the Sombrero Galaxy Card."
+        ]
+      }
+    ],
+    "data_display_testing": [
+      {
+        "id": "TC001",
+        "name": "Distance Data Point Hover Test",
+        "objective": "To verify that hovering over the Distance Data Point within the Whirlpool Galaxy information card displays accurate information.",
+        "coverage_element": "Distance Data Point",
+        "preconditions": "The Whirlpool Galaxy information card is open.",
+        "expected_results": "Hovering over the distance data point should display or highlight the accurate distance value. 7. Next Steps : The next step is to hover over the distance data point to verify its accuracy.",
+        "procedure": [
+          "Hover over the Distance Data Point.",
+          "Verify that the tooltip or additional information confirms the distance as 23 million light-years."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Verify Large Magellanic Cloud Card Display",
+        "objective": "To verify that the Large Magellanic Cloud Card displays detailed information correctly.",
+        "coverage_element": "Large Magellanic Cloud Card : Card associated with the Large Magellanic Cloud for displaying detailed information",
+        "preconditions": "The user is on the Galactic Exploration page.",
+        "expected_results": "The Large Magellanic Cloud Card should be visible and display all relevant detailed information about the galaxy.",
+        "procedure": [
+          "Navigate to the Galactic Exploration page.",
+          "Locate and click on the Large Magellanic Cloud label or icon."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Check Milky Way Label Presence",
+        "objective": "To verify that the Milky Way label is present and correctly identified.",
+        "coverage_element": "Milky Way : Label for Milky Way Galaxy",
+        "preconditions": "The user is on the Galactic Exploration page.",
+        "expected_results": "The Milky Way label should be present and correctly named.",
+        "procedure": [
+          "Navigate to the Galactic Exploration page.",
+          "Search for the Milky Way label."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Test Whirlpool Galaxy Card Information",
+        "objective": "To verify that the Whirlpool Galaxy Card contains accurate and complete information.",
+        "coverage_element": "Whirlpool Galaxy Card : Card associated with the Whirlpool Galaxy for displaying detailed information",
+        "preconditions": "The user is on the Galactic Exploration page.",
+        "expected_results": "The Whirlpool Galaxy Card should display all accurate and complete information about the Whirlpool Galaxy.",
+        "procedure": [
+          "Navigate to the Galactic Exploration page.",
+          "Locate and click on the Whirlpool Galaxy Card to view its details."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Confirm Pinwheel Galaxy Label Accuracy",
+        "objective": "To verify that the Pinwheel Galaxy label accurately represents the galaxy.",
+        "coverage_element": "Pinwheel Galaxy : Label indicating the Pinwheel Galaxy",
+        "preconditions": "The user is on the Galactic Exploration page.",
+        "expected_results": "The Pinwheel Galaxy label should accurately represent the galaxy and be correctly named.",
+        "procedure": [
+          "Navigate to the Galactic Exploration page.",
+          "Locate and confirm the accuracy of the Pinwheel Galaxy label."
+        ]
+      }
+    ],
+    "design_validation_testing": [
+      {
+        "id": "TC001",
+        "name": "UI Design and Style Test: Color Palette",
+        "objective": "To verify that the UI elements maintain consistent colors and proper alignment throughout the website.",
+        "coverage_element": "Color Scheme",
+        "preconditions": "",
+        "expected_results": "All UI elements should maintain consistent colors and proper alignment, contributing to a cohesive and visually appealing design.",
+        "procedure": [
+          "Observe the specified UI elements and their design properties.",
+          "Evaluate specific design aspects such as color contrast, style consistency, etc.",
+          "Compare against design best practices or requirements."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Validate Sombrero Galaxy Label Design",
+        "objective": "To verify that the Sombrero Galaxy label is displayed correctly according to the design specifications.",
+        "coverage_element": "Sombrero Galaxy : Label indicating the Sombrero Galaxy",
+        "preconditions": "The user is on the Galactic Exploration page.",
+        "expected_results": "The Sombrero Galaxy label should be clearly visible, correctly named, and styled according to the design guidelines.",
+        "procedure": [
+          "Navigate to the Galactic Exploration page.",
+          "Locate and visually inspect the Sombrero Galaxy label."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Verify Whirlpool Galaxy Label Visibility",
+        "objective": "To verify that the Whirlpool Galaxy label is visible and correctly named.",
+        "coverage_element": "Whirlpool Galaxy : Label indicating the Whirlpool Galaxy",
+        "preconditions": "The user is on the Galactic Exploration page.",
+        "expected_results": "The Whirlpool Galaxy label should be visible and correctly named.",
+        "procedure": [
+          "Navigate to the Galactic Exploration page.",
+          "Locate and verify the visibility and naming of the Whirlpool Galaxy label."
+        ]
+      }
+    ]
+  },
+  "element_requirement": [
+    "1. Whirlpool Galaxy Information Card : Card displaying Whirlpool Galaxy details such as type, stars, distance, diameter, and coordinates",
+    "2. Distance Data Point : Specific data point for distance within the Milky Way information card",
+    "3. Large Magellanic Cloud Card : Card associated with the Large Magellanic Cloud for displaying detailed information",
+    "4. Sombrero Galaxy Card : Card associated with the Sombrero Galaxy for displaying detailed information",
+    "5. Sombrero Galaxy : Label indicating the Sombrero Galaxy",
+    "6. Andromeda Galaxy : Label for Andromeda Galaxy",
+    "7. Milky Way : Label for Milky Way Galaxy",
+    "8. Triangulum Galaxy : Label for Triangulum Galaxy",
+    "9. Whirlpool Galaxy Card : Card associated with the Whirlpool Galaxy for displaying detailed information",
+    "10. Whirlpool Galaxy : Label indicating the Whirlpool Galaxy",
+    "11. Pinwheel Galaxy : Label indicating the Pinwheel Galaxy"
+  ]
+}

@@ -1,0 +1,236 @@
+{
+  "website_summary": {
+    "name": "Reddit Clone Forum",
+    "description": "The website looks like a cautious replication of Reddit, featuring a clean, user-friendly interface with trending posts, community listings, and user interaction elements.",
+    "category": "User Interaction",
+    "appearance": "The website has a header with navigation options like Home, Explore, and Trending. The main content section displays trending posts with upvote count, post details, comments, and share options. The left sidebar shows the user's subreddits with member counts and brief descriptions, while the right sidebar presents trending communities. The footer contains links to About, Help, and Follow Us sections. Visually, it employs a clean design with a white background, rounded buttons, and colored icons.",
+    "functionality": "The website allows users to browse trending posts within different communities, upvote or downvote content, and explore various subreddits. It also offers options to purchase Reddit Premium and gold coins. Users can view trending communities and navigate through different sections using the top navigation bar."
+  },
+  "test_cases": {
+    "functionality_testing": [
+      {
+        "id": "TC001",
+        "name": "Comments Count Link Test",
+        "objective": "To verify that hovering over the Comments Count Link confirms the accuracy of the displayed comment count.",
+        "coverage_element": "Comments Count Link",
+        "preconditions": "The post is visible on the homepage.",
+        "expected_results": "The comment count should be accurately confirmed upon hovering. 7. Next Steps : Hover over the comments count link for the post to verify the displayed count.",
+        "procedure": [
+          "Hover over the Comments Count Link.",
+          "Verify that the tooltip or additional information confirms the displayed comment count."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Comments Count Verification for Another Post",
+        "objective": "To verify that the comments count is accurately displayed for another post.",
+        "coverage_element": "Comments Count Link",
+        "preconditions": "A different post is visible on the homepage.",
+        "expected_results": "The displayed comment count matches the actual number of comments for the selected post. 7. Next Steps : Hover over the comments count link for a different post to verify the displayed count.",
+        "procedure": [
+          "Hover over the Comments Count Link for a different post.",
+          "Check that the displayed comment count matches the actual number of comments."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Downvote Button Test",
+        "objective": "To verify that clicking the Downvote Button decreases the vote count.",
+        "coverage_element": "Downvote Button",
+        "preconditions": "The first post is displayed.",
+        "expected_results": "The Vote Count should decrease by one after clicking the downvote button.",
+        "procedure": [
+          "Click on the Downvote Button.",
+          "Observe the Vote Count and verify it decrements."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Upvote Button Test",
+        "objective": "To verify that clicking the Upvote Button increases the vote count.",
+        "coverage_element": "Upvote Button",
+        "preconditions": "The first post is displayed.",
+        "expected_results": "The Vote Count should increase by one after clicking the upvote button.",
+        "procedure": [
+          "Click on the Upvote Button.",
+          "Observe the Vote Count and verify it increments."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "r/AskReddit Link Test",
+        "objective": "To verify that clicking the \"r/AskReddit\" Subreddit link with class \"font-semibold text-gray-800\" redirects to the \"r/AskReddit\" subreddit page.",
+        "coverage_element": "\"r/AskReddit\" Subreddit link with class \"font-semibold text-gray-800\"",
+        "preconditions": "The user is currently on the homepage with the \"r/AskReddit\" link visible in the left sidebar.",
+        "expected_results": "The webpage should navigate to the \"r/AskReddit\" subreddit page with respective posts and interactions displayed.",
+        "procedure": [
+          "Click on the \"r/AskReddit\" Subreddit link with class \"font-semibold text-gray-800\" in the left sidebar."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Test Dark Mode Toggle Functionality",
+        "objective": "To verify that the button to switch between light and dark themes works as expected.",
+        "coverage_element": "Dark Mode Toggle : Button to switch between light and dark themes",
+        "preconditions": "The web application is open in light mode.",
+        "expected_results": "The theme of the application switches to dark mode when the button is clicked, and back to light mode when clicked again.",
+        "procedure": [
+          "Locate the dark mode toggle button in the header.",
+          "Click the button and verify that the theme changes to dark mode, then click again to switch back to light mode."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "Validate Home Hyperlink",
+        "objective": "To verify that the hyperlink to the homepage functions correctly.",
+        "coverage_element": "Home : Hyperlink to homepage",
+        "preconditions": "The web application is open and the header is visible.",
+        "expected_results": "Clicking the 'Home' hyperlink navigates the user to the homepage without errors.",
+        "procedure": [
+          "Locate the 'Home' hyperlink in the header menu.",
+          "Click the 'Home' hyperlink and ensure that it navigates to the homepage."
+        ]
+      },
+      {
+        "id": "TC008",
+        "name": "Explore Page Hyperlink Verification",
+        "objective": "To verify that the hyperlink to the explore page functions correctly.",
+        "coverage_element": "Explore : Hyperlink to explore page",
+        "preconditions": "The web application is open and the header is visible.",
+        "expected_results": "Clicking the 'Explore' hyperlink navigates the user to the explore page without errors.",
+        "procedure": [
+          "Locate the 'Explore' hyperlink in the header menu.",
+          "Click the 'Explore' hyperlink and ensure that it navigates to the explore page."
+        ]
+      }
+    ],
+    "data_display_testing": [
+      {
+        "id": "TC001",
+        "name": "Post Card Display Test",
+        "objective": "To verify that the Post Card accurately displays the post content.",
+        "coverage_element": "Post Card",
+        "preconditions": "The post card is present and visible.",
+        "expected_results": "All text elements within the post card should be accurately displayed. 7. Next Steps : The next step is to click the upvote button to test if the vote count updates correctly as expected.",
+        "procedure": [
+          "Hover over the Post Card.",
+          "Verify the post title, subreddit, author, and comments are correctly displayed."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Trending Communities List Test",
+        "objective": "To verify that the list of trending communities displayed on the right side of the page is up to date and relevant.",
+        "coverage_element": "Trending Communities list",
+        "preconditions": "The user is currently on the \"r/AskReddit\" subreddit page.",
+        "expected_results": "The trending communities list should display currently trending and relevant communities.",
+        "procedure": [
+          "Scroll down the page if necessary to view the trending communities list.",
+          "Verify that the communities listed are currently trending and relevant."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Verify Vote Count Display",
+        "objective": "To verify that the number of votes next to the first post is correctly displayed.",
+        "coverage_element": "Vote Count : Number of votes next to the first post",
+        "preconditions": "The web application is open and the first post is displayed.",
+        "expected_results": "The vote count next to the first post is accurately displayed.",
+        "procedure": [
+          "Navigate to the main content section and locate the first post.",
+          "Verify that the number of votes is displayed correctly and is not negative."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Check 'r/AskReddit' Subreddit Link Display",
+        "objective": "To verify that the 'r/AskReddit' subreddit link is displayed correctly along with its members count and description.",
+        "coverage_element": "\"r/AskReddit\" Subreddit link displayed with subreddit name \"r/AskReddit\", members count, and description",
+        "preconditions": "The web application is open and the user is not logged out.",
+        "expected_results": "The 'r/AskReddit' subreddit link, members count, and brief description are accurately displayed.",
+        "procedure": [
+          "Find the 'r/AskReddit' subreddit link in the left sidebar.",
+          "Verify that the subreddit name, members count, and description are displayed correctly."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Validate User Profile Card Information",
+        "objective": "To verify that the user profile card displays accurate user profile information and subreddits.",
+        "coverage_element": "User Profile Card : Shows user profile information and subreddits",
+        "preconditions": "The web application is open and the user is logged in.",
+        "expected_results": "The user profile card shows the correct user profile information and list of subreddits.",
+        "procedure": [
+          "Navigate to the user profile card, typically found in the upper right corner or a dedicated profile page.",
+          "Check that the displayed profile information and list of subreddits are accurate."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Test Trending Communities Card",
+        "objective": "To verify that the trending communities card lists trending communities correctly.",
+        "coverage_element": "Trending Communities Card : Lists trending communities",
+        "preconditions": "The web application is open and the user is not logged out.",
+        "expected_results": "The trending communities card displays a list of currently trending communities.",
+        "procedure": [
+          "Locate the trending communities card in the right sidebar.",
+          "Verify that the list of trending communities is displayed and contains valid subreddit links."
+        ]
+      }
+    ],
+    "design_validation_testing": [
+      {
+        "id": "TC001",
+        "name": "UI Design and Style Test: Header Alignment and Color Consistency",
+        "objective": "To verify that the header navigation links are properly aligned and maintain color consistency.",
+        "coverage_element": "Home, Explore, Trending",
+        "preconditions": "Homepage is loaded, and the header navigation links are visible.",
+        "expected_results": "All header navigation links should be properly aligned and maintain a consistent color scheme.",
+        "procedure": [
+          "Observe the alignment and color of the header navigation links.",
+          "Compare the alignment and color with design requirements."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "UI Design and Style Test: Other UI Elements Alignment and Color Consistency",
+        "objective": "To verify that other UI elements are properly aligned and maintain color consistency.",
+        "coverage_element": "[0-7, 12-18]",
+        "preconditions": "Homepage is loaded, and the UI elements are visible.",
+        "expected_results": "All UI elements should be properly aligned and maintain a consistent color scheme.",
+        "procedure": [
+          "Observe the alignment and color of the UI elements.",
+          "Compare the alignment and color with design requirements."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "UI Design and Style Test: Subreddit Box Alignment and Color Consistency",
+        "objective": "To verify that the subreddit boxes are properly aligned and maintain color consistency.",
+        "coverage_element": "Subreddit Information Card",
+        "preconditions": "Homepage is loaded, and the subreddit information cards are visible.",
+        "expected_results": "All subreddit information cards should be properly aligned and maintain a consistent color scheme.",
+        "procedure": [
+          "Observe the alignment and color of the subreddit information cards.",
+          "Compare the alignment and color with design requirements."
+        ]
+      }
+    ]
+  },
+  "element_requirement": [
+    "1. Upvote Button : Upvote icon near the first post",
+    "2. Downvote Button : Downvote icon near the first post",
+    "3. Vote Count : Number of votes next to the first post",
+    "4. Subreddit : Subreddit link under the first post",
+    "5. Comments Count Link : Displays the number of comments for a post",
+    "6. Post Card : Contains post details including title, author, subreddit, and comment count",
+    "7. Dark Mode Toggle : Button to switch between light and dark themes",
+    "8. \"r/AskReddit\" Subreddit link displayed with subreddit name \"r/AskReddit\", members count, and description",
+    "9. Trending tab options card contains Home, Explore, and Trending options",
+    "10. User Profile Card : Shows user profile information and subreddits",
+    "11. Trending Communities Card : Lists trending communities",
+    "12. Home : Hyperlink to homepage",
+    "13. Explore : Hyperlink to explore page",
+    "14. Trending : Hyperlink to trending page"
+  ]
+}

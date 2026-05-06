@@ -1,0 +1,261 @@
+{
+  "website_summary": {
+    "name": "BandHub Entertainment Directory",
+    "description": "The website has a sleek design with a floral white background and dark goldenrod components, facilitating an organized layout for band and advertiser interactions.",
+    "category": "User Interaction",
+    "appearance": "The website features a professional design with a floral white (`#FFFAF0`) background and dark goldenrod (`#8B4513`) text and elements, ensuring a visually pleasing user experience. It is divided into three main sections: a left-side menu for navigation with options like \"Sign Up,\" \"Bands,\" and \"Advertisers,\" a central login section where users can choose their role as either a \"Band\" or an \"Advertiser\" and then log in with their credentials, and a right-side placeholder for advertisements. Elements are well-aligned, and the login form contains labeled fields for role selection, username, and password input, along with a submit button for logging in.",
+    "functionality": "The website includes a menu for user navigation, enabling users to either sign up for a new account or login if they already have one. It provides specific user roles for bands and advertisers, each with personalized features such as submitting band information, audio samples, video links, and advertisements. Additionally, users can browse through乐队信息，包括音频样本和视频。"
+  },
+  "test_cases": {
+    "functionality_testing": [
+      {
+        "id": "TC001",
+        "name": "Advertiser Role Selection Test",
+        "objective": "To verify that the Role Dropdown allows selection of the \"Advertiser\" role.",
+        "coverage_element": "Role Dropdown",
+        "preconditions": "Login form is displayed, and the role dropdown is clicked.",
+        "expected_results": "The selected role should be \"Advertiser\". 7. Next Steps : Select the \"Advertiser\" role from the dropdown menu.",
+        "procedure": [
+          "Click on the \"Advertiser\" option in the Role Dropdown.",
+          "Verify that the selected role is \"Advertiser\"."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Bands Button Test",
+        "objective": "To verify that clicking the Bands button navigates to the band information page.",
+        "coverage_element": "Bands",
+        "preconditions": "The Bands button is visible and clickable.",
+        "expected_results": "The page should display detailed band information. 7. Next Steps : Click on the \"Bands\" button to proceed with the task.",
+        "procedure": [
+          "Click on the Bands button.",
+          "Verify that the page navigates to the band information section."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Login Execution Test",
+        "objective": "Verify that clicking Login Button correctly submits the credentials for login as an advertiser.",
+        "coverage_element": "Login Button",
+        "preconditions": "The roles are set appropriately as \"Advertiser\" and the input fields Login Button and Login Button have been filled with the credentials.",
+        "expected_results": "A successful user authentication and page redirection to the advertiser's dashboard or interface. 7. Next Steps : Proceed with clicking the \"Login\" button, completing the login phase of this task and setting the stage for uploading content on behalf of the advertiser account.",
+        "procedure": [
+          "Click on the Login Button to attempt logging in.",
+          "Observe the response received upon clicking the button and assess if the action follows through indicating a login process or failure."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Password Input Test",
+        "objective": "To verify that the Password Input allows the user to enter a password.",
+        "coverage_element": "Password Input",
+        "preconditions": "Login form is displayed, the role is selected as 'Advertiser', and a valid username is entered.",
+        "expected_results": "The entered password should be hidden in the input field, preparing for login. 7. Next Steps : Enter a valid password in the password field.",
+        "procedure": [
+          "Enter a valid password in the Password Input.",
+          "Verify that the entered password is displayed as hidden characters (e.g., dots or asterisks) in the input field."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Sign Up Button Test",
+        "objective": "To verify that clicking the Sign Up button navigates to the registration page.",
+        "coverage_element": "Sign Up",
+        "preconditions": "User is on the login page.",
+        "expected_results": "The user is redirected to the registration form page. 7. Next Steps : Click the \"Sign Up\" button to proceed to the registration form.",
+        "procedure": [
+          "Click on the Sign Up button.",
+          "Verify that the page navigates to the registration form."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Username Input Test",
+        "objective": "To verify that the Username Input allows the user to enter a username.",
+        "coverage_element": "Username Input",
+        "preconditions": "Login form is displayed and the role is selected as 'Advertiser'.",
+        "expected_results": "The entered username should be visible in the input field, preparing for login.",
+        "procedure": [
+          "Enter a valid username in the Username Input.",
+          "Verify that the entered username is displayed in the input field."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "Test Advertisers Navigation",
+        "objective": "To verify that clicking the 'Advertisers' button navigates to the advertisers section.",
+        "coverage_element": "\"Advertisers\" button : A navigation option for accessing information on advertisers",
+        "preconditions": "User is on the homepage and logged out.",
+        "expected_results": "The page should navigate to the advertisers section upon clicking the 'Advertisers' button.",
+        "procedure": [
+          "Click on the 'Advertisers' button in the left-side menu.",
+          "Verify that the page navigates to the advertisers section."
+        ]
+      },
+      {
+        "id": "TC008",
+        "name": "Test Role Selection",
+        "objective": "To verify that the Role Selector dropdown allows users to select different roles.",
+        "coverage_element": "Role Selector : Dropdown menu for selecting role",
+        "preconditions": "User is on the login page.",
+        "expected_results": "The Role Selector should display available roles, allowing the user to select one.",
+        "procedure": [
+          "Click on the Role Selector dropdown.",
+          "Select a role from the list and verify that the selection is reflected."
+        ]
+      },
+      {
+        "id": "TC009",
+        "name": "Test Username Input",
+        "objective": "To verify that the Username textbox accepts valid usernames.",
+        "coverage_element": "Username textbox : An input field for entering the login username",
+        "preconditions": "User is on the login page.",
+        "expected_results": "The Username textbox should accept a valid username without errors.",
+        "procedure": [
+          "Enter a valid username in the Username textbox.",
+          "Verify that the input is accepted and no error messages appear."
+        ]
+      },
+      {
+        "id": "TC010",
+        "name": "Test Password Input",
+        "objective": "To verify that the Password textbox accepts valid passwords.",
+        "coverage_element": "Password textbox : An input field for entering the login password",
+        "preconditions": "User is on the login page.",
+        "expected_results": "The Password textbox should accept a valid password without errors.",
+        "procedure": [
+          "Enter a valid password in the Password textbox.",
+          "Verify that the input is accepted and no error messages appear."
+        ]
+      },
+      {
+        "id": "TC011",
+        "name": "Test Password Visibility Toggle",
+        "objective": "To verify that the Password Toggle button correctly shows/hides the password.",
+        "coverage_element": "Password Toggle : Button for toggling password visibility",
+        "preconditions": "User is on the login page and has entered a password.",
+        "expected_results": "The password should be visible when toggled on and hidden when toggled off.",
+        "procedure": [
+          "Enter a password in the Password textbox.",
+          "Click the Password Toggle button and verify the password visibility changes accordingly."
+        ]
+      },
+      {
+        "id": "TC012",
+        "name": "Test Picture Link Input",
+        "objective": "To verify that the Picture Link Input textbox accepts valid URLs.",
+        "coverage_element": "Picture Link Input : Textbox for entering the picture link",
+        "preconditions": "User is on the relevant page where picture link can be entered.",
+        "expected_results": "The Picture Link Input textbox should accept a valid URL without errors.",
+        "procedure": [
+          "Enter a valid picture URL in the Picture Link Input textbox.",
+          "Verify that the input is accepted and no error messages appear."
+        ]
+      },
+      {
+        "id": "TC013",
+        "name": "Test Audio Link Input",
+        "objective": "To verify that the Audio Link Input textbox accepts valid URLs.",
+        "coverage_element": "Audio Link Input : Textbox for entering the audio link",
+        "preconditions": "User is on the relevant page where audio link can be entered.",
+        "expected_results": "The Audio Link Input textbox should accept a valid URL without errors.",
+        "procedure": [
+          "Enter a valid audio URL in the Audio Link Input textbox.",
+          "Verify that the input is accepted and no error messages appear."
+        ]
+      }
+    ],
+    "data_display_testing": [
+      {
+        "id": "TC001",
+        "name": "Test Sign Up Card Display",
+        "objective": "To verify that the Sign Up Card displays correct sign-up information.",
+        "coverage_element": "Sign Up Card : Card displaying sign-up information",
+        "preconditions": "User is on the sign-up page.",
+        "expected_results": "The Sign Up Card should display all necessary sign-up information clearly.",
+        "procedure": [
+          "Navigate to the sign-up page.",
+          "Verify that the Sign Up Card displays all required information for signing up."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Test Bands Card Display",
+        "objective": "To verify that the Bands Card displays correct bands information.",
+        "coverage_element": "Bands Card : Card displaying bands information",
+        "preconditions": "User is on the bands page.",
+        "expected_results": "The Bands Card should display all necessary bands information clearly.",
+        "procedure": [
+          "Navigate to the bands page.",
+          "Verify that the Bands Card displays all required information about bands."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Test Advertisers Card Display",
+        "objective": "To verify that the Advertisers Card displays correct advertisers information.",
+        "coverage_element": "Advertisers Card : Card displaying advertisers information",
+        "preconditions": "User is on the advertisers page.",
+        "expected_results": "The Advertisers Card should display all necessary advertisers information clearly.",
+        "procedure": [
+          "Navigate to the advertisers page.",
+          "Verify that the Advertisers Card displays all required information about advertisers."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Test Login Card Display",
+        "objective": "To verify that the Login Card displays correct login information.",
+        "coverage_element": "Login Card : Card displaying login information",
+        "preconditions": "User is on the login page.",
+        "expected_results": "The Login Card should display all necessary login information clearly.",
+        "procedure": [
+          "Navigate to the login page.",
+          "Verify that the Login Card displays all required information for logging in."
+        ]
+      }
+    ],
+    "design_validation_testing": [
+      {
+        "id": "TC001",
+        "name": "UI Design and Style Test: Color Palette",
+        "objective": "To evaluate the color scheme consistency across the website.",
+        "coverage_element": "Color Scheme",
+        "preconditions": "",
+        "expected_results": "All background elements should display floral white, and all text and interactive elements should be dark goldenrod. 7. Next Steps : Click on the \"Bands\" button to navigate to a different section of the website and gather more information about the color scheme.",
+        "procedure": [
+          "Navigate to different sections of the website.",
+          "Observe the background color and compare it to the required floral white (`#FFFAF0`).",
+          "Inspect the text and interactive elements and compare their color to the required dark goldenrod (`#8B4513`)."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "UI Design and Style Test: Login Page Blueprints",
+        "objective": "To evaluate the color scheme and design consistency in login forms and navigation",
+        "coverage_element": "BandAdvertiser Dropdown Menu Selection[Interactive : Yes]",
+        "preconditions": "",
+        "expected_results": "Background adheres to the light beige match or specified floral white, text and design elements follow dark goldenrod color scheme and design, no login scope limitations exist by role selection. 7. Next Steps : Given the observation shows no variation in page content and fails to provide deeper access, we should revisit the login process with a focus on role settings interaction to bypass login or access another interactive page section.",
+        "procedure": [
+          "Click on the BandAdvertiser dropdown to select a role",
+          "Confirm the text fields are in line with #8B4513, buttons #FFFAF0, both as per the design guidelines."
+        ]
+      }
+    ]
+  },
+  "element_requirement": [
+    "1. \"Sign Up\" button : A navigation option for registering a new account",
+    "2. \"Bands\" button : A navigation option potentially leading to band information",
+    "3. \"Advertisers\" button : A navigation option for accessing information on advertisers",
+    "4. Role Selector : Dropdown menu for selecting role",
+    "5. Username textbox : An input field for entering the login username",
+    "6. Password textbox : An input field for entering the login password",
+    "7. Password Toggle : Button for toggling password visibility",
+    "8. Picture Link Input : Textbox for entering the picture link",
+    "9. Sign Up Card : Card displaying sign-up information",
+    "10. Audio Link Input : Textbox for entering the audio link",
+    "11. Bands Card : Card displaying bands information",
+    "12. Advertisers Card : Card displaying advertisers information",
+    "13. Login Card : Card displaying login information"
+  ]
+}

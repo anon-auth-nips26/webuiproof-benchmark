@@ -1,0 +1,161 @@
+{
+  "website_summary": {
+    "name": "CyberAP Market Dashboard",
+    "description": "CyberAP Market Dashboard features a sleek, modern design with a dark theme and vibrant gradient accents, offering a user-friendly interface for market data visualization and customization.",
+    "category": "User Interaction",
+    "appearance": "The website has a clean and modern design with a dark background and vibrant gradient elements in blue, purple, and magenta. The header contains a horizontal navigation bar with links to \"Home,\" \"Features,\" \"Pricing,\" and \"Contact,\" all written in a simple, sans-serif font. A prominent \"Sign Up\" button with a gradient fill is positioned on the far right. The main content area is divided into two sections: a chart area on the left displaying market data with a purple line and markers, and a settings area on the right with interactive elements like buttons and sliders. The chart shows numerical values along the vertical axis ranging from 0 to 10,000, and the horizontal axis ranges from 0 to 7. The settings area includes an \"Options\" button, an \"Edit\" button, and two sliders for adjusting scale and effect, all with gradient fills and clear markers.",
+    "functionality": "The website provides a market data visualization tool with a line chart that displays numerical values over time. Users can interact with the chart to view specific data points. The settings area allows users to customize the chart's appearance and behavior using sliders for scale and effect. The \"Options\" button reveals a dropdown menu with various settings like \"Sound,\" \"Effects,\" \"Animations,\" and \"Preferences.\" Users can also sign up for additional services via the \"Sign Up\" button in the header."
+  },
+  "test_cases": {
+    "functionality_testing": [
+      {
+        "id": "TC001",
+        "name": "Second Data Point Hover Test",
+        "objective": "To verify that hovering over a second data point on the Market View chart displays accurate tooltip information.",
+        "coverage_element": "Market View",
+        "preconditions": "The chart is fully loaded and visible, and the first data point has been verified.",
+        "expected_results": "Tooltip should display accurate values corresponding to the second data point. 7. Next Steps : Hover over a second data point on the chart to continue verifying the chart data.",
+        "procedure": [
+          "Hover over a second data point on the chart.",
+          "Verify that the tooltip appears with the correct numerical value."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Features Link Test",
+        "objective": "To verify that clicking the Features link navigates to the features section.",
+        "coverage_element": "Features",
+        "preconditions": "On the homepage.",
+        "expected_results": "The page should navigate to the features section.",
+        "procedure": [
+          "Click on the Features link.",
+          "Verify navigation to the features section."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Market View Chart Hover Test",
+        "objective": "To verify that hovering over data points on the Market View chart displays accurate tooltip information.",
+        "coverage_element": "Market View",
+        "preconditions": "The chart is fully loaded and visible.",
+        "expected_results": "Tooltips should display accurate values corresponding to the data points. 7. Next Steps : Begin interacting with the chart by hovering over a data point to start verifying the chart data.",
+        "procedure": [
+          "Hover over the first data point on the chart.",
+          "Verify that the tooltip appears with the correct numerical value.",
+          "Repeat for a second data point."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Scale Slider Test",
+        "objective": "To verify that the Scale Slider adjusts the chart's appearance as expected.",
+        "coverage_element": "Scale Slider",
+        "preconditions": "The slider is at its minimum position.",
+        "expected_results": "The chart's appearance should change according to the slider adjustments. 7. Next Steps : The next step is to interact with the \"Scale\" slider to verify its functionality.",
+        "procedure": [
+          "Drag the Scale Slider from \"min\" to \"max\" position.",
+          "Observe any changes in the chart's appearance."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Sign Up Button Test",
+        "objective": "To verify that clicking the Sign Up button opens the sign-up form/modal.",
+        "coverage_element": "Sign Up",
+        "preconditions": "On the homepage.",
+        "expected_results": "The sign-up form/modal should open.",
+        "procedure": [
+          "Click on the Sign Up button.",
+          "Verify that the sign-up form/modal appears."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Slider Gradient Fill Test",
+        "objective": "To ensure the gradient fills on sliders are consistent.",
+        "coverage_element": "Sliders",
+        "preconditions": "Sliders are visible.",
+        "expected_results": "Gradient fills should remain consistent during adjustment. 7. Next Steps : Perform the first test case to validate the color palette.",
+        "procedure": [
+          "Adjust the Scale slider.",
+          "Adjust the Effect slider.",
+          "Observe the gradient fills on the sliders."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "Test Case for Options Button Dropdown Functionality",
+        "objective": "To verify that the Options button correctly displays the dropdown menu with additional settings.",
+        "coverage_element": "Options : Button with dropdown menu for additional settings",
+        "preconditions": "The web application is fully loaded and the user is on the settings area.",
+        "expected_results": "The dropdown menu should appear when the Options button is clicked, displaying all additional settings options.",
+        "procedure": [
+          "Step 1 : Navigate to the settings area of the web application.",
+          "Step 2 : Click on the Options button and verify that the dropdown menu appears with all expected settings options."
+        ]
+      },
+      {
+        "id": "TC008",
+        "name": "Test Case for Settings Card Sliders Adjustment",
+        "objective": "To verify that the sliders for 'Scale' and 'Effect' adjustments in the Settings Card function correctly.",
+        "coverage_element": "Settings Card : Card containing sliders for \"Scale\" and \"Effect\" adjustments",
+        "preconditions": "The web application is fully loaded and the user is on the settings area.",
+        "expected_results": "The sliders should allow the user to adjust the 'Scale' and 'Effect' settings, and the changes should be reflected in the application's behavior.",
+        "procedure": [
+          "Step 1 : Navigate to the settings area of the web application.",
+          "Step 2 : Adjust the 'Scale' and 'Effect' sliders and verify that the changes are applied and visible in the application."
+        ]
+      },
+      {
+        "id": "TC009",
+        "name": "Test Case for Effect Slider Adjustment",
+        "objective": "To verify that the Effect Slider allows for proper adjustment of the effect setting.",
+        "coverage_element": "Effect Slider : Slider for adjusting the effect setting",
+        "preconditions": "The web application is fully loaded and the user is on the settings area.",
+        "expected_results": "The Effect Slider should allow the user to adjust the effect setting, and the changes should be reflected in the application's behavior.",
+        "procedure": [
+          "Step 1 : Navigate to the settings area of the web application.",
+          "Step 2 : Adjust the Effect Slider and verify that the changes are applied and visible in the application."
+        ]
+      }
+    ],
+    "data_display_testing": [
+      {
+        "id": "TC001",
+        "name": "Market View Display Test",
+        "objective": "To verify that the Market View card displays the correct market data.",
+        "coverage_element": "Market View",
+        "preconditions": "On the homepage.",
+        "expected_results": "The card should display accurate market data.",
+        "procedure": [
+          "Observe the Market View card.",
+          "Verify that the graph displays market data for the last 24 hours."
+        ]
+      }
+    ],
+    "design_validation_testing": [
+      {
+        "id": "TC001",
+        "name": "Test Case for Logo and Brand Name Visibility",
+        "objective": "To verify that the logo and brand name are displayed correctly in the header.",
+        "coverage_element": "CYBERAP : Logo and brand name",
+        "preconditions": "The web application is fully loaded and the user is on the homepage.",
+        "expected_results": "The logo and brand name should be visible, correctly positioned, and match the design specifications.",
+        "procedure": [
+          "Step 1 : Navigate to the homepage of the web application.",
+          "Step 2 : Verify the presence, position, and appearance of the logo and brand name in the header."
+        ]
+      }
+    ]
+  },
+  "element_requirement": [
+    "1. CYBERAP : Logo and brand name",
+    "2. Sign Up : Button for user registration",
+    "3. Options : Button with dropdown menu for additional settings",
+    "4. Market View : Card displaying a line chart of market data over the last 24 hours",
+    "5. Settings Card : Card containing sliders for \"Scale\" and \"Effect\" adjustments",
+    "6. Scale Slider : Slider for adjusting the scale setting",
+    "7. Effect Slider : Slider for adjusting the effect setting",
+    "8. Navigation links (Home, Features, Pricing, Contact)"
+  ]
+}

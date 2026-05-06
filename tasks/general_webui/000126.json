@@ -1,0 +1,205 @@
+{
+  "website_summary": {
+    "name": "Maven Apocalypse League Portal",
+    "description": "The website features a sleek, dark-themed interface with monospace fonts, emphasizing sportsmanship rules and league participation standards in a structured layout.",
+    "category": "User Interaction",
+    "appearance": "The Maven Apocalypse League Portal employs a dark theme with a black background and white text for high contrast. It uses a monospace font throughout, giving it a technical and retro aesthetic. Key sections like \"Sportsmanship Rules\" and \"Participation Standards\" are highlighted with bold red-orange titles. Important keywords and actions are also highlighted in red-orange and purple respectively. The layout includes a header with navigation buttons for \"Rules,\" \"Standards,\" and \"League Info.\" Below the header, there are two main columns: the left column lists sportsmanship rules with point deductions for infractions, while the right column contains announcements and quick action buttons for registration, viewing standings, and reviewing rules. The overall design is clean, organized, and visually distinct.",
+    "functionality": "The website provides several interactive functionalities:\n- **Navigation Buttons:** Users can navigate between \"Rules,\" \"Standards,\" and \"League Info\" using the top navigation buttons.\n- **Quick Actions:** Users can register for the upcoming season, view league standings, and review rules through dedicated buttons.\n- **Announcements:** Important updates regarding the league, such as new seasons and training sessions, are displayed prominently.\n- **Point Deduction Rules:** Detailed explanations of penalties for various infractions like no-shows, collusion, and dishonesty are provided.\n- **Relegation Information:** Information about the relegation process at the end of the season is clearly stated."
+  },
+  "test_cases": {
+    "functionality_testing": [
+      {
+        "id": "TC001",
+        "name": "Email Input Test",
+        "objective": "To verify that the email input field accepts valid email addresses and displays an error message for invalid inputs.",
+        "coverage_element": "Email Input",
+        "preconditions": "The registration form is loaded and the email input field is visible.",
+        "expected_results": "The email input field should accept valid email addresses and display an error message for invalid inputs. 7. Next Steps : Fill out the email field with a valid email address.",
+        "procedure": [
+          "Enter an invalid email address in the Email Input field.",
+          "Verify that an error message is displayed.",
+          "Enter a valid email address in the Email Input field.",
+          "Verify that the error message is cleared."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "League Info Button Test",
+        "objective": "To verify that clicking the League Info Button updates the page content to display league information.",
+        "coverage_element": "League Info Button",
+        "preconditions": "The \"Standards\" section is currently active.",
+        "expected_results": "The page content should change to display league information. 7. Next Steps : Click on the \"League Info\" button to navigate to the league info section.",
+        "procedure": [
+          "Click on the League Info Button.",
+          "Verify that the page content updates to display league information."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Register for Season 3 Test",
+        "objective": "To verify that clicking the Register for Season 3 button initiates the registration process or redirects to the registration page.",
+        "coverage_element": "Register for Season 3",
+        "preconditions": "The webpage is loaded and the button is visible.",
+        "expected_results": "The registration process should initiate or the user should be redirected to the registration page. 7. Next Steps : Click the \"Register for Season 3\" button to proceed with the task.",
+        "procedure": [
+          "Click on the Register for Season 3 button.",
+          "Verify that the registration process initiates or redirects to the registration page."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Registration Form Test",
+        "objective": "To verify that the registration form accepts valid inputs and submits the registration successfully.",
+        "coverage_element": "Player Name Input, Email Input, Total Wins Input, Age Input, Agreement Checkbox, Submit Registration Button",
+        "preconditions": "The registration form is loaded and all input fields are visible.",
+        "expected_results": "The registration should be submitted successfully without any errors. 7. Next Steps : Fill out the registration form with valid inputs and submit the registration.",
+        "procedure": [
+          "Enter valid values in the Player Name Input, Email Input, Total Wins Input, and Age Input fields.",
+          "Check the Agreement Checkbox.",
+          "Click on the Submit Registration Button.",
+          "Verify that the registration is submitted successfully."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Standards Button Test",
+        "objective": "To verify that clicking the Standards Button updates the page content to display participation standards.",
+        "coverage_element": "Standards Button",
+        "preconditions": "The \"Rules\" section is currently active.",
+        "expected_results": "The page content should change to display participation standards. 7. Next Steps : Click on the \"Standards\" button to navigate to the standards section.",
+        "procedure": [
+          "Click on the Standards Button.",
+          "Verify that the page content updates to display participation standards."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Test Rules Button Navigation",
+        "objective": "To verify that clicking the Rules Button navigates to the rules section.",
+        "coverage_element": "Rules Button : Button for navigating to the rules section",
+        "preconditions": "User is logged into the Maven Apocalypse League Portal.",
+        "expected_results": "The user is redirected to the rules section upon clicking the Rules Button.",
+        "procedure": [
+          "Step 1 : Click on the 'Rules' button located in the header.",
+          "Step 2 : Verify that the page content changes to display the rules section."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "Test View League Standings Button Functionality",
+        "objective": "To verify that clicking the View League Standings Button displays the league standings.",
+        "coverage_element": "View League Standings Button : Button for viewing league standings",
+        "preconditions": "User is logged into the Maven Apocalypse League Portal.",
+        "expected_results": "The league standings are displayed after clicking the View League Standings Button.",
+        "procedure": [
+          "Step 1 : Click on the 'View League Standings' button.",
+          "Step 2 : Verify that the league standings are correctly displayed."
+        ]
+      },
+      {
+        "id": "TC008",
+        "name": "Test Rules Standards League Info Card Navigation Options",
+        "objective": "To verify that the Rules Standards League Info Card provides correct navigation options.",
+        "coverage_element": "Rules Standards League Info Card : Card with navigation options for rules, standards, and league info",
+        "preconditions": "User is logged into the Maven Apocalypse League Portal.",
+        "expected_results": "Clicking on any option within the card navigates to the corresponding section.",
+        "procedure": [
+          "Step 1 : Click on one of the navigation options ('Rules', 'Standards', or 'League Info') within the card.",
+          "Step 2 : Verify that the page navigates to the selected section."
+        ]
+      },
+      {
+        "id": "TC009",
+        "name": "Test Agreement Checkbox Selection",
+        "objective": "To verify that selecting the Agreement Checkbox registers the agreement.",
+        "coverage_element": "Agreement Checkbox : Checkbox for agreeing to the rules and standards",
+        "preconditions": "User is logged into the Maven Apocalypse League Portal.",
+        "expected_results": "Selecting the checkbox marks the user as agreeing to the rules and standards.",
+        "procedure": [
+          "Step 1 : Select the Agreement Checkbox.",
+          "Step 2 : Verify that the selection is registered and any related actions can proceed."
+        ]
+      }
+    ],
+    "data_display_testing": [
+      {
+        "id": "TC001",
+        "name": "Test Important Announcements Card Display",
+        "objective": "To verify that the Important Announcements Card displays the correct information.",
+        "coverage_element": "Important Announcements Card : Card displaying important announcements",
+        "preconditions": "User is logged into the Maven Apocalypse League Portal.",
+        "expected_results": "The Important Announcements Card shows the latest announcements.",
+        "procedure": [
+          "Step 1 : Navigate to the section containing the Important Announcements Card.",
+          "Step 2 : Verify that the card displays the expected announcements."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Test Total Wins Input Data Entry",
+        "objective": "To verify that the Total Wins Input allows valid data entry.",
+        "coverage_element": "Total Wins Input : Textbox for entering total wins",
+        "preconditions": "User is logged into the Maven Apocalypse League Portal.",
+        "expected_results": "The Total Wins Input accepts only numerical values and updates the system accordingly.",
+        "procedure": [
+          "Step 1 : Enter a valid number into the Total Wins Input textbox.",
+          "Step 2 : Verify that the input is accepted and the system reflects the change."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Test Age Input Data Entry",
+        "objective": "To verify that the Age Input allows valid data entry.",
+        "coverage_element": "Age Input : Textbox for entering age in months",
+        "preconditions": "User is logged into the Maven Apocalypse League Portal.",
+        "expected_results": "The Age Input accepts only numerical values representing age in months and updates the system accordingly.",
+        "procedure": [
+          "Step 1 : Enter a valid number into the Age Input textbox.",
+          "Step 2 : Verify that the input is accepted and the system reflects the change."
+        ]
+      }
+    ],
+    "design_validation_testing": [
+      {
+        "id": "TC001",
+        "name": "UI Design and Style Test: Color Palette",
+        "objective": "To evaluate the consistency of the color scheme across the page.",
+        "coverage_element": "Color Scheme",
+        "preconditions": "",
+        "expected_results": "All elements should maintain a consistent black background with white/pink text and purple outlines.",
+        "procedure": [
+          "Observe the background color and text colors.",
+          "Check the consistency of button and card outlines.",
+          "Compare against design requirements."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Test Navigation Tabs Card Design",
+        "objective": "To verify that the Navigation Tabs Card adheres to the design specifications.",
+        "coverage_element": "Navigation Tabs Card : Card displaying navigation tabs",
+        "preconditions": "User is logged into the Maven Apocalypse League Portal.",
+        "expected_results": "The Navigation Tabs Card matches the specified design criteria including color, font, and layout.",
+        "procedure": [
+          "Step 1 : Inspect the Navigation Tabs Card.",
+          "Step 2 : Verify that the card's design matches the specified design criteria."
+        ]
+      }
+    ]
+  },
+  "element_requirement": [
+    "1. Rules Button : Button for navigating to the rules section",
+    "2. Standards Button : Button for navigating to the standards section",
+    "3. League Info Button : Button for navigating to the league info section",
+    "4. Register for Season 3 Button : Button for registering for the upcoming season",
+    "5. View League Standings Button : Button for viewing league standings",
+    "6. Important Announcements Card : Card displaying important announcements",
+    "7. Rules Standards League Info Card : Card with navigation options for rules, standards, and league info",
+    "8. Navigation Tabs Card : Card displaying navigation tabs",
+    "9. Email Input : Textbox for entering email address",
+    "10. Total Wins Input : Textbox for entering total wins",
+    "11. Age Input : Textbox for entering age in months",
+    "12. Agreement Checkbox : Checkbox for agreeing to the rules and standards",
+    "13. Submit Registration Button : Button for submitting the registration form"
+  ]
+}

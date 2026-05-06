@@ -1,0 +1,297 @@
+{
+  "website_summary": {
+    "name": "Vocabulary Mastery Hub",
+    "description": "The website features a clean and engaging interface with a dashboard displaying weekly progress, activity distribution, and quick access to various vocabulary-building games.",
+    "category": "User Interaction",
+    "appearance": "The website has a modern and intuitive design with a prominent dashboard that showcases a user's learning streak, weekly progress through a bar chart, and activity distribution via a pie chart. The dashboard is visually appealing, using a dark red theme for main components against a light gray background. Quick activities are presented as clickable buttons for easy access to crossword puzzles, unjumbling letters, finding synonyms and antonyms, flashcards, and fill-in-the-blank exercises. Additionally, there’s a “Word of the Day” section providing daily vocabulary enrichment. The header includes navigation links for Dashboard, Activities, and Blog, ensuring seamless user navigation.",
+    "functionality": "The website offers several interactive features aimed at enhancing vocabulary skills. Users can engage in various activities such as solving crossword puzzles, unscrambling letters, identifying synonyms and antonyms, using flashcards, and completing fill-in-the-blank sentences. The dashboard provides a comprehensive overview of the user's progress, including a learning streak counter, weekly performance metrics, and activity distribution percentages. Users can also explore new words introduced each day and navigate to additional resources via the Activities and Blog sections."
+  },
+  "test_cases": {
+    "functionality_testing": [
+      {
+        "id": "TC001",
+        "name": "Find Synonyms Button Test",
+        "objective": "To verify that clicking the Find Synonyms button navigates to the synonym-finding activity.",
+        "preconditions": "On the dashboard page.",
+        "expected_results": "The page should navigate to the synonym-finding activity. 7. Next Steps : Click the \"Find Synonyms\" button to proceed with the synonym-finding task.",
+        "procedure": [
+          "Click on the Find Synonyms button.",
+          "Verify that the page navigates to the synonym-finding activity."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Dashboard Navigation Button",
+        "objective": "To verify that clicking the Dashboard button navigates the user to the dashboard page.",
+        "coverage_element": "1 - Dashboard - Button for navigating to the dashboard section",
+        "preconditions": "User is logged into the system.",
+        "expected_results": "The dashboard page is displayed upon clicking the button.",
+        "procedure": [
+          "Step 1 : Log in to the web application.",
+          "Step 2 : Click the 'Dashboard' button."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Activities Navigation Button",
+        "objective": "To verify that clicking the Activities button navigates the user to the activities page.",
+        "coverage_element": "2 - Activities - Button for navigating to the activities section",
+        "preconditions": "User is logged into the system.",
+        "expected_results": "The activities page is displayed upon clicking the button.",
+        "procedure": [
+          "Step 1 : Log in to the web application.",
+          "Step 2 : Click the 'Activities' button."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Blog Navigation Button",
+        "objective": "To verify that clicking the Blog button navigates the user to the blog page.",
+        "coverage_element": "3 - Blog - Button for navigating to the blog section",
+        "preconditions": "User is logged into the system.",
+        "expected_results": "The blog page is displayed upon clicking the button.",
+        "procedure": [
+          "Step 1 : Log in to the web application.",
+          "Step 2 : Click the 'Blog' button."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Crossword Activity Button",
+        "objective": "To verify that clicking the Crossword button starts the crossword activity.",
+        "coverage_element": "8 - Crossword - Button for starting the crossword activity",
+        "preconditions": "User is logged into the system.",
+        "expected_results": "The crossword activity starts upon clicking the button.",
+        "procedure": [
+          "Step 1 : Log in to the web application.",
+          "Step 2 : Click the 'Crossword' button."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Unjumble Letters Activity Button",
+        "objective": "To verify that clicking the Unjumble Letters button starts the unjumble letters activity.",
+        "coverage_element": "9 - Unjumble Letters - Button for starting the unjumble letters activity",
+        "preconditions": "User is logged into the system.",
+        "expected_results": "The unjumble letters activity starts upon clicking the button.",
+        "procedure": [
+          "Step 1 : Log in to the web application.",
+          "Step 2 : Click the 'Unjumble Letters' button."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "Find Synonyms Activity Button",
+        "objective": "To verify that clicking the Find Synonyms button starts the find synonyms activity.",
+        "coverage_element": "10 - Find Synonyms - Button for starting the find synonyms activity",
+        "preconditions": "User is logged into the system.",
+        "expected_results": "The find synonyms activity starts upon clicking the button.",
+        "procedure": [
+          "Step 1 : Log in to the web application.",
+          "Step 2 : Click the 'Find Synonyms' button."
+        ]
+      },
+      {
+        "id": "TC008",
+        "name": "Find Antonyms Activity Button",
+        "objective": "To verify that clicking the Find Antonyms button starts the find antonyms activity.",
+        "coverage_element": "11 - Find Antonyms - Button for starting the find antonyms activity",
+        "preconditions": "User is logged into the system.",
+        "expected_results": "The find antonyms activity starts upon clicking the button.",
+        "procedure": [
+          "Step 1 : Log in to the web application.",
+          "Step 2 : Click the 'Find Antonyms' button."
+        ]
+      },
+      {
+        "id": "TC009",
+        "name": "Fill in the Blanks Activity Button",
+        "objective": "To verify that clicking the Fill in the Blanks button starts the fill in the blanks activity.",
+        "coverage_element": "12 - Fill in the Blanks - Button for starting the fill in the blanks activity",
+        "preconditions": "User is logged into the system.",
+        "expected_results": "The fill in the blanks activity starts upon clicking the button.",
+        "procedure": [
+          "Step 1 : Log in to the web application.",
+          "Step 2 : Click the 'Fill in the Blanks' button."
+        ]
+      },
+      {
+        "id": "TC010",
+        "name": "Flashcards Activity Button",
+        "objective": "To verify that clicking the Flashcards button starts the flashcards activity.",
+        "coverage_element": "13 - Flashcards - Button for starting the flashcards activity",
+        "preconditions": "User is logged into the system.",
+        "expected_results": "The flashcards activity starts upon clicking the button.",
+        "procedure": [
+          "Step 1 : Log in to the web application.",
+          "Step 2 : Click the 'Flashcards' button."
+        ]
+      }
+    ],
+    "data_display_testing": [
+      {
+        "id": "TC001",
+        "name": "UI Design and Style Test: Background Color",
+        "objective": "To verify that the background color of the body is consistently light gray.",
+        "preconditions": "",
+        "expected_results": "The background color should be consistently light gray.",
+        "procedure": [
+          "Observe the background color of the body.",
+          "Compare it with the specified light gray color."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "UI Design and Style Test: Button Styling",
+        "objective": "To verify that all main components, such as buttons, use the dark red theme.",
+        "preconditions": "",
+        "expected_results": "All buttons should be styled in dark red.",
+        "procedure": [
+          "Observe the styling of the buttons.",
+          "Confirm that they use the dark red theme."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "UI Design and Style Test: Card Styling",
+        "objective": "To verify that cards maintain consistent styling with the dark red theme.",
+        "preconditions": "",
+        "expected_results": "Cards should be styled consistently with the dark red theme. 7. Next Steps : The next step is to verify the background color of the body. Since the screenshot does not provide direct access to the background, I will attempt to scroll down to observe more of the background.",
+        "procedure": [
+          "Observe the styling of the cards.",
+          "Confirm that they use the dark red theme appropriately."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Learning Streak Card Visibility",
+        "objective": "To verify that the learning streak card displays the correct value.",
+        "coverage_element": "4 - Learning Streak - Card displaying the current learning streak",
+        "preconditions": "User is logged into the system.",
+        "expected_results": "The learning streak card shows the current learning streak of the user.",
+        "procedure": [
+          "Step 1 : Log in to the web application.",
+          "Step 2 : Verify the learning streak card shows the expected streak."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Weekly Progress Bar Chart Visibility and Labels",
+        "objective": "To verify that the weekly progress bar chart is displayed correctly with percentage labels.",
+        "coverage_element": "5 - Weekly Progress Card - Displays weekly progress bar chart with percentage labels",
+        "preconditions": "User is logged into the system.",
+        "expected_results": "The weekly progress bar chart is visible and percentage labels are correctly displayed.",
+        "procedure": [
+          "Step 1 : Log in to the web application.",
+          "Step 2 : Check the display of the weekly progress bar chart."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Activity Distribution Pie Chart Visibility",
+        "objective": "To verify that the activity distribution pie chart is displayed correctly.",
+        "coverage_element": "6 - Activity Distribution - Card displaying activity distribution with a pie chart",
+        "preconditions": "User is logged into the system.",
+        "expected_results": "The pie chart showing activity distribution is displayed accurately.",
+        "procedure": [
+          "Step 1 : Log in to the web application.",
+          "Step 2 : Check the display of the activity distribution pie chart."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "Welcome Card Display",
+        "objective": "To verify that the welcome card is displayed correctly.",
+        "coverage_element": "14 - Welcome Card - Card welcoming the learner",
+        "preconditions": "User is logged into the system.",
+        "expected_results": "The welcome card is displayed with the correct message.",
+        "procedure": [
+          "Step 1 : Log in to the web application.",
+          "Step 2 : Check the display of the welcome card."
+        ]
+      },
+      {
+        "id": "TC008",
+        "name": "Word of the Day Card Display",
+        "objective": "To verify that the Word of the Day card is displayed correctly.",
+        "coverage_element": "15 - Word of the Day Card - Card displaying the word of the day",
+        "preconditions": "User is logged into the system.",
+        "expected_results": "The Word of the Day card is displayed with the correct word and details.",
+        "procedure": [
+          "Step 1 : Log in to the web application.",
+          "Step 2 : Check the display of the Word of the Day card."
+        ]
+      },
+      {
+        "id": "TC009",
+        "name": "Weekly Progress Bar Visibility",
+        "objective": "To verify that the weekly progress bar represents daily progress visually.",
+        "coverage_element": "16 - Weekly Progress Bar - Represents daily progress visually",
+        "preconditions": "User is logged into the system.",
+        "expected_results": "The weekly progress bar visually represents daily progress.",
+        "procedure": [
+          "Step 1 : Log in to the web application.",
+          "Step 2 : Check the visual representation of the weekly progress bar."
+        ]
+      },
+      {
+        "id": "TC010",
+        "name": "Weekly Progress Tooltip Visibility",
+        "objective": "To verify that the weekly progress tooltip shows detailed information on hovering over bars.",
+        "coverage_element": "17 - Weekly Progress Tooltip - Shows detailed information on hovering over bars",
+        "preconditions": "User is logged into the system.",
+        "expected_results": "The tooltip displays detailed progress information when hovered over.",
+        "procedure": [
+          "Step 1 : Log in to the web application.",
+          "Step 2 : Hover over the bars in the weekly progress chart to check the tooltip."
+        ]
+      },
+      {
+        "id": "TC011",
+        "name": "Weekly Progress Tooltip Content Verification",
+        "objective": "To verify that the weekly progress tooltip content displays the correct completion details for specific days.",
+        "coverage_element": "18 - Weekly Progress Tooltip Content - Displays completion details for specific days",
+        "preconditions": "User is logged into the system.",
+        "expected_results": "The tooltip content for specific days shows correct completion details.",
+        "procedure": [
+          "Step 1 : Log in to the web application.",
+          "Step 2 : Hover over specific bars in the weekly progress chart and verify the tooltip content."
+        ]
+      }
+    ],
+    "design_validation_testing": [
+      {
+        "id": "TC001",
+        "name": "Quick Activities Section Visibility",
+        "objective": "To verify that the quick activities section is displayed and accessible.",
+        "coverage_element": "7 - Quick Activities - Section containing various activity buttons",
+        "preconditions": "User is logged into the system.",
+        "expected_results": "The quick activities section is displayed with all activity buttons accurately.",
+        "procedure": [
+          "Step 1 : Log in to the web application.",
+          "Step 2 : Check the display of the quick activities section."
+        ]
+      }
+    ]
+  },
+  "element_requirement": [
+    "1. 1. Dashboard - Button for navigating to the dashboard section",
+    "2. 2. Activities - Button for navigating to the activities section",
+    "3. 3. Blog - Button for navigating to the blog section",
+    "4. 4. Learning Streak - Card displaying the current learning streak",
+    "5. 5. Weekly Progress Card - Displays weekly progress bar chart with percentage labels",
+    "6. 6. Activity Distribution - Card displaying activity distribution with a pie chart",
+    "7. 7. Quick Activities - Section containing various activity buttons",
+    "8. 8. Crossword - Button for starting the crossword activity",
+    "9. 9. Unjumble Letters - Button for starting the unjumble letters activity",
+    "10. 10. Find Synonyms - Button for starting the find synonyms activity",
+    "11. 11. Find Antonyms - Button for starting the find antonyms activity",
+    "12. 12. Fill in the Blanks - Button for starting the fill in the blanks activity",
+    "13. 13. Flashcards - Button for starting the flashcards activity",
+    "14. 14. Welcome Card - Card welcoming the learner",
+    "15. 15. Word of the Day Card - Card displaying the word of the day",
+    "16. 16. Weekly Progress Bar - Represents daily progress visually",
+    "17. 17. Weekly Progress Tooltip - Shows detailed information on hovering over bars",
+    "18. 18. Weekly Progress Tooltip Content - Displays completion details for specific days"
+  ]
+}

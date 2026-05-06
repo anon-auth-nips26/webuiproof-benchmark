@@ -1,0 +1,549 @@
+{
+  "website_summary": {
+    "name": "Construction Project Manager",
+    "description": "The website presents a clean and organized interface for managing construction projects, featuring interactive dashboards, project status updates, and resource allocation visuals.",
+    "category": "Data Management",
+    "appearance": "The website features a sidebar menu with options such as Dashboard, Projects, Calendar, Tasks, Documents, Messages, Time Tracking, Resource Management, and Team Members. The main dashboard displays key metrics including Total Projects, Total Budget, Total Spent, and Team Members. It also includes sections for Project Status and Resource Allocation, which show progress bars and resource utilization percentages. The design uses a light gray background with dark red accents for UI elements, ensuring a professional and visually appealing look. The layout is responsive, adapting well to different screen sizes.",
+    "functionality": "The website offers several functionalities:\n- **Dashboard Overview**: Provides a summary of total projects, budget, expenses, and team size.\n- **Project Management**: Allows users to create, view, and manage projects with detailed status updates.\n- **Document Management**: Enables uploading, storing, and accessing project-related documents.\n- **Communication Tools**: Facilitates messaging between team members for seamless collaboration.\n- **Time Tracking**: Helps monitor and record time spent on various tasks within projects.\n- **Resource Management**: Tracks material, equipment, and labor allocation for efficient resource planning.\n- **Project Scheduling**: Supports scheduling timelines and deadlines for project activities."
+  },
+  "test_cases": {
+    "functionality_testing": [
+      {
+        "id": "TC001",
+        "name": "Add Resource Test",
+        "objective": "To verify that clicking the Add Resource button allows adding new resources.",
+        "coverage_element": "Add Resource",
+        "preconditions": "The resource management section is displayed.",
+        "expected_results": "The page should display the form for adding new resources. 7. Next Steps : Click on the \"Add Resource\" button to add new resources.",
+        "procedure": [
+          "Click on the Add Resource button.",
+          "Verify that the page displays the form for adding new resources."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Create Project Button Test",
+        "objective": "To verify that clicking the Create Project Button opens the project creation interface.",
+        "coverage_element": "Create Project",
+        "preconditions": "The Projects section is open and visible.",
+        "expected_results": "The user should encounter a new interface or form for entering the project name, description, timeline, etc.",
+        "procedure": [
+          "Click on the Create Project Button.",
+          "Verify that the project creation interface appears, allowing the user to input project details."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Navigate to the Projects View Test",
+        "objective": "Verify that clicking the Projects Button navigates to the Projects section where the Create New Project feature is available.",
+        "coverage_element": "Projects",
+        "preconditions": "The project management software is open and initialized.",
+        "expected_results": "The user should be able to find the Create New Project feature after navigating to the Projects section.",
+        "procedure": [
+          "Click on the Projects Button in the sidebar menu.",
+          "Verify that the application correctly navigates to the Projects section.",
+          "Look for the Create New Project button or option to proceed with project creation."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Project Selection Test",
+        "objective": "To verify that selecting a project from the Select Project dropdown menu populates the form with relevant project information and allows proceeding with resource allocation.",
+        "coverage_element": "Select Project",
+        "preconditions": "The \"Add Resource\" form is displayed, and the \"Select Project\" dropdown is active.",
+        "expected_results": "The selected project should be displayed in the dropdown, and the form should be populated, allowing the user to proceed with resource allocation. 7. Next Steps : Click on one of the available projects in the \"Select Project\" dropdown menu.",
+        "procedure": [
+          "Click on the Select Project dropdown menu and select one of the available projects.",
+          "Verify that the selected project is displayed in the dropdown menu, and the form is populated with relevant project information."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Resource Management Navigation Test",
+        "objective": "To verify that clicking the Resource Management button navigates to the resource management section.",
+        "coverage_element": "Resource Management",
+        "preconditions": "The dashboard is displayed.",
+        "expected_results": "The page should navigate to the resource management section. 7. Next Steps : Click on the \"Resource Management\" button to navigate to the resource management section.",
+        "procedure": [
+          "Click on the Resource Management button.",
+          "Verify that the page navigates to the resource management section."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Test Dashboard Menu Item",
+        "objective": "To verify that the Dashboard menu item correctly navigates to the dashboard section.",
+        "coverage_element": "Dashboard : Menu item for accessing the dashboard section",
+        "preconditions": "User is logged into the application.",
+        "expected_results": "The user is redirected to the dashboard section upon clicking the Dashboard menu item.",
+        "procedure": [
+          "Click on the Dashboard menu item in the sidebar.",
+          "Verify that the dashboard section is displayed."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "Test View Details Button Functionality",
+        "objective": "To verify that the View Details button correctly navigates to the detailed information page for a project.",
+        "coverage_element": "View Details : Buttons for accessing detailed information on existing projects",
+        "preconditions": "User is logged into the application and is on the Projects page.",
+        "expected_results": "The user is redirected to the detailed information page for the selected project.",
+        "procedure": [
+          "Click on the View Details button for an existing project.",
+          "Verify that the detailed information page for the selected project is displayed."
+        ]
+      },
+      {
+        "id": "TC008",
+        "name": "Test Company Selector Dropdown",
+        "objective": "To verify that the Company Selector dropdown menu allows the user to select a company.",
+        "coverage_element": "Company Selector : Button with dropdown menu for selecting company",
+        "preconditions": "User is logged into the application.",
+        "expected_results": "The user can select a company from the dropdown menu.",
+        "procedure": [
+          "Click on the Company Selector button.",
+          "Select a company from the dropdown menu and verify the selection is applied."
+        ]
+      },
+      {
+        "id": "TC009",
+        "name": "Test Resource Quantity Textbox",
+        "objective": "To verify that the Quantity textbox allows the user to enter a resource quantity.",
+        "coverage_element": "Quantity : Textbox for entering the resource quantity",
+        "preconditions": "User is logged into the application and is on the resource management page.",
+        "expected_results": "The user can enter a resource quantity in the Quantity textbox.",
+        "procedure": [
+          "Navigate to the resource management page.",
+          "Enter a quantity in the Quantity textbox and verify the input is accepted."
+        ]
+      },
+      {
+        "id": "TC010",
+        "name": "Test Resource Unit Cost Textbox",
+        "objective": "To verify that the Unit Cost textbox allows the user to enter a resource unit cost.",
+        "coverage_element": "Unit Cost : Textbox for entering the resource unit cost",
+        "preconditions": "User is logged into the application and is on the resource management page.",
+        "expected_results": "The user can enter a resource unit cost in the Unit Cost textbox.",
+        "procedure": [
+          "Navigate to the resource management page.",
+          "Enter a unit cost in the Unit Cost textbox and verify the input is accepted."
+        ]
+      },
+      {
+        "id": "TC011",
+        "name": "Test Resource Name Textbox",
+        "objective": "To verify that the Resource Name textbox allows the user to enter a resource name.",
+        "coverage_element": "Resource Name : Textbox for entering the resource name",
+        "preconditions": "User is logged into the application and is on the resource management page.",
+        "expected_results": "The user can enter a resource name in the Resource Name textbox.",
+        "procedure": [
+          "Navigate to the resource management page.",
+          "Enter a resource name in the Resource Name textbox and verify the input is accepted."
+        ]
+      },
+      {
+        "id": "TC012",
+        "name": "Test Resource Type Dropdown",
+        "objective": "To verify that the Resource Type dropdown menu allows the user to select a resource type.",
+        "coverage_element": "Resource Type : Dropdown menu for selecting the resource type",
+        "preconditions": "User is logged into the application and is on the resource management page.",
+        "expected_results": "The user can select a resource type from the dropdown menu.",
+        "procedure": [
+          "Navigate to the resource management page.",
+          "Select a resource type from the Resource Type dropdown menu and verify the selection is applied."
+        ]
+      },
+      {
+        "id": "TC013",
+        "name": "Test Resource Availability Textbox",
+        "objective": "To verify that the Availability textbox allows the user to enter resource availability.",
+        "coverage_element": "Availability : Textbox for entering the resource availability",
+        "preconditions": "User is logged into the application and is on the resource management page.",
+        "expected_results": "The user can enter resource availability in the Availability textbox.",
+        "procedure": [
+          "Navigate to the resource management page.",
+          "Enter resource availability in the Availability textbox and verify the input is accepted."
+        ]
+      },
+      {
+        "id": "TC014",
+        "name": "Test Cancel Button Functionality",
+        "objective": "To verify that the Cancel button cancels the addition of a resource.",
+        "coverage_element": "Cancel : Button for canceling the addition of a resource",
+        "preconditions": "User is logged into the application and is on the resource management page.",
+        "expected_results": "The addition of the resource is canceled upon clicking the Cancel button.",
+        "procedure": [
+          "Navigate to the resource management page.",
+          "Click the Cancel button and verify that the addition of the resource is canceled."
+        ]
+      }
+    ],
+    "data_display_testing": [
+      {
+        "id": "TC001",
+        "name": "Test Menu Card Elements",
+        "objective": "To verify that the Menu Card displays all expected menu sections.",
+        "coverage_element": "Menu Card : Menu section including Dashboard, Projects, Calendar, etc.",
+        "preconditions": "User is logged into the application.",
+        "expected_results": "The Menu Card displays Dashboard, Projects, Calendar, and other sections.",
+        "procedure": [
+          "Navigate to the sidebar menu.",
+          "Verify that all expected menu sections are displayed in the Menu Card."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Test Project Status Card Display",
+        "objective": "To verify that the Project Status Card correctly displays progress bars for various projects.",
+        "coverage_element": "Project Status Card : Displays progress bars for Office Building Construction, Bridge Construction, and Park Renovation",
+        "preconditions": "User is logged into the application and is on the dashboard page.",
+        "expected_results": "The Project Status Card displays progress bars for Office Building Construction, Bridge Construction, and Park Renovation.",
+        "procedure": [
+          "Navigate to the dashboard page.",
+          "Verify that the Project Status Card displays the correct progress bars for the specified projects."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Test Resource Allocation Card Display",
+        "objective": "To verify that the Resource Allocation Card correctly displays resource allocation percentages.",
+        "coverage_element": "Resource Allocation Card : Displays resource allocation percentages for various projects",
+        "preconditions": "User is logged into the application and is on the dashboard page.",
+        "expected_results": "The Resource Allocation Card displays the correct resource allocation percentages.",
+        "procedure": [
+          "Navigate to the dashboard page.",
+          "Verify that the Resource Allocation Card displays the correct resource allocation percentages."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Test Total Spent Card Display",
+        "objective": "To verify that the Total Spent Card correctly displays the total amount spent.",
+        "coverage_element": "Total Spent Card : Displays the total amount spent",
+        "preconditions": "User is logged into the application and is on the dashboard page.",
+        "expected_results": "The Total Spent Card displays the correct total amount spent.",
+        "procedure": [
+          "Navigate to the dashboard page.",
+          "Verify that the Total Spent Card displays the correct total amount spent."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Test Team Members Card Display",
+        "objective": "To verify that the Team Members Card correctly displays the number of team members.",
+        "coverage_element": "Team Members Card : Displays the number of team members",
+        "preconditions": "User is logged into the application and is on the dashboard page.",
+        "expected_results": "The Team Members Card displays the correct number of team members.",
+        "procedure": [
+          "Navigate to the dashboard page.",
+          "Verify that the Team Members Card displays the correct number of team members."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Test Resource Type Column Header",
+        "objective": "To verify that the Type column header is correctly displayed.",
+        "coverage_element": "Type : Column header for resource types",
+        "preconditions": "User is logged into the application and is on the resource management page.",
+        "expected_results": "The Type column header is displayed correctly.",
+        "procedure": [
+          "Navigate to the resource management page.",
+          "Verify that the Type column header is displayed correctly."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "Test Resource Quantity Column Header",
+        "objective": "To verify that the Quantity column header is correctly displayed.",
+        "coverage_element": "Quantity : Column header for resource quantities",
+        "preconditions": "User is logged into the application and is on the resource management page.",
+        "expected_results": "The Quantity column header is displayed correctly.",
+        "procedure": [
+          "Navigate to the resource management page.",
+          "Verify that the Quantity column header is displayed correctly."
+        ]
+      },
+      {
+        "id": "TC008",
+        "name": "Test Resource Unit Cost Column Header",
+        "objective": "To verify that the Unit Cost column header is correctly displayed.",
+        "coverage_element": "Unit Cost : Column header for resource unit costs",
+        "preconditions": "User is logged into the application and is on the resource management page.",
+        "expected_results": "The Unit Cost column header is displayed correctly.",
+        "procedure": [
+          "Navigate to the resource management page.",
+          "Verify that the Unit Cost column header is displayed correctly."
+        ]
+      },
+      {
+        "id": "TC009",
+        "name": "Test Resource Total Cost Column Header",
+        "objective": "To verify that the Total Cost column header is correctly displayed.",
+        "coverage_element": "Total Cost : Column header for resource total costs",
+        "preconditions": "User is logged into the application and is on the resource management page.",
+        "expected_results": "The Total Cost column header is displayed correctly.",
+        "procedure": [
+          "Navigate to the resource management page.",
+          "Verify that the Total Cost column header is displayed correctly."
+        ]
+      },
+      {
+        "id": "TC010",
+        "name": "Test Concrete Resource Name",
+        "objective": "To verify that the Concrete resource name is correctly displayed.",
+        "coverage_element": "Concrete : Resource name",
+        "preconditions": "User is logged into the application and is on the resource management page.",
+        "expected_results": "The Concrete resource name is displayed correctly.",
+        "procedure": [
+          "Navigate to the resource management page.",
+          "Verify that the Concrete resource name is displayed correctly."
+        ]
+      },
+      {
+        "id": "TC011",
+        "name": "Test Material Resource Type",
+        "objective": "To verify that the Material resource type is correctly displayed.",
+        "coverage_element": "Material : Resource type",
+        "preconditions": "User is logged into the application and is on the resource management page.",
+        "expected_results": "The Material resource type is displayed correctly.",
+        "procedure": [
+          "Navigate to the resource management page.",
+          "Verify that the Material resource type is displayed correctly."
+        ]
+      },
+      {
+        "id": "TC012",
+        "name": "Test Resource Quantity Value",
+        "objective": "To verify that the resource quantity value is correctly displayed.",
+        "coverage_element": "500 : Resource quantity",
+        "preconditions": "User is logged into the application and is on the resource management page.",
+        "expected_results": "The resource quantity value is displayed correctly.",
+        "procedure": [
+          "Navigate to the resource management page.",
+          "Verify that the resource quantity value is displayed correctly."
+        ]
+      },
+      {
+        "id": "TC013",
+        "name": "Test Resource Unit Cost Value",
+        "objective": "To verify that the resource unit cost value is correctly displayed.",
+        "coverage_element": "$120.00 : Resource unit cost",
+        "preconditions": "User is logged into the application and is on the resource management page.",
+        "expected_results": "The resource unit cost value is displayed correctly.",
+        "procedure": [
+          "Navigate to the resource management page.",
+          "Verify that the resource unit cost value is displayed correctly."
+        ]
+      },
+      {
+        "id": "TC014",
+        "name": "Test Resource Total Cost Value",
+        "objective": "To verify that the resource total cost value is correctly displayed.",
+        "coverage_element": "$60,000.00 : Resource total cost",
+        "preconditions": "User is logged into the application and is on the resource management page.",
+        "expected_results": "The resource total cost value is displayed correctly.",
+        "procedure": [
+          "Navigate to the resource management page.",
+          "Verify that the resource total cost value is displayed correctly."
+        ]
+      },
+      {
+        "id": "TC015",
+        "name": "Test Steel Beams Resource Name",
+        "objective": "To verify that the Steel Beams resource name is correctly displayed.",
+        "coverage_element": "Steel Beams : Resource name",
+        "preconditions": "User is logged into the application and is on the resource management page.",
+        "expected_results": "The Steel Beams resource name is displayed correctly.",
+        "procedure": [
+          "Navigate to the resource management page.",
+          "Verify that the Steel Beams resource name is displayed correctly."
+        ]
+      },
+      {
+        "id": "TC016",
+        "name": "Test Resource Quantity Value for Steel Beams",
+        "objective": "To verify that the resource quantity value for Steel Beams is correctly displayed.",
+        "coverage_element": "200 : Resource quantity",
+        "preconditions": "User is logged into the application and is on the resource management page.",
+        "expected_results": "The resource quantity value for Steel Beams is displayed correctly.",
+        "procedure": [
+          "Navigate to the resource management page.",
+          "Verify that the resource quantity value for Steel Beams is displayed correctly."
+        ]
+      },
+      {
+        "id": "TC017",
+        "name": "Test Resource Unit Cost Value for Steel Beams",
+        "objective": "To verify that the resource unit cost value for Steel Beams is correctly displayed.",
+        "coverage_element": "$500.00 : Resource unit cost",
+        "preconditions": "User is logged into the application and is on the resource management page.",
+        "expected_results": "The resource unit cost value for Steel Beams is displayed correctly.",
+        "procedure": [
+          "Navigate to the resource management page.",
+          "Verify that the resource unit cost value for Steel Beams is displayed correctly."
+        ]
+      },
+      {
+        "id": "TC018",
+        "name": "Test Resource Total Cost Value for Steel Beams",
+        "objective": "To verify that the resource total cost value for Steel Beams is correctly displayed.",
+        "coverage_element": "$100,000.00 : Resource total cost",
+        "preconditions": "User is logged into the application and is on the resource management page.",
+        "expected_results": "The resource total cost value for Steel Beams is displayed correctly.",
+        "procedure": [
+          "Navigate to the resource management page.",
+          "Verify that the resource total cost value for Steel Beams is displayed correctly."
+        ]
+      },
+      {
+        "id": "TC019",
+        "name": "Test Crane Rental Resource Name",
+        "objective": "To verify that the Crane Rental resource name is correctly displayed.",
+        "coverage_element": "Crane Rental : Resource name",
+        "preconditions": "User is logged into the application and is on the resource management page.",
+        "expected_results": "The Crane Rental resource name is displayed correctly.",
+        "procedure": [
+          "Navigate to the resource management page.",
+          "Verify that the Crane Rental resource name is displayed correctly."
+        ]
+      },
+      {
+        "id": "TC020",
+        "name": "Test Equipment Resource Type",
+        "objective": "To verify that the Equipment resource type is correctly displayed.",
+        "coverage_element": "Equipment : Resource type",
+        "preconditions": "User is logged into the application and is on the resource management page.",
+        "expected_results": "The Equipment resource type is displayed correctly.",
+        "procedure": [
+          "Navigate to the resource management page.",
+          "Verify that the Equipment resource type is displayed correctly."
+        ]
+      },
+      {
+        "id": "TC021",
+        "name": "Test Resource Quantity Value for Crane Rental",
+        "objective": "To verify that the resource quantity value for Crane Rental is correctly displayed.",
+        "coverage_element": "1 : Resource quantity",
+        "preconditions": "User is logged into the application and is on the resource management page.",
+        "expected_results": "The resource quantity value for Crane Rental is displayed correctly.",
+        "procedure": [
+          "Navigate to the resource management page.",
+          "Verify that the resource quantity value for Crane Rental is displayed correctly."
+        ]
+      },
+      {
+        "id": "TC022",
+        "name": "Test Resource Unit Cost Value for Crane Rental",
+        "objective": "To verify that the resource unit cost value for Crane Rental is correctly displayed.",
+        "coverage_element": "$15,000.00 : Resource unit cost",
+        "preconditions": "User is logged into the application and is on the resource management page.",
+        "expected_results": "The resource unit cost value for Crane Rental is displayed correctly.",
+        "procedure": [
+          "Navigate to the resource management page.",
+          "Verify that the resource unit cost value for Crane Rental is displayed correctly."
+        ]
+      },
+      {
+        "id": "TC023",
+        "name": "Test Resource Total Cost Value for Crane Rental",
+        "objective": "To verify that the resource total cost value for Crane Rental is correctly displayed.",
+        "coverage_element": "$15,000.00 : Resource total cost",
+        "preconditions": "User is logged into the application and is on the resource management page.",
+        "expected_results": "The resource total cost value for Crane Rental is displayed correctly.",
+        "procedure": [
+          "Navigate to the resource management page.",
+          "Verify that the resource total cost value for Crane Rental is displayed correctly."
+        ]
+      }
+    ],
+    "design_validation_testing": [
+      {
+        "id": "TC001",
+        "name": "UI Design and Style Test: Alignment",
+        "objective": "To verify that all elements are neatly aligned without overlap.",
+        "coverage_element": "Layout & Organization",
+        "preconditions": "",
+        "expected_results": "All elements should be neatly aligned without overlap. 7. Next Steps : Hover over the next card (Layout & Organization) to continue inspecting the color and alignment.",
+        "procedure": [
+          "Observe the arrangement of all elements on the dashboard.",
+          "Check for any overlapping or misaligned elements."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "UI Design and Style Test: Color Palette",
+        "objective": "To evaluate the consistency of the color scheme, ensuring the background is light gray and UI elements are dark red.",
+        "coverage_element": "Color Scheme",
+        "preconditions": "",
+        "expected_results": "The background should be consistently light gray, and UI elements should be dark red. 7. Next Steps : Hover over the cards to inspect their color and alignment.",
+        "procedure": [
+          "Observe the background color of the dashboard.",
+          "Inspect the color of the UI elements such as buttons and cards.",
+          "Compare the observed colors against the specified design requirements."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "UI Design and Style Test: Usability Elements",
+        "objective": "To evaluate the usability of the dashboard, focusing on button visibility and text readability.",
+        "coverage_element": "Usability Elements",
+        "preconditions": "",
+        "expected_results": "Buttons should be clearly visible, and text should be easily readable. 7. Next Steps : Hover over the next card (Usability Elements) to continue inspecting the color and alignment.",
+        "procedure": [
+          "Observe the visibility of buttons and readability of text.",
+          "Check for any usability issues such as unclear labels or difficult-to-read text."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "UI Design and Style Test: Visual Appeal",
+        "objective": "To assess the overall aesthetic quality and visual coherence of the dashboard.",
+        "coverage_element": "Visual Appeal",
+        "preconditions": "",
+        "expected_results": "The dashboard should have a clean and professional appearance with visual coherence. 7. Next Steps : Hover over the next card (Visual Appeal) to continue inspecting the color and alignment.",
+        "procedure": [
+          "Observe the overall appearance of the dashboard.",
+          "Check for visual coherence and professional appearance."
+        ]
+      }
+    ]
+  },
+  "element_requirement": [
+    "1. Dashboard : Menu item for accessing the dashboard section",
+    "2. Menu Card : Menu section including Dashboard, Projects, Calendar, etc.",
+    "3. Create Project : Button for initiating the creation of a new project",
+    "4. View Details : Buttons for accessing detailed information on existing projects",
+    "5. Company Selector : Button with dropdown menu for selecting company",
+    "6. Resource Management : Button for navigating to the resource management section",
+    "7. Project Status Card : Displays progress bars for Office Building Construction, Bridge Construction, and Park Renovation",
+    "8. Resource Allocation Card : Displays resource allocation percentages for various projects",
+    "9. Total Projects Card : Displays the total number of projects",
+    "10. Total Spent Card : Displays the total amount spent",
+    "11. Team Members Card : Displays the number of team members",
+    "12. Resource : Column header for resource names",
+    "13. Type : Column header for resource types",
+    "14. Quantity : Column header for resource quantities",
+    "15. Quantity : Textbox for entering the resource quantity",
+    "16. Unit Cost : Column header for resource unit costs",
+    "17. Unit Cost : Textbox for entering the resource unit cost",
+    "18. Total Cost : Column header for resource total costs",
+    "19. Concrete : Resource name",
+    "20. Material : Resource type",
+    "21. 500 : Resource quantity",
+    "22. $120.00 : Resource unit cost",
+    "23. $60,000.00 : Resource total cost",
+    "24. Steel Beams : Resource name",
+    "25. 200 : Resource quantity",
+    "26. $500.00 : Resource unit cost",
+    "27. $100,000.00 : Resource total cost",
+    "28. Crane Rental : Resource name",
+    "29. Equipment : Resource type",
+    "30. 1 : Resource quantity",
+    "31. $15,000.00 : Resource unit cost",
+    "32. $15,000.00 : Resource total cost",
+    "33. Resource Name : Textbox for entering the resource name",
+    "34. Resource Type : Dropdown menu for selecting the resource type",
+    "35. Availability : Textbox for entering the resource availability",
+    "36. Cancel : Button for canceling the addition of a resource"
+  ]
+}

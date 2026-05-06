@@ -1,0 +1,245 @@
+{
+  "website_summary": {
+    "name": "E-Government Office Management System",
+    "description": "The website features a clean and structured interface designed with a light pink background and medium violet red elements for key components, providing an organized display for office management functions.",
+    "category": "Data Management",
+    "appearance": "The E-Government Office Management System consists of a well-structured layout. On the left side of the screen, there's a vertical navigation menu with options such as Home, Modules, Applications, Approvals, Queries, and Reports. Each option is accompanied by a distinct icon and text. The main content area displays the Home page prominently, featuring three sections: Quick Actions, Recent Activity, and Statistics. The Quick Actions section provides buttons for functions like submitting leave requests, cadre leaving requests, attendance, and power requests. The Recent Activity section is currently empty, indicating no recent updates. The Statistics section lists counts of different types of requests (leave, cadre leaving, attendance, and power) with values of \"0\" next to each. The top of the main content area has a search bar for easy navigation and functional icons for notifications and user profile access.",
+    "functionality": "The website includes several key functionalities. Users can navigate through various modules like Modules, Applications, Approvals, Queries, and Reports via the sidebar menu. The search bar at the top enables users to search for specific information within the system. Under the Home section, users can quickly perform essential actions like submitting different types of requests by clicking the corresponding buttons. User profile customization and notification viewing are available via icons in the top-right corner. The Recent Activity and Statistics sections provide an overview of recent and past activities within the system. Despite the current display showing no recent activity and all statistics set as '0', these sections imply that when data is present, they will facilitate tracking and monitoring of relevant activities."
+  },
+  "test_cases": {
+    "functionality_testing": [
+      {
+        "id": "TC001",
+        "name": "Dropdown Option Click Test",
+        "objective": "To verify that clicking the Profile button correctly navigates to the edit profile page.",
+        "coverage_element": "Profile",
+        "preconditions": "The dropdown menu is visible after clicking the user profile icon.",
+        "expected_results": "The system should navigate to the edit profile page. 7. Next Steps : Click on the \"Profile\" option in the dropdown menu to proceed to the edit profile page.",
+        "procedure": [
+          "Click on the Profile button.",
+          "Verify navigation to the edit profile page."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Leave Application Form Test",
+        "objective": "To verify that filling out the leave application form and submitting it increments the leave request count in the Statistics section.",
+        "coverage_element": "Name, Department, Leave Type, Start Date, End Date, Reason, Submit Application",
+        "preconditions": "The user is on the leave application form page.",
+        "expected_results": "The leave request count in the Statistics section should be incremented by one, and the leave application should be successfully submitted. 7. Next Steps : Fill out the leave application form and submit the leave request.",
+        "procedure": [
+          "Fill in the Name textbox with \"John Doe\".",
+          "Fill in the Department textbox with \"Engineering\".",
+          "Select \"Annual Leave\" from the Leave Type dropdown.",
+          "Fill in the Start Date textbox with \"01/01/2023\".",
+          "Fill in the End Date textbox with \"01/05/2023\".",
+          "Fill in the Reason textarea with \"Vacation\".",
+          "Click on the Submit Application button.",
+          "Verify that the leave request count in the Statistics section has incremented by one."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Leave Application Form Validation Test",
+        "objective": "To verify that the leave application form validates required fields and prevents submission until all required fields are filled out.",
+        "coverage_element": "Name, Department, Leave Type, Start Date, End Date, Reason, Submit Application",
+        "preconditions": "The user is on the leave application form page with the \"Name\" field filled out.",
+        "expected_results": "The form validation error message should appear next to the \"Department\" field when attempting to submit the form without filling it out. After filling out the \"Department\" field, the form should be submitted successfully and the leave request count in the Statistics section should be incremented by one. 7. Next Steps : Fill out the \"Department\" field with \"Engineering\".",
+        "procedure": [
+          "Attempt to click on the Submit Application button without filling out the \"Department\" field.",
+          "Verify that a form validation error message appears next to the \"Department\" field.",
+          "Fill in the Department textbox with \"Engineering\".",
+          "Click on the Submit Application button again.",
+          "Verify that the form is submitted successfully and the leave request count in the Statistics section is incremented by one."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Leave Type Selection Test",
+        "objective": "To verify that selecting a leave type from the Leave Type Dropdown allows form submission.",
+        "coverage_element": "Leave Type Dropdown",
+        "preconditions": "Leave application form is loaded and other fields are filled, but leave type is not selected.",
+        "expected_results": "The form should be submitted successfully without any validation errors. 7. Next Steps : Select a leave type from the dropdown menu and click the \"Submit Application\" button again.",
+        "procedure": [
+          "Select a leave type from the Leave Type Dropdown.",
+          "Click on the Submit Button.",
+          "Verify that the form is submitted successfully without any validation errors."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Mandatory Field Validation Test",
+        "objective": "To verify that leaving a mandatory field blank, such as Department Input textbox, prevents form submission and shows a validation message.",
+        "coverage_element": "Department Input",
+        "preconditions": "Leave application form is loaded and other fields are filled, leaving the department field blank.",
+        "expected_results": "A validation message should appear indicating that the \"Department\" field must be completed before submission. 7. Next Steps : Fill in the \"Department\" field and click the \"Submit Application\" button again.",
+        "procedure": [
+          "Click on the Submit Button.",
+          "Verify that a validation message appears indicating that the \"Department\" field must be filled out."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Test Quick Actions Buttons Functionality",
+        "objective": "To verify that the Quick Actions buttons can be clicked and perform their intended actions.",
+        "coverage_element": "Quick Actions Buttons : Buttons for submitting various requests",
+        "preconditions": "User is logged into the system and navigated to the Home page.",
+        "expected_results": "Each button click should trigger the corresponding action without errors.",
+        "procedure": [
+          "Click on the 'Submit Cadre Leaving Request' button.",
+          "Verify that the request submission form appears."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "Test Submit Cadre Leaving Request Button",
+        "objective": "To verify that clicking the 'Submit Cadre Leaving Request' button opens the request form.",
+        "coverage_element": "Submit Cadre Leaving Request : Button for submitting a cadre leaving request",
+        "preconditions": "User is logged into the system and navigated to the Home page.",
+        "expected_results": "The cadre leaving request form should appear after clicking the button.",
+        "procedure": [
+          "Click on the 'Submit Cadre Leaving Request' button.",
+          "Verify that the cadre leaving request form is displayed."
+        ]
+      },
+      {
+        "id": "TC008",
+        "name": "Test Submit Attendance Button",
+        "objective": "To verify that clicking the 'Submit Attendance' button opens the attendance submission form.",
+        "coverage_element": "Submit Attendance : Button for submitting attendance records",
+        "preconditions": "User is logged into the system and navigated to the Home page.",
+        "expected_results": "The attendance submission form should appear after clicking the button.",
+        "procedure": [
+          "Click on the 'Submit Attendance' button.",
+          "Verify that the attendance submission form is displayed."
+        ]
+      }
+    ],
+    "data_display_testing": [
+      {
+        "id": "TC001",
+        "name": "Test Name Textbox Data Entry",
+        "objective": "To verify that the 'Name' textbox accepts input and displays the entered text correctly.",
+        "coverage_element": "Name : Textbox for entering the applicant's name",
+        "preconditions": "User is logged into the system and navigated to the relevant form.",
+        "expected_results": "The textbox should display the entered name accurately.",
+        "procedure": [
+          "Enter 'John Doe' into the 'Name' textbox.",
+          "Verify that the textbox displays 'John Doe'."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Test Statistics Text Display",
+        "objective": "To verify that the Statistics text elements display the correct recent activity statistics.",
+        "coverage_element": "Statistics Text : Text elements displaying recent activity statistics",
+        "preconditions": "User is logged into the system and navigated to the Home page.",
+        "expected_results": "The text elements should display accurate counts of recent activities.",
+        "procedure": [
+          "Navigate to the Statistics section.",
+          "Verify that all text elements display the correct counts."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Test Cadre Leaving Requests Count Display",
+        "objective": "To verify that the 'Cadre Leaving Requests Count' text displays the correct number of requests.",
+        "coverage_element": "Cadre Leaving Requests Count : Text displaying the count of cadre leaving requests",
+        "preconditions": "User is logged into the system and navigated to the Home page.",
+        "expected_results": "The text should display the accurate count of cadre leaving requests.",
+        "procedure": [
+          "Navigate to the Statistics section.",
+          "Verify that the 'Cadre Leaving Requests Count' displays the correct number."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Test Attendance Records Count Display",
+        "objective": "To verify that the 'Attendance Records Count' text displays the correct number of records.",
+        "coverage_element": "Attendance Records Count : Text displaying the count of attendance records",
+        "preconditions": "User is logged into the system and navigated to the Home page.",
+        "expected_results": "The text should display the accurate count of attendance records.",
+        "procedure": [
+          "Navigate to the Statistics section.",
+          "Verify that the 'Attendance Records Count' displays the correct number."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Test Power Requests Count Display",
+        "objective": "To verify that the 'Power Requests Count' text displays the correct number of requests.",
+        "coverage_element": "Power Requests Count : Text displaying the count of power requests",
+        "preconditions": "User is logged into the system and navigated to the Home page.",
+        "expected_results": "The text should display the accurate count of power requests.",
+        "procedure": [
+          "Navigate to the Statistics section.",
+          "Verify that the 'Power Requests Count' displays the correct number."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Test Reason Textarea Input",
+        "objective": "To verify that the 'Reason' textarea accepts input and displays the entered text correctly.",
+        "coverage_element": "Reason : Textarea for entering the reason for the leave",
+        "preconditions": "User is logged into the system and navigated to the relevant form.",
+        "expected_results": "The textarea should display the entered reason accurately.",
+        "procedure": [
+          "Enter 'Personal reasons' into the 'Reason' textarea.",
+          "Verify that the textarea displays 'Personal reasons'."
+        ]
+      }
+    ],
+    "design_validation_testing": [
+      {
+        "id": "TC001",
+        "name": "UI Design and Style Test: Alignment",
+        "objective": "To verify that all UI elements are properly aligned according to the design requirements.",
+        "coverage_element": "Alignment",
+        "preconditions": "",
+        "expected_results": "All UI elements should be aligned properly with no visual discrepancies. 7. Next Steps : Proceed to validate the alignment of all UI elements.",
+        "procedure": [
+          "Visually inspect all UI elements to ensure they are aligned properly.",
+          "Check if there are any visual discrepancies in alignment."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "UI Design and Style Test: Hover Effects",
+        "objective": "To verify that hovering over navigation items in the sidebar triggers the expected hover effect.",
+        "coverage_element": "Hover Effects",
+        "preconditions": "",
+        "expected_results": "Hovering over each navigation item should trigger a hover effect, changing the background color as designed. 7. Next Steps : Proceed to validate the hover effects on the navigation items in the sidebar.",
+        "procedure": [
+          "Hover over each navigation button in the sidebar.",
+          "Observe if the hover effect changes the background color as set in the CSS."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Test Card Design and Content",
+        "objective": "To verify that the card displaying '3 Alex Johnson' is visually correct and contains the expected content.",
+        "coverage_element": "Card : Card displaying \"3 Alex Johnson\"",
+        "preconditions": "User is logged into the system and navigated to the relevant section.",
+        "expected_results": "The card should be properly styled and contain the text '3 Alex Johnson'.",
+        "procedure": [
+          "Locate the card labeled '3 Alex Johnson'.",
+          "Verify that the card's design matches the specifications and contains the correct text."
+        ]
+      }
+    ]
+  },
+  "element_requirement": [
+    "1. Quick Actions Buttons : Buttons for submitting various requests",
+    "2. Submit Cadre Leaving Request : Button for submitting a cadre leaving request",
+    "3. Submit Attendance : Button for submitting attendance records",
+    "4. Name : Textbox for entering the applicant's name",
+    "5. Statistics Text : Text elements displaying recent activity statistics",
+    "6. Cadre Leaving Requests Count : Text displaying the count of cadre leaving requests",
+    "7. Attendance Records Count : Text displaying the count of attendance records",
+    "8. Power Requests Count : Text displaying the count of power requests",
+    "9. Reason : Textarea for entering the reason for the leave",
+    "10. Submit Application : Button for submitting the leave application",
+    "11. User Profile Icon : Button with the text \"Alex Johnson\" located at the top-right corner",
+    "12. Card : Card displaying \"3 Alex Johnson\""
+  ]
+}

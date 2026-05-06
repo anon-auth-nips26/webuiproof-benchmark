@@ -1,0 +1,265 @@
+{
+  "website_summary": {
+    "name": "Internship Connector Hub",
+    "description": "The website features a clean and professional design with a mint cream background and teal-colored components, providing an intuitive interface for connecting students with internship opportunities.",
+    "category": "User Interaction",
+    "appearance": "The website has a sleek and modern design with a mint cream background and teal accents for buttons, headers, and other interactive elements. The homepage prominently displays a hero section with a call-to-action inviting users to connect with top internships. Below this, there are sections detailing how the platform works, including creating a profile, finding opportunities, and applying. Student success stories are highlighted with testimonials and ratings. The footer provides links for students, companies, and general site navigation. The overall layout is well-organized, ensuring easy navigation and readability.",
+    "functionality": "The website offers several key functionalities:\n- Users can register or log in using the buttons in the top navigation bar.\n- Students can create profiles, browse curated internship listings, and apply directly through the platform.\n- Companies can post internship positions and access a network of talented students.\n- A \"Get Started\" button leads users to begin their journey on the platform.\n- There are sections dedicated to showcasing student success stories and featured companies.\n- Users can explore various resources and services tailored for both students and companies."
+  },
+  "test_cases": {
+    "functionality_testing": [
+      {
+        "id": "TC001",
+        "name": "Email Input Field Test",
+        "objective": "To verify that the Email Input Field accepts and validates the user's email address",
+        "coverage_element": "Email Input Field",
+        "preconditions": "The registration form is partially filled with a valid name.",
+        "expected_results": "The email address should be accepted and displayed correctly, resolving the current validation error.",
+        "procedure": [
+          "Enter a valid email address in the Email Input Field.",
+          "Verify that the email address is accepted and displayed correctly."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Get Started Button Test",
+        "objective": "To verify that clicking the \"Get Started\" Button navigates the user to the right section",
+        "coverage_element": "\"Get Started\" Button",
+        "preconditions": "The page is fully loaded and the user is not logged in.",
+        "expected_results": "The user should be navigated to the Find Opportunities section where they can view internship listings.",
+        "procedure": [
+          "Click on the \"Get Started\" Button.",
+          "Verify that the page navigates to the relevant section for finding internship opportunities."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Learn More Button Test",
+        "objective": "To verify that clicking the \"Learn More\" Button provides additional relevant information",
+        "coverage_element": "\"Learn More\" Button",
+        "preconditions": "The page is fully loaded and the user is not logged in.",
+        "expected_results": "The user should be provided with detailed information about the platform's offerings.",
+        "procedure": [
+          "Click on the \"Learn More\" Button.",
+          "Verify that the page provides relevant additional information about the platform and opportunities."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Name Input Field Test",
+        "objective": "To verify that the Name Input Field accepts and validates the user's name input",
+        "coverage_element": "Name Input Field",
+        "preconditions": "The registration form is open and ready for input.",
+        "expected_results": "The name input should be accepted and displayed correctly in the field.",
+        "procedure": [
+          "Enter a valid name in the Name Input Field.",
+          "Verify that the input is accepted and displayed correctly."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Password Input Field Test",
+        "objective": "To verify that the Password Input Field accepts and validates the user's password input",
+        "coverage_element": "Password Input Field",
+        "preconditions": "The registration form is partially filled with a valid name and email.",
+        "expected_results": "The password should be accepted and displayed correctly, resolving the current validation error.",
+        "procedure": [
+          "Enter a valid password in the Password Input Field.",
+          "Verify that the password is accepted and displayed correctly."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Register Button Test",
+        "objective": "To verify that clicking the Register Button submits the registration form",
+        "coverage_element": "Register Button",
+        "preconditions": "The registration form is filled out with valid information.",
+        "expected_results": "The registration form should be submitted successfully, and the user should be redirected to the next step in the process.",
+        "procedure": [
+          "Click on the Register Button.",
+          "Verify that the registration form is submitted and the user is redirected to the appropriate page."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "Registration Form Test",
+        "objective": "To verify that the registration form can be filled out with valid details and submitted successfully.",
+        "coverage_element": "Name Input, Email Input, Password Input, Register As Dropdown, Register Button",
+        "preconditions": "The registration form is visible and ready to be filled out.",
+        "expected_results": "The user should be redirected to a confirmation page or dashboard indicating successful registration.",
+        "procedure": [
+          "Type \"John Doe\" into the Name Input textbox",
+          "Type \"johndoe@example.com\" into the Email Input textbox",
+          "Type \"SecurePassword123\" into the Password Input textbox",
+          "Select \"Student\" from the Register As Dropdown menu",
+          "Click on the Register Button"
+        ]
+      },
+      {
+        "id": "TC008",
+        "name": "Registration Type Dropdown Test",
+        "objective": "To verify that changing the registration type from the Dropdown Menu updates accordingly",
+        "coverage_element": "Dropdown Menu",
+        "preconditions": "The registration form is partially filled with a valid name and email.",
+        "expected_results": "The dropdown should display \"Company\" after selection.",
+        "procedure": [
+          "Select \"Company\" from the Dropdown Menu.",
+          "Verify that the selection changes to \"Company\" and any relevant content updates accordingly."
+        ]
+      },
+      {
+        "id": "TC009",
+        "name": "Toggle Theme Functionality Test",
+        "objective": "To verify that the theme toggling feature changes the page theme correctly.",
+        "coverage_element": "Toggle Theme : Button to toggle the page theme",
+        "preconditions": "The web application is loaded and the user is on the homepage.",
+        "expected_results": "The page theme should switch between light and dark modes when the toggle button is clicked.",
+        "procedure": [
+          "Step 1 : Click the 'Toggle Theme' button.",
+          "Step 2 : Verify that the page theme changes accordingly."
+        ]
+      },
+      {
+        "id": "TC010",
+        "name": "Registration Type Dropdown Functionality Test",
+        "objective": "To verify that the dropdown menu for selecting registration type functions correctly.",
+        "coverage_element": "Register As Dropdown : Dropdown menu for selecting the registration type (Student or Company)",
+        "preconditions": "The web application is loaded and the user is on the homepage.",
+        "expected_results": "The dropdown should display options for 'Student' and 'Company', and allow selection.",
+        "procedure": [
+          "Step 1 : Click on the 'Register As Dropdown' menu.",
+          "Step 2 : Verify that both 'Student' and 'Company' options are available and selectable."
+        ]
+      },
+      {
+        "id": "TC011",
+        "name": "Login Link Functionality Test",
+        "objective": "To verify that the link to navigate to the login page works correctly.",
+        "coverage_element": "Login Link : Link to navigate to the login page",
+        "preconditions": "The web application is loaded and the user is on the homepage.",
+        "expected_results": "Clicking the 'Login Link' should redirect the user to the login page.",
+        "procedure": [
+          "Step 1 : Click on the 'Login Link'.",
+          "Step 2 : Verify that the user is redirected to the login page."
+        ]
+      }
+    ],
+    "data_display_testing": [
+      {
+        "id": "TC001",
+        "name": "Register Card Display Test",
+        "objective": "To verify that the registration form card is displayed correctly.",
+        "coverage_element": "Register Card : Card containing the registration form",
+        "preconditions": "The web application is loaded and the user is on the homepage.",
+        "expected_results": "The registration form card should be visible and properly formatted.",
+        "procedure": [
+          "Step 1 : Navigate to the homepage.",
+          "Step 2 : Verify that the 'Register Card' is displayed with all necessary fields."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Find Opportunities Card Display Test",
+        "objective": "To verify that the card explaining how users can find internship opportunities is displayed correctly.",
+        "coverage_element": "Find Opportunities : Card explaining how users can find internship opportunities",
+        "preconditions": "The web application is loaded and the user is on the homepage.",
+        "expected_results": "The 'Find Opportunities' card should be visible and contain accurate information.",
+        "procedure": [
+          "Step 1 : Navigate to the homepage.",
+          "Step 2 : Verify that the 'Find Opportunities' card is displayed with correct content."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Create Profile Card Display Test",
+        "objective": "To verify that the card describing how to create a profile is displayed correctly.",
+        "coverage_element": "Create Profile : Card describing how to create a profile on the platform",
+        "preconditions": "The web application is loaded and the user is on the homepage.",
+        "expected_results": "The 'Create Profile' card should be visible and contain accurate instructions.",
+        "procedure": [
+          "Step 1 : Navigate to the homepage.",
+          "Step 2 : Verify that the 'Create Profile' card is displayed with correct content."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Apply & Connect Card Display Test",
+        "objective": "To verify that the card explaining how users can apply and connect with companies is displayed correctly.",
+        "coverage_element": "Apply & Connect : Card explaining how users can apply and connect with companies",
+        "preconditions": "The web application is loaded and the user is on the homepage.",
+        "expected_results": "The 'Apply & Connect' card should be visible and contain accurate information.",
+        "procedure": [
+          "Step 1 : Navigate to the homepage.",
+          "Step 2 : Verify that the 'Apply & Connect' card is displayed with correct content."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Michael Chen Testimonial Display Test",
+        "objective": "To verify that Michael Chen's testimonial card is displayed correctly.",
+        "coverage_element": "Michael Chen Testimonial : Card displaying a student success story",
+        "preconditions": "The web application is loaded and the user is on the homepage.",
+        "expected_results": "The 'Michael Chen Testimonial' card should be visible and contain his success story.",
+        "procedure": [
+          "Step 1 : Navigate to the homepage.",
+          "Step 2 : Verify that the 'Michael Chen Testimonial' card is displayed with correct content."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Emma Wilson Testimonial Display Test",
+        "objective": "To verify that Emma Wilson's testimonial card is displayed correctly.",
+        "coverage_element": "Emma Wilson Testimonial : Card displaying a student success story",
+        "preconditions": "The web application is loaded and the user is on the homepage.",
+        "expected_results": "The 'Emma Wilson Testimonial' card should be visible and contain her success story.",
+        "procedure": [
+          "Step 1 : Navigate to the homepage.",
+          "Step 2 : Verify that the 'Emma Wilson Testimonial' card is displayed with correct content."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "Sophia Rodriguez Testimonial Display Test",
+        "objective": "To verify that Sophia Rodriguez's testimonial card is displayed correctly.",
+        "coverage_element": "Sophia Rodriguez Testimonial : Card displaying a student success story",
+        "preconditions": "The web application is loaded and the user is on the homepage.",
+        "expected_results": "The 'Sophia Rodriguez Testimonial' card should be visible and contain her success story.",
+        "procedure": [
+          "Step 1 : Navigate to the homepage.",
+          "Step 2 : Verify that the 'Sophia Rodriguez Testimonial' card is displayed with correct content."
+        ]
+      }
+    ],
+    "design_validation_testing": [
+      {
+        "id": "TC001",
+        "name": "UI Design and Style Test: Color Palette",
+        "objective": "To verify that the website maintains consistent use of mint cream and teal colors throughout its elements.",
+        "coverage_element": "Color Scheme",
+        "preconditions": "",
+        "expected_results": "The website should consistently use mint cream and teal colors, with all elements properly aligned and easily navigable. 7. Next Steps : Hover over the cards to inspect their design and alignment.",
+        "procedure": [
+          "Observe the background color and ensure it is mint cream.",
+          "Inspect the color of buttons, headers, and other components to ensure they are teal.",
+          "Compare the observed colors against the specified design requirements."
+        ]
+      }
+    ]
+  },
+  "element_requirement": [
+    "1. Toggle Theme : Button to toggle the page theme",
+    "2. Name Input : Textbox for entering the user's name",
+    "3. Email Input : Textbox for entering the user's email address",
+    "4. Register Card : Card containing the registration form",
+    "5. Register Button : Button to submit the registration form",
+    "6. Get Started : Button for initiating the internship search process",
+    "7. Register As Dropdown : Dropdown menu for selecting the registration type (Student or Company)",
+    "8. Find Opportunities : Card explaining how users can find internship opportunities",
+    "9. Create Profile : Card describing how to create a profile on the platform",
+    "10. Apply & Connect : Card explaining how users can apply and connect with companies",
+    "11. Login Link : Link to navigate to the login page",
+    "12. Michael Chen Testimonial : Card displaying a student success story",
+    "13. Emma Wilson Testimonial : Card displaying a student success story",
+    "14. Sophia Rodriguez Testimonial : Card displaying a student success story"
+  ]
+}

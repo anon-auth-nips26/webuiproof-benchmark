@@ -1,0 +1,450 @@
+{
+  "website_summary": {
+    "name": "GolfTravel Booking Hub",
+    "description": "The website offers a sleek and user-friendly interface for booking golf travel packages, featuring vibrant visuals and interactive forms.",
+    "category": "User Interaction",
+    "appearance": "The website has a clean and modern design with a dark cyan theme for main components and a whitesmoke background for the body. It includes a prominent header with navigation links such as Home, Destinations, Packages, CRM, and Contact. Below the header, there are sections showcasing popular destinations with images and brief descriptions, followed by a form for requesting quotes. The featured packages section displays various packages with details like duration, accommodations, and pricing. The footer contains links for company information, support, and social media connections. The overall layout is well-organized, ensuring easy navigation and readability.",
+    "functionality": "The website allows users to explore golf destinations, view featured packages, request quotes, and book packages. Users can submit their preferences via a quote request form, which collects information like name, email, phone number, destination, travel dates, number of golfers, accommodations, transportation, and additional information. The booking confirmation feature enables users to finalize their bookings online, generating digital vouchers and invoices. Additionally, the site includes a customer relationship management (CRM) section for managing customer data and a contact page for inquiries."
+  },
+  "test_cases": {
+    "functionality_testing": [
+      {
+        "id": "TC001",
+        "name": "Email Input Field Test",
+        "objective": "To verify that entering an email address into the Email Input Field is handled correctly.",
+        "coverage_element": "Email Input Field[Interactive : Yes]",
+        "preconditions": "The booking form is open and the Name field is filled with \"Jane Smith\".",
+        "expected_results": "The email \"jane@example.com\" should be visible in the Email field without any errors. 7. Next Steps : Enter \"jane@example.com\" into the Email field to continue filling out the booking form.",
+        "procedure": [
+          "Type \"jane@example.com\" into the Email Input Field.",
+          "Verify that the input is accepted and displayed correctly."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Form Input Test",
+        "objective": "Verify that the form fields accept the specified input values.",
+        "coverage_element": "[7], [8], [9], [10], [11], [12], [13], [14], [15]",
+        "preconditions": "User is on the \"Request a Quote\" section.",
+        "expected_results": "All form fields accept the specified input values without errors. 7. Next Steps : Begin filling out the form starting with the \"Name\" field.",
+        "procedure": [
+          "Enter \"John Doe\" in the Name textbox.",
+          "Enter \"john@example.com\" in the Email textbox.",
+          "Enter \"555-1234\" in the Phone textbox.",
+          "Select \"Scotland\" from the Destination dropdown.",
+          "Enter \"08/15/2023 - 08/22/2023\" in the Travel Dates textbox.",
+          "Enter \"2\" in the Number of Golfers textbox.",
+          "Select \"Luxury Resort\" from the Accommodations dropdown.",
+          "Select \"Private Car with Driver\" from the Transportation dropdown.",
+          "Leave the Additional Information textarea empty."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Hover Over Scotland Classic Package Test",
+        "objective": "To verify that hovering over the \"Scotland Classic\" package card displays its details correctly.",
+        "coverage_element": "[C5]",
+        "preconditions": "The \"Featured Packages\" section is visible, and the \"Scotland Classic\" package card is present.",
+        "expected_results": "The hovered package should show its details clearly, and the data should match the expected values. 7. Next Steps : Hover over the \"Scotland Classic\" package card to verify its details.",
+        "procedure": [
+          "Hover over the \"Scotland Classic\" package card.",
+          "Verify that the details such as price ($2,995), duration (\"7 Days / 6 Nights\"), and accommodation (\"Accommodates 2-4 Golfers\") are displayed correctly."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Name Input Field Test",
+        "objective": "To verify that entering a name into the Name Input Field is handled correctly.",
+        "coverage_element": "Name Input Field[Interactive : Yes]",
+        "preconditions": "The booking form is open and ready for input.",
+        "expected_results": "The name \"Jane Smith\" should be visible in the Name field without any errors. 7. Next Steps : Enter \"Jane Smith\" into the Name field as the first step in filling out the booking form.",
+        "procedure": [
+          "Type \"Jane Smith\" into the Name Input Field.",
+          "Verify that the input is accepted and displayed correctly."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Phone Input Field Test",
+        "objective": "To verify that entering a phone number into the Phone Input Field is handled correctly.",
+        "coverage_element": "Phone Input Field[Interactive : Yes]",
+        "preconditions": "The booking form is open and the Name and Email fields are filled with \"Jane Smith\" and \"jane@example.com\" respectively.",
+        "expected_results": "The phone number \"555-5678\" should be visible in the Phone field without any errors. 7. Next Steps : Enter \"555-5678\" into the Phone field to continue filling out the booking form.",
+        "procedure": [
+          "Type \"555-5678\" into the Phone Input Field.",
+          "Verify that the input is accepted and displayed correctly."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Request a Quote Button Test",
+        "objective": "To verify that clicking the Request a Quote Button navigates to the booking section.",
+        "coverage_element": "Request a Quote Button[Interactive : Yes]",
+        "preconditions": "The current page is the homepage and the booking section is not directly visible.",
+        "expected_results": "The page should navigate away from the homepage and display the booking form elements present in Request a Quote Button[Interactive : Yes]. 7. Next Steps : Click on the \"Request a Quote\" button as it seems to lead to the booking section, which is necessary for fulfilling the task.",
+        "procedure": [
+          "Click on the Request a Quote Button.",
+          "Verify the page navigates to a section where booking details can be entered."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "Scroll to Featured Packages Test",
+        "objective": "To verify that scrolling down reveals the \"Featured Packages\" section.",
+        "coverage_element": "[WINDOW]",
+        "preconditions": "The webpage is loaded and the top part of the page is visible.",
+        "expected_results": "The \"Featured Packages\" section should be visible after scrolling. 7. Next Steps : Scroll down to reveal the \"Featured Packages\" section.",
+        "procedure": [
+          "Scroll down the webpage.",
+          "Verify that the \"Featured Packages\" section becomes visible."
+        ]
+      },
+      {
+        "id": "TC008",
+        "name": "Test Navigation Link Home",
+        "objective": "To verify that clicking the 'Home' navigation link navigates to the homepage.",
+        "coverage_element": "Home : Navigation link",
+        "preconditions": "User is on any page of the web application.",
+        "expected_results": "The user is redirected to the homepage.",
+        "procedure": [
+          "Navigate to any page within the web application.",
+          "Click on the 'Home' navigation link."
+        ]
+      },
+      {
+        "id": "TC009",
+        "name": "Test Navigation Link Destinations",
+        "objective": "To verify that clicking the 'Destinations' navigation link navigates to the destinations page.",
+        "coverage_element": "Destinations : Navigation link",
+        "preconditions": "User is on any page of the web application.",
+        "expected_results": "The user is redirected to the destinations page.",
+        "procedure": [
+          "Navigate to any page within the web application.",
+          "Click on the 'Destinations' navigation link."
+        ]
+      },
+      {
+        "id": "TC010",
+        "name": "Test Navigation Link Packages",
+        "objective": "To verify that clicking the 'Packages' navigation link navigates to the packages page.",
+        "coverage_element": "Packages : Navigation link",
+        "preconditions": "User is on any page of the web application.",
+        "expected_results": "The user is redirected to the packages page.",
+        "procedure": [
+          "Navigate to any page within the web application.",
+          "Click on the 'Packages' navigation link."
+        ]
+      },
+      {
+        "id": "TC011",
+        "name": "Test Navigation Link CRM",
+        "objective": "To verify that clicking the 'CRM' navigation link navigates to the CRM page.",
+        "coverage_element": "CRM : Navigation link",
+        "preconditions": "User is on any page of the web application.",
+        "expected_results": "The user is redirected to the CRM page.",
+        "procedure": [
+          "Navigate to any page within the web application.",
+          "Click on the 'CRM' navigation link."
+        ]
+      },
+      {
+        "id": "TC012",
+        "name": "Test Navigation Link Contact",
+        "objective": "To verify that clicking the 'Contact' navigation link navigates to the contact page.",
+        "coverage_element": "Contact : Navigation link",
+        "preconditions": "User is on any page of the web application.",
+        "expected_results": "The user is redirected to the contact page.",
+        "procedure": [
+          "Navigate to any page within the web application.",
+          "Click on the 'Contact' navigation link."
+        ]
+      },
+      {
+        "id": "TC013",
+        "name": "Test Notifications Button",
+        "objective": "To verify that clicking the notifications button opens the notifications panel.",
+        "coverage_element": "Notifications : Button for notifications",
+        "preconditions": "User is on any page of the web application.",
+        "expected_results": "The notifications panel is displayed.",
+        "procedure": [
+          "Navigate to any page within the web application.",
+          "Click on the notifications button."
+        ]
+      },
+      {
+        "id": "TC014",
+        "name": "Test Submit Quote Request Button",
+        "objective": "To verify that clicking the submit quote request button submits the form.",
+        "coverage_element": "Submit Quote Request : Button for submitting quote request",
+        "preconditions": "User fills out the quote request form.",
+        "expected_results": "The form is submitted successfully, and a confirmation message is displayed.",
+        "procedure": [
+          "Fill out the quote request form.",
+          "Click on the submit quote request button."
+        ]
+      },
+      {
+        "id": "TC015",
+        "name": "Test Select Destination Dropdown",
+        "objective": "To verify that the select destination dropdown allows users to choose a destination.",
+        "coverage_element": "Select Destination : Dropdown for selecting destination",
+        "preconditions": "User is on the quote request form page.",
+        "expected_results": "The user can select a destination from the dropdown list.",
+        "procedure": [
+          "Navigate to the quote request form page.",
+          "Open the select destination dropdown and choose a destination."
+        ]
+      },
+      {
+        "id": "TC016",
+        "name": "Test Travel Dates Textbox",
+        "objective": "To verify that the travel dates textbox accepts valid date inputs.",
+        "coverage_element": "Travel Dates : Textbox for entering travel dates",
+        "preconditions": "User is on the quote request form page.",
+        "expected_results": "The textbox accepts valid date inputs and displays them correctly.",
+        "procedure": [
+          "Navigate to the quote request form page.",
+          "Enter valid travel dates into the textbox."
+        ]
+      },
+      {
+        "id": "TC017",
+        "name": "Test Number of Golfers Textbox",
+        "objective": "To verify that the number of golfers textbox accepts valid numeric inputs.",
+        "coverage_element": "Number of Golfers : Textbox for entering number of golfers",
+        "preconditions": "User is on the quote request form page.",
+        "expected_results": "The textbox accepts valid numeric inputs and displays them correctly.",
+        "procedure": [
+          "Navigate to the quote request form page.",
+          "Enter a valid number into the number of golfers textbox."
+        ]
+      },
+      {
+        "id": "TC018",
+        "name": "Test Select Accommodation Type Dropdown",
+        "objective": "To verify that the select accommodation type dropdown allows users to choose an accommodation type.",
+        "coverage_element": "Select Accommodation Type : Dropdown for selecting accommodation type",
+        "preconditions": "User is on the quote request form page.",
+        "expected_results": "The user can select an accommodation type from the dropdown list.",
+        "procedure": [
+          "Navigate to the quote request form page.",
+          "Open the select accommodation type dropdown and choose an option."
+        ]
+      },
+      {
+        "id": "TC019",
+        "name": "Test Select Transportation Dropdown",
+        "objective": "To verify that the select transportation dropdown allows users to choose a transportation option.",
+        "coverage_element": "Select Transportation : Dropdown for selecting transportation",
+        "preconditions": "User is on the quote request form page.",
+        "expected_results": "The user can select a transportation option from the dropdown list.",
+        "procedure": [
+          "Navigate to the quote request form page.",
+          "Open the select transportation dropdown and choose an option."
+        ]
+      },
+      {
+        "id": "TC020",
+        "name": "Test Additional Information Textarea",
+        "objective": "To verify that the additional information textarea accepts text input.",
+        "coverage_element": "Additional Information : Textarea for additional information",
+        "preconditions": "User is on the quote request form page.",
+        "expected_results": "The textarea accepts text input and displays it correctly.",
+        "procedure": [
+          "Navigate to the quote request form page.",
+          "Enter text into the additional information textarea."
+        ]
+      }
+    ],
+    "data_display_testing": [
+      {
+        "id": "TC001",
+        "name": "Test Booking Form Elements Display",
+        "objective": "To verify that all booking form elements are displayed correctly.",
+        "coverage_element": "Card containing booking form elements such as Name, Email, Phone, Package, Dates, Number of Golfers",
+        "preconditions": "User is on the booking form page.",
+        "expected_results": "All booking form elements are visible and properly formatted.",
+        "procedure": [
+          "Navigate to the booking form page.",
+          "Verify that all elements (Name, Email, Phone, Package, Dates, Number of Golfers) are displayed."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Test Florida Information Card Display",
+        "objective": "To verify that the Florida information card is displayed correctly.",
+        "coverage_element": "Florida : Card with information about Florida",
+        "preconditions": "User is on the destinations page.",
+        "expected_results": "The Florida information card is visible and properly formatted.",
+        "procedure": [
+          "Navigate to the destinations page.",
+          "Locate and verify the display of the Florida information card."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Test Customer Booking Details Card Display",
+        "objective": "To verify that the customer booking details card is displayed correctly.",
+        "coverage_element": "Card displaying customer booking details",
+        "preconditions": "User is on the booking confirmation page.",
+        "expected_results": "The customer booking details card is visible and properly formatted.",
+        "procedure": [
+          "Navigate to the booking confirmation page.",
+          "Locate and verify the display of the customer booking details card."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Test Scotland Classic Package Card Display",
+        "objective": "To verify that the Scotland Classic package card is displayed correctly.",
+        "coverage_element": "Scotland Classic : Card displaying package details",
+        "preconditions": "User is on the packages page.",
+        "expected_results": "The Scotland Classic package card is visible and properly formatted.",
+        "procedure": [
+          "Navigate to the packages page.",
+          "Locate and verify the display of the Scotland Classic package card."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Test Florida Sunshine Package Card Display",
+        "objective": "To verify that the Florida Sunshine package card is displayed correctly.",
+        "coverage_element": "Florida Sunshine : Card displaying package details",
+        "preconditions": "User is on the packages page.",
+        "expected_results": "The Florida Sunshine package card is visible and properly formatted.",
+        "procedure": [
+          "Navigate to the packages page.",
+          "Locate and verify the display of the Florida Sunshine package card."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Test Irish Links Package Card Display",
+        "objective": "To verify that the Irish Links package card is displayed correctly.",
+        "coverage_element": "Irish Links : Card displaying package details",
+        "preconditions": "User is on the packages page.",
+        "expected_results": "The Irish Links package card is visible and properly formatted.",
+        "procedure": [
+          "Navigate to the packages page.",
+          "Locate and verify the display of the Irish Links package card."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "Test Scotland Information Card Display",
+        "objective": "To verify that the Scotland information card is displayed correctly.",
+        "coverage_element": "Scotland : Card with information about Scotland",
+        "preconditions": "User is on the destinations page.",
+        "expected_results": "The Scotland information card is visible and properly formatted.",
+        "procedure": [
+          "Navigate to the destinations page.",
+          "Locate and verify the display of the Scotland information card."
+        ]
+      },
+      {
+        "id": "TC008",
+        "name": "Test Ireland Information Card Display",
+        "objective": "To verify that the Ireland information card is displayed correctly.",
+        "coverage_element": "Ireland : Card with information about Ireland",
+        "preconditions": "User is on the destinations page.",
+        "expected_results": "The Ireland information card is visible and properly formatted.",
+        "procedure": [
+          "Navigate to the destinations page.",
+          "Locate and verify the display of the Ireland information card."
+        ]
+      },
+      {
+        "id": "TC009",
+        "name": "Test Golf Tours Office Contact Information Card Display",
+        "objective": "To verify that the Golf Tours Office contact information card is displayed correctly.",
+        "coverage_element": "Golf Tours Office : Card with contact information",
+        "preconditions": "User is on the contact page.",
+        "expected_results": "The Golf Tours Office contact information card is visible and properly formatted.",
+        "procedure": [
+          "Navigate to the contact page.",
+          "Locate and verify the display of the Golf Tours Office contact information card."
+        ]
+      },
+      {
+        "id": "TC010",
+        "name": "Test Disclaimer Card Display",
+        "objective": "To verify that the disclaimer card is displayed correctly.",
+        "coverage_element": "Disclaimer : Card with disclaimer information",
+        "preconditions": "User is on the disclaimer page.",
+        "expected_results": "The disclaimer card is visible and properly formatted.",
+        "procedure": [
+          "Navigate to the disclaimer page.",
+          "Locate and verify the display of the disclaimer card."
+        ]
+      }
+    ],
+    "design_validation_testing": [
+      {
+        "id": "TC001",
+        "name": "UI Design and Style Test: Color Palette",
+        "objective": "To verify that the background color is whitesmoke and main components have a dark cyan color.",
+        "coverage_element": "Color Scheme",
+        "preconditions": "",
+        "expected_results": "The background should be whitesmoke, and main components should have a dark cyan color. 7. Next Steps : Perform the first test case to validate the color palette.",
+        "procedure": [
+          "Observe the background color and compare it to whitesmoke.",
+          "Inspect the colors of navigation links, buttons, and cards.",
+          "Compare the observed colors against the required design specifications."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "UI Design and Style Test: Confirm Booking Button",
+        "objective": "To ensure the \"Confirm Booking\" button adheres to the specified design requirements, focusing on the color and alignment criteria.",
+        "coverage_element": "Confirm Booking Button",
+        "preconditions": "",
+        "expected_results": "The button should display a consistent dark cyan color and maintain proper horizontal and vertical alignment. 7. Next Steps : Hover over the \"Confirm Booking\" button, inspect its color and alignment, and validate against prior consistent UI findings.",
+        "procedure": [
+          "Hover over the \"Confirm Booking\" button to inspect its color and alignment.",
+          "Compare its properties with the experimentally determined consistent dark氰 color and foreground alignment established in prior steps.",
+          "Note its positioning relative to form elements."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Test Toggle Dark Mode Button",
+        "objective": "To verify that clicking the toggle dark mode button switches the theme.",
+        "coverage_element": "Toggle dark mode : Button for toggling dark mode",
+        "preconditions": "User is on any page of the web application.",
+        "expected_results": "The theme of the web application changes to dark mode.",
+        "procedure": [
+          "Navigate to any page within the web application.",
+          "Click on the toggle dark mode button."
+        ]
+      }
+    ]
+  },
+  "element_requirement": [
+    "1. Home : Navigation link",
+    "2. Destinations : Navigation link",
+    "3. Packages : Navigation link",
+    "4. CRM : Navigation link",
+    "5. Contact : Navigation link",
+    "6. Toggle dark mode : Button for toggling dark mode",
+    "7. Notifications : Button for notifications",
+    "8. Submit Quote Request : Button for submitting quote request",
+    "9. Email : Textbox for entering email",
+    "10. Phone : Textbox for entering phone number",
+    "11. Select Destination : Dropdown for selecting destination",
+    "12. Travel Dates : Textbox for entering travel dates",
+    "13. Number of Golfers : Textbox for entering number of golfers",
+    "14. Select Accommodation Type : Dropdown for selecting accommodation type",
+    "15. Select Transportation : Dropdown for selecting transportation",
+    "16. Additional Information : Textarea for additional information",
+    "17. Card containing booking form elements such as Name, Email, Phone, Package, Dates, Number of Golfers",
+    "18. Florida : Card with information about Florida",
+    "19. Card displaying customer booking details",
+    "20. Scotland Classic : Card displaying package details",
+    "21. Florida Sunshine : Card displaying package details",
+    "22. Irish Links : Card displaying package details",
+    "23. Scotland : Card with information about Scotland",
+    "24. Ireland : Card with information about Ireland",
+    "25. Golf Tours Office : Card with contact information",
+    "26. Disclaimer : Card with disclaimer information"
+  ]
+}

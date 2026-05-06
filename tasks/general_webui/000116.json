@@ -1,0 +1,148 @@
+{
+  "website_summary": {
+    "name": "Creative Portfolio Showcase",
+    "description": "The website features a vibrant and modern aesthetic with interactive elements, designed to highlight a creative director's portfolio.",
+    "category": "User Interaction",
+    "appearance": "The website has a clean and visually appealing design with a prominent header titled \"CREATIVE PORTFOLIO\" in bold, outlined text. Below the header, there's a welcoming message introducing the portfolio's focus on interactive UI designs, 3D experiences, and digital art. A circular profile picture of the creative director is displayed on the left side, accompanied by social media icons for additional engagement. On the right side, there's a stylized graphic with a glowing teal circle and a sparkle icon inside a bordered square. Below this graphic is a contact form labeled \"Get In Touch,\" featuring fields for entering a name and email address, along with a pink \"Send Message\" button. The overall color scheme includes soft pastel tones with pops of bright pink and teal, creating a playful yet professional atmosphere.",
+    "functionality": "The website offers several interactive features. Users can toggle between light and dark modes using a button in the top-right corner. They can also navigate through the creative director's profile, which includes links to their website, portfolio, showreel, and ArtStation page via social media icons. Additionally, visitors can reach out directly by filling out the contact form with their name and email, then submitting it via the \"Send Message\" button. The website emphasizes user interaction through its engaging design and intuitive navigation."
+  },
+  "test_cases": {
+    "functionality_testing": [
+      {
+        "id": "TC001",
+        "name": "Dark Mode Button Test",
+        "objective": "To ensure that clicking the Dark Mode Button switches the theme from light to dark mode.",
+        "coverage_element": "Dark Mode Button",
+        "preconditions": "The page is initially in light mode.",
+        "expected_results": "The page background should darken, and text and elements should adjust for enhanced visibility.",
+        "procedure": [
+          "Click on the Dark Mode Button.",
+          "Observe the transition from light to dark mode."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Profile Picture Test",
+        "objective": "To verify that hovering over the Profile Picture reveals the respective labels or links.",
+        "coverage_element": "Profile Picture",
+        "preconditions": "The profile picture is visible.",
+        "expected_results": "The respective labels or links should be revealed when hovering over the profile picture. 7. Next Steps : Hover over the profile picture to check if it reveals the respective labels or links.",
+        "procedure": [
+          "Hover over the Profile Picture",
+          "Verify that the respective labels or links are revealed."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Scroll Down Test",
+        "objective": "To verify that scrolling down reveals the \"Get In Touch\" section.",
+        "coverage_element": "[WINDOW]",
+        "preconditions": "The webpage is loaded and currently displays the portfolio homepage.",
+        "expected_results": "The \"Get In Touch\" section should appear after scrolling down. 7. Next Steps : Scroll down to locate the \"Get In Touch\" section.",
+        "procedure": [
+          "Scroll down the webpage.",
+          "Verify if the \"Get In Touch\" section becomes visible."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Send Message Button Test",
+        "objective": "Verify that clicking the \"Send Message\" button submits the form successfully.",
+        "coverage_element": "Send Message",
+        "preconditions": "The \"Get In Touch\" section is visible with both a valid name and email address entered.",
+        "expected_results": "After clicking the \"Send Message\" button, a confirmation message confirming the successful submission should be displayed. 7. Next Steps : Click the \"Send Message\" button to submit the contact form.",
+        "procedure": [
+          "Click the \"Send Message\" button.",
+          "Verify that a confirmation message is displayed indicating the message was sent."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Your Email Input Test",
+        "objective": "To verify that the \"Your Email\" textbox accepts input correctly.",
+        "coverage_element": "Your Email",
+        "preconditions": "The \"Get In Touch\" section is visible, and the \"Your Name\" field is filled.",
+        "expected_results": "The \"Your Email\" textbox should display the entered email address accurately. 7. Next Steps : Enter a valid email address in the \"Your Email\" field.",
+        "procedure": [
+          "Type a valid email address into the \"Your Email\" textbox.",
+          "Verify that the input is accepted and displayed correctly."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Your Name Input Test",
+        "objective": "To verify that the \"Your Name\" textbox accepts input correctly.",
+        "coverage_element": "Your Name",
+        "preconditions": "The \"Get In Touch\" section is visible.",
+        "expected_results": "The \"Your Name\" textbox should display the entered name accurately. 7. Next Steps : Enter a valid name in the \"Your Name\" field.",
+        "procedure": [
+          "Type a valid name into the \"Your Name\" textbox.",
+          "Verify that the input is accepted and displayed correctly."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "Test Send Message Button Functionality",
+        "objective": "To verify that the 'Send Message' button submits the form data correctly.",
+        "coverage_element": "Send Message : Button for submitting the form",
+        "preconditions": "The web application is loaded, the user is on the main page, and the contact form is filled with valid data.",
+        "expected_results": "Upon clicking the 'Send Message' button, the form data is submitted successfully, and a confirmation message is displayed.",
+        "procedure": [
+          "Step 1 : Navigate to the main page of the web application and locate the contact form.",
+          "Step 2 : Fill in the form fields with valid data and click the 'Send Message' button.",
+          "Step 3 : Verify that the form data is submitted successfully and a confirmation message appears."
+        ]
+      }
+    ],
+    "data_display_testing": [
+      {
+        "id": "TC001",
+        "name": "Social Media Links Test",
+        "objective": "To verify that the social media links display the icons and text correctly.",
+        "coverage_element": "Website Link, Portfolio Link, Showreel Link, Artstation Link",
+        "preconditions": "The social media links are visible.",
+        "expected_results": "The icons and text should be displayed correctly with the specified colors and styles. 7. Next Steps : Hover over the Website Link to inspect its design properties.",
+        "procedure": [
+          "Hover over each social media link.",
+          "Verify that the icons and text are displayed correctly."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Verify Portfolio Introduction Display",
+        "objective": "To verify that the portfolio introduction card is displayed correctly with the expected content.",
+        "coverage_element": "Portfolio Introduction : Card displaying the portfolio introduction",
+        "preconditions": "The web application is loaded and the user is on the main page.",
+        "expected_results": "The portfolio introduction card is visible, containing the welcoming message about interactive UI designs, 3D experiences, and digital art.",
+        "procedure": [
+          "Step 1 : Navigate to the main page of the web application.",
+          "Step 2 : Verify that the portfolio introduction card is displayed with the correct content."
+        ]
+      }
+    ],
+    "design_validation_testing": [
+      {
+        "id": "TC001",
+        "name": "UI Design and Style Test: Color Palette",
+        "objective": "To evaluate the consistency of the color palette across the header, profile section, and contact form.",
+        "coverage_element": "Color Scheme",
+        "preconditions": "",
+        "expected_results": "All elements should adhere to the specified color scheme, maintaining a cohesive and visually appealing design.",
+        "procedure": [
+          "Observe the specified UI elements and their design properties.",
+          "Evaluate the consistency of the color palette across these elements.",
+          "Compare against design best practices or requirements."
+        ]
+      }
+    ]
+  },
+  "element_requirement": [
+    "1. Dark Mode Button : Button for enabling dark mode",
+    "2. Portfolio Introduction : Card displaying the portfolio introduction",
+    "3. Profile Picture Card : A circular image card with a person's photo",
+    "4. Send Message : Card with a button for sending a message",
+    "5. Send Message : Button for submitting the form",
+    "6. Your Name : Textbox for entering the user's name",
+    "7. Your Email : Textbox for entering the user's email"
+  ]
+}

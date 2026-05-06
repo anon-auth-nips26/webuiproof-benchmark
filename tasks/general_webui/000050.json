@@ -1,0 +1,302 @@
+{
+  "website_summary": {
+    "name": "Women's Health Survey Portal",
+    "description": "The website presents a clean and organized form interface for women to submit their health-related information, featuring a structured layout with distinct sections for various health details.",
+    "category": "Data Management",
+    "appearance": "The website has a minimalist design with a white background and uses \"whitesmoke\" as the default background color for its main container. It features a header with the title \"Women's Health Survey\" in bold text, followed by a brief instruction. Below the header, there is a form divided into several sections, each labeled clearly with fields such as Name, Age, Blood Type, Allergies, Current Medications, Medical Conditions, Lifestyle Factors, Family Medical History, Reproductive Health History, Pregnancy Complications, Sexual Health Concerns, Mental Health Status, Exercise Habits, Sleep Patterns, and Nutrition Habits. Each section includes appropriate input fields like text boxes, dropdown menus, and text areas. The form is styled with \"dark cyan\" accents for buttons and highlighted elements, providing a visually appealing contrast. The overall layout is responsive, adapting well to different screen sizes.",
+    "functionality": "The website allows users to fill out a comprehensive health survey form. It includes fields for personal information, medical history, lifestyle factors, reproductive health, mental health, exercise habits, sleep patterns, and nutrition. Users can select their blood type from a dropdown menu, enter text in various fields, and submit the form using a prominent \"Submit\" button. Upon submission, the system collects the entered data for further processing, including data management, permission management, data review, and reporting. The form also ensures proper validation of inputs before submission."
+  },
+  "test_cases": {
+    "functionality_testing": [
+      {
+        "id": "TC001",
+        "name": "Age Field Test",
+        "objective": "To verify that Age Field correctly inputs and displays the correct value, \"30\".",
+        "coverage_element": "Age Field",
+        "preconditions": "User is on the form page.",
+        "expected_results": "The Age Field should display \"30\".",
+        "procedure": [
+          "Click Back to Form Button.",
+          "Type \"30\" into the Age Field.",
+          "Click Submit Form.",
+          "Verify that the \"Age\" field displays \"30\" on the review page."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Back to Form Button Test",
+        "objective": "To verify that clicking the Back to Form Button returns the user to the form to continue filling it out.",
+        "coverage_element": "Back to Form Button",
+        "preconditions": "The user is on the review page after submitting the form.",
+        "expected_results": "The user should be redirected back to the form page, where they can continue filling out the remaining fields. 7. Next Steps : The next step is to click the \"Back to Form\" button to return to the form and continue filling it out as per the procedure.",
+        "procedure": [
+          "Click on the Back to Form Button.",
+          "Verify that the user is redirected back to the form page."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Form Automatic Submission Test",
+        "objective": "To assess if the form auto-submits based on detecting changes in input fields.",
+        "coverage_element": "Name Field ,Medical Conditions Field",
+        "preconditions": "The form is open, and both the name and age fields are cleared.",
+        "expected_results": "The form should not auto-submit until a submit button is manually clicked.",
+        "procedure": [
+          "Enter \"Jane Doe\" into the Name Field.",
+          "Enter \"30\" into the Age Field and verify if there's an option for form submission during this process.",
+          "Click on the Medical Conditions Field but do not enter any text, then attempt any action that suggests moving onto the next fillable area such as clicking outside the form."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Medical Conditions Textarea Test",
+        "objective": "To verify that the Medical Conditions Textarea textbox allows valid medical conditions entry.",
+        "coverage_element": "Medical Conditions Textarea",
+        "preconditions": "The form is displayed.",
+        "expected_results": "The medical conditions input should be accepted and displayed correctly in the textbox.",
+        "procedure": [
+          "Type valid medical conditions into the Medical Conditions Textarea textbox.",
+          "Verify that the input is accepted and displayed correctly."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Name Field Test",
+        "objective": "To verify that the Name Field textbox handles empty input correctly.",
+        "coverage_element": "Name Field",
+        "preconditions": "The form is loaded and ready for input.",
+        "expected_results": "An error message should appear next to the \"Name\" field.",
+        "procedure": [
+          "Leave the Name Field textbox empty.",
+          "Click the submit button.",
+          "Verify that an error message appears indicating the \"Name\" field is required."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Return to Form Test",
+        "objective": "Verify the functionality of Back to Form Button when returning to fill out additional fields like Age.",
+        "coverage_element": "Back to Form Button",
+        "preconditions": "Data review section is displayed.",
+        "expected_results": "User navigates back to form page successfully.",
+        "procedure": [
+          "Click Back to Form Button.",
+          "Confirm user returns to the form page."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "Sexual Health Concerns Textarea Test",
+        "objective": "To verify that the Sexual Health Concerns Textarea textbox allows valid entries of sexual health concerns.",
+        "coverage_element": "Sexual Health Concerns Textarea",
+        "preconditions": "The form is displayed.",
+        "expected_results": "The input should be accepted without errors and shown accurately in the textbox.",
+        "procedure": [
+          "Type relevant sexual health concerns into the Sexual Health Concerns Textarea textbox.",
+          "Verify that the input is accepted and displayed correctly."
+        ]
+      },
+      {
+        "id": "TC008",
+        "name": "Submit Button Test",
+        "objective": "To verify that clicking the Submit Button correctly submits the form.",
+        "coverage_element": "Submit Button",
+        "preconditions": "Each textarea has been filled with relevant information.",
+        "expected_results": "The form should submit successfully with a confirmation or navigation to a new state post-submission.",
+        "procedure": [
+          "Input relevant content into all the textareas.",
+          "Click on the Submit Button.",
+          "Verify that the form is successfully submitted and leads to the next step or page."
+        ]
+      },
+      {
+        "id": "TC009",
+        "name": "Time Input Test",
+        "objective": "To verify that the Time Input textbox allows valid time entry.",
+        "coverage_element": "Time Input",
+        "preconditions": "The form is displayed.",
+        "expected_results": "The time input should be accepted and displayed correctly in the textbox.",
+        "procedure": [
+          "Type a valid time into the Time Input textbox.",
+          "Verify that the input is accepted and displayed correctly."
+        ]
+      },
+      {
+        "id": "TC010",
+        "name": "Verify Mental Health Status Input",
+        "objective": "To verify that the mental health status textarea functions correctly and accepts input.",
+        "coverage_element": "Mental Health Status Textarea : Textarea for entering mental health status information",
+        "preconditions": "The form page is loaded and the user is ready to enter mental health status.",
+        "expected_results": "The textarea should accept the text input and display it correctly.",
+        "procedure": [
+          "Navigate to the women's health survey form.",
+          "Enter 'Good' in the Mental Health Status Textarea."
+        ]
+      },
+      {
+        "id": "TC011",
+        "name": "Enter Family Medical History Information",
+        "objective": "To verify that the family medical history textarea functions correctly and accepts input.",
+        "coverage_element": "Family Medical History Textarea : Textarea for entering family medical history information",
+        "preconditions": "The form page is loaded and the user is ready to enter family medical history.",
+        "expected_results": "The textarea should accept the text input and display it correctly.",
+        "procedure": [
+          "Navigate to the women's health survey form.",
+          "Enter 'History of diabetes' in the Family Medical History Textarea."
+        ]
+      },
+      {
+        "id": "TC012",
+        "name": "Duplicate Family Medical History Check",
+        "objective": "To verify that the family medical history textarea allows re-entry and updates the content.",
+        "coverage_element": "Family Medical History Textarea : Textarea for entering family medical history information",
+        "preconditions": "The form page is loaded and the user previously entered some family medical history.",
+        "expected_results": "The textarea should update to the new content.",
+        "procedure": [
+          "Navigate to the women's health survey form.",
+          "Re-enter 'Updated history of diabetes' in the Family Medical History Textarea."
+        ]
+      },
+      {
+        "id": "TC013",
+        "name": "Check Reproductive Health History Input",
+        "objective": "To verify that the reproductive health history textarea functions correctly and accepts input.",
+        "coverage_element": "Reproductive Health History Textarea : Textarea for entering reproductive health history information",
+        "preconditions": "The form page is loaded and the user is ready to enter reproductive health history.",
+        "expected_results": "The textarea should accept the text input and display it correctly.",
+        "procedure": [
+          "Navigate to the women's health survey form.",
+          "Enter 'Normal menstrual cycle' in the Reproductive Health History Textarea."
+        ]
+      },
+      {
+        "id": "TC014",
+        "name": "Test Pregnancy Complications Text Input",
+        "objective": "To verify that the pregnancy complications textarea functions correctly and accepts input.",
+        "coverage_element": "Pregnancy Complications Textarea : Textarea for entering pregnancy complications information",
+        "preconditions": "The form page is loaded and the user is ready to enter pregnancy complications.",
+        "expected_results": "The textarea should accept the text input and display it correctly.",
+        "procedure": [
+          "Navigate to the women's health survey form.",
+          "Enter 'No complications' in the Pregnancy Complications Textarea."
+        ]
+      },
+      {
+        "id": "TC015",
+        "name": "Submit Card Button Functionality",
+        "objective": "To verify that the submit button within the card functions correctly.",
+        "coverage_element": "Submit Card : Card containing the submit button",
+        "preconditions": "The form page is loaded with all necessary fields filled out.",
+        "expected_results": "The form should be submitted and a confirmation message should be displayed.",
+        "procedure": [
+          "Fill out all the necessary fields in the form.",
+          "Click the submit button within the Card containing the submit button."
+        ]
+      },
+      {
+        "id": "TC016",
+        "name": "Back to Form Button",
+        "objective": "To verify that the 'Back to Form' button functions correctly.",
+        "coverage_element": "Back to Form Card : Card containing the \"Back to Form\" button",
+        "preconditions": "The user is on a page that includes the 'Back to Form' button.",
+        "expected_results": "Clicking the button should navigate the user back to the form.",
+        "procedure": [
+          "Navigate to a page that includes the 'Back to Form' button.",
+          "Click the 'Back to Form' button in the Back to Form Card."
+        ]
+      }
+    ],
+    "data_display_testing": [
+      {
+        "id": "TC001",
+        "name": "Review Information Card Display Test",
+        "objective": "To verify that the Review Information Card correctly displays the submitted data.",
+        "coverage_element": "Review Information Card",
+        "preconditions": "The form has been submitted and the data review section is displayed.",
+        "expected_results": "The Review Information Card should display the submitted data accurately.",
+        "procedure": [
+          "Hover over the Review Information Card.",
+          "Verify that the card displays the correct personal and medical information."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Download JSON Card Option",
+        "objective": "To verify that the download JSON option is correctly displayed and functional.",
+        "coverage_element": "Download JSON Card : Card with an option to download the information in JSON format",
+        "preconditions": "The form page is loaded.",
+        "expected_results": "The JSON download option should be visible and allow the user to download the information in JSON format.",
+        "procedure": [
+          "Navigate to the women's health survey form.",
+          "Click the download JSON option in the Download JSON Card."
+        ]
+      }
+    ],
+    "design_validation_testing": [
+      {
+        "id": "TC001",
+        "name": "UI Design and Style Test: Color Palette",
+        "objective": "To evaluate the color scheme consistency and usage of \"dark cyan\" for buttons and highlighted elements.",
+        "coverage_element": "Color Scheme",
+        "preconditions": "",
+        "expected_results": "All buttons and highlighted elements should consistently use \"dark cyan\" as specified. 7. Next Steps : Scroll down to see if there are any buttons or highlighted elements that can be evaluated for the design validation task.",
+        "procedure": [
+          "Observe the specified UI elements and their design properties.",
+          "Evaluate the use of \"dark cyan\" for buttons and highlighted elements.",
+          "Compare against design requirements."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Validate Medical Conditions Card",
+        "objective": "To verify the design and layout of the card containing the medical conditions textarea.",
+        "coverage_element": "Card 3 : Card containing the medical conditions textarea",
+        "preconditions": "The form page is loaded.",
+        "expected_results": "The card should have the correct design, including appropriate styling and layout.",
+        "procedure": [
+          "Navigate to the women's health survey form.",
+          "Visually inspect the Card containing the medical conditions textarea."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Validate Lifestyle Factors Card",
+        "objective": "To verify the design and layout of the card containing the lifestyle factors textarea.",
+        "coverage_element": "Card 4 : Card containing the lifestyle factors textarea",
+        "preconditions": "The form page is loaded.",
+        "expected_results": "The card should have the correct design, including appropriate styling and layout.",
+        "procedure": [
+          "Navigate to the women's health survey form.",
+          "Visually inspect the Card containing the lifestyle factors textarea."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Validate Family Medical History Card",
+        "objective": "To verify the design and layout of the card containing the family medical history textarea.",
+        "coverage_element": "Card 5 : Card containing the family medical history textarea",
+        "preconditions": "The form page is loaded.",
+        "expected_results": "The card should have the correct design, including appropriate styling and layout.",
+        "procedure": [
+          "Navigate to the women's health survey form.",
+          "Visually inspect the Card containing the family medical history textarea."
+        ]
+      }
+    ]
+  },
+  "element_requirement": [
+    "1. Sexual Health Concerns Textarea : Textarea for entering sexual health concerns information",
+    "2. Mental Health Status Textarea : Textarea for entering mental health status information",
+    "3. Family Medical History Textarea : Textarea for entering family medical history information",
+    "4. Family Medical History Textarea : Textarea for entering family medical history information",
+    "5. Reproductive Health History Textarea : Textarea for entering reproductive health history information",
+    "6. Pregnancy Complications Textarea : Textarea for entering pregnancy complications information",
+    "7. Submit Card : Card containing the submit button",
+    "8. Review Information Card : Card displaying submitted personal and medical information",
+    "9. Download JSON Card : Card with an option to download the information in JSON format",
+    "10. Back to Form Card : Card containing the \"Back to Form\" button",
+    "11. Card 3 : Card containing the medical conditions textarea",
+    "12. Card 4 : Card containing the lifestyle factors textarea",
+    "13. Card 5 : Card containing the family medical history textarea"
+  ]
+}

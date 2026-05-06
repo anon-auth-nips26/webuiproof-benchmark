@@ -1,0 +1,188 @@
+{
+  "website_summary": {
+    "name": "Regulatory Policy Dashboard",
+    "description": "The website presents a clean and organized interface for monitoring and analyzing regulatory policies with interactive charts and filters.",
+    "category": "Data Management",
+    "appearance": "The website features a modern and professional design with a lavender background and indigo-colored UI elements. It includes several key sections:\n- **Header Section:** Displays the title \"Regulatory Policy Dashboard\" along with a subtitle describing its purpose. There is also a \"Refresh Data\" button for updating the displayed information.\n- **Search and Filter Section:** Contains a search bar for finding specific policies and a dropdown menu for selecting a policy. Additionally, there is a \"Filters\" button for refining the displayed data.\n- **Policy Information Cards:** Three cards provide details such as Policy Type, Effective Date, and Status.\n- **Compliance Trend Section:** Shows a bar chart with a line overlay representing target, actual, and predicted compliance trends over time.\n- **Current Compliance Section:** Displays an overall compliance rate with a progress bar and regional distribution through a pie chart.\n- **Violations by Month Section:** Includes a bar chart illustrating monthly policy violations.\n- **Incident Severity Section:** Features a pie chart depicting the distribution of incident severity levels.\nEach section is neatly arranged in a grid layout, ensuring easy navigation and readability.",
+    "functionality": "The website offers various functionalities to enhance user interaction and data analysis:\n- **Search Bar:** Allows users to search for specific policies using keywords.\n- **Policy Selection Dropdown:** Enables users to choose from predefined policies like Carbon Emissions Reduction, Data Privacy Protection, etc.\n- **Filter Button:** Provides options to filter the displayed data according to specific criteria.\n- **Interactive Charts:** Users can view and analyze compliance trends, regional distribution, violations by month, and incident severity through interactive charts.\n- **Download Options:** Each chart comes with a download button for saving the visualizations.\n- **Refresh Data Button:** Updates the displayed data to reflect the latest information."
+  },
+  "test_cases": {
+    "functionality_testing": [
+      {
+        "id": "TC001",
+        "name": "Category Filter Test",
+        "objective": "To verify that the Category Filter allows users to filter policies by category.",
+        "coverage_element": "Category Filter",
+        "preconditions": "The dashboard is loaded, the search bar contains \"Carbon Emissions Reduction,\" and the filters dropdown is open.",
+        "expected_results": "The search results should be filtered according to the selected category.",
+        "procedure": [
+          "Click on the Category Filter.",
+          "Select a category option.",
+          "Verify that the search results are filtered based on the selected category."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Filters Button Test",
+        "objective": "To verify that clicking the Filters Button opens the filter options dialog.",
+        "coverage_element": "Filters Button",
+        "preconditions": "",
+        "expected_results": "The filter dialog should be visible with options to select filters such as date ranges.",
+        "procedure": [
+          "Click on the Filters Button",
+          "Verify that the filter options appear for user interaction."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Search Bar Test",
+        "objective": "To verify that the Search Bar allows users to search for specific policies.",
+        "coverage_element": "Search Bar",
+        "preconditions": "The dashboard is loaded, and the search bar is empty.",
+        "expected_results": "The selected policy should update to \"Carbon Emissions Reduction.\"",
+        "procedure": [
+          "Type \"Carbon Emissions Reduction\" into the Search Bar.",
+          "Press Enter.",
+          "Verify that the Selected Policy updates to \"Carbon Emissions Reduction.\""
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Type Filter Test",
+        "objective": "To verify that selecting a specific policy type in Type Filter correctly modifies the displayed data.",
+        "coverage_element": "Type Filter",
+        "preconditions": "Filters options are visible after clicking the Filters button.",
+        "expected_results": "The dashboard cards should update, reflecting only the policies that are classified under the 'Directive' type.",
+        "procedure": [
+          "Select the 'Directive' option from Type Filter.",
+          "Observe any changes in the data displayed in the cards below, particularly the policy details and related compliance statistics."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Test Refresh Data Button Functionality",
+        "objective": "To verify that the 'Refresh Data' button updates the dashboard data.",
+        "coverage_element": "Refresh Data : Button for refreshing dashboard data",
+        "preconditions": "The dashboard must be fully loaded with initial data.",
+        "expected_results": "After clicking the 'Refresh Data' button, the dashboard should display updated data with no errors.",
+        "procedure": [
+          "Step 1 : Observe the initial data displayed on the dashboard.",
+          "Step 2 : Click the 'Refresh Data' button and verify that the data is updated."
+        ]
+      }
+    ],
+    "data_display_testing": [
+      {
+        "id": "TC001",
+        "name": "Verify Policy Cards Display",
+        "objective": "To verify that policy-related data is correctly displayed on the policy cards.",
+        "coverage_element": "Policy Cards : Cards displaying various policy-related data",
+        "preconditions": "The dashboard must be fully loaded, and there should be policy-related data available.",
+        "expected_results": "Each policy card should display the correct policy-related data such as policy type, effective date, and status.",
+        "procedure": [
+          "Step 1 : Navigate to the Regulatory Policy Dashboard.",
+          "Step 2 : Verify that each card displays the correct and relevant policy information."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Validate Compliance Trend Monitor Display",
+        "objective": "To verify the display of compliance rates over time on the compliance trend monitor.",
+        "coverage_element": "Compliance Trend Monitor : Card displaying compliance rates over time",
+        "preconditions": "The dashboard must be fully loaded, and there should be compliance data available over time.",
+        "expected_results": "The compliance trend monitor card should accurately display the compliance rates over time using a bar chart.",
+        "procedure": [
+          "Step 1 : Navigate to the Regulatory Policy Dashboard.",
+          "Step 2 : Verify that the compliance trend monitor card displays the correct compliance rates over time."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Check Compliance Trend Chart Accuracy",
+        "objective": "To verify the accuracy of actual, predicted, and target compliance rates in the compliance trend chart.",
+        "coverage_element": "Compliance Trend Chart : Card showing the actual, predicted, and target compliance rates",
+        "preconditions": "The dashboard must be fully loaded, and there should be compliance data available for comparison.",
+        "expected_results": "The compliance trend chart should correctly display the actual, predicted, and target compliance rates.",
+        "procedure": [
+          "Step 1 : Navigate to the Regulatory Policy Dashboard.",
+          "Step 2 : Compare the actual, predicted, and target compliance rates displayed on the chart with the expected values."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Verify Current Compliance Rate Display",
+        "objective": "To verify that the overall compliance rate is correctly displayed with a progress bar.",
+        "coverage_element": "Current Compliance : Card displaying the overall compliance rate",
+        "preconditions": "The dashboard must be fully loaded, and there should be compliance data available.",
+        "expected_results": "The current compliance card should display the correct overall compliance rate with a progress bar.",
+        "procedure": [
+          "Step 1 : Navigate to the Regulatory Policy Dashboard.",
+          "Step 2 : Verify that the current compliance card displays the correct overall compliance rate with a progress bar."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Test Regional Distribution Display",
+        "objective": "To verify the display of compliance by region using a pie chart.",
+        "coverage_element": "Regional Distribution : Card showing compliance by region",
+        "preconditions": "The dashboard must be fully loaded, and there should be compliance data by region available.",
+        "expected_results": "The regional distribution card should display the correct compliance by region using a pie chart.",
+        "procedure": [
+          "Step 1 : Navigate to the Regulatory Policy Dashboard.",
+          "Step 2 : Verify that the regional distribution card displays the correct compliance by region using a pie chart."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Validate Violations by Month Chart",
+        "objective": "To verify the display of policy violations over time using a bar chart.",
+        "coverage_element": "Violations by Month : Card tracking policy violations over time",
+        "preconditions": "The dashboard must be fully loaded, and there should be violation data available.",
+        "expected_results": "The violations by month card should correctly display the policy violations over time using a bar chart.",
+        "procedure": [
+          "Step 1 : Navigate to the Regulatory Policy Dashboard.",
+          "Step 2 : Verify that the violations by month card displays the correct policy violations over time using a bar chart."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "Check Incident Severity Distribution Pie Chart",
+        "objective": "To verify the display of incident severity levels using a pie chart.",
+        "coverage_element": "Incident Severity : Card showing the distribution of incident severity levels",
+        "preconditions": "The dashboard must be fully loaded, and there should be incident severity data available.",
+        "expected_results": "The incident severity card should display the correct distribution of incident severity levels using a pie chart.",
+        "procedure": [
+          "Step 1 : Navigate to the Regulatory Policy Dashboard.",
+          "Step 2 : Verify that the incident severity card displays the correct distribution of incident severity levels using a pie chart."
+        ]
+      }
+    ],
+    "design_validation_testing": [
+      {
+        "id": "TC001",
+        "name": "UI Design and Style Test: Card Alignment",
+        "objective": "To verify that cards are properly aligned and spaced.",
+        "coverage_element": "Card Alignment",
+        "preconditions": "",
+        "expected_results": "All cards should be properly aligned and spaced.",
+        "procedure": [
+          "Observe the alignment and spacing of cards.",
+          "Ensure all cards are properly aligned and spaced."
+        ]
+      }
+    ]
+  },
+  "element_requirement": [
+    "1. Search Bar : A text box for entering search queries",
+    "2. Filters Button : Button marked as \"Filters\" for opening filter options",
+    "3. Category Filter : Dropdown list for various categories like Environmental, Privacy, etc.",
+    "4. Policy Cards : Cards displaying various policy-related data",
+    "5. Refresh Data : Button for refreshing dashboard data",
+    "6. Compliance Trend Monitor : Card displaying compliance rates over time",
+    "7. Compliance Trend Chart : Card showing the actual, predicted, and target compliance rates",
+    "8. Current Compliance : Card displaying the overall compliance rate",
+    "9. Regional Distribution : Card showing compliance by region",
+    "10. Violations by Month : Card tracking policy violations over time",
+    "11. Incident Severity : Card showing the distribution of incident severity levels"
+  ]
+}

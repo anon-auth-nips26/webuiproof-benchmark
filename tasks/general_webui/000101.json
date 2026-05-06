@@ -1,0 +1,186 @@
+{
+  "website_summary": {
+    "name": "Travel Expense Manager",
+    "description": "The website provides a clean and organized interface for managing travel expenses, featuring vibrant colors and interactive charts.",
+    "category": "Data Management",
+    "appearance": "The website has a modern and professional design with a gradient header in shades of purple and indigo. It includes a dashboard displaying key metrics such as total expenses, reimbursements, and pending approvals in colorful cards. Below the dashboard, there are sections for a monthly expense overview with a bar chart and an expense distribution pie chart. The recent activity section lists updates like approved reimbursements and new bookings. The footer contains links to privacy policy, terms of service, and contact support. The overall layout is intuitive, with white containers for content and navy accents for components.",
+    "functionality": "The website allows users to book tickets, hotels, and trains via dropdown menus in the navigation bar. It enables the generation of settlement reports and submission of reimbursement applications through dedicated buttons. Users can also view the status of their reimbursements and track recent activities. The dashboard provides an overview of total expenses, reimbursements, and pending amounts. Additionally, it offers graphical representations of monthly expenses and expense distributions."
+  },
+  "test_cases": {
+    "functionality_testing": [
+      {
+        "id": "TC001",
+        "name": "Bookings Button Test",
+        "objective": "To verify that clicking the Bookings button opens the dropdown menu.",
+        "coverage_element": "Bookings",
+        "preconditions": "On the dashboard page.",
+        "expected_results": "Dropdown menu should be visible with booking options. 7. Next Steps : Click on the \"Bookings\" button to proceed with the booking process.",
+        "procedure": [
+          "Click on the Bookings button.",
+          "Verify that the dropdown menu appears."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Reimbursement Button Test",
+        "objective": "To verify that clicking the Reimbursement button navigates to the reimbursement section.",
+        "coverage_element": "Reimbursement",
+        "preconditions": "On the dashboard page.",
+        "expected_results": "Navigation to the reimbursement section. 7. Next Steps : Click on the \"Reimbursement\" button to proceed to the reimbursement section.",
+        "procedure": [
+          "Click on the Reimbursement button.",
+          "Verify navigation to the reimbursement section."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Test Case for Book Ticket Option",
+        "objective": "To verify that the 'Book Ticket' option in the dropdown menu correctly initiates the ticket booking process.",
+        "coverage_element": "Book Ticket : Option in the dropdown menu for initiating the ticket booking process",
+        "preconditions": "User is logged into the application and has access to the dropdown menu.",
+        "expected_results": "Upon selecting the 'Book Ticket' option, the user is directed to the ticket booking form.",
+        "procedure": [
+          "Step 1 : Click on the dropdown menu.",
+          "Step 2 : Select the 'Book Ticket' option."
+        ]
+      },
+      {
+        "id": "TC004",
+        "name": "Test Case for Departure City Textbox",
+        "objective": "To verify that the 'Departure City' textbox allows users to enter valid departure cities.",
+        "coverage_element": "Departure City : Textbox for entering the departure city",
+        "preconditions": "User is on the ticket booking page.",
+        "expected_results": "The textbox accepts valid city names and does not accept invalid entries.",
+        "procedure": [
+          "Step 1 : Enter a valid departure city name in the textbox.",
+          "Step 2 : Attempt to enter an invalid entry and ensure it is rejected."
+        ]
+      },
+      {
+        "id": "TC005",
+        "name": "Test Case for Destination City Textbox",
+        "objective": "To verify that the 'Destination City' textbox allows users to enter valid destination cities.",
+        "coverage_element": "Destination City : Textbox for entering the destination city",
+        "preconditions": "User is on the ticket booking page.",
+        "expected_results": "The textbox accepts valid city names and does not accept invalid entries.",
+        "procedure": [
+          "Step 1 : Enter a valid destination city name in the textbox.",
+          "Step 2 : Attempt to enter an invalid entry and ensure it is rejected."
+        ]
+      },
+      {
+        "id": "TC006",
+        "name": "Test Case for Dashboard Navigation Button",
+        "objective": "To verify that the 'Dashboard' button navigates the user to the dashboard page.",
+        "coverage_element": "Dashboard : Button for navigating to the dashboard",
+        "preconditions": "User is logged into the application.",
+        "expected_results": "Upon clicking the 'Dashboard' button, the user is redirected to the dashboard page.",
+        "procedure": [
+          "Step 1 : Locate and click the 'Dashboard' button.",
+          "Step 2 : Verify that the user is redirected to the dashboard page."
+        ]
+      },
+      {
+        "id": "TC007",
+        "name": "Test Case for Back to Dashboard Button",
+        "objective": "To verify that the 'Back to Dashboard' button correctly redirects the user back to the dashboard.",
+        "coverage_element": "Back to Dashboard : Button for returning to the dashboard",
+        "preconditions": "User is on a page other than the dashboard.",
+        "expected_results": "Upon clicking the 'Back to Dashboard' button, the user is redirected back to the dashboard page.",
+        "procedure": [
+          "Step 1 : Navigate away from the dashboard page.",
+          "Step 2 : Click the 'Back to Dashboard' button and verify redirection."
+        ]
+      },
+      {
+        "id": "TC008",
+        "name": "Test Case for Purpose of Travel Textbox",
+        "objective": "To verify that the 'Purpose of Travel' textbox allows users to enter valid purposes of travel.",
+        "coverage_element": "Purpose of Travel : Textbox for entering purpose of travel",
+        "preconditions": "User is on the ticket booking page.",
+        "expected_results": "The textbox accepts valid text input related to the purpose of travel.",
+        "procedure": [
+          "Step 1 : Enter a valid purpose of travel in the textbox.",
+          "Step 2 : Ensure the entered text is saved and displayed correctly."
+        ]
+      },
+      {
+        "id": "TC009",
+        "name": "Test Case for Travel Dates Textbox",
+        "objective": "To verify that the 'Travel Dates' textbox allows users to enter valid travel dates.",
+        "coverage_element": "Travel Dates : Textbox for entering travel dates",
+        "preconditions": "User is on the ticket booking page.",
+        "expected_results": "The textbox accepts valid date formats and does not accept invalid entries.",
+        "procedure": [
+          "Step 1 : Enter a valid travel date in the textbox.",
+          "Step 2 : Attempt to enter an invalid date and ensure it is rejected."
+        ]
+      }
+    ],
+    "data_display_testing": [
+      {
+        "id": "TC001",
+        "name": "UI Alignment Test: Text Labels and Icons",
+        "objective": "To confirm that all text labels and icons within the cards are aligned properly.",
+        "coverage_element": "Layout & Organization",
+        "preconditions": "",
+        "expected_results": "All text labels and icons within the cards are aligned properly without any misalignment observed.",
+        "procedure": [
+          "Hover over each card C9 and observe the text labels and icons.",
+          "Verify proper alignment and consistency in the positioning of text labels and icons within each card."
+        ]
+      },
+      {
+        "id": "TC002",
+        "name": "Test Case for Financial Summaries Cards",
+        "objective": "To verify that various cards displaying financial summaries and expense distributions show accurate and up-to-date information.",
+        "coverage_element": "Various cards displaying financial summaries and expense distributions",
+        "preconditions": "Financial data is available and updated in the system.",
+        "expected_results": "All cards display correct financial summaries and expense distributions without any discrepancies.",
+        "procedure": [
+          "Step 1 : Navigate to the dashboard where financial summary cards are displayed.",
+          "Step 2 : Verify the accuracy of the data shown in each card against the expected values."
+        ]
+      },
+      {
+        "id": "TC003",
+        "name": "Test Case for Expense Distribution Card",
+        "objective": "To verify that the 'Expense Distribution Card' pie chart accurately displays expense distribution.",
+        "coverage_element": "Expense Distribution Card : Pie chart displaying expense distribution with sections labeled Travel, Accommodation, Meals, and Other",
+        "preconditions": "Expense data is available and updated in the system.",
+        "expected_results": "The pie chart displays the correct distribution of expenses across all categories.",
+        "procedure": [
+          "Step 1 : Navigate to the dashboard where the expense distribution card is displayed.",
+          "Step 2 : Verify that the pie chart accurately reflects the expense distribution according to the latest data."
+        ]
+      }
+    ],
+    "design_validation_testing": [
+      {
+        "id": "TC001",
+        "name": "UI Design and Style Test: Card Colors",
+        "objective": "To validate that dashboard cards have white backgrounds with navy accents as specified in the design requirements.",
+        "coverage_element": "Color Scheme",
+        "preconditions": "",
+        "expected_results": "All dashboard cards should have a white background with navy-colored component visuals following the design requirements.",
+        "procedure": [
+          "Hover over each card C9 to observe background colors and component visuals.",
+          "Verify that the background of each card is white and the component visuals are navy colored."
+        ]
+      }
+    ]
+  },
+  "element_requirement": [
+    "1. Bookings : Button with dropdown menu for accessing booking-related options",
+    "2. Book Ticket : Option in the dropdown menu for initiating the ticket booking process",
+    "3. Various cards displaying financial summaries and expense distributions",
+    "4. Reimbursement : Dropdown button for reimbursement-related options",
+    "5. Departure City : Textbox for entering the departure city",
+    "6. Destination City : Textbox for entering the destination city",
+    "7. Dashboard : Button for navigating to the dashboard",
+    "8. Back to Dashboard : Button for returning to the dashboard",
+    "9. Purpose of Travel : Textbox for entering purpose of travel",
+    "10. Travel Dates : Textbox for entering travel dates",
+    "11. Expense Distribution Card : Pie chart displaying expense distribution with sections labeled Travel, Accommodation, Meals, and Other"
+  ]
+}
