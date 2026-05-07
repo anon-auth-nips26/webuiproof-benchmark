@@ -1,4 +1,4 @@
-# WebUIProof Benchmark
+# WebUIProof: Benchmarking WebUI Code Generator with UI-Agent Execution Harness
 
 WebUIProof is a comprehensive benchmark for evaluating AI models' ability to generate functional and accurate web user interfaces from natural language descriptions. This benchmark tests LLM-generated React/TypeScript/Three.js components through automated UI testing with vision-language model agents.
 
